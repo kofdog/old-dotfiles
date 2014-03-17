@@ -1,0 +1,9 @@
+<skin name="MattGloobus Light" width="1000" height="200">
+  <artistname x="0" y="35" font="Caviar Dreams 24" color="#ffffffff" maxchars="25" scroll="true"/> 
+  <titlename  x="0" y="75" font="Caviar Dreams 12" color="#ffffffff" maxchars="60" scroll="true"/> <!--rgba -->
+  <albumname x="0" y="95" font="Caviar Dreams 12" color="#ffffffff"  maxchars="60" scroll="true"/>
+</skin>
+
+
+
+

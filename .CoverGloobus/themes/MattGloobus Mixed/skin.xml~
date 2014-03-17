@@ -1,0 +1,9 @@
+<skin name="MattGloobus Mixed" width="1000" height="200">
+  <artistname x="0" y="35" font="BankGothic Md BT 25" color="#d7d7d7ff" maxchars="25" scroll="true"/> 
+  <titlename  x="0" y="75" font="BankGothic Md BT 10" color="#413536ff" maxchars="60" scroll="true"/> <!--rgba -->
+  <albumname x="0" y="95" font="BankGothic Md BT 10" color="#413536FF"  maxchars="60" scroll="true"/>
+</skin>
+
+
+
+
