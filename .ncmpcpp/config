@@ -1,12 +1,6 @@
-# Set up FIFO for visualizer
-audio_output {
-    type    "fifo"
-    name    "MPD"
-    path    "/home/mike/.mpd/mpd.fifo"
-    format  "44100:16:1"
-}
-
 # Configure visualizer
 visualizer_fifo_path = "/home/mike/.mpd/mpd.fifo"
+visualizer_output_name = "FIFO"
+visualizer_sync_interval = "1"
 visualizer_type = "spectrum"
 visualizer_color = "default"
