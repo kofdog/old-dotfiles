@@ -1,6 +1,8 @@
 sw_volume: 100
 audio_device_state:1:MPD
-state: stop
+state: play
+current: 0
+time: 120
 random: 0
 repeat: 0
 single: 0
@@ -9,4 +11,17 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Alt-J (∆)/01 Intro.m4a
+1:Alt-J (∆)/02 Interlude 1.m4a
+2:Alt-J (∆)/03 Tessellate.m4a
+3:Alt-J (∆)/04 Breezeblocks.m4a
+4:Alt-J (∆)/05 Interlude 2.m4a
+5:Alt-J (∆)/06 Estocada.m4a
+6:Alt-J (∆)/07 Dissolve Me.m4a
+7:Alt-J (∆)/08 Matilda.m4a
+8:Alt-J (∆)/09 Ms.m4a
+9:Alt-J (∆)/10 Fitzpleasure.m4a
+10:Alt-J (∆)/11 Interlude 3.m4a
+11:Alt-J (∆)/12 Blood Flood.m4a
+12:Alt-J (∆)/13 Taro_Handmade.m4a
 playlist_end
