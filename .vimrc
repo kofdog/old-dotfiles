@@ -1,11 +1,13 @@
 " Add packages to runtime path
 execute pathogen#infect()
 
-" Color scheme
-"colorscheme 256-jungle
-
 " Syntax highlighting
 syntax on
+
+" Color scheme
+set background=dark
+se t_Co=16
+colorscheme solarized
 
 " Auto indent
 filetype plugin indent on
