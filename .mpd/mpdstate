@@ -1,8 +1,9 @@
 sw_volume: 100
 audio_device_state:1:MPD
+audio_device_state:1:FIFO
 state: play
-current: 7
-time: 198
+current: 8
+time: 95
 random: 0
 repeat: 0
 single: 0
@@ -24,4 +25,13 @@ playlist_begin
 10:Alt-J (∆)/11 Interlude 3.m4a
 11:Alt-J (∆)/12 Blood Flood.m4a
 12:Alt-J (∆)/13 Taro_Handmade.m4a
+13:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
+14:LCD Soundsystem/Sound Of Silver/02 Time To Get Away.mp3
+15:LCD Soundsystem/Sound Of Silver/03 North American Scum.mp3
+16:LCD Soundsystem/Sound Of Silver/04 Someone Great.mp3
+17:LCD Soundsystem/Sound Of Silver/05 All My Friends.mp3
+18:LCD Soundsystem/Sound Of Silver/06 Us V Them.mp3
+19:LCD Soundsystem/Sound Of Silver/07 Watch The Tapes.mp3
+20:LCD Soundsystem/Sound Of Silver/08 Sound Of Silver.mp3
+21:LCD Soundsystem/Sound Of Silver/09 New York, I Love You But You're B.mp3
 playlist_end
