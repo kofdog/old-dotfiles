@@ -1,9 +1,9 @@
-sw_volume: 100
+sw_volume: 99
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: play
-current: 8
-time: 95
+current: 425
+time: 120
 random: 0
 repeat: 0
 single: 0
@@ -34,4 +34,420 @@ playlist_begin
 19:LCD Soundsystem/Sound Of Silver/07 Watch The Tapes.mp3
 20:LCD Soundsystem/Sound Of Silver/08 Sound Of Silver.mp3
 21:LCD Soundsystem/Sound Of Silver/09 New York, I Love You But You're B.mp3
+22:Led Zeppelin/Led Zeppelin/08 I Can't Quit You Baby.mp3
+23:Led Zeppelin/Led Zeppelin/09 How Many More Times.mp3
+24:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-01 Prologue_ One Ring To Rule Them.mp3
+25:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-02 The Shire.mp3
+26:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-03 Bag End.mp3
+27:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-04 Very Old Friends.mp3
+28:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-05 Flaming Red Hair.mp3
+29:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-06 Farewell Dear Bilbo.mp3
+30:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-07 Keep It Secret, Keep It Safe.mp3
+31:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-08 A Conspiracy Unmasked.mp3
+32:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-09 Three Is Company.mp3
+33:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-10 The Passing Of The Elves.mp3
+34:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-11 Saruman The White.mp3
+35:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-12 A Shortcut To Mushrooms.mp3
+36:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-13 Strider.mp3
+37:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-14 The Nazgûl.mp3
+38:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-01 Weathertop.mp3
+39:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-02 The Caverns Of Isengard.mp3
+40:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-03 Give Up The Halfling.mp3
+41:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-04 Orthanc.mp3
+42:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-05 Rivendell.mp3
+43:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-06 The Sword That Was Broken.mp3
+44:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-07 The Council Of Elrond Assembles.mp3
+45:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-08 The Great Eye.mp3
+46:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-09 Gilraen's Memorial.mp3
+47:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-10 The Pass Of Caradhras.mp3
+48:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-11 The Doors Of Durin.mp3
+49:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-12 Moria.mp3
+50:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-13 Gollum.mp3
+51:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-14 Balin's Tomb.mp3
+52:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-01 Khazad-Dûm.mp3
+53:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-02 Caras Galadhon [Featuring _Lame.mp3
+54:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-03 The Mirror Of Galadriel.mp3
+55:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-04 The Fighting Uruk-Hai.mp3
+56:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-05 Parth Galen.mp3
+57:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-06 The Departure Of Boromir.mp3
+58:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-07 The Road Goes Ever On... ,Pt. 1.mp3
+59:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-08 May It Be [Composed & Performed.mp3
+60:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-09 The Road Goes Ever On... ,Pt. 2.mp3
+61:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-01 Aragorn's Return.mp3
+62:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-02 War Is Upon Us.mp3
+63:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-03 _Where Is The Horse And The Rid.mp3
+64:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-04 The Host Of The Eldar.mp3
+65:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-05 The Battle Of The Hornburg.mp3
+66:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-06 The Breach Of The Deeping Wall.mp3
+67:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-07 The Entmoot Decides.mp3
+68:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-08 Retreat [Featuring _Haldir's La.mp3
+69:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-09 Master Peregrin's Plan.mp3
+70:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-10 The Last March Of The Ents [Fea.mp3
+71:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-11 The Nazgûl Attack.mp3
+72:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-12 Théoden Rides Forth [Featuring.mp3
+73:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-13 The Tales That Really Matter.mp3
+74:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-14 _Long Ways To Go Yet_ [Featurin.mp3
+75:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-01 Glamdring.mp3
+76:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-02 Elven Rope.mp3
+77:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-03 Lost In Emyn Muil.mp3
+78:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-04 My Precious.mp3
+79:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-05 Uglúk's Warriors.mp3
+80:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-06 The Three Hunters.mp3
+81:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-07 The Banishment Of Éomer.mp3
+82:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-08 Night Camp.mp3
+83:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-09 The Plains Of Rohan.mp3
+84:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-10 Fangorn.mp3
+85:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-11 The Dead Marshes.mp3
+86:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-12 _Wraiths On Wings_.mp3
+87:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-13 Gandalf The White.mp3
+88:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-14 The Dreams Of Trees.mp3
+89:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-15 The Heir Of Númenor.mp3
+90:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-16 Ent-Draught.mp3
+91:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-01 Edoras.mp3
+92:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-02 The Court Of Meduseld.mp3
+93:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-03 Théoden King [Featuring _The Fu.mp3
+94:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-04 The King's Decision.mp3
+95:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-05 Exodus From Edoras.mp3
+96:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-06 The Forests Of Ithilien.mp3
+97:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-07 One Of The Dúnedain [Featuring.mp3
+98:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-08 The Wolves Of Isengard.mp3
+99:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-09 Refuge At Helm's Deep.mp3
+100:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-10 The Voice Of Saruman.mp3
+101:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-11 Arwen's Fate [Featuring _The Gr.mp3
+102:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-12 The Story Foretold.mp3
+103:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-13 Sons Of The Steward.mp3
+104:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-14 Rock And Pool.mp3
+105:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-15 Faramir's Good Council.mp3
+106:Howard Shore/The Lord Of The Rings_ The Return Of The/1-01 Roots and Beginnings.mp3
+107:Howard Shore/The Lord Of The Rings_ The Return Of The/1-02 Journey to the Cross-roads.mp3
+108:Howard Shore/The Lord Of The Rings_ The Return Of The/1-03 The Road to Isengard.mp3
+109:Howard Shore/The Lord Of The Rings_ The Return Of The/1-04 The Foot of Orthanc.mp3
+110:Howard Shore/The Lord Of The Rings_ The Return Of The/1-05 Return to Edoras.mp3
+111:Howard Shore/The Lord Of The Rings_ The Return Of The/1-06 The Chalice Passed.mp3
+112:Howard Shore/The Lord Of The Rings_ The Return Of The/1-07 The Green Dragon [Featuring Bil.mp3
+113:Howard Shore/The Lord Of The Rings_ The Return Of The/1-08 Gollum's Villainy.mp3
+114:Howard Shore/The Lord Of The Rings_ The Return Of The/1-09 Éowyn's Dream.mp3
+115:Howard Shore/The Lord Of The Rings_ The Return Of The/1-10 The Palantír.mp3
+116:Howard Shore/The Lord Of The Rings_ The Return Of The/1-11 Flight from Edoras.mp3
+117:Howard Shore/The Lord Of The Rings_ The Return Of The/1-12 The Grace of Undómiel [Featurin.mp3
+118:Howard Shore/The Lord Of The Rings_ The Return Of The/1-13 The Eyes of the White Tower.mp3
+119:Howard Shore/The Lord Of The Rings_ The Return Of The/1-14 A Coronal of Silver and Gold.mp3
+120:Howard Shore/The Lord Of The Rings_ The Return Of The/1-15 The Lighting of the Beacons.mp3
+121:Howard Shore/The Lord Of The Rings_ The Return Of The/2-01 Osgiliath Invaded [Featuring Be.mp3
+122:Howard Shore/The Lord Of The Rings_ The Return Of The/2-02 The Stairs Of Cirith Ungol.mp3
+123:Howard Shore/The Lord Of The Rings_ The Return Of The/2-03 Allegiance To Denethor.mp3
+124:Howard Shore/The Lord Of The Rings_ The Return Of The/2-04 The Sacrifice Of Faramir [Featu.mp3
+125:Howard Shore/The Lord Of The Rings_ The Return Of The/2-05 The Parting Of Sam And Frodo.mp3
+126:Howard Shore/The Lord Of The Rings_ The Return Of The/2-06 Marshalling At Dunharrow.mp3
+127:Howard Shore/The Lord Of The Rings_ The Return Of The/2-07 Andúril - Flame Of The West.mp3
+128:Howard Shore/The Lord Of The Rings_ The Return Of The/2-08 The Passing Of The Grey Company.mp3
+129:Howard Shore/The Lord Of The Rings_ The Return Of The/2-09 Dwimorberg - The Haunted Mounta.mp3
+130:Howard Shore/The Lord Of The Rings_ The Return Of The/2-10 Master Meriadoc, Swordthain.mp3
+131:Howard Shore/The Lord Of The Rings_ The Return Of The/2-11 The Paths Of The Dead.mp3
+132:Howard Shore/The Lord Of The Rings_ The Return Of The/2-12 The Siege Of Gondor.mp3
+133:Howard Shore/The Lord Of The Rings_ The Return Of The/2-13 Shelob's Lair.mp3
+134:Howard Shore/The Lord Of The Rings_ The Return Of The/2-14 Merry's Simple Courage.mp3
+135:Howard Shore/The Lord Of The Rings_ The Return Of The/3-01 Grond - The Hammer Of The Under.mp3
+136:Howard Shore/The Lord Of The Rings_ The Return Of The/3-02 Shelob The Great.mp3
+137:Howard Shore/The Lord Of The Rings_ The Return Of The/3-03 The Tomb Of The Stewards.mp3
+138:Howard Shore/The Lord Of The Rings_ The Return Of The/3-04 The Battle Of The Pelennor Fiel.mp3
+139:Howard Shore/The Lord Of The Rings_ The Return Of The/3-05 The Pyre Of Denethor.mp3
+140:Howard Shore/The Lord Of The Rings_ The Return Of The/3-06 The Mûmakil.mp3
+141:Howard Shore/The Lord Of The Rings_ The Return Of The/3-07 Dernhelm In Battle.mp3
+142:Howard Shore/The Lord Of The Rings_ The Return Of The/3-08 A Far Green Country.mp3
+143:Howard Shore/The Lord Of The Rings_ The Return Of The/3-09 Shieldmaiden Of Rohan.mp3
+144:Howard Shore/The Lord Of The Rings_ The Return Of The/3-10 The Passing Of Théoden.mp3
+145:Howard Shore/The Lord Of The Rings_ The Return Of The/3-11 The Houses Of Healing [Featurin.mp3
+146:Howard Shore/The Lord Of The Rings_ The Return Of The/3-12 The Tower Of Cirith Ungol.mp3
+147:Howard Shore/The Lord Of The Rings_ The Return Of The/3-13 The Last Debate [Featuring _Asë.mp3
+148:Howard Shore/The Lord Of The Rings_ The Return Of The/3-14 The Land Of Shadow.mp3
+149:Howard Shore/The Lord Of The Rings_ The Return Of The/3-15 The Mouth Of Sauron [Featuring.mp3
+150:Howard Shore/The Lord Of The Rings_ The Return Of The/3-16 For Frodo [Featuring Ben Del Ma.mp3
+151:Howard Shore/The Lord Of The Rings_ The Return Of The/4-01 Mount Doom [Featuring Renée Fle.mp3
+152:Howard Shore/The Lord Of The Rings_ The Return Of The/4-02 The Crack of Doom.mp3
+153:Howard Shore/The Lord Of The Rings_ The Return Of The/4-03 The Eagles [Featuring Renée Fle.mp3
+154:Howard Shore/The Lord Of The Rings_ The Return Of The/4-04 The Fellowship Reunited [Featur.mp3
+155:Howard Shore/The Lord Of The Rings_ The Return Of The/4-05 The Journey to the Grey Havens.mp3
+156:Howard Shore/The Lord Of The Rings_ The Return Of The/4-06 Elanor [Featuring Sir James Gal.mp3
+157:Howard Shore/The Lord Of The Rings_ The Return Of The/4-07 Days of the Ring [Featuring _In.mp3
+158:Howard Shore/The Lord Of The Rings_ The Return Of The/4-08 Bilbo's Song.mp3
+159:Alt-J (∆)/13 Taro_Handmade.m4a
+160:Alt-J (∆)/01 Intro.m4a
+161:Alt-J (∆)/02 Interlude 1.m4a
+162:Alt-J (∆)/03 Tessellate.m4a
+163:Alt-J (∆)/04 Breezeblocks.m4a
+164:Alt-J (∆)/05 Interlude 2.m4a
+165:Alt-J (∆)/06 Estocada.m4a
+166:Alt-J (∆)/07 Dissolve Me.m4a
+167:Alt-J (∆)/08 Matilda.m4a
+168:Alt-J (∆)/09 Ms.m4a
+169:Alt-J (∆)/10 Fitzpleasure.m4a
+170:Alt-J (∆)/11 Interlude 3.m4a
+171:Alt-J (∆)/12 Blood Flood.m4a
+172:Alt-J (∆)/13 Taro_Handmade.m4a
+173:Alt-J (∆)/01 Intro.m4a
+174:Alt-J (∆)/02 Interlude 1.m4a
+175:Alt-J (∆)/03 Tessellate.m4a
+176:Alt-J (∆)/04 Breezeblocks.m4a
+177:Alt-J (∆)/05 Interlude 2.m4a
+178:Alt-J (∆)/06 Estocada.m4a
+179:Alt-J (∆)/07 Dissolve Me.m4a
+180:Alt-J (∆)/08 Matilda.m4a
+181:Alt-J (∆)/09 Ms.m4a
+182:Alt-J (∆)/10 Fitzpleasure.m4a
+183:Alt-J (∆)/11 Interlude 3.m4a
+184:Alt-J (∆)/12 Blood Flood.m4a
+185:Alt-J (∆)/13 Taro_Handmade.m4a
+186:Radiohead/In Rainbows/01 15 Step.mp3
+187:Radiohead/In Rainbows/02 Bodysnatchers.mp3
+188:Radiohead/In Rainbows/03 Nude.mp3
+189:Radiohead/In Rainbows/04 Weird Fishes_Arpeggi.mp3
+190:Radiohead/In Rainbows/05 All I Need.mp3
+191:Radiohead/In Rainbows/06 Faust Arp.mp3
+192:Radiohead/In Rainbows/07 Reckoner.mp3
+193:Radiohead/In Rainbows/08 House Of Cards.mp3
+194:Radiohead/In Rainbows/09 Jigsaw Falling Into Place.mp3
+195:Radiohead/In Rainbows/10 Videotape.mp3
+196:Radiohead/The King of Limbs/01 Bloom.mp3
+197:Radiohead/The King of Limbs/02 Morning Mr. Magpie.mp3
+198:Radiohead/The King of Limbs/03 Little By Little.mp3
+199:Radiohead/The King of Limbs/04 Feral.mp3
+200:Radiohead/The King of Limbs/05 Lotus Flower.mp3
+201:Radiohead/The King of Limbs/06 Codex.mp3
+202:Radiohead/The King of Limbs/07 Give Up the Ghost.mp3
+203:Radiohead/The King of Limbs/08 Separator.mp3
+204:Radiohead/The Bends/01 Planet Telex.mp3
+205:Radiohead/The Bends/02 The Bends.mp3
+206:Radiohead/The Bends/03 High And Dry.mp3
+207:Radiohead/The Bends/04 Fake Plastic Trees.mp3
+208:Radiohead/The Bends/05 Bones.mp3
+209:Radiohead/The Bends/06 (Nice Dream).mp3
+210:Radiohead/The Bends/07 Just.mp3
+211:Radiohead/The Bends/08 My Iron Lung.mp3
+212:Radiohead/The Bends/09 Bullet Proof...I Wish I Was.mp3
+213:Radiohead/The Bends/10 Black Star.mp3
+214:Radiohead/The Bends/11 Sulk.mp3
+215:Radiohead/The Bends/12 Street Spirit (Fade Out).mp3
+216:Alt-J (∆)/01 Intro.m4a
+217:Alt-J (∆)/02 Interlude 1.m4a
+218:Alt-J (∆)/03 Tessellate.m4a
+219:Alt-J (∆)/04 Breezeblocks.m4a
+220:Alt-J (∆)/05 Interlude 2.m4a
+221:Alt-J (∆)/06 Estocada.m4a
+222:Alt-J (∆)/07 Dissolve Me.m4a
+223:Alt-J (∆)/08 Matilda.m4a
+224:Alt-J (∆)/09 Ms.m4a
+225:Alt-J (∆)/10 Fitzpleasure.m4a
+226:Alt-J (∆)/11 Interlude 3.m4a
+227:Alt-J (∆)/12 Blood Flood.m4a
+228:Alt-J (∆)/13 Taro_Handmade.m4a
+229:Delicate Steve/Positive Force/01 Ramona Reborn 1.m4a
+230:Delicate Steve/Positive Force/02 Wally Wilder 1.m4a
+231:Delicate Steve/Positive Force/03 Two Lovers 1.m4a
+232:Delicate Steve/Positive Force/04 Big Time Receiver 1.m4a
+233:Delicate Steve/Positive Force/05 Touch 1.m4a
+234:Delicate Steve/Positive Force/06 Positive Force 1.m4a
+235:Delicate Steve/Positive Force/07 Love 1.m4a
+236:Delicate Steve/Positive Force/08 Redeemer 1.m4a
+237:Delicate Steve/Positive Force/09 Afria Talks to You 1.m4a
+238:Delicate Steve/Positive Force/10 Tallest Heights 1.m4a
+239:Delicate Steve/Positive Force/11 Luna 1.m4a
+240:Django Django/Django Django/01 Introduction.mp3
+241:Django Django/Django Django/02 Default.mp3
+242:Django Django/Django Django/03 Firewater.mp3
+243:Django Django/Django Django/04 Waveforms.mp3
+244:Django Django/Django Django/05 Zumm Zumm.mp3
+245:Django Django/Django Django/06 Hand of Man.mp3
+246:Django Django/Django Django/07 Love's Dart.mp3
+247:Django Django/Django Django/08 WOR.mp3
+248:Django Django/Django Django/09 Storm.mp3
+249:Django Django/Django Django/10 Life's a Beach.mp3
+250:Django Django/Django Django/11 Skies Over Cairo.mp3
+251:Django Django/Django Django/12 Silver Rays.mp3
+252:Django Django/Django Django/13 Bail Hop.mp3
+253:Electric Light Orchestra/Time/01 Prologue.mp3
+254:Electric Light Orchestra/Time/02 Twilight.mp3
+255:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
+256:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
+257:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
+258:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
+259:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
+260:Electric Light Orchestra/Time/08 From The End Of The World.mp3
+261:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
+262:Electric Light Orchestra/Time/10 Here Is The News.mp3
+263:Electric Light Orchestra/Time/11 21st Century Man.mp3
+264:Electric Light Orchestra/Time/12 Hold On Tight.mp3
+265:Electric Light Orchestra/Time/13 Epilogue.mp3
+266:Grizzly Bear/Yellow House/01 Easier.mp3
+267:Grizzly Bear/Yellow House/02 Lullabye.mp3
+268:Grizzly Bear/Yellow House/03 Knife.mp3
+269:Grizzly Bear/Yellow House/04 Central and Remote.mp3
+270:Grizzly Bear/Yellow House/05 Little Brother.mp3
+271:Grizzly Bear/Yellow House/06 Plans.mp3
+272:Grizzly Bear/Yellow House/07 Marla.mp3
+273:Grizzly Bear/Yellow House/08 On a Neck, On a Spit.mp3
+274:Grizzly Bear/Yellow House/09 Reprise.mp3
+275:Grizzly Bear/Yellow House/10 Colorado.mp3
+276:Bon Iver/Bon Iver/01 Perth.mp3
+277:Bon Iver/Bon Iver/02 Minnesota, WI.mp3
+278:Bon Iver/Bon Iver/03 Holocene.mp3
+279:Bon Iver/Bon Iver/04 Towers.mp3
+280:Bon Iver/Bon Iver/05 Michicant.mp3
+281:Bon Iver/Bon Iver/06 Hinnom, TX.mp3
+282:Bon Iver/Bon Iver/07 Wash..mp3
+283:Bon Iver/Bon Iver/08 Calgary.mp3
+284:Bon Iver/Bon Iver/09 Lisbon, OH.mp3
+285:Bon Iver/Bon Iver/10 Beth_Rest.mp3
+286:Daft Punk/Random Access Memories/01 Give Life Back to Music.mp3
+287:Daft Punk/Random Access Memories/02 The Game of Love.mp3
+288:Daft Punk/Random Access Memories/03 Giorgio by Moroder.mp3
+289:Daft Punk/Random Access Memories/04 Within.mp3
+290:Daft Punk/Random Access Memories/05 Instant Crush [Feat. Julian Casab.mp3
+291:Daft Punk/Random Access Memories/06 Lose Yourself to Dance [Feat. Pha.mp3
+292:Daft Punk/Random Access Memories/07 Touch [Feat. Paul Williams].mp3
+293:Daft Punk/Random Access Memories/08 Get Lucky [Feat. Pharrell William.mp3
+294:Daft Punk/Random Access Memories/09 Beyond.mp3
+295:Daft Punk/Random Access Memories/10 Motherboard.mp3
+296:Daft Punk/Random Access Memories/11 Fragments of Time [Feat. Todd Edw.mp3
+297:Daft Punk/Random Access Memories/12 Doin' It Right [Feat. Panda Bear].mp3
+298:Daft Punk/Random Access Memories/13 Contact.mp3
+299:Radiohead/In Rainbows/01 15 Step.mp3
+300:Radiohead/In Rainbows/02 Bodysnatchers.mp3
+301:Radiohead/In Rainbows/03 Nude.mp3
+302:Radiohead/In Rainbows/04 Weird Fishes_Arpeggi.mp3
+303:Radiohead/In Rainbows/05 All I Need.mp3
+304:Radiohead/In Rainbows/06 Faust Arp.mp3
+305:Radiohead/In Rainbows/07 Reckoner.mp3
+306:Radiohead/In Rainbows/08 House Of Cards.mp3
+307:Radiohead/In Rainbows/09 Jigsaw Falling Into Place.mp3
+308:Radiohead/In Rainbows/10 Videotape.mp3
+309:Alt-J (∆)/01 Intro.m4a
+310:Alt-J (∆)/02 Interlude 1.m4a
+311:Alt-J (∆)/03 Tessellate.m4a
+312:Alt-J (∆)/04 Breezeblocks.m4a
+313:Alt-J (∆)/05 Interlude 2.m4a
+314:Alt-J (∆)/06 Estocada.m4a
+315:Alt-J (∆)/07 Dissolve Me.m4a
+316:Alt-J (∆)/08 Matilda.m4a
+317:Alt-J (∆)/09 Ms.m4a
+318:Alt-J (∆)/10 Fitzpleasure.m4a
+319:Alt-J (∆)/11 Interlude 3.m4a
+320:Alt-J (∆)/12 Blood Flood.m4a
+321:Alt-J (∆)/13 Taro_Handmade.m4a
+322:Grizzly Bear/Yellow House/05 Little Brother.mp3
+323:Grizzly Bear/Yellow House/10 Colorado.mp3
+324:Grizzly Bear/Yellow House/10 Colorado.mp3
+325:Grizzly Bear/Yellow House/10 Colorado.mp3
+326:Sigur Rós/Valtari/02 - Ekki múkk.mp3
+327:Sigur Rós/Valtari/08 - Fjögur píanó.mp3
+328:Unknown Artist/Unknown Album/hyde more centered drum.mp3.mp3
+329:LPC/The Bear/LPC - The Bear - 01 Tomahawks & Buffalo.mp3
+330:LPC/The Bear/LPC - The Bear - 02 Thunder.mp3
+331:LPC/The Bear/LPC - The Bear - 03 Asteroids First.mp3
+332:LPC/The Bear/LPC - The Bear - 04 Jekyll.mp3
+333:LPC/The Bear/LPC - The Bear - 05 The Bear.mp3
+334:LPC/The Bear/LPC - The Bear - 06 Hyde.mp3
+335:LPC/The Bear/LPC - The Bear - 07 Bongo.mp3
+336:LPC/The Bear/LPC - The Bear - 08 (The Last) VVOLVES.mp3
+337:LPC/The Bear/LPC - The Bear - 09 Kondors & Wizardry.mp3
+338:Radiohead/In Rainbows/01 15 Step.mp3
+339:Radiohead/In Rainbows/02 Bodysnatchers.mp3
+340:Radiohead/In Rainbows/03 Nude.mp3
+341:Radiohead/In Rainbows/04 Weird Fishes_Arpeggi.mp3
+342:Radiohead/In Rainbows/05 All I Need.mp3
+343:Radiohead/In Rainbows/06 Faust Arp.mp3
+344:Radiohead/In Rainbows/07 Reckoner.mp3
+345:Radiohead/In Rainbows/08 House Of Cards.mp3
+346:Radiohead/In Rainbows/09 Jigsaw Falling Into Place.mp3
+347:Radiohead/In Rainbows/10 Videotape.mp3
+348:Radiohead/The King of Limbs/01 Bloom.mp3
+349:Radiohead/The King of Limbs/02 Morning Mr. Magpie.mp3
+350:Radiohead/The King of Limbs/03 Little By Little.mp3
+351:Radiohead/The King of Limbs/04 Feral.mp3
+352:Radiohead/The King of Limbs/05 Lotus Flower.mp3
+353:Radiohead/The King of Limbs/06 Codex.mp3
+354:Radiohead/The King of Limbs/07 Give Up the Ghost.mp3
+355:Radiohead/The King of Limbs/08 Separator.mp3
+356:Alt-J (∆)/01 Intro.m4a
+357:Alt-J (∆)/02 Interlude 1.m4a
+358:Alt-J (∆)/03 Tessellate.m4a
+359:Alt-J (∆)/04 Breezeblocks.m4a
+360:Alt-J (∆)/05 Interlude 2.m4a
+361:Alt-J (∆)/06 Estocada.m4a
+362:Alt-J (∆)/07 Dissolve Me.m4a
+363:Alt-J (∆)/08 Matilda.m4a
+364:Alt-J (∆)/09 Ms.m4a
+365:Alt-J (∆)/10 Fitzpleasure.m4a
+366:Alt-J (∆)/11 Interlude 3.m4a
+367:Alt-J (∆)/12 Blood Flood.m4a
+368:Alt-J (∆)/13 Taro_Handmade.m4a
+369:Grizzly Bear/Shields/01 Sleeping Ute.mp3
+370:Grizzly Bear/Shields/02 Speak In Rounds.mp3
+371:Grizzly Bear/Shields/03 Adelma.mp3
+372:Grizzly Bear/Shields/04 Yet Again.mp3
+373:Grizzly Bear/Shields/05 The Hunt.mp3
+374:Grizzly Bear/Shields/06 A Simple Answer.mp3
+375:Grizzly Bear/Shields/07 What's Wrong.mp3
+376:Grizzly Bear/Shields/08 gun-shy.mp3
+377:Grizzly Bear/Shields/09 Half Gate.mp3
+378:Grizzly Bear/Shields/10 Sun In Your Eyes.mp3
+379:Grizzly Bear/Yellow House/05 Little Brother.mp3
+380:Led Zeppelin/Led Zeppelin/01 Good Times Bad Times.mp3
+381:Led Zeppelin/Led Zeppelin/02 Babe I'm Gonna Leave You.mp3
+382:Led Zeppelin/Led Zeppelin/03 You Shook Me.mp3
+383:Led Zeppelin/Led Zeppelin/04 Dazed and Confused.mp3
+384:Led Zeppelin/Led Zeppelin/05 Your Time Is Gonna Come.mp3
+385:Led Zeppelin/Led Zeppelin/06 Black Mountain Side.mp3
+386:Led Zeppelin/Led Zeppelin/07 Communication Breakdown.mp3
+387:Led Zeppelin/Led Zeppelin/08 I Can't Quit You Baby.mp3
+388:Led Zeppelin/Led Zeppelin/09 How Many More Times.mp3
+389:Led Zeppelin/Houses of the Holy/01 The Song Remains the Same.mp3
+390:Led Zeppelin/Houses of the Holy/02 The Rain Song.mp3
+391:Led Zeppelin/Houses of the Holy/03 Over the Hills and Far Away.mp3
+392:Led Zeppelin/Houses of the Holy/04 The Crunge.mp3
+393:Led Zeppelin/Houses of the Holy/05 Dancing Days.mp3
+394:Led Zeppelin/Houses of the Holy/06 D'Yer Mak'er.mp3
+395:Led Zeppelin/Houses of the Holy/07 No Quarter.mp3
+396:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
+397:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
+398:Led Zeppelin/Houses of the Holy/02 The Rain Song.mp3
+399:Led Zeppelin/Houses of the Holy/01 The Song Remains the Same.mp3
+400:Led Zeppelin/Houses of the Holy/01 The Song Remains the Same.mp3
+401:Led Zeppelin/Houses of the Holy/02 The Rain Song.mp3
+402:Led Zeppelin/Houses of the Holy/03 Over the Hills and Far Away.mp3
+403:Led Zeppelin/Houses of the Holy/04 The Crunge.mp3
+404:Led Zeppelin/Houses of the Holy/05 Dancing Days.mp3
+405:Led Zeppelin/Houses of the Holy/06 D'Yer Mak'er.mp3
+406:Led Zeppelin/Houses of the Holy/07 No Quarter.mp3
+407:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
+408:Alt-J (∆)/01 Intro.m4a
+409:Alt-J (∆)/02 Interlude 1.m4a
+410:Alt-J (∆)/03 Tessellate.m4a
+411:Alt-J (∆)/04 Breezeblocks.m4a
+412:Alt-J (∆)/05 Interlude 2.m4a
+413:Alt-J (∆)/06 Estocada.m4a
+414:Alt-J (∆)/07 Dissolve Me.m4a
+415:Alt-J (∆)/08 Matilda.m4a
+416:Alt-J (∆)/09 Ms.m4a
+417:Alt-J (∆)/10 Fitzpleasure.m4a
+418:Alt-J (∆)/11 Interlude 3.m4a
+419:Alt-J (∆)/12 Blood Flood.m4a
+420:Alt-J (∆)/13 Taro_Handmade.m4a
+421:Led Zeppelin/Led Zeppelin IV/08 When the Levee Breaks.mp3
+422:Led Zeppelin/Houses of the Holy/07 No Quarter.mp3
+423:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
+424:Led Zeppelin/Led Zeppelin II/04 Thank You.mp3
+425:Alt-J (∆)/01 Intro.m4a
+426:Alt-J (∆)/02 Interlude 1.m4a
+427:Alt-J (∆)/03 Tessellate.m4a
+428:Alt-J (∆)/04 Breezeblocks.m4a
+429:Alt-J (∆)/05 Interlude 2.m4a
+430:Alt-J (∆)/06 Estocada.m4a
+431:Alt-J (∆)/07 Dissolve Me.m4a
+432:Alt-J (∆)/08 Matilda.m4a
+433:Alt-J (∆)/09 Ms.m4a
+434:Alt-J (∆)/10 Fitzpleasure.m4a
+435:Alt-J (∆)/11 Interlude 3.m4a
+436:Alt-J (∆)/12 Blood Flood.m4a
+437:Alt-J (∆)/13 Taro_Handmade.m4a
 playlist_end
