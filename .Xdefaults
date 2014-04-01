@@ -1,4 +1,7 @@
-!! Colors
+!--------------------------------------
+! Colors
+!--------------------------------------
+
 ! Solarized
 #define solarized_yellow #b58900
 #define solarized_orange #cb4b16
@@ -17,7 +20,12 @@
 #define solarized_base2 #eee8d5
 #define solarized_base3 #fdf6e3
 
-!! Color scheme
+
+
+!--------------------------------------
+! Color scheme
+!--------------------------------------
+
 ! Base colors
 *background: #002b36
 *foreground: #839496
@@ -58,8 +66,30 @@
 *color7: #eee8d5
 *color15: #fdf6e3
 
-!! URxvt
+
+
+!--------------------------------------
+! Xft
+!--------------------------------------
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+
+
+
+!--------------------------------------
+! URxvt
+!--------------------------------------
+
 ! General
+URxvt*depth: 32
+URxvt*geometry: 80x20
+URxvt*transparent: false
+URxvt*fading: 0
+URxvt*intensityStyles: false
 URxvt*termName: rxvt-unicode
 URxvt*cursorBlink: true
 
@@ -71,5 +101,5 @@ URxvt*secondaryScroll: true
 
 ! Font
 URxvt*allow_bold: true
-URxvt*font: xft:Inconsolata:size=12:antialias=true
-URxvt*letterSpace: -1
+URxvt*font: xft:Inconsolata:size=12
+URxvt*letterSpace: 0
