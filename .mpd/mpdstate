@@ -1,9 +1,7 @@
-sw_volume: 99
+sw_volume: 0
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: play
-current: 425
-time: 120
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -450,4 +448,183 @@ playlist_begin
 435:Alt-J (∆)/11 Interlude 3.m4a
 436:Alt-J (∆)/12 Blood Flood.m4a
 437:Alt-J (∆)/13 Taro_Handmade.m4a
+438:Daft Punk/Random Access Memories/03 Giorgio by Moroder.mp3
+439:Daft Punk/Random Access Memories/03 Giorgio by Moroder.mp3
+440:David Gilmour/On An Island/01 Castellorizon.mp3
+441:David Gilmour/On An Island/02 On An Island.mp3
+442:David Gilmour/On An Island/03 The Blue.mp3
+443:David Gilmour/On An Island/04 Take A Breath.mp3
+444:David Gilmour/On An Island/05 Red Sky At Night.mp3
+445:David Gilmour/On An Island/06 This Heaven.mp3
+446:David Gilmour/On An Island/07 Then I Close My Eyes.mp3
+447:David Gilmour/On An Island/08 Smile.mp3
+448:David Gilmour/On An Island/09 A Pocketful Of Stones.mp3
+449:David Gilmour/On An Island/10 Where We Start.mp3
+450:Electric Light Orchestra/Destination Unknown--Collector's Edition/01 Destination Unknown.mp3
+451:Electric Light Orchestra/Destination Unknown--Collector's Edition/03 Don't Bring Me Down.mp3
+452:Electric Light Orchestra/Destination Unknown--Collector's Edition/04 Evil Woman.mp3
+453:Electric Light Orchestra/Destination Unknown--Collector's Edition/06 Telephone Line.mp3
+454:Electric Light Orchestra/Destination Unknown--Collector's Edition/08 Turn To Stone.mp3
+455:Electric Light Orchestra/Destination Unknown--Collector's Edition/09 Do Ya.mp3
+456:Electric Light Orchestra/Destination Unknown--Collector's Edition/10 Roll Over Beethoven.mp3
+457:Electric Light Orchestra/Time/01 Prologue.mp3
+458:Electric Light Orchestra/Time/02 Twilight.mp3
+459:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
+460:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
+461:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
+462:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
+463:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
+464:Electric Light Orchestra/Time/08 From The End Of The World.mp3
+465:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
+466:Electric Light Orchestra/Time/10 Here Is The News.mp3
+467:Electric Light Orchestra/Time/11 21st Century Man.mp3
+468:Electric Light Orchestra/Time/12 Hold On Tight.mp3
+469:Electric Light Orchestra/Time/13 Epilogue.mp3
+470:Fleet Foxes/Fleet Foxes/01 Sun It Rises.mp3
+471:Fleet Foxes/Fleet Foxes/02 White Winter Hymnal.mp3
+472:Fleet Foxes/Fleet Foxes/03 Ragged Wood.mp3
+473:Fleet Foxes/Fleet Foxes/04 Tiger Mountain Peasant Song.mp3
+474:Fleet Foxes/Fleet Foxes/05 Quiet Houses.mp3
+475:Fleet Foxes/Fleet Foxes/06 He Doesn't Know Why.mp3
+476:Fleet Foxes/Fleet Foxes/07 Heard Them Stirring.mp3
+477:Fleet Foxes/Fleet Foxes/08 Your Protector.mp3
+478:Fleet Foxes/Fleet Foxes/09 Meadowlarks.mp3
+479:Fleet Foxes/Fleet Foxes/10 Blue Ridge Mountains.mp3
+480:Fleet Foxes/Fleet Foxes/11 Oliver James.mp3
+481:Fleet Foxes/Helplessness Blues/01 Montezuma.mp3
+482:Fleet Foxes/Helplessness Blues/02 Bedouin Dress.mp3
+483:Fleet Foxes/Helplessness Blues/03 Sim Sala Bim.mp3
+484:Fleet Foxes/Helplessness Blues/04 Battery Kinzie.mp3
+485:Fleet Foxes/Helplessness Blues/05 The Plains _ Bitter Dancer.mp3
+486:Fleet Foxes/Helplessness Blues/06 Helplessness Blues.mp3
+487:Fleet Foxes/Helplessness Blues/07 The Cascades.mp3
+488:Fleet Foxes/Helplessness Blues/08 Lorelai.mp3
+489:Fleet Foxes/Helplessness Blues/09 Someone You'd Admire.mp3
+490:Fleet Foxes/Helplessness Blues/10 The Shrine _ An Argument.mp3
+491:Fleet Foxes/Helplessness Blues/11 Blue Spotted Tail.mp3
+492:Fleet Foxes/Helplessness Blues/12 Grown Ocean.mp3
+493:Electric Light Orchestra/Time/01 Prologue.mp3
+494:Electric Light Orchestra/Time/02 Twilight.mp3
+495:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
+496:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
+497:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
+498:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
+499:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
+500:Electric Light Orchestra/Time/08 From The End Of The World.mp3
+501:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
+502:Electric Light Orchestra/Time/10 Here Is The News.mp3
+503:Electric Light Orchestra/Time/11 21st Century Man.mp3
+504:Electric Light Orchestra/Time/12 Hold On Tight.mp3
+505:Electric Light Orchestra/Time/13 Epilogue.mp3
+506:Electric Light Orchestra/Time/01 Prologue.mp3
+507:Electric Light Orchestra/Time/02 Twilight.mp3
+508:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
+509:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
+510:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
+511:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
+512:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
+513:Electric Light Orchestra/Time/08 From The End Of The World.mp3
+514:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
+515:Electric Light Orchestra/Time/10 Here Is The News.mp3
+516:Electric Light Orchestra/Time/11 21st Century Man.mp3
+517:Electric Light Orchestra/Time/12 Hold On Tight.mp3
+518:Electric Light Orchestra/Time/13 Epilogue.mp3
+519:Electric Light Orchestra/Time/01 Prologue.mp3
+520:Electric Light Orchestra/Time/02 Twilight.mp3
+521:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
+522:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
+523:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
+524:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
+525:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
+526:Electric Light Orchestra/Time/08 From The End Of The World.mp3
+527:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
+528:Electric Light Orchestra/Time/10 Here Is The News.mp3
+529:Electric Light Orchestra/Time/11 21st Century Man.mp3
+530:Electric Light Orchestra/Time/12 Hold On Tight.mp3
+531:Electric Light Orchestra/Time/13 Epilogue.mp3
+532:Grizzly Bear/Yellow House/05 Little Brother.mp3
+533:Grizzly Bear/Yellow House/10 Colorado.mp3
+534:Grizzly Bear/Yellow House/03 Knife.mp3
+535:Interpol/Turn On The Bright Lights/01 Untitled.mp3
+536:Interpol/Turn On The Bright Lights/02 Obstacle 1.mp3
+537:Interpol/Turn On The Bright Lights/03 NYC.mp3
+538:Interpol/Turn On The Bright Lights/04 PDA.mp3
+539:Interpol/Turn On The Bright Lights/05 Say Hello To The Angels.mp3
+540:Interpol/Turn On The Bright Lights/06 Hands Away.mp3
+541:Interpol/Turn On The Bright Lights/07 Obstacle 2.mp3
+542:Interpol/Turn On The Bright Lights/08 Stella Was A Diver And She Was Al.mp3
+543:Interpol/Turn On The Bright Lights/09 Roland.mp3
+544:Interpol/Turn On The Bright Lights/10 The New.mp3
+545:Interpol/Turn On The Bright Lights/11 Leif Erikson.mp3
+546:Interpol/Turn On The Bright Lights/12 Specialist.mp3
+547:Jimi Hendrix/Are You Experienced_/01 Purple Haze.mp3
+548:Jimi Hendrix/Are You Experienced_/03 Hey Joe.mp3
+549:Jimi Hendrix/Are You Experienced_/07 The Wind Cries Mary.mp3
+550:Jimi Hendrix/Rainy Day, Dream Away_ Opus Collection/02 Little Wing.mp3
+551:Jimi Hendrix/Electric Ladyland/16 Voodoo Child (Slight Return).mp3
+552:Jimi Hendrix/Electric Ladyland/04 Voodoo Chile.mp3
+553:Jimi Hendrix/Hendrix Mix/06 Voodoo Child [Slight Return].mp3
+554:Jimi Hendrix/Hendrix Mix/01 All Along the watchtower.mp3
+555:LCD Soundsystem/This is Happening/01 Dance Yrself Clean.m4a
+556:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
+557:LCD Soundsystem/Sound Of Silver/02 Time To Get Away.mp3
+558:LCD Soundsystem/Sound Of Silver/03 North American Scum.mp3
+559:LCD Soundsystem/Sound Of Silver/04 Someone Great.mp3
+560:LCD Soundsystem/Sound Of Silver/05 All My Friends.mp3
+561:LCD Soundsystem/Sound Of Silver/06 Us V Them.mp3
+562:LCD Soundsystem/Sound Of Silver/07 Watch The Tapes.mp3
+563:LCD Soundsystem/Sound Of Silver/08 Sound Of Silver.mp3
+564:LCD Soundsystem/Sound Of Silver/09 New York, I Love You But You're B.mp3
+565:Led Zeppelin/Led Zeppelin II/01 Whole Lotta Love.mp3
+566:Led Zeppelin/Led Zeppelin II/02 What Is and What Should Never Be.mp3
+567:Led Zeppelin/Led Zeppelin II/03 The Lemon Song.mp3
+568:Led Zeppelin/Led Zeppelin II/04 Thank You.mp3
+569:Led Zeppelin/Led Zeppelin II/05 Heartbreaker.mp3
+570:Led Zeppelin/Led Zeppelin II/06 Living Loving Maid (She's Just a.mp3
+571:Led Zeppelin/Led Zeppelin II/07 Ramble On.mp3
+572:Led Zeppelin/Led Zeppelin II/08 Moby Dick.mp3
+573:Led Zeppelin/Led Zeppelin II/09 Bring It on Home.mp3
+574:Jimi Hendrix/Electric Ladyland/16 Voodoo Child (Slight Return).mp3
+575:Jimi Hendrix/Hendrix Mix/01 All Along the watchtower.mp3
+576:Jimi Hendrix/Hendrix Mix/02 Purple Haze.mp3
+577:Jimi Hendrix/Hendrix Mix/03 Hey Joe.mp3
+578:Jimi Hendrix/Hendrix Mix/16 Little Wing.mp3
+579:Stevie Ray Vaughan/SRV Mix/07 Little Wing.mp3
+580:Alt-J (∆)/01 Intro.m4a
+581:Alt-J (∆)/02 Interlude 1.m4a
+582:Alt-J (∆)/03 Tessellate.m4a
+583:Alt-J (∆)/04 Breezeblocks.m4a
+584:Alt-J (∆)/05 Interlude 2.m4a
+585:Alt-J (∆)/06 Estocada.m4a
+586:Alt-J (∆)/07 Dissolve Me.m4a
+587:Alt-J (∆)/08 Matilda.m4a
+588:Alt-J (∆)/09 Ms.m4a
+589:Alt-J (∆)/10 Fitzpleasure.m4a
+590:Alt-J (∆)/11 Interlude 3.m4a
+591:Alt-J (∆)/12 Blood Flood.m4a
+592:Alt-J (∆)/13 Taro_Handmade.m4a
+593:Grizzly Bear/Shields/01 Sleeping Ute.mp3
+594:Grizzly Bear/Shields/02 Speak In Rounds.mp3
+595:Grizzly Bear/Shields/03 Adelma.mp3
+596:Grizzly Bear/Shields/04 Yet Again.mp3
+597:Grizzly Bear/Shields/05 The Hunt.mp3
+598:Grizzly Bear/Shields/06 A Simple Answer.mp3
+599:Grizzly Bear/Shields/07 What's Wrong.mp3
+600:Grizzly Bear/Shields/08 gun-shy.mp3
+601:Grizzly Bear/Shields/09 Half Gate.mp3
+602:Grizzly Bear/Shields/10 Sun In Your Eyes.mp3
+603:Grizzly Bear/Veckatimest/01 Southern Point.mp3
+604:Grizzly Bear/Veckatimest/02 Two Weeks.mp3
+605:Grizzly Bear/Veckatimest/03 All We Ask.mp3
+606:Grizzly Bear/Veckatimest/04 Fine for Now.mp3
+607:Grizzly Bear/Veckatimest/05 Cheerleader.mp3
+608:Grizzly Bear/Veckatimest/06 Dory.mp3
+609:Grizzly Bear/Veckatimest/07 Ready, Able.mp3
+610:Grizzly Bear/Veckatimest/08 About Face.mp3
+611:Grizzly Bear/Veckatimest/09 Hold Still.mp3
+612:Grizzly Bear/Veckatimest/10 While You Wait for the Others.mp3
+613:Grizzly Bear/Veckatimest/11 I Live With You.mp3
+614:Grizzly Bear/Veckatimest/12 Foreground.mp3
+615:Pink Floyd/Meddle [Remaster]/06 Echoes.mp3
+616:Pink Floyd/Meddle [Remaster]/06 Echoes.mp3
 playlist_end
