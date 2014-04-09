@@ -114,4 +114,8 @@ if ! shopt -oq posix; then
 fi
 
 # Set correct term for tmux so solarized theme works in Vim
-alias tmux="TERM=screen-256color-bce tmux"
+export TERM="screen-256color"
+alias tmux="tmux -2"
+
+# Add personal scripts to path
+PATH=/home/mike/Documents/code/bin:$PATH
