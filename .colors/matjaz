@@ -1,0 +1,23 @@
+#define COLOR0 #101010
+#define COLOR8 #404040
+
+#define COLOR1 #e84f4f
+#define COLOR9 #d23d3d
+
+#define COLOR2 #b8d68c
+#define COLOR10 #a0cf5d
+
+#define COLOR3 #e1aa5d
+#define COLOR11 #f39d21
+
+#define COLOR4 #7dc1cf
+#define COLOR12 #4e9fb1
+
+#define COLOR5 #9b64fb
+#define COLOR13 #8542ff
+
+#define COLOR6 #6d878d
+#define COLOR14 #42717b
+
+#define COLOR7 #dddddd
+#define COLOR15 #dddddd

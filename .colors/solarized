@@ -19,19 +19,28 @@
 #define FOREGROUND BASE0
 #define FADE BASE03
 
+
+
 #define COLOR0 BASE02
-#define COLOR1 RED
-#define COLOR2 GREEN
-#define COLOR3 YELLOW
-#define COLOR4 BLUE
-#define COLOR5 MAGENTA
-#define COLOR6 CYAN
-#define COLOR7 BASE2
 #define COLOR8 BASE03
+
+#define COLOR1 RED
 #define COLOR9 ORANGE
+
+#define COLOR2 GREEN
 #define COLOR10 BASE01
+
+#define COLOR3 YELLOW
 #define COLOR11 BASE00
+
+#define COLOR4 BLUE
 #define COLOR12 BASE0
+
+#define COLOR5 MAGENTA
 #define COLOR13 VIOLET
+
+#define COLOR6 CYAN
 #define COLOR14 BASE1
+
+#define COLOR7 BASE2
 #define COLOR15 BASE3
