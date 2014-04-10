@@ -5,9 +5,11 @@ execute pathogen#infect()
 syntax on
 
 " Color scheme
+colorscheme noctu
+
+" For solarized
 set background=dark
-se t_Co=16
-colorscheme solarized
+se t_Co=256
 
 " Auto indent
 filetype plugin indent on

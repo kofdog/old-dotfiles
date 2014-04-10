@@ -1,0 +1,37 @@
+#define BASE0 #839496
+#define BASE1 #93a1a1
+#define BASE2 #eee8d5
+#define BASE3 #fdf6e3
+#define BASE00 #657b83
+#define BASE01 #586e75
+#define BASE02 #073642
+#define BASE03 #002b36
+#define YELLOW #b58900
+#define ORANGE #cb4b16
+#define RED #dc322f
+#define MAGENTA #d33682
+#define VIOLET #6c71c4
+#define BLUE #268bd2
+#define CYAN #2aa198
+#define GREEN #859900
+ 
+#define BACKGROUND BASE03
+#define FOREGROUND BASE0
+#define FADE BASE03
+
+#define COLOR0 BASE02
+#define COLOR1 RED
+#define COLOR2 GREEN
+#define COLOR3 YELLOW
+#define COLOR4 BLUE
+#define COLOR5 MAGENTA
+#define COLOR6 CYAN
+#define COLOR7 BASE2
+#define COLOR8 BASE03
+#define COLOR9 ORANGE
+#define COLOR10 BASE01
+#define COLOR11 BASE00
+#define COLOR12 BASE0
+#define COLOR13 VIOLET
+#define COLOR14 BASE1
+#define COLOR15 BASE3
