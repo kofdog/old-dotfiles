@@ -17,7 +17,6 @@
  
 #define BACKGROUND BASE03
 #define FOREGROUND BASE0
-#define FADE BASE03
 
 
 

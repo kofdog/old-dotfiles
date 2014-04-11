@@ -21,3 +21,8 @@
 
 #define COLOR7 #dddddd
 #define COLOR15 #dddddd
+
+
+
+#define BACKGROUND #151515
+#define FOREGROUND #d7d0c7

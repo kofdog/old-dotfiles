@@ -4,12 +4,14 @@ execute pathogen#infect()
 " Syntax highlighting
 syntax on
 
-" Color scheme
-colorscheme noctu
+" Line numbers
+set number
+set numberwidth=1
 
-" For solarized
+" Color scheme
+colorscheme default
 set background=dark
-se t_Co=256
+"se t_Co=256
 
 " Auto indent
 filetype plugin indent on
@@ -39,5 +41,5 @@ endif
 :map <silent> <C-n> :NERDTreeFocus<CR>
 
 " Remap up/down keys to navigate wrapped lines
-:nnoremap j gj
-:nnoremap k gk
+":nnoremap j gj
+":nnoremap k gk
