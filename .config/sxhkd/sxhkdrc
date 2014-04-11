@@ -106,8 +106,11 @@ super + @button{1-3}
 #--------------------------------------
 
 # Volume keys
-XF86Audio{Raise,Lower,Mute}Volume
-    pactl set-sink-volume 0 {+5%,-- -5%,0%}
+XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume 0 {+5%,-- -5%}
+
+XF86AudioMute
+    pactl set-sink-volume 0 0%
 
 # Multimedia keys
 XF86Audio{Play,Next,Prev}
