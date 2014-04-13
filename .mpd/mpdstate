@@ -1,8 +1,8 @@
-sw_volume: 0
+sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: play
-current: 23
+current: 10
 time: 119
 random: 0
 repeat: 0
@@ -12,40 +12,24 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Eagles Of Death Metal/Death By Sexy/03 Cherry Cola.mp3
-1:Eagles Of Death Metal/Death By Sexy/04 I Like To Move In The Night.mp3
-2:Eagles Of Death Metal/Death By Sexy/04 I Like To Move In The Night.mp3
-3:Eagles Of Death Metal/Death By Sexy/04 I Like To Move In The Night.mp3
-4:Eagles Of Death Metal/Peace Love Death Metal/02 Speaking In Tongues.mp3
-5:Eagles Of Death Metal/Peace Love Death Metal/02 Speaking In Tongues.mp3
-6:Eagles Of Death Metal/Death By Sexy/04 I Like To Move In The Night.mp3
-7:Eagles Of Death Metal/Death By Sexy/03 Cherry Cola.mp3
-8:Eagles Of Death Metal/Death By Sexy/01 I Want You So Hard (Boys Bad News.mp3
-9:Eagles Of Death Metal/Death By Sexy/04 I Like To Move In The Night.mp3
-10:Alt-J (∆)/01 Intro.m4a
-11:Alt-J (∆)/02 Interlude 1.m4a
-12:Alt-J (∆)/03 Tessellate.m4a
-13:Alt-J (∆)/04 Breezeblocks.m4a
-14:Alt-J (∆)/05 Interlude 2.m4a
-15:Alt-J (∆)/06 Estocada.m4a
-16:Alt-J (∆)/07 Dissolve Me.m4a
-17:Alt-J (∆)/08 Matilda.m4a
-18:Alt-J (∆)/09 Ms.m4a
-19:Alt-J (∆)/10 Fitzpleasure.m4a
-20:Alt-J (∆)/11 Interlude 3.m4a
-21:Alt-J (∆)/12 Blood Flood.m4a
-22:Alt-J (∆)/13 Taro_Handmade.m4a
-23:Alt-J (∆)/01 Intro.m4a
-24:Alt-J (∆)/02 Interlude 1.m4a
-25:Alt-J (∆)/03 Tessellate.m4a
-26:Alt-J (∆)/04 Breezeblocks.m4a
-27:Alt-J (∆)/05 Interlude 2.m4a
-28:Alt-J (∆)/06 Estocada.m4a
-29:Alt-J (∆)/07 Dissolve Me.m4a
-30:Alt-J (∆)/08 Matilda.m4a
-31:Alt-J (∆)/09 Ms.m4a
-32:Alt-J (∆)/10 Fitzpleasure.m4a
-33:Alt-J (∆)/11 Interlude 3.m4a
-34:Alt-J (∆)/12 Blood Flood.m4a
-35:Alt-J (∆)/13 Taro_Handmade.m4a
+0:Bon Iver/For Emma, Forever Ago/01 Flume.mp3
+1:Bon Iver/For Emma, Forever Ago/02 Lump Sum.mp3
+2:Bon Iver/For Emma, Forever Ago/03 Skinny Love.mp3
+3:Bon Iver/For Emma, Forever Ago/04 The Wolves (Act I & 2).mp3
+4:Bon Iver/For Emma, Forever Ago/05 Blindsided.mp3
+5:Bon Iver/For Emma, Forever Ago/06 Creature Fear.mp3
+6:Bon Iver/For Emma, Forever Ago/07 Team.mp3
+7:Bon Iver/For Emma, Forever Ago/08 For Emma.mp3
+8:Bon Iver/For Emma, Forever Ago/09 Re_ Stacks.mp3
+9:Bon Iver/For Emma, Forever Ago/10 Wisconsin (Bonus Track).mp3
+10:Red Hot Chili Peppers/Californication/04 Otherside.mp3
+11:Red Hot Chili Peppers/Californication/15 Road Trippin'.mp3
+12:Red Hot Chili Peppers/Californication/06 Californication.mp3
+13:Red Hot Chili Peppers/Californication/03 Scar Tissue.mp3
+14:Red Hot Chili Peppers/Blood Sugar Sex Magik/03 Breaking The Girl.mp3
+15:Red Hot Chili Peppers/Californication/02 Parallel Universe.mp3
+16:Red Hot Chili Peppers/By The Way/01 By The Way.mp3
+17:Red Hot Chili Peppers/Stadium Arcadium/1-02 Snow (Hey Oh).mp3
+18:Red Hot Chili Peppers/Stadium Arcadium/1-01 Dani California.mp3
+19:Red Hot Chili Peppers/Stadium Arcadium/1-07 Slow Cheetah.mp3
 playlist_end

@@ -1,8 +1,47 @@
-# Xdefaults
-xrdb ~/.Xdefaults &
+#!/bin/sh
+
+
+#--------------------------------------
+# X.org
+#--------------------------------------
+
+# Load Xresources
+xrdb ~/.Xdefaults
+
+# Remove annoying beep
+xset b off
+
+# Cursor
+xsetroot -cursor_name left_ptr
+
+
+
+#--------------------------------------
+# Themes
+#--------------------------------------
 
 # Wallpaper
-feh --bg-fill ~/Pictures/Wallpapers/QwVL3ze\ -\ Imgur.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/QwVL3ze\ -\ Imgur.jpg
+
+
+
+#--------------------------------------
+# Programs
+#--------------------------------------
+
+# Defaults
+export EDITOR=vim
+export BROWSER=google-chrome-stable
+export VIEWER=apvlv
+
+# Daemons
+mpd &
+
+
+
+#--------------------------------------
+# Window manager
+#--------------------------------------
 
 # bspwm
 sxhkd &

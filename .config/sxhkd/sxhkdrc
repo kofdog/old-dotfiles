@@ -1,3 +1,7 @@
+#!/bin/sh
+
+
+
 #--------------------------------------
 # bspwm
 #--------------------------------------
@@ -6,8 +10,8 @@
 super + alt + Escape
     bspc quit
 
-# ?????
-super + w
+# Close window
+super + shift + q
     bspc window -c
 
 # ?????
@@ -18,15 +22,15 @@ super + t
 super + b
     bspc desktop -B
 
-# Switch active window to floating, fullscreen
+# Toggle active window floating, fullscreen
 super + {s,f}
     bspc window -t {floating,fullscreen}
 
-# ?????
+# Go to previously visited window (from current workspace), workspace
 super + {grave,Tab}
     bspc {window,desktop} -f last
 
-# ?????
+# Go to previously visited window from any workspace
 super + apostrophe
     bspc window -s last
 
@@ -48,7 +52,7 @@ super + m
 super + {_,shift + }{h,j,k,l}
     bspc window -{f,s} {left,down,up,right}
 
-# ?????
+# Cycle through windows
 super + {_,shift + }c
     bspc window -f {next,prev}
 
@@ -56,7 +60,7 @@ super + {_,shift + }c
 super + {comma,period}
     bspc desktop -C {backward,forward}
 
-# ?????
+# Cycle through workspaces
 super + bracket{left,right}
     bspc desktop -f {prev,next}
 
@@ -87,7 +91,7 @@ super + {_,shift + }{1-9,0}
 ~button1
     bspc pointer -g focus
 
-# Resize with mouse
+# Move, resize with mouse
 super + button{1-3}
     bspc pointer -g {move,resize_side,resize_corner}
 
