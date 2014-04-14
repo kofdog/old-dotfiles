@@ -2,7 +2,7 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: play
-current: 10
+current: 0
 time: 119
 random: 0
 repeat: 0
@@ -12,24 +12,17 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Bon Iver/For Emma, Forever Ago/01 Flume.mp3
-1:Bon Iver/For Emma, Forever Ago/02 Lump Sum.mp3
-2:Bon Iver/For Emma, Forever Ago/03 Skinny Love.mp3
-3:Bon Iver/For Emma, Forever Ago/04 The Wolves (Act I & 2).mp3
-4:Bon Iver/For Emma, Forever Ago/05 Blindsided.mp3
-5:Bon Iver/For Emma, Forever Ago/06 Creature Fear.mp3
-6:Bon Iver/For Emma, Forever Ago/07 Team.mp3
-7:Bon Iver/For Emma, Forever Ago/08 For Emma.mp3
-8:Bon Iver/For Emma, Forever Ago/09 Re_ Stacks.mp3
-9:Bon Iver/For Emma, Forever Ago/10 Wisconsin (Bonus Track).mp3
-10:Red Hot Chili Peppers/Californication/04 Otherside.mp3
-11:Red Hot Chili Peppers/Californication/15 Road Trippin'.mp3
-12:Red Hot Chili Peppers/Californication/06 Californication.mp3
-13:Red Hot Chili Peppers/Californication/03 Scar Tissue.mp3
-14:Red Hot Chili Peppers/Blood Sugar Sex Magik/03 Breaking The Girl.mp3
-15:Red Hot Chili Peppers/Californication/02 Parallel Universe.mp3
-16:Red Hot Chili Peppers/By The Way/01 By The Way.mp3
-17:Red Hot Chili Peppers/Stadium Arcadium/1-02 Snow (Hey Oh).mp3
-18:Red Hot Chili Peppers/Stadium Arcadium/1-01 Dani California.mp3
-19:Red Hot Chili Peppers/Stadium Arcadium/1-07 Slow Cheetah.mp3
+0:Grizzly Bear/Yellow House/03 Knife.mp3
+1:Grizzly Bear/Yellow House/05 Little Brother.mp3
+2:Grizzly Bear/Yellow House/10 Colorado.mp3
+3:Grizzly Bear/Yellow House/01 Easier.mp3
+4:Grizzly Bear/Yellow House/02 Lullabye.mp3
+5:Grizzly Bear/Yellow House/03 Knife.mp3
+6:Grizzly Bear/Yellow House/04 Central and Remote.mp3
+7:Grizzly Bear/Yellow House/05 Little Brother.mp3
+8:Grizzly Bear/Yellow House/06 Plans.mp3
+9:Grizzly Bear/Yellow House/07 Marla.mp3
+10:Grizzly Bear/Yellow House/08 On a Neck, On a Spit.mp3
+11:Grizzly Bear/Yellow House/09 Reprise.mp3
+12:Grizzly Bear/Yellow House/10 Colorado.mp3
 playlist_end

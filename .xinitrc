@@ -32,7 +32,8 @@ feh --bg-fill ~/Pictures/Wallpapers/QwVL3ze\ -\ Imgur.jpg
 # Defaults
 export EDITOR=vim
 export BROWSER=google-chrome-stable
-export VIEWER=apvlv
+export VIEWER=zathura
+export VPLAYER=mpv
 
 # Daemons
 mpd &

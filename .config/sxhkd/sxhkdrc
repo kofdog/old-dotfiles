@@ -35,7 +35,7 @@ super + apostrophe
     bspc window -s last
 
 # ?????
-super + {o,i}
+super + {o,p}
     bspc control --record-history off; \
     bspc window {older,newer} -f; \
     bspc control --record-history on
@@ -61,14 +61,14 @@ super + {comma,period}
     bspc desktop -C {backward,forward}
 
 # Cycle through workspaces
-super + bracket{left,right}
+super + {u,i}
     bspc desktop -f {prev,next}
 
 # Set split direction for active window
 super + ctrl + {h,j,k,l}
     bspc window -p {left,down,up,right}
 
-# ?????
+# Reset split direction for active window, ?????
 super + ctrl + {_,shift + }space
     bspc {window -p cancel,desktop -c}
 
@@ -132,7 +132,7 @@ super + Return
 
 # Application launcher
 super + space
-    dmenu_run
+    j4-dmenu-desktop --term=urxvt --dmenu="dmenu -i -fn 'Inconsolata-10'"
 
 
 
