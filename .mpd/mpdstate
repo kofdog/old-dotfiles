@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: play
-current: 0
-time: 119
+current: 2
+time: 116
 random: 0
 repeat: 0
 single: 0
@@ -12,17 +12,9 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Grizzly Bear/Yellow House/03 Knife.mp3
-1:Grizzly Bear/Yellow House/05 Little Brother.mp3
-2:Grizzly Bear/Yellow House/10 Colorado.mp3
-3:Grizzly Bear/Yellow House/01 Easier.mp3
-4:Grizzly Bear/Yellow House/02 Lullabye.mp3
-5:Grizzly Bear/Yellow House/03 Knife.mp3
-6:Grizzly Bear/Yellow House/04 Central and Remote.mp3
-7:Grizzly Bear/Yellow House/05 Little Brother.mp3
-8:Grizzly Bear/Yellow House/06 Plans.mp3
-9:Grizzly Bear/Yellow House/07 Marla.mp3
-10:Grizzly Bear/Yellow House/08 On a Neck, On a Spit.mp3
-11:Grizzly Bear/Yellow House/09 Reprise.mp3
-12:Grizzly Bear/Yellow House/10 Colorado.mp3
+0:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
+1:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
+2:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
+3:Black Rebel Motorcycle Club/B.R.M.C_/07 Rifles.mp3
+4:Black Rebel Motorcycle Club/B.R.M.C_/09 Spread Your Love.mp3
 playlist_end

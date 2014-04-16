@@ -134,6 +134,14 @@ super + Return
 super + space
     j4-dmenu-desktop --term=urxvt --dmenu="dmenu -i -fn 'Inconsolata-10'"
 
+# Screenshot
+{_,alt +} Print
+    scrot {_,-s}
+
+# Screen lock
+Fn + F2
+    lock
+
 
 
 #--------------------------------------

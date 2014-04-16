@@ -11,8 +11,10 @@ xrdb ~/.Xdefaults
 # Remove annoying beep
 xset b off
 
-# Cursor
-xsetroot -cursor_name left_ptr
+# Don't turn off backlight for any reason
+xset s off
+xset -dpms
+xset s noblank
 
 
 
