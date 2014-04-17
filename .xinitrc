@@ -16,6 +16,9 @@ xset s off
 xset -dpms
 xset s noblank
 
+# Set cursor theme
+xsetroot -cursor_name left_ptr
+
 
 
 #--------------------------------------
@@ -28,14 +31,20 @@ feh --bg-fill ~/Pictures/Wallpapers/QwVL3ze\ -\ Imgur.jpg
 
 
 #--------------------------------------
-# Programs
+# Applications
 #--------------------------------------
 
 # Defaults
+export TERMINAL=urxvt
+export TERMRUN="urxvt -e"
+export FM=ranger
 export EDITOR=vim
 export BROWSER=google-chrome-stable
 export VIEWER=zathura
 export VPLAYER=mpv
+export MPLAYER="ncmpcpp -s media-library"
+export MVIZ=viz
+export CLOCK=clock
 
 # Daemons
 mpd &

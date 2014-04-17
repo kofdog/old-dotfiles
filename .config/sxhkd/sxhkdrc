@@ -15,15 +15,15 @@ super + shift + q
     bspc window -c
 
 # ?????
-super + t
+super + a
     bspc desktop -l next
 
 # ?????
-super + b
+super + z
     bspc desktop -B
 
 # Toggle active window floating, fullscreen
-super + {s,f}
+super + {s,d}
     bspc window -t {floating,fullscreen}
 
 # Go to previously visited window (from current workspace), workspace
@@ -45,7 +45,7 @@ super + y
     bspc window -w last.manual
 
 # ?????
-super + m
+super + g
     bspc window -s biggest
 
 # Move window control, window
@@ -53,16 +53,12 @@ super + {_,shift + }{h,j,k,l}
     bspc window -{f,s} {left,down,up,right}
 
 # Cycle through windows
-super + {_,shift + }c
+super + {n,b}
     bspc window -f {next,prev}
 
 # ?????
 super + {comma,period}
     bspc desktop -C {backward,forward}
-
-# Cycle through workspaces
-super + {u,i}
-    bspc desktop -f {prev,next}
 
 # Set split direction for active window
 super + ctrl + {h,j,k,l}
@@ -86,6 +82,9 @@ super + ctrl + {1-9}
 # Move to workspace, move active window to workspace
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,window -d} ^{1-9,10}
+
+super + {_,shift + }{u,i}
+    bspc {desktop -f,window -d} {prev,next}
 
 # Change focus with mouse
 ~button1
@@ -128,18 +127,42 @@ XF86Audio{Play,Next,Prev}
 
 # Terminal
 super + Return
-    urxvt
+    $TERMINAL
+
+# File manager
+super + f
+    $TERMRUN $FM
+
+# Web browser
+super + w
+    $BROWSER
+
+# Editor
+super + e
+    $TERMRUN $EDITOR
+
+# Music player
+super + m
+    $TERMRUN $MPLAYER
+
+# Music visualizer
+super + v
+    $TERMRUN $MVIZ
+
+# Clock
+super + c
+    $TERMRUN $CLOCK
 
 # Application launcher
 super + space
     j4-dmenu-desktop --term=urxvt --dmenu="dmenu -i -fn 'Inconsolata-10'"
 
 # Screenshot
-{_,alt +} Print
+{_,alt +} @Print
     scrot {_,-s}
 
 # Screen lock
-Fn + F2
+super + @F2
     lock
 
 

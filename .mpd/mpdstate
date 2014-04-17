@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: play
-current: 2
-time: 116
+current: 6
+time: 119
 random: 0
 repeat: 0
 single: 0
@@ -17,4 +17,15 @@ playlist_begin
 2:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
 3:Black Rebel Motorcycle Club/B.R.M.C_/07 Rifles.mp3
 4:Black Rebel Motorcycle Club/B.R.M.C_/09 Spread Your Love.mp3
+5:Bon Iver/For Emma, Forever Ago/09 Re_ Stacks.mp3
+6:Alberta Cross/Broken Side of Time/01 Song Three Blues.mp3
+7:Alberta Cross/Broken Side of Time/02 Atx.mp3
+8:Alberta Cross/Broken Side of Time/03 Taking Control.mp3
+9:Alberta Cross/Broken Side of Time/04 Old Man Chicago.mp3
+10:Alberta Cross/Broken Side of Time/05 Broken Side of Time.mp3
+11:Alberta Cross/Broken Side of Time/06 Rise from the Shadows.mp3
+12:Alberta Cross/Broken Side of Time/07 City Walls.mp3
+13:Alberta Cross/Broken Side of Time/08 The Thief and the Heartbreaker.mp3
+14:Alberta Cross/Broken Side of Time/09 Leave Us and Forgive Us.mp3
+15:Alberta Cross/Broken Side of Time/10 Ghost of the City Life.mp3
 playlist_end
