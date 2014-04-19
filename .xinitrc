@@ -41,13 +41,14 @@ export FM=ranger
 export EDITOR=vim
 export BROWSER=google-chrome-stable
 export VIEWER=zathura
-export VPLAYER=mpv
+export VPLAYER=vlc
 export MPLAYER="ncmpcpp -s media-library"
-export MVIZ=viz
+export MVIZ=mpv
 export CLOCK=clock
 
 # Daemons
 mpd &
+dropboxd &
 
 
 
