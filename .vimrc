@@ -41,5 +41,5 @@ endif
 :map <silent> <C-n> :NERDTreeFocus<CR>
 
 " Remap up/down keys to navigate wrapped lines
-":nnoremap j gj
-":nnoremap k gk
+:nnoremap j gj
+:nnoremap k gk
