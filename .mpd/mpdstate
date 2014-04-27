@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: play
-current: 188
-time: 119
+state: pause
+current: 0
+time: 7
 random: 0
 repeat: 0
 single: 0
@@ -12,202 +12,12 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
-1:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
-2:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
-3:Black Rebel Motorcycle Club/B.R.M.C_/07 Rifles.mp3
-4:Black Rebel Motorcycle Club/B.R.M.C_/09 Spread Your Love.mp3
-5:Bon Iver/For Emma, Forever Ago/09 Re_ Stacks.mp3
-6:Alberta Cross/Broken Side of Time/01 Song Three Blues.mp3
-7:Alberta Cross/Broken Side of Time/02 Atx.mp3
-8:Alberta Cross/Broken Side of Time/03 Taking Control.mp3
-9:Alberta Cross/Broken Side of Time/04 Old Man Chicago.mp3
-10:Alberta Cross/Broken Side of Time/05 Broken Side of Time.mp3
-11:Alberta Cross/Broken Side of Time/06 Rise from the Shadows.mp3
-12:Alberta Cross/Broken Side of Time/07 City Walls.mp3
-13:Alberta Cross/Broken Side of Time/08 The Thief and the Heartbreaker.mp3
-14:Alberta Cross/Broken Side of Time/09 Leave Us and Forgive Us.mp3
-15:Alberta Cross/Broken Side of Time/10 Ghost of the City Life.mp3
-16:Eagles Of Death Metal/Death By Sexy/04 I Like To Move In The Night.mp3
-17:Django Django/Django Django/02 Default.mp3
-18:Electric Light Orchestra/Time/01 Prologue.mp3
-19:Electric Light Orchestra/Time/02 Twilight.mp3
-20:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
-21:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
-22:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
-23:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
-24:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
-25:Electric Light Orchestra/Time/08 From The End Of The World.mp3
-26:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
-27:Electric Light Orchestra/Time/10 Here Is The News.mp3
-28:Electric Light Orchestra/Time/11 21st Century Man.mp3
-29:Electric Light Orchestra/Time/12 Hold On Tight.mp3
-30:Electric Light Orchestra/Time/13 Epilogue.mp3
-31:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-01 Prologue_ One Ring To Rule Them.mp3
-32:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-02 The Shire.mp3
-33:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-03 Bag End.mp3
-34:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-04 Very Old Friends.mp3
-35:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-05 Flaming Red Hair.mp3
-36:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-06 Farewell Dear Bilbo.mp3
-37:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-07 Keep It Secret, Keep It Safe.mp3
-38:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-08 A Conspiracy Unmasked.mp3
-39:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-09 Three Is Company.mp3
-40:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-10 The Passing Of The Elves.mp3
-41:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-11 Saruman The White.mp3
-42:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-12 A Shortcut To Mushrooms.mp3
-43:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-13 Strider.mp3
-44:Howard Shore/The Lord Of The Rings_ The Fellowship Of/1-14 The Nazgûl.mp3
-45:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-01 Weathertop.mp3
-46:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-02 The Caverns Of Isengard.mp3
-47:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-03 Give Up The Halfling.mp3
-48:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-04 Orthanc.mp3
-49:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-05 Rivendell.mp3
-50:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-06 The Sword That Was Broken.mp3
-51:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-07 The Council Of Elrond Assembles.mp3
-52:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-08 The Great Eye.mp3
-53:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-09 Gilraen's Memorial.mp3
-54:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-10 The Pass Of Caradhras.mp3
-55:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-11 The Doors Of Durin.mp3
-56:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-12 Moria.mp3
-57:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-13 Gollum.mp3
-58:Howard Shore/The Lord Of The Rings_ The Fellowship Of/2-14 Balin's Tomb.mp3
-59:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-01 Khazad-Dûm.mp3
-60:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-02 Caras Galadhon [Featuring _Lame.mp3
-61:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-03 The Mirror Of Galadriel.mp3
-62:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-04 The Fighting Uruk-Hai.mp3
-63:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-05 Parth Galen.mp3
-64:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-06 The Departure Of Boromir.mp3
-65:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-07 The Road Goes Ever On... ,Pt. 1.mp3
-66:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-08 May It Be [Composed & Performed.mp3
-67:Howard Shore/The Lord Of The Rings_ The Fellowship Of/3-09 The Road Goes Ever On... ,Pt. 2.mp3
-68:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-01 Aragorn's Return.mp3
-69:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-02 War Is Upon Us.mp3
-70:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-03 _Where Is The Horse And The Rid.mp3
-71:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-04 The Host Of The Eldar.mp3
-72:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-05 The Battle Of The Hornburg.mp3
-73:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-06 The Breach Of The Deeping Wall.mp3
-74:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-07 The Entmoot Decides.mp3
-75:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-08 Retreat [Featuring _Haldir's La.mp3
-76:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-09 Master Peregrin's Plan.mp3
-77:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-10 The Last March Of The Ents [Fea.mp3
-78:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-11 The Nazgûl Attack.mp3
-79:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-12 Théoden Rides Forth [Featuring.mp3
-80:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-13 The Tales That Really Matter.mp3
-81:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-14 _Long Ways To Go Yet_ [Featurin.mp3
-82:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-01 Glamdring.mp3
-83:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-02 Elven Rope.mp3
-84:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-03 Lost In Emyn Muil.mp3
-85:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-04 My Precious.mp3
-86:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-05 Uglúk's Warriors.mp3
-87:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-06 The Three Hunters.mp3
-88:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-07 The Banishment Of Éomer.mp3
-89:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-08 Night Camp.mp3
-90:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-09 The Plains Of Rohan.mp3
-91:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-10 Fangorn.mp3
-92:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-11 The Dead Marshes.mp3
-93:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-12 _Wraiths On Wings_.mp3
-94:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-13 Gandalf The White.mp3
-95:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-14 The Dreams Of Trees.mp3
-96:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-15 The Heir Of Númenor.mp3
-97:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-16 Ent-Draught.mp3
-98:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-01 Edoras.mp3
-99:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-02 The Court Of Meduseld.mp3
-100:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-03 Théoden King [Featuring _The Fu.mp3
-101:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-04 The King's Decision.mp3
-102:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-05 Exodus From Edoras.mp3
-103:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-06 The Forests Of Ithilien.mp3
-104:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-07 One Of The Dúnedain [Featuring.mp3
-105:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-08 The Wolves Of Isengard.mp3
-106:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-09 Refuge At Helm's Deep.mp3
-107:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-10 The Voice Of Saruman.mp3
-108:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-11 Arwen's Fate [Featuring _The Gr.mp3
-109:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-12 The Story Foretold.mp3
-110:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-13 Sons Of The Steward.mp3
-111:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-14 Rock And Pool.mp3
-112:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-15 Faramir's Good Council.mp3
-113:Howard Shore/The Lord Of The Rings_ The Return Of The/1-01 Roots and Beginnings.mp3
-114:Howard Shore/The Lord Of The Rings_ The Return Of The/1-02 Journey to the Cross-roads.mp3
-115:Howard Shore/The Lord Of The Rings_ The Return Of The/1-03 The Road to Isengard.mp3
-116:Howard Shore/The Lord Of The Rings_ The Return Of The/1-04 The Foot of Orthanc.mp3
-117:Howard Shore/The Lord Of The Rings_ The Return Of The/1-05 Return to Edoras.mp3
-118:Howard Shore/The Lord Of The Rings_ The Return Of The/1-06 The Chalice Passed.mp3
-119:Howard Shore/The Lord Of The Rings_ The Return Of The/1-07 The Green Dragon [Featuring Bil.mp3
-120:Howard Shore/The Lord Of The Rings_ The Return Of The/1-08 Gollum's Villainy.mp3
-121:Howard Shore/The Lord Of The Rings_ The Return Of The/1-09 Éowyn's Dream.mp3
-122:Howard Shore/The Lord Of The Rings_ The Return Of The/1-10 The Palantír.mp3
-123:Howard Shore/The Lord Of The Rings_ The Return Of The/1-11 Flight from Edoras.mp3
-124:Howard Shore/The Lord Of The Rings_ The Return Of The/1-12 The Grace of Undómiel [Featurin.mp3
-125:Howard Shore/The Lord Of The Rings_ The Return Of The/1-13 The Eyes of the White Tower.mp3
-126:Howard Shore/The Lord Of The Rings_ The Return Of The/1-14 A Coronal of Silver and Gold.mp3
-127:Howard Shore/The Lord Of The Rings_ The Return Of The/1-15 The Lighting of the Beacons.mp3
-128:Howard Shore/The Lord Of The Rings_ The Return Of The/2-01 Osgiliath Invaded [Featuring Be.mp3
-129:Howard Shore/The Lord Of The Rings_ The Return Of The/2-02 The Stairs Of Cirith Ungol.mp3
-130:Howard Shore/The Lord Of The Rings_ The Return Of The/2-03 Allegiance To Denethor.mp3
-131:Howard Shore/The Lord Of The Rings_ The Return Of The/2-04 The Sacrifice Of Faramir [Featu.mp3
-132:Howard Shore/The Lord Of The Rings_ The Return Of The/2-05 The Parting Of Sam And Frodo.mp3
-133:Howard Shore/The Lord Of The Rings_ The Return Of The/2-06 Marshalling At Dunharrow.mp3
-134:Howard Shore/The Lord Of The Rings_ The Return Of The/2-07 Andúril - Flame Of The West.mp3
-135:Howard Shore/The Lord Of The Rings_ The Return Of The/2-08 The Passing Of The Grey Company.mp3
-136:Howard Shore/The Lord Of The Rings_ The Return Of The/2-09 Dwimorberg - The Haunted Mounta.mp3
-137:Howard Shore/The Lord Of The Rings_ The Return Of The/2-10 Master Meriadoc, Swordthain.mp3
-138:Howard Shore/The Lord Of The Rings_ The Return Of The/2-11 The Paths Of The Dead.mp3
-139:Howard Shore/The Lord Of The Rings_ The Return Of The/2-12 The Siege Of Gondor.mp3
-140:Howard Shore/The Lord Of The Rings_ The Return Of The/2-13 Shelob's Lair.mp3
-141:Howard Shore/The Lord Of The Rings_ The Return Of The/2-14 Merry's Simple Courage.mp3
-142:Howard Shore/The Lord Of The Rings_ The Return Of The/3-01 Grond - The Hammer Of The Under.mp3
-143:Howard Shore/The Lord Of The Rings_ The Return Of The/3-02 Shelob The Great.mp3
-144:Howard Shore/The Lord Of The Rings_ The Return Of The/3-03 The Tomb Of The Stewards.mp3
-145:Howard Shore/The Lord Of The Rings_ The Return Of The/3-04 The Battle Of The Pelennor Fiel.mp3
-146:Howard Shore/The Lord Of The Rings_ The Return Of The/3-05 The Pyre Of Denethor.mp3
-147:Howard Shore/The Lord Of The Rings_ The Return Of The/3-06 The Mûmakil.mp3
-148:Howard Shore/The Lord Of The Rings_ The Return Of The/3-07 Dernhelm In Battle.mp3
-149:Howard Shore/The Lord Of The Rings_ The Return Of The/3-08 A Far Green Country.mp3
-150:Howard Shore/The Lord Of The Rings_ The Return Of The/3-09 Shieldmaiden Of Rohan.mp3
-151:Howard Shore/The Lord Of The Rings_ The Return Of The/3-10 The Passing Of Théoden.mp3
-152:Howard Shore/The Lord Of The Rings_ The Return Of The/3-11 The Houses Of Healing [Featurin.mp3
-153:Howard Shore/The Lord Of The Rings_ The Return Of The/3-12 The Tower Of Cirith Ungol.mp3
-154:Howard Shore/The Lord Of The Rings_ The Return Of The/3-13 The Last Debate [Featuring _Asë.mp3
-155:Howard Shore/The Lord Of The Rings_ The Return Of The/3-14 The Land Of Shadow.mp3
-156:Howard Shore/The Lord Of The Rings_ The Return Of The/3-15 The Mouth Of Sauron [Featuring.mp3
-157:Howard Shore/The Lord Of The Rings_ The Return Of The/3-16 For Frodo [Featuring Ben Del Ma.mp3
-158:Howard Shore/The Lord Of The Rings_ The Return Of The/4-01 Mount Doom [Featuring Renée Fle.mp3
-159:Howard Shore/The Lord Of The Rings_ The Return Of The/4-02 The Crack of Doom.mp3
-160:Howard Shore/The Lord Of The Rings_ The Return Of The/4-03 The Eagles [Featuring Renée Fle.mp3
-161:Howard Shore/The Lord Of The Rings_ The Return Of The/4-04 The Fellowship Reunited [Featur.mp3
-162:Howard Shore/The Lord Of The Rings_ The Return Of The/4-05 The Journey to the Grey Havens.mp3
-163:Howard Shore/The Lord Of The Rings_ The Return Of The/4-06 Elanor [Featuring Sir James Gal.mp3
-164:Howard Shore/The Lord Of The Rings_ The Return Of The/4-07 Days of the Ring [Featuring _In.mp3
-165:Howard Shore/The Lord Of The Rings_ The Return Of The/4-08 Bilbo's Song.mp3
-166:Howard Shore/The Lord Of The Rings_ The Return Of The/3-04 The Battle Of The Pelennor Fiel.mp3
-167:Howard Shore/The Lord Of The Rings_ The Return Of The/3-04 The Battle Of The Pelennor Fiel.mp3
-168:Howard Shore/The Lord Of The Rings_ The Two Towers -/1-09 The Plains Of Rohan.mp3
-169:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-12 Théoden Rides Forth [Featuring.mp3
-170:Howard Shore/The Lord Of The Rings_ The Two Towers -/2-05 Exodus From Edoras.mp3
-171:Howard Shore/The Lord Of The Rings_ The Return Of The/1-11 Flight from Edoras.mp3
-172:LCD Soundsystem/This is Happening/01 Dance Yrself Clean.m4a
-173:LCD Soundsystem/This is Happening/01 Dance Yrself Clean.m4a
-174:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
-175:Pink Floyd/Wish You Were Here [Remaster]/01 Shine On You Crazy Diamond (Parts.mp3
-176:Pink Floyd/Wish You Were Here [Remaster]/02 Welcome To The Machine.mp3
-177:Pink Floyd/Wish You Were Here [Remaster]/03 Have A Cigar.mp3
-178:Pink Floyd/Wish You Were Here [Remaster]/04 Wish You Were Here.mp3
-179:Pink Floyd/Wish You Were Here [Remaster]/05 Shine On You Crazy Diamond (Parts.mp3
-180:Led Zeppelin/Led Zeppelin IV/07 Going to California.mp3
-181:Led Zeppelin/Led Zeppelin IV/03 The Battle of Evermore.mp3
-182:Led Zeppelin/Led Zeppelin IV/06 Four Sticks.mp3
-183:Led Zeppelin/Led Zeppelin IV/08 When the Levee Breaks.mp3
-184:Led Zeppelin/Led Zeppelin III/04 Since I've Been Loving You.mp3
-185:Led Zeppelin/Led Zeppelin III/02 Friends.mp3
-186:Led Zeppelin/Led Zeppelin III/07 Tangerine.mp3
-187:Led Zeppelin/Led Zeppelin III/08 That's the Way.mp3
-188:Alberta Cross/Broken Side of Time/01 Song Three Blues.mp3
-189:Alberta Cross/Broken Side of Time/02 Atx.mp3
-190:Alberta Cross/Broken Side of Time/03 Taking Control.mp3
-191:Alberta Cross/Broken Side of Time/04 Old Man Chicago.mp3
-192:Alberta Cross/Broken Side of Time/05 Broken Side of Time.mp3
-193:Alberta Cross/Broken Side of Time/06 Rise from the Shadows.mp3
-194:Alberta Cross/Broken Side of Time/07 City Walls.mp3
-195:Alberta Cross/Broken Side of Time/08 The Thief and the Heartbreaker.mp3
-196:Alberta Cross/Broken Side of Time/09 Leave Us and Forgive Us.mp3
-197:Alberta Cross/Broken Side of Time/10 Ghost of the City Life.mp3
+0:Led Zeppelin/Houses of the Holy/01 The Song Remains the Same.mp3
+1:Led Zeppelin/Houses of the Holy/02 The Rain Song.mp3
+2:Led Zeppelin/Houses of the Holy/03 Over the Hills and Far Away.mp3
+3:Led Zeppelin/Houses of the Holy/04 The Crunge.mp3
+4:Led Zeppelin/Houses of the Holy/05 Dancing Days.mp3
+5:Led Zeppelin/Houses of the Holy/06 D'Yer Mak'er.mp3
+6:Led Zeppelin/Houses of the Holy/07 No Quarter.mp3
+7:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
 playlist_end

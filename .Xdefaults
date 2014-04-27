@@ -61,13 +61,15 @@ Xft.hintstyle: hintslight
 !--------------------------------------
 
 ! General
-URxvt*depth: 32
 URxvt*geometry: 80x25
-URxvt*transparent: false
 URxvt*fading: 0
 URxvt*intensityStyles: false
 URxvt*termName: rxvt-unicode
 URxvt*cursorBlink: true
+
+! Transparency (fake)
+URxvt*transparent: true
+URxvt*shading: 30
 
 ! Scrolling
 URxvt*saveLines: 5000
