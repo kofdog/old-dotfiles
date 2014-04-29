@@ -71,6 +71,10 @@ URxvt*cursorBlink: true
 URxvt*transparent: true
 URxvt*shading: 30
 
+! Transparency (real)
+URxvt*depth: 32
+URxvt*background: [80]#111111
+
 ! Scrolling
 URxvt*saveLines: 5000
 URxvt*scrollStyle: rxvt

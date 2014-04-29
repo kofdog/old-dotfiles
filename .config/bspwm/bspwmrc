@@ -27,6 +27,46 @@ bspc config split_ratio         0.50
 
 
 #--------------------------------------
+# X.org
+#--------------------------------------
+
+# Load Xresources
+xrdb ~/.Xdefaults
+
+# Remove annoying beep
+xset b off
+
+# Don't turn off backlight for any reason
+xset s off
+xset -dpms
+xset s noblank
+
+# Set cursor theme
+xsetroot -cursor_name left_ptr
+
+
+
+#--------------------------------------
+# Themes
+#--------------------------------------
+
+# Wallpaper
+feh --bg-fill ~/Pictures/Wallpapers/QwVL3ze\ -\ Imgur.jpg
+
+
+
+#--------------------------------------
+# Applications
+#--------------------------------------
+
+# Daemons
+mpd &
+dropboxd &
+CopyAgent &
+
+
+
+#--------------------------------------
 # Panel
 #--------------------------------------
 

@@ -1,49 +1,12 @@
 #!/bin/sh
 
 
-#--------------------------------------
-# X.org
-#--------------------------------------
-
-# Load Xresources
-xrdb ~/.Xdefaults
-
-# Remove annoying beep
-xset b off
-
-# Don't turn off backlight for any reason
-xset s off
-xset -dpms
-xset s noblank
-
-# Set cursor theme
-xsetroot -cursor_name left_ptr
-
-
 
 #--------------------------------------
-# Themes
+# System Variables
 #--------------------------------------
 
-# Wallpaper
-feh --bg-fill ~/Pictures/Wallpapers/QwVL3ze\ -\ Imgur.jpg
-
-
-
-#--------------------------------------
-# Paths
-#--------------------------------------
-
-# Go programming language
-export GOPATH=~/.gopath
-
-
-
-#--------------------------------------
-# Applications
-#--------------------------------------
-
-# Defaults
+# Default applications
 export TERMINAL=urxvt
 export TERMRUN="urxvt -e"
 export FM=ranger
@@ -55,10 +18,8 @@ export MPLAYER="ncmpcpp -s media-library"
 export MVIZ=viz
 export CLOCK=clock
 
-# Daemons
-mpd &
-dropboxd &
-CopyAgent &
+# Paths
+export GOPATH=~/.gopath
 
 
 
@@ -66,5 +27,34 @@ CopyAgent &
 # Window Manager / Desktop Environment
 #--------------------------------------
 
-sxhkd &
-exec bspwm
+case $WM in
+    bspwm)
+        sxhkd &
+        exec bspwm
+        ;;
+    gnome)
+        exec gnome-session
+        ;;
+    kde)
+        exec startkde
+        ;;
+    vb)
+        VirtualBox -startvm "Windows 8" -fullscreen
+        ;;
+    xfce)
+        exec startxfce4
+        ;;
+    lxde)
+        exec startlxde
+        ;;
+    openbox)
+        exec openbox-session
+        ;;
+    i3)
+        exec i3
+        ;;
+    *)
+        sxhkd &
+        exec bspwm
+        ;;
+esac
