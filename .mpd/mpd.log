@@ -10562,3 +10562,16 @@ Apr 28 17:05 : pulse_output: "MPD" [pulse] failed to play: suspended
 Apr 28 17:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Apr 28 17:09 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Apr 28 17:09 : player: played "The Black Keys/Thickfreakness/01 Thickfreakness.m4a"
+Apr 28 21:53 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 28 21:55 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 28 21:55 : player: played "The Black Keys/Thickfreakness/02 Hard Row.m4a"
+Apr 28 21:58 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 28 21:58 : player: played "The Black Keys/Thickfreakness/03 Set You Free.m4a"
+Apr 28 21:59 : player: played "The Black Keys/Thickfreakness/04 Midnight In Her Eyes.m4a"
+Apr 28 22:00 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 28 22:02 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 28 22:02 : player: played "The Black Keys/Thickfreakness/04 Midnight In Her Eyes.m4a"
+Apr 28 22:05 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 28 22:05 : player: played "The Black Keys/Thickfreakness/05 Have Love Will Travel.m4a"
+Apr 28 22:08 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Apr 28 22:08 : player: played "The Black Keys/Thickfreakness/06 Hurt Like Mine.m4a"
