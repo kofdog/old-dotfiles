@@ -10,10 +10,6 @@ execute pathogen#infect()
 " Syntax highlighting
 syntax on
 
-" Line numbers
-set number
-set numberwidth=1
-
 " Color scheme
 colorscheme default
 set background=dark

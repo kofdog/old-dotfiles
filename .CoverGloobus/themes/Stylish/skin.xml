@@ -1,0 +1,12 @@
+<!--
+covergloobus skin with no covers!
+seekbar images are from Simple by Mustapha Asbbar, http://alezzacreative.deviantart.com
+-->
+
+  <skin name="eOS" width="300" height="90">
+  <artistname x="0" y="20" width="300" font="Raleway Light 18" align="center" color="#ffffffff"  maxchars="55" scroll="true" />
+  <titlename x="0" y="63" width="300" font="Raleway 12" align="center" color="#ffffffff"  maxchars="55" scroll="true" />
+  <seekbar x="0" y="58" width="300" height="1" back="seekbar.back.png" top="seekbar.top.png">
+  </seekbar>
+  </skin>
+
