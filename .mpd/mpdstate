@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: play
-current: 67
-time: 120
+state: pause
+current: 0
+time: 109
 random: 0
 repeat: 0
 single: 0
@@ -12,84 +12,17 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:George Harrison/All Things Must Pass [Disc 1]/1-11 Beware Of Darkness.mp3
-1:The Beatles/Abbey Road/02 Something.mp3
-2:The Beatles/Abbey Road/01 Come Together.mp3
-3:The Beatles/Abbey Road/02 Something.mp3
-4:The Beatles/Abbey Road/03 Maxwell's Silver Hammer.mp3
-5:The Beatles/Abbey Road/04 Oh! Darling.mp3
-6:The Beatles/Abbey Road/05 Octopus's Garden.mp3
-7:The Beatles/Abbey Road/06 I Want You (She's So Heavy).mp3
-8:The Beatles/Abbey Road/07 Here Comes The Sun.mp3
-9:The Beatles/Abbey Road/08 Because.mp3
-10:The Beatles/Abbey Road/09 You Never Give Me Your Money.mp3
-11:The Beatles/Abbey Road/10 Sun King.mp3
-12:The Beatles/Abbey Road/11 Mean Mr. Mustard.mp3
-13:The Beatles/Abbey Road/12 Polythene Pam.mp3
-14:The Beatles/Abbey Road/13 She Came In Through The Bathroom.mp3
-15:The Beatles/Abbey Road/14 Golden Slumbers.mp3
-16:The Beatles/Abbey Road/15 Carry That Weight.mp3
-17:The Beatles/Abbey Road/16 The End.mp3
-18:The Beatles/Abbey Road/17 Her Majesty.mp3
-19:The Black Keys/Rubber Factory/01 When The Lights Go Out.m4a
-20:The Black Keys/Rubber Factory/02 10 A.M. Automatic.m4a
-21:The Black Keys/Rubber Factory/03 Just Couldn't Tie Me Down.m4a
-22:The Black Keys/Rubber Factory/04 All Hands Against His Own.m4a
-23:The Black Keys/Rubber Factory/05 The Desperate Man.m4a
-24:The Black Keys/Rubber Factory/06 Girl Is On My Mind.m4a
-25:The Black Keys/Rubber Factory/07 The Lengths.m4a
-26:The Black Keys/Rubber Factory/08 Grown So Ugly.m4a
-27:The Black Keys/Rubber Factory/09 Stack Shot Billy.m4a
-28:The Black Keys/Rubber Factory/10 Act Nice And Gentle.m4a
-29:The Black Keys/Rubber Factory/11 Aeroplane Blues.m4a
-30:The Black Keys/Rubber Factory/12 Keep Me.m4a
-31:The Black Keys/Rubber Factory/13 Till I Get My Way.m4a
-32:The Black Keys/Magic Potion/01 Just Got to Be.mp3
-33:The Black Keys/Magic Potion/02 Your Touch.mp3
-34:The Black Keys/Magic Potion/03 You're the One.mp3
-35:The Black Keys/Magic Potion/04 Just a Little Heat.mp3
-36:The Black Keys/Magic Potion/05 Give Your Heart Away.mp3
-37:The Black Keys/Magic Potion/06 Strange Desire.mp3
-38:The Black Keys/Magic Potion/07 Modern Times.mp3
-39:The Black Keys/Magic Potion/08 The Flame.mp3
-40:The Black Keys/Magic Potion/09 Goodbye Babylon.mp3
-41:The Black Keys/Magic Potion/10 Black Door.mp3
-42:The Black Keys/Magic Potion/11 Elevator.mp3
-43:The Black Keys/The Big Come Up/01 Busted.m4a
-44:The Black Keys/The Big Come Up/02 Do The Rump.m4a
-45:The Black Keys/The Big Come Up/03 I'll Be Your Man.m4a
-46:The Black Keys/The Big Come Up/04 Countdown.m4a
-47:The Black Keys/The Big Come Up/05 The Breaks.m4a
-48:The Black Keys/The Big Come Up/06 Run Me Down.m4a
-49:The Black Keys/The Big Come Up/07 Leavin' Trunk.m4a
-50:The Black Keys/The Big Come Up/08 Heavy Soul.m4a
-51:The Black Keys/The Big Come Up/09 She Said, She Said.m4a
-52:The Black Keys/The Big Come Up/10 Them Eyes.m4a
-53:The Black Keys/The Big Come Up/11 Yearnin'.m4a
-54:The Black Keys/The Big Come Up/12 Brooklyn Bound.m4a
-55:The Black Keys/The Big Come Up/13 240 Years Before Your Time.m4a
-56:The Black Keys/Thickfreakness/01 Thickfreakness.m4a
-57:The Black Keys/Thickfreakness/02 Hard Row.m4a
-58:The Black Keys/Thickfreakness/03 Set You Free.m4a
-59:The Black Keys/Thickfreakness/04 Midnight In Her Eyes.m4a
-60:The Black Keys/Thickfreakness/05 Have Love Will Travel.m4a
-61:The Black Keys/Thickfreakness/06 Hurt Like Mine.m4a
-62:The Black Keys/Thickfreakness/07 Everywhere I Go.m4a
-63:The Black Keys/Thickfreakness/08 No Trust.m4a
-64:The Black Keys/Thickfreakness/09 If You See Me.m4a
-65:The Black Keys/Thickfreakness/10 Hold Me In Your Arms.m4a
-66:The Black Keys/Thickfreakness/11 I Cry Alone.m4a
-67:The Black Keys/Rubber Factory/01 When The Lights Go Out.m4a
-68:The Black Keys/Rubber Factory/02 10 A.M. Automatic.m4a
-69:The Black Keys/Rubber Factory/03 Just Couldn't Tie Me Down.m4a
-70:The Black Keys/Rubber Factory/04 All Hands Against His Own.m4a
-71:The Black Keys/Rubber Factory/05 The Desperate Man.m4a
-72:The Black Keys/Rubber Factory/06 Girl Is On My Mind.m4a
-73:The Black Keys/Rubber Factory/07 The Lengths.m4a
-74:The Black Keys/Rubber Factory/08 Grown So Ugly.m4a
-75:The Black Keys/Rubber Factory/09 Stack Shot Billy.m4a
-76:The Black Keys/Rubber Factory/10 Act Nice And Gentle.m4a
-77:The Black Keys/Rubber Factory/11 Aeroplane Blues.m4a
-78:The Black Keys/Rubber Factory/12 Keep Me.m4a
-79:The Black Keys/Rubber Factory/13 Till I Get My Way.m4a
+0:The Black Keys/Rubber Factory/01 When The Lights Go Out.m4a
+1:The Black Keys/Rubber Factory/02 10 A.M. Automatic.m4a
+2:The Black Keys/Rubber Factory/03 Just Couldn't Tie Me Down.m4a
+3:The Black Keys/Rubber Factory/04 All Hands Against His Own.m4a
+4:The Black Keys/Rubber Factory/05 The Desperate Man.m4a
+5:The Black Keys/Rubber Factory/06 Girl Is On My Mind.m4a
+6:The Black Keys/Rubber Factory/07 The Lengths.m4a
+7:The Black Keys/Rubber Factory/08 Grown So Ugly.m4a
+8:The Black Keys/Rubber Factory/09 Stack Shot Billy.m4a
+9:The Black Keys/Rubber Factory/10 Act Nice And Gentle.m4a
+10:The Black Keys/Rubber Factory/11 Aeroplane Blues.m4a
+11:The Black Keys/Rubber Factory/12 Keep Me.m4a
+12:The Black Keys/Rubber Factory/13 Till I Get My Way.m4a
 playlist_end

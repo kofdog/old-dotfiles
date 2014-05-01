@@ -73,7 +73,7 @@ URxvt*shading: 30
 
 ! Transparency (real)
 URxvt*depth: 32
-URxvt*background: [80]#111111
+URxvt*background: [80]#121212
 
 ! Scrolling
 URxvt*saveLines: 5000
