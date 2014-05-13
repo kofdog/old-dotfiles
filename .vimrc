@@ -11,7 +11,7 @@ execute pathogen#infect()
 syntax on
 
 " Color scheme
-colorscheme default
+colorscheme jezebel
 set background=dark
 "se t_Co=256
 
