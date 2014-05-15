@@ -116,7 +116,7 @@ fi
 export TERM='screen-256color'
 
 # Add personal scripts to path
-PATH=~/Documents/code/bin:$PATH
+PATH=~/.bin:$PATH
 PATH=~/.gopath/bin:$PATH
 
 # PS1

@@ -81,5 +81,5 @@ URxvt*secondaryScroll: true
 
 ! Font
 URxvt*allow_bold: true
-URxvt*font: xft:Audimat Mono:size=10
+URxvt*font: xft:Ubuntu Mono:size=11
 URxvt*letterSpace: 0
