@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: pause
-current: 0
-time: 16
+current: 1
+time: 0
 random: 0
 repeat: 0
 single: 0

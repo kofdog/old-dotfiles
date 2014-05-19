@@ -8,7 +8,6 @@
 ! Base colors
 *background: BACKGROUND
 *foreground: FOREGROUND
-*cursorColor: FOREGROUND
 
 ! Black dark/light
 *color0: COLOR0
