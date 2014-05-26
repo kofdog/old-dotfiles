@@ -137,8 +137,8 @@ super + f
 super + w
     $BROWSER
 
-# Editor
-super + e
+# Text editor
+super + t
     $TERMRUN $EDITOR
 
 # Music player

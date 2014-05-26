@@ -47,11 +47,13 @@
 ! Xft
 !--------------------------------------
 
+Xft.autohint: 0
 Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
 
 
 
@@ -80,5 +82,5 @@ URxvt*secondaryScroll: true
 
 ! Font
 URxvt*allow_bold: true
-URxvt*font: xft:Ubuntu Mono:size=11
+URxvt*font: xft:Droid Sans Mono:size=10
 URxvt*letterSpace: 0

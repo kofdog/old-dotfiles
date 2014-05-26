@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: pause
-current: 1
-time: 0
+state: play
+current: 15
+time: 14
 random: 0
 repeat: 0
 single: 0
@@ -25,4 +25,17 @@ playlist_begin
 10:The Black Keys/Rubber Factory/11 Aeroplane Blues.m4a
 11:The Black Keys/Rubber Factory/12 Keep Me.m4a
 12:The Black Keys/Rubber Factory/13 Till I Get My Way.m4a
+13:Alt-J (∆)/01 Intro.m4a
+14:Alt-J (∆)/02 Interlude 1.m4a
+15:Alt-J (∆)/03 Tessellate.m4a
+16:Alt-J (∆)/04 Breezeblocks.m4a
+17:Alt-J (∆)/05 Interlude 2.m4a
+18:Alt-J (∆)/06 Estocada.m4a
+19:Alt-J (∆)/07 Dissolve Me.m4a
+20:Alt-J (∆)/08 Matilda.m4a
+21:Alt-J (∆)/09 Ms.m4a
+22:Alt-J (∆)/10 Fitzpleasure.m4a
+23:Alt-J (∆)/11 Interlude 3.m4a
+24:Alt-J (∆)/12 Blood Flood.m4a
+25:Alt-J (∆)/13 Taro_Handmade.m4a
 playlist_end
