@@ -82,5 +82,5 @@ URxvt*secondaryScroll: true
 
 ! Font
 URxvt*allow_bold: true
-URxvt*font: xft:Droid Sans Mono:size=10
-URxvt*letterSpace: 0
+URxvt*font: xft:Droid Sans Mono:size=8
+URxvt*letterSpace: -1
