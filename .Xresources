@@ -1,49 +1,4 @@
 !--------------------------------------
-! Color scheme
-!--------------------------------------
-
-! Import scheme
-#include ".colors/jezebel"
-
-! Base colors
-*background: BACKGROUND
-*foreground: FOREGROUND
-
-! Black dark/light
-*color0: COLOR0
-*color8: COLOR8
-
-! Red dark/light
-*color1: COLOR1
-*color9: COLOR9
-
-! Green dark/light
-*color2: COLOR2
-*color10: COLOR10
-
-! Yellow dark/light
-*color3: COLOR3
-*color11: COLOR11
-
-! Blue dark/light
-*color4: COLOR4
-*color12: COLOR12
-
-! Magenta dark/light
-*color5: COLOR5
-*color13: COLOR13
-
-! Cyan dark/light
-*color6: COLOR6
-*color14: COLOR14
-
-! White dark/light
-*color7: COLOR7
-*color15: COLOR15
-
-
-
-!--------------------------------------
 ! Xft
 !--------------------------------------
 
@@ -65,7 +20,7 @@ Xft.lcdfilter: lcddefault
 URxvt*geometry: 80x25
 URxvt*fading: 0
 URxvt*intensityStyles: false
-URxvt*termName: rxvt-unicode
+URxvt*termName: rxvt-256color
 URxvt*cursorBlink: true
 
 ! Transparency
@@ -84,3 +39,108 @@ URxvt*secondaryScroll: true
 URxvt*allow_bold: true
 URxvt*font: xft:Droid Sans Mono:size=8
 URxvt*letterSpace: -1
+
+! Import scheme
+#include ".colors/jezebel"
+
+! Base colors
+URxvt*background: BACKGROUND
+URxvt*foreground: FOREGROUND
+URxvt*cursorColor: CURSOR
+
+! Black dark/light
+URxvt*color0: COLOR0
+URxvt*color8: COLOR8
+
+! Red dark/light
+URxvt*color1: COLOR1
+URxvt*color9: COLOR9
+
+! Green dark/light
+URxvt*color2: COLOR2
+URxvt*color10: COLOR10
+
+! Yellow dark/light
+URxvt*color3: COLOR3
+URxvt*color11: COLOR11
+
+! Blue dark/light
+URxvt*color4: COLOR4
+URxvt*color12: COLOR12
+
+! Magenta dark/light
+URxvt*color5: COLOR5
+URxvt*color13: COLOR13
+
+! Cyan dark/light
+URxvt*color6: COLOR6
+URxvt*color14: COLOR14
+
+! White dark/light
+URxvt*color7: COLOR7
+URxvt*color15: COLOR15
+
+!--------------------------------------
+! XTerm
+!--------------------------------------
+
+! General
+XTerm*geometry: 80x25
+XTerm*fading: 0
+XTerm*intensityStyles: false
+XTerm*termName: xterm-256color
+XTerm*cursorBlink: true
+
+! Transparency
+!XTerm*transparent: true
+!XTerm*shading: 30
+!XTerm*depth: 32
+!XTerm*background: [80]#121212
+
+! Scrolling
+XTerm*saveLines: 5000
+XTerm*scrollBar: false
+
+! Font
+XTerm*allow_bold: true
+XTerm*faceName: Droid Sans Mono:size=8
+
+! Import scheme
+#include ".colors/tomorrow"
+
+! Base colors
+XTerm*background: BACKGROUND
+XTerm*foreground: FOREGROUND
+XTerm*cursorColor: CURSOR
+
+! Black dark/light
+XTerm*color0: COLOR0
+XTerm*color8: COLOR8
+
+! Red dark/light
+XTerm*color1: COLOR1
+XTerm*color9: COLOR9
+
+! Green dark/light
+XTerm*color2: COLOR2
+XTerm*color10: COLOR10
+
+! Yellow dark/light
+XTerm*color3: COLOR3
+XTerm*color11: COLOR11
+
+! Blue dark/light
+XTerm*color4: COLOR4
+XTerm*color12: COLOR12
+
+! Magenta dark/light
+XTerm*color5: COLOR5
+XTerm*color13: COLOR13
+
+! Cyan dark/light
+XTerm*color6: COLOR6
+XTerm*color14: COLOR14
+
+! White dark/light
+XTerm*color7: COLOR7
+XTerm*color15: COLOR15

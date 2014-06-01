@@ -113,8 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export TERM='screen-256color'
-
 # Add personal scripts to path
 PATH=~/.bin:$PATH
 PATH=~/.gopath/bin:$PATH

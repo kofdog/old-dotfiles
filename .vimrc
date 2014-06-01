@@ -11,9 +11,11 @@ execute pathogen#infect()
 syntax on
 
 " Color scheme
-colorscheme jezebel
-set background=dark
-"se t_Co=256
+if $TERM == 'rxvt-256color'
+    colorscheme Tomorrow-Night
+elseif $TERM == 'xterm-256color'
+    colorscheme Tomorrow
+endif
 
 
 
