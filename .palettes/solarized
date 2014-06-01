@@ -15,9 +15,6 @@
 #define CYAN #2aa198
 #define GREEN #859900
  
-#define BACKGROUND BASE03
-#define FOREGROUND BASE0
-
 
 
 #define COLOR0 BASE02
@@ -43,3 +40,9 @@
 
 #define COLOR7 BASE2
 #define COLOR15 BASE3
+
+
+
+#define BACKGROUND BASE03
+#define FOREGROUND BASE0
+#define CURSOR BASE0

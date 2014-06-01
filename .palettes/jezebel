@@ -1,5 +1,5 @@
-#define COLOR0 #d4d4d4
-#define COLOR8 #f4f4f4
+#define COLOR0 #212121
+#define COLOR8 #212121
 
 #define COLOR1 #ae4551
 #define COLOR9 #e1b5ba
@@ -19,10 +19,11 @@
 #define COLOR6 #45aea2
 #define COLOR14 #b5e1dc
 
-#define COLOR7 #212121
-#define COLOR15 #212121
+#define COLOR7 #d4d4d4
+#define COLOR15 #f4f4f4
 
 
 
-#define BACKGROUND #ffffff
-#define FOREGROUND #212121
+#define BACKGROUND #212121
+#define FOREGROUND #bdbdbd
+#define CURSOR #bdbdbd

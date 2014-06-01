@@ -37,7 +37,7 @@ URxvt*secondaryScroll: true
 
 ! Font
 URxvt*allow_bold: true
-URxvt*font: xft:Droid Sans Mono:size=8
+URxvt*font: xft:Meslo LG M:size=8
 URxvt*letterSpace: -1
 
 ! Import scheme
@@ -103,7 +103,7 @@ XTerm*scrollBar: false
 
 ! Font
 XTerm*allow_bold: true
-XTerm*faceName: Droid Sans Mono:size=8
+XTerm*faceName: Meslo LG M:size=8
 
 ! Import scheme
 #include ".colors/tomorrow"

@@ -26,3 +26,4 @@
 
 #define BACKGROUND #1d1f21
 #define FOREGROUND #edeff2
+#define CURSOR #edeff2
