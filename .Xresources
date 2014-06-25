@@ -37,11 +37,11 @@ URxvt*secondaryScroll: true
 
 ! Font
 URxvt*allow_bold: true
-URxvt*font: xft:Meslo LG M:size=8
+URxvt*font: xft:Meslo LG S:size=8
 URxvt*letterSpace: -1
 
 ! Import scheme
-#include ".colors/jezebel"
+#include ".palettes/tomorrow_night2"
 
 ! Base colors
 URxvt*background: BACKGROUND
@@ -103,10 +103,10 @@ XTerm*scrollBar: false
 
 ! Font
 XTerm*allow_bold: true
-XTerm*faceName: Meslo LG M:size=8
+XTerm*faceName: Meslo LG S:size=8
 
 ! Import scheme
-#include ".colors/tomorrow"
+#include ".palettes/tomorrow"
 
 ! Base colors
 XTerm*background: BACKGROUND
@@ -117,30 +117,30 @@ XTerm*cursorColor: CURSOR
 XTerm*color0: COLOR0
 XTerm*color8: COLOR8
 
-! Red dark/light
+! Red dark/ligXht
 XTerm*color1: COLOR1
 XTerm*color9: COLOR9
 
-! Green dark/light
+! Green dark/lXight
 XTerm*color2: COLOR2
 XTerm*color10: COLOR10
 
-! Yellow dark/light
+! Yellow dark/Xlight
 XTerm*color3: COLOR3
 XTerm*color11: COLOR11
 
-! Blue dark/light
+! Blue dark/liXght
 XTerm*color4: COLOR4
 XTerm*color12: COLOR12
 
-! Magenta dark/light
+! Magenta darkX/light
 XTerm*color5: COLOR5
 XTerm*color13: COLOR13
 
-! Cyan dark/light
+! Cyan dark/liXght
 XTerm*color6: COLOR6
 XTerm*color14: COLOR14
 
-! White dark/light
+! White dark/lXight
 XTerm*color7: COLOR7
 XTerm*color15: COLOR15

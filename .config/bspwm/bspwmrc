@@ -48,7 +48,7 @@ xsetroot -cursor_name left_ptr
 #--------------------------------------
 
 # Wallpaper
-feh --bg-fill ~/Pictures/Wallpapers/QwVL3ze\ -\ Imgur.jpg
+feh --bg-fill ~/Pictures/Wallpapers/Lighthouse.jpg
 
 
 

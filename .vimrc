@@ -11,11 +11,13 @@ execute pathogen#infect()
 syntax on
 
 " Color scheme
-if $TERM == 'rxvt-256color'
-    colorscheme Tomorrow-Night
-elseif $TERM == 'xterm-256color'
-    colorscheme Tomorrow
-endif
+set t_Co=16
+colorscheme default
+"if $TERM == 'rxvt-256color'
+"    colorscheme Tomorrow-Night
+"elseif $TERM == 'xterm-256color'
+"    colorscheme Tomorrow
+"endif
 
 
 

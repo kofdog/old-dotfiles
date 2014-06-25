@@ -2,7 +2,7 @@
 gtk-theme-name="Adwaita"
 
 # Icons
-gtk-icon-theme-name="Moka"
+gtk-icon-theme-name="Numix-Circle"
 
 # Cursor
 gtk-cursor-theme-name="Adwaita"
@@ -21,7 +21,7 @@ gtk-enable-event-sounds=0
 gtk-enable-input-feedback-sounds=0
 
 # Font
-gtk-font-name="Cantarell 10"
+gtk-font-name="Droid Sans 10"
 gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle="hintslight"
