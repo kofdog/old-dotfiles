@@ -12,7 +12,8 @@ syntax on
 
 " Color scheme
 set t_Co=16
-colorscheme default
+set background=dark
+colorscheme base16-default
 "if $TERM == 'rxvt-256color'
 "    colorscheme Tomorrow-Night
 "elseif $TERM == 'xterm-256color'
