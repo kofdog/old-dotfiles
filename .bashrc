@@ -118,4 +118,4 @@ PATH=~/.bin:$PATH
 PATH=~/.gopath/bin:$PATH
 
 # PS1
-export PS1='$ '
+export PS1='┌──\u@\h[\w]\n└╼ '
