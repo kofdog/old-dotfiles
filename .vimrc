@@ -11,8 +11,8 @@ execute pathogen#infect()
 syntax on
 
 " Color scheme
-set t_Co=16
-set background=dark
+"set t_Co=16
+"set background=light
 colorscheme base16-default
 "if $TERM == 'rxvt-256color'
 "    colorscheme Tomorrow-Night
