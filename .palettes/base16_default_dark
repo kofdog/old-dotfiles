@@ -1,0 +1,29 @@
+#define COLOR0 #151515
+#define COLOR8 #505050
+
+#define COLOR1 #ac4142
+#define COLOR9 #ac4142
+
+#define COLOR2 #90a959
+#define COLOR10 #90a959
+
+#define COLOR3 #f4bf75
+#define COLOR11 #f4bf75
+
+#define COLOR4 #6a9fb5
+#define COLOR12 #6a9fb5
+
+#define COLOR5 #aa759f
+#define COLOR13 #aa759f
+
+#define COLOR6 #75b5aa
+#define COLOR14 #75b5aa
+
+#define COLOR7 #d0d0d0
+#define COLOR15 #f5f5f5
+
+
+
+#define BACKGROUND #151515
+#define FOREGROUND #d0d0d0
+#define CURSOR #d0d0d0
