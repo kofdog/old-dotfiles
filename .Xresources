@@ -36,12 +36,12 @@ URxvt*scrollBar: false
 URxvt*secondaryScroll: true
 
 ! Font
-URxvt*allow_bold: true
 URxvt*font: xft:Meslo LG S:size=8
+URxvt*boldFont:
 URxvt*letterSpace: -1
 
 ! Import scheme
-#include ".palettes/tomorrow_night2"
+#include ".palettes/base16_default_dark"
 
 ! Base colors
 URxvt*background: BACKGROUND
@@ -79,68 +79,3 @@ URxvt*color14: COLOR14
 ! White dark/light
 URxvt*color7: COLOR7
 URxvt*color15: COLOR15
-
-!--------------------------------------
-! XTerm
-!--------------------------------------
-
-! General
-XTerm*geometry: 80x25
-XTerm*fading: 0
-XTerm*intensityStyles: false
-XTerm*termName: xterm-256color
-XTerm*cursorBlink: true
-
-! Transparency
-!XTerm*transparent: true
-!XTerm*shading: 30
-!XTerm*depth: 32
-!XTerm*background: [80]#121212
-
-! Scrolling
-XTerm*saveLines: 5000
-XTerm*scrollBar: false
-
-! Font
-XTerm*allow_bold: true
-XTerm*faceName: Meslo LG S:size=8
-
-! Import scheme
-#include ".palettes/tomorrow"
-
-! Base colors
-XTerm*background: BACKGROUND
-XTerm*foreground: FOREGROUND
-XTerm*cursorColor: CURSOR
-
-! Black dark/light
-XTerm*color0: COLOR0
-XTerm*color8: COLOR8
-
-! Red dark/ligXht
-XTerm*color1: COLOR1
-XTerm*color9: COLOR9
-
-! Green dark/lXight
-XTerm*color2: COLOR2
-XTerm*color10: COLOR10
-
-! Yellow dark/Xlight
-XTerm*color3: COLOR3
-XTerm*color11: COLOR11
-
-! Blue dark/liXght
-XTerm*color4: COLOR4
-XTerm*color12: COLOR12
-
-! Magenta darkX/light
-XTerm*color5: COLOR5
-XTerm*color13: COLOR13
-
-! Cyan dark/liXght
-XTerm*color6: COLOR6
-XTerm*color14: COLOR14
-
-! White dark/lXight
-XTerm*color7: COLOR7
-XTerm*color15: COLOR15
