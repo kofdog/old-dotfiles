@@ -1,28 +1,16 @@
-# Theme
-gtk-theme-name="Adwaita"
+# File created by KDE Gtk Config
+# Configs for GTK2 programs 
 
-# Icons
+include "/usr/share/themes/QtCurve/gtk-2.0/gtkrc"
+style "user-font" 
+{
+	font_name="Sans Serif "
+}
+widget_class "*" style "user-font"
+gtk-font-name="Sans Serif  9"
+gtk-theme-name="QtCurve"
 gtk-icon-theme-name="Numix-Circle"
-
-# Cursor
-gtk-cursor-theme-name="Adwaita"
-gtk-cursor-theme-size=0
-
-# Toolbar
+gtk-fallback-icon-theme="oxygen"
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
-gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
-
-# Menus
+gtk-menu-images=0
 gtk-button-images=1
-gtk-menu-images=1
-
-# Sounds
-gtk-enable-event-sounds=0
-gtk-enable-input-feedback-sounds=0
-
-# Font
-gtk-font-name="Droid Sans 10"
-gtk-xft-antialias=1
-gtk-xft-hinting=1
-gtk-xft-hintstyle="hintslight"
-gtk-xft-rgba="rgb"

@@ -41,7 +41,7 @@ URxvt*boldFont:
 URxvt*letterSpace: -1
 
 ! Import scheme
-#include ".palettes/base16_default_dark"
+#include ".palettes/dark/base16_default"
 
 ! Base colors
 URxvt*background: BACKGROUND
