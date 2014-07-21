@@ -1,0 +1,16 @@
+[DownloadDialog Settings]
+Height 800=400
+Width 1280=700
+
+[KFileDialog Settings]
+Height 800=420
+Recent Files[$e]=Google+.qtcurve,$HOME/Downloads/Google+.qtcurve,$HOME/Downloads/Google.colors
+Recent URLs[$e]=$HOME/Downloads/
+Width 1280=672
+
+[MainWindow]
+Height 800=533
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAswAAAH1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1280=716

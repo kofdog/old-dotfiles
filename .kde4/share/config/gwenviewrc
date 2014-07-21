@@ -1,0 +1,11 @@
+[General]
+SideBarPage=folders
+
+[MainWindow]
+Height 800=500
+State=AAAA/wAAAAD9AAAAAAAAAu4AAAG1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1280=750
+
+[SideBar-BrowseMode]
+IsVisible=false

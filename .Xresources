@@ -36,7 +36,7 @@ URxvt*scrollBar: false
 URxvt*secondaryScroll: true
 
 ! Font
-URxvt*font: xft:Meslo LG S:size=8
+URxvt*font: xft:Meslo LG S:size=9
 URxvt*boldFont:
 URxvt*letterSpace: -1
 

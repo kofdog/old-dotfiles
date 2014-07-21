@@ -1,0 +1,11 @@
+[cache]
+KnownMailBoxes=,m.kofron.us@ieee.org,mike.kofron@yahoo.com,[Gmail]/Spam,INBOX,[Gmail],komic@seas.upenn.edu,Drafts,SMS backup,[Gmail]/All Mail,[Gmail]/Sent Mail
+TrashCollectionMigrated=true
+
+[idle]
+IdleRidPath=/INBOX,imap://mpkofron@gmail.com@imap.googlemail.com/
+
+[network]
+Authentication=7
+ImapServer=imap.googlemail.com
+UserName=mpkofron@gmail.com

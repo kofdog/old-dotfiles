@@ -1,0 +1,15 @@
+[$Version]
+update_info=mailtransports.upd:initial-kmail-migration,mailtransports.upd:initial-knode-migration
+
+[General]
+default-transport=2121498494
+
+[Transport 2121498494]
+auth=true
+encryption=SSL
+host=smtp.googlemail.com
+id=2121498494
+name=Google Mail (mpkofron)
+port=465
+storepass=true
+user=mpkofron@gmail.com

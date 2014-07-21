@@ -9,6 +9,9 @@
 # Load Xresources
 xrdb ~/.Xresources
 
+# Load keybindings
+xbindkeys
+
 
 
 #--------------------------------------
