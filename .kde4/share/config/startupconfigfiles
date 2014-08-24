@@ -1,17 +1,17 @@
 kcminputrc Mouse cursorTheme 'Oxygen_White'
-!/home/mike/.kde4/share/config/kcminputrc
+/home/mike/.kde4/share/config/kcminputrc
 !/usr/share/config/kcminputrc
 *
 kcminputrc Mouse cursorSize ''
-!/home/mike/.kde4/share/config/kcminputrc
+/home/mike/.kde4/share/config/kcminputrc
 !/usr/share/config/kcminputrc
 *
 ksplashrc KSplash Theme Default
-!/home/mike/.kde4/share/config/ksplashrc
+/home/mike/.kde4/share/config/ksplashrc
 !/usr/share/config/ksplashrc
 *
 ksplashrc KSplash Engine KSplashX
-!/home/mike/.kde4/share/config/ksplashrc
+/home/mike/.kde4/share/config/ksplashrc
 !/usr/share/config/ksplashrc
 *
 krandrrc Display ApplyOnStartup false

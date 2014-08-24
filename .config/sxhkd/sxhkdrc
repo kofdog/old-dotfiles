@@ -155,7 +155,7 @@ super + c
 
 # Application launcher
 super + space
-    j4-dmenu-desktop --term=urxvt --dmenu="dmenu -i -fn 'Inconsolata-10'"
+    j4-dmenu-desktop --term=$TERMINAL --dmenu="dmenu -i -fn 'Inconsolata-10'"
 
 # Screenshot
 {_,alt +} @Print

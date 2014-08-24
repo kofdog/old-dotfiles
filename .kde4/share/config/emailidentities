@@ -2,26 +2,14 @@
 update_info=kmail.upd:3.3-move-identities-to-own-file,kmail.upd:3.3-aegypten-emailidentities-split-sign-encr-keys
 
 [General]
-Default Identity=1131293179
+Default Identity=337121226
 
 [Identity #0]
-Attach Vcard=false
+Default Domain=olorin
 Dictionary=English (United States of America)
 Disable Fcc=false
-Drafts=8
-Email Address=mpkofron@gmail.com
-Email Aliases=komic@seas.upenn.edu
-Fcc=7
 Identity=Unnamed
 Image Location=
 Inline Signature=
-Inlined Html=false
-Name=Mike Kofron
-Pgp Auto Sign=false
-Preferred Crypto Message Format=auto
 Signature Enabled=false
-Signature Type=inline
-Templates=10
-VCardFile=/home/mike/.kde4/share/apps/kmail2/Unnamed.vcf
-X-FaceEnabled=false
-uoid=1131293179
+uoid=337121226

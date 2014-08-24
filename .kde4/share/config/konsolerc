@@ -12,11 +12,9 @@ Favorites=Shell.profile
 
 [KonsoleWindow]
 SaveGeometryOnExit=false
-ShowMenuBarByDefault=false
 
 [MainWindow]
-MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAjIAAAFuAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAqYAAAF6AAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 
 [TabBar]

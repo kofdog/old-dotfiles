@@ -4,13 +4,24 @@ Width 1280=700
 
 [KFileDialog Settings]
 Height 800=420
-Recent Files[$e]=Google+.qtcurve,$HOME/Downloads/Google+.qtcurve,$HOME/Downloads/Google.colors
-Recent URLs[$e]=$HOME/Downloads/
+Recent Files[$e]=Nitrux.qtcurve,$HOME/Downloads/Nitrux_QtCurve/N4.colors,$HOME/Downloads/Nitrux_QtCurve/N4.qtcurve,$HOME/Pictures/me/avatar.png,$HOME/Pictures/me/me.jpg,$HOME/Downloads/Nitrux_KDE_suite_March2014/Nitrux-Qt_curve/Nitrux.colors,$HOME/Downloads/Nitrux_KDE_suite_March2014/Nitrux-Qt_curve/Nitrux.qtcurve
+Recent URLs[$e]=$HOME/Downloads/Nitrux_KDE_suite_March2014/Nitrux-Qt_curve/,$HOME/Pictures/me/,$HOME/Pictures/,$HOME/Downloads/Nitrux_QtCurve/
 Width 1280=672
 
+[KPropertiesDialog]
+Height 800=353
+Width 1280=401
+
 [MainWindow]
-Height 800=533
+Height 800=538
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAswAAAH1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA3cAAAH8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1280=716
+Width 1280=887
+
+[Open-with settings]
+CompletionMode=5
+History=kmix,urxvtc,urxvtd
+
+[Phonon::AudioOutput]
+System Settings_Volume=1

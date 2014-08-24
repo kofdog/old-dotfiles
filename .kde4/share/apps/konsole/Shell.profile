@@ -1,15 +1,12 @@
 [Appearance]
 BoldIntense=false
-ColorScheme=Base 16 Default Dark
-Font=Meslo LG S,8,-1,5,50,0,0,0,0,0
+ColorScheme=Base16 Default Dark
+Font=Meslo LG S,9,-1,5,50,0,0,0,0,0
 
 [General]
-Name=Mike
+Name=Shell
 Parent=FALLBACK/
 TerminalRows=24
-
-[Interaction Options]
-TrimTrailingSpacesInSelectedText=true
 
 [Scrolling]
 HistoryMode=2

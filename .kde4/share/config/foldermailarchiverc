@@ -1,2 +1,8 @@
 [$Version]
 update_info=kmail.upd:4.13
+
+[FolderArchiveAccount akonadi_imap_resource_0]
+enabled=false
+folderArchiveType=0
+instanceName=akonadi_imap_resource_0
+keepExistingStructure=false

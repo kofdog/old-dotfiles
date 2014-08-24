@@ -1,4 +1,4 @@
-# created by KDE, Mon Jul 21 11:34:20 2014
+# created by KDE, Sat Aug 23 18:10:46 2014
 #
 # If you do not want KDE to override your GTK settings, select
 # Appearance -> Colors in the System Settings and disable the checkbox
@@ -7,39 +7,39 @@
 #
 style "default"
 {
-  bg[NORMAL] = { 0.961, 0.961, 0.961 }
-  bg[SELECTED] = { 0.871, 0.871, 0.871 }
-  bg[INSENSITIVE] = { 0.961, 0.961, 0.961 }
-  bg[ACTIVE] = { 0.769, 0.769, 0.769 }
-  bg[PRELIGHT] = { 0.961, 0.961, 0.961 }
+  bg[NORMAL] = { 0.788, 0.788, 0.792 }
+  bg[SELECTED] = { 0.110, 0.471, 0.745 }
+  bg[INSENSITIVE] = { 0.788, 0.788, 0.792 }
+  bg[ACTIVE] = { 0.647, 0.647, 0.655 }
+  bg[PRELIGHT] = { 0.788, 0.788, 0.792 }
 
-  base[NORMAL] = { 1.000, 1.000, 1.000 }
-  base[SELECTED] = { 0.871, 0.871, 0.871 }
-  base[INSENSITIVE] = { 0.961, 0.961, 0.961 }
-  base[ACTIVE] = { 0.871, 0.871, 0.871 }
-  base[PRELIGHT] = { 0.871, 0.871, 0.871 }
+  base[NORMAL] = { 0.969, 0.969, 0.969 }
+  base[SELECTED] = { 0.110, 0.471, 0.745 }
+  base[INSENSITIVE] = { 0.788, 0.788, 0.792 }
+  base[ACTIVE] = { 0.110, 0.471, 0.745 }
+  base[PRELIGHT] = { 0.110, 0.471, 0.745 }
 
-  text[NORMAL] = { 0.392, 0.392, 0.392 }
-  text[SELECTED] = { 0.557, 0.557, 0.557 }
-  text[INSENSITIVE] = { 0.769, 0.769, 0.769 }
-  text[ACTIVE] = { 0.557, 0.557, 0.557 }
-  text[PRELIGHT] = { 0.557, 0.557, 0.557 }
+  text[NORMAL] = { 0.114, 0.114, 0.114 }
+  text[SELECTED] = { 0.984, 0.984, 0.984 }
+  text[INSENSITIVE] = { 0.647, 0.647, 0.655 }
+  text[ACTIVE] = { 0.984, 0.984, 0.984 }
+  text[PRELIGHT] = { 0.984, 0.984, 0.984 }
 
-  fg[NORMAL] = { 0.369, 0.369, 0.369 }
-  fg[SELECTED] = { 0.557, 0.557, 0.557 }
-  fg[INSENSITIVE] = { 0.769, 0.769, 0.769 }
-  fg[ACTIVE] = { 0.369, 0.369, 0.369 }
-  fg[PRELIGHT] = { 0.369, 0.369, 0.369 }
+  fg[NORMAL] = { 0.106, 0.098, 0.094 }
+  fg[SELECTED] = { 0.984, 0.984, 0.984 }
+  fg[INSENSITIVE] = { 0.647, 0.647, 0.655 }
+  fg[ACTIVE] = { 0.106, 0.098, 0.094 }
+  fg[PRELIGHT] = { 0.106, 0.098, 0.094 }
 }
 
 class "*" style "default"
 
 style "ToolTip"
 {
-  bg[NORMAL] = { 0.961, 0.961, 0.961 }
-  base[NORMAL] = { 1.000, 1.000, 1.000 }
-  text[NORMAL] = { 0.392, 0.392, 0.392 }
-  fg[NORMAL] = { 0.369, 0.369, 0.369 }
+  bg[NORMAL] = { 0.788, 0.788, 0.792 }
+  base[NORMAL] = { 0.969, 0.969, 0.969 }
+  text[NORMAL] = { 0.114, 0.114, 0.114 }
+  fg[NORMAL] = { 0.106, 0.098, 0.094 }
 }
 
 widget "gtk-tooltip" style "ToolTip"
@@ -47,7 +47,7 @@ widget "gtk-tooltips" style "ToolTip"
 
 style "MenuItem"
 {
-  bg[PRELIGHT] = { 0.871, 0.871, 0.871 }
+  bg[PRELIGHT] = { 0.110, 0.471, 0.745 }
 }
 
 class "*MenuItem" style "MenuItem"

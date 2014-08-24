@@ -2,8 +2,8 @@
 Profile=Default
 
 [PROFILE_Default]
-EmailAddress=mpkofron@gmail.com
-FullName=Mike Kofron
+EmailAddress=
+FullName=
 Organization=
 ReplyAddr=
 ServerType=

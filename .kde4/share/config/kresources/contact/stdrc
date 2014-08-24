@@ -1,11 +1,11 @@
 [General]
 PassiveResourceKeys=
-ResourceKeys=BxpeBTawQD
-Standard=BxpeBTawQD
+ResourceKeys=l2PoQl29at
+Standard=l2PoQl29at
 
-[Resource_BxpeBTawQD]
+[Resource_l2PoQl29at]
 FileFormat=vcard
-ResourceIdentifier=BxpeBTawQD
+ResourceIdentifier=l2PoQl29at
 ResourceIsActive=true
 ResourceIsReadOnly=false
 ResourceName=Default Address Book

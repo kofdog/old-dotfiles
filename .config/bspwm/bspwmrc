@@ -16,50 +16,13 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 #--------------------------------------
 
 # Borders and gaps
-bspc config border_width        2
+bspc config border_width        10
 bspc config window_gap          12
 bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 
 # Split behavior
 bspc config split_ratio         0.50
-
-
-
-#--------------------------------------
-# X.org
-#--------------------------------------
-
-# Remove annoying beep
-xset b off
-
-# Don't turn off backlight for any reason
-xset s off
-xset -dpms
-xset s noblank
-
-# Set cursor theme
-xsetroot -cursor_name left_ptr
-
-
-
-#--------------------------------------
-# Themes
-#--------------------------------------
-
-# Wallpaper
-feh --bg-fill ~/Pictures/Wallpapers/Lighthouse.jpg
-
-
-
-#--------------------------------------
-# Applications
-#--------------------------------------
-
-# Daemons
-mpd &
-dropboxd &
-CopyAgent &
 
 
 

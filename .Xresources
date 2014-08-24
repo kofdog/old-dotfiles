@@ -23,11 +23,9 @@ URxvt*intensityStyles: false
 URxvt*termName: rxvt-256color
 URxvt*cursorBlink: true
 
-! Transparency
+! Fake transparency
 !URxvt*transparent: true
 !URxvt*shading: 30
-!URxvt*depth: 32
-!URxvt*background: [80]#121212
 
 ! Scrolling
 URxvt*saveLines: 5000
@@ -44,7 +42,8 @@ URxvt*letterSpace: -1
 #include ".palettes/dark/base16_default"
 
 ! Base colors
-URxvt*background: BACKGROUND
+URxvt*depth: 32
+URxvt*background: [95]#151515
 URxvt*foreground: FOREGROUND
 URxvt*cursorColor: CURSOR
 

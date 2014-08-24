@@ -12,7 +12,7 @@ syntax on
 
 " Color scheme
 "set t_Co=16
-"set background=dark
+set background=dark
 colorscheme base16-default
 "if $TERM == 'rxvt-256color'
 "    colorscheme Tomorrow-Night

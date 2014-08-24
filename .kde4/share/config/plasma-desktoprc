@@ -1,29 +1,28 @@
 [BackgroundConfigDialog]
-Height 800=719
+Height 800=630
 Width 1280=649
+
+[Colors]
+CurrentPalette=Forty Colors
 
 [KFileDialog Settings]
 Height 800=420
-Recent Files[$e]=grass-lawn-grass-green-green-plant-spikelets-sea-water-glare-light-sun-wind.jpg,$HOME/Pictures/grass-lawn-grass-green-green-plant-spikelets-sea-water-glare-light-sun-wind.jpg
-Recent URLs[$e]=$HOME/Pictures/
+Recent Files[$e]=Yosemite.jpg,$HOME/Copy/multimedia/pictures/grass-lawn-grass-green-green-plant-spikelets-sea-water-glare-light-sun-wind.jpg,$HOME/Pictures/Yosemite.jpg
+Recent URLs[$e]=$HOME/Pictures/,$HOME/Copy/multimedia/pictures/
 Width 1280=672
 
-[PlasmaViews][1]
+[PlasmaViews][3]
 panelVisibility=0
 
-[PlasmaViews][1][Sizes]
+[PlasmaViews][3][Sizes]
 lastsize=1280
 
 [Updates]
 performed=/usr/share/apps/plasma-desktop/updates/addShowActivitiesManagerPlasmoid.js,/usr/share/apps/plasma-desktop/updates/set-hidden-single-vd-pager.js,/usr/share/apps/plasma-desktop/updates/systray-to-notifications-widget.js
 
 [ViewIds]
-1=1
+16=3
 8=2
-
-[invokeAction]
-__file=
-actionId=2
 
 [stopSuppressingScreenPowerManagement]
 __file=
@@ -32,9 +31,6 @@ cookie=-1
 [stopSuppressingSleep]
 __file=
 cookie=-1
-
-[toggleActivityManager]
-__file=
 
 [userClosed]
 __file=

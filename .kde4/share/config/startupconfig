@@ -1,12 +1,12 @@
 #! /bin/sh
 # kcminputrc Mouse cursorTheme 'Oxygen_White'
-kcminputrc_mouse_cursortheme=Oxygen_White
+kcminputrc_mouse_cursortheme=Breeze
 # kcminputrc Mouse cursorSize ''
-kcminputrc_mouse_cursorsize=''
+kcminputrc_mouse_cursorsize=0
 # ksplashrc KSplash Theme Default
-ksplashrc_ksplash_theme=Default
+ksplashrc_ksplash_theme=Caledonia-KSplash
 # ksplashrc KSplash Engine KSplashX
-ksplashrc_ksplash_engine=KSplashX
+ksplashrc_ksplash_engine=KSplashQML
 # krandrrc Display ApplyOnStartup false
 krandrrc_display_applyonstartup=false
 # krandrrc Display StartupCommands ''

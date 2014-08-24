@@ -7,37 +7,31 @@ InfoOutput=4
 [KSharedDataCache]
 InfoOutput=4
 
+[LibKGAPI]
+InfoOutput=4
+
+[LibKGAPI (raw data)]
+InfoOutput=4
+
 [Oxygen ( style )]
 InfoOutput=2
 
 [Oxygen (decoration)]
 InfoOutput=2
 
-[Plasma-nm (applet)]
-InfoOutput=4
-
-[Plasma-nm (handler)]
-InfoOutput=4
-
-[Plasma-nm (item)]
-InfoOutput=4
-
-[Plasma-nm (model)]
-InfoOutput=4
-
-[Plasma-nm (monitor)]
+[Plasma-nm]
 InfoOutput=4
 
 [Polkit1AuthAgent]
 InfoOutput=4
 
-[accountwizard]
-InfoOutput=4
-
 [akonadi_archivemail_agent]
-InfoOutput=4
+InfoOutput=2
 
 [akonadi_baloo_indexer]
+InfoOutput=2
+
+[akonadi_googlecalendar_resource_0]
 InfoOutput=4
 
 [akonadi_imap_resource_0]
@@ -47,15 +41,21 @@ InfoOutput=4
 InfoOutput=4
 
 [akonadi_mailfilter_agent]
-InfoOutput=4
+InfoOutput=2
 
 [akonadi_migration_agent]
 InfoOutput=4
 
-[akonadi_newmailnotifier_agent]
+[akonadi_notes_agent]
+InfoOutput=2
+
+[amarok]
 InfoOutput=4
 
-[akonadiserver]
+[amarokcollectionscanner]
+InfoOutput=2
+
+[ark]
 InfoOutput=4
 
 [baloo_file]
@@ -65,9 +65,6 @@ InfoOutput=4
 InfoOutput=4
 
 [dolphin]
-InfoOutput=2
-
-[fontinst]
 InfoOutput=4
 
 [gwenview]
@@ -76,10 +73,16 @@ InfoOutput=2
 [kaddressbookmigrator]
 InfoOutput=4
 
+[kate]
+InfoOutput=4
+
 [kate-filetree]
 InfoOutput=2
 
 [kbuildsycoca4]
+InfoOutput=4
+
+[kcmshell]
 InfoOutput=4
 
 [kdecore (KConfigSkeleton)]
@@ -91,16 +94,31 @@ InfoOutput=2
 [kdecore (KPluginInfo)]
 InfoOutput=2
 
+[kdecore (services)]
+InfoOutput=2
+
 [kded]
 InfoOutput=4
 
+[kdesu (kdelibs)]
+InfoOutput=2
+
 [kdostartupconfig4]
+InfoOutput=4
+
+[kget]
 InfoOutput=4
 
 [kglobalaccel]
 InfoOutput=4
 
+[khelpcenter]
+InfoOutput=2
+
 [kio (delegateanimationhandler)]
+InfoOutput=4
+
+[kio_help]
 InfoOutput=4
 
 [kio_thumbnail]
@@ -115,11 +133,11 @@ InfoOutput=4
 [klipper]
 InfoOutput=2
 
-[kmail2]
-InfoOutput=4
-
 [knotify]
 InfoOutput=4
+
+[korgac]
+InfoOutput=2
 
 [krunner]
 InfoOutput=4
@@ -130,10 +148,16 @@ InfoOutput=4
 [ksmserver]
 InfoOutput=4
 
+[ksnapshot]
+InfoOutput=4
+
 [kwalletd]
 InfoOutput=4
 
 [kwin]
+InfoOutput=4
+
+[okular]
 InfoOutput=2
 
 [plasma-desktop]
@@ -143,4 +167,4 @@ InfoOutput=4
 InfoOutput=4
 
 [unnamed app]
-InfoOutput=2
+InfoOutput=4

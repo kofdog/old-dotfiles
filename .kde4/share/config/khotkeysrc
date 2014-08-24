@@ -1,5 +1,5 @@
 [Data]
-DataCount=6
+DataCount=5
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
@@ -90,7 +90,7 @@ TriggersCount=1
 [Data_2_1Triggers0]
 Key=Ctrl+Alt+I
 Type=SHORTCUT
-Uuid={dc56d841-0713-42a8-94f4-df8100b308b0}
+Uuid={2df1a4a4-c94b-4e78-a4ce-1e45df73d483}
 
 [Data_2_2]
 Comment=After pressing Alt+Ctrl+H the input of 'Hello' will be simulated, as if you typed it.  This is especially useful if you have call to frequently type a word (for instance, 'unsigned').  Every keypress in the input is separated by a colon ':'. Note that the keypresses literally mean keypresses, so you have to write what you would press on the keyboard. In the table below, the left column shows the input and the right column shows what to type.\n\n"enter" (i.e. new line)                Enter or Return\na (i.e. small a)                          A\nA (i.e. capital a)                       Shift+A\n: (colon)                                  Shift+;\n' '  (space)                              Space
@@ -117,7 +117,7 @@ TriggersCount=1
 [Data_2_2Triggers0]
 Key=Ctrl+Alt+H
 Type=SHORTCUT
-Uuid={f840f682-285c-46de-b8e4-7d34c6c086ad}
+Uuid={fadbe54d-e0eb-4504-af37-0ece827ff656}
 
 [Data_2_3]
 Comment=This action runs Konsole, after pressing Ctrl+Alt+T.
@@ -143,7 +143,7 @@ TriggersCount=1
 [Data_2_3Triggers0]
 Key=Ctrl+Alt+T
 Type=SHORTCUT
-Uuid={cf9ed713-a928-449d-a9af-6e61d0d86a49}
+Uuid={70c215c0-0d3d-49ee-9cfc-df074bd37562}
 
 [Data_2_4]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nQt Designer uses Ctrl+F4 for closing windows.  In KDE, however, Ctrl+F4 is the shortcut for going to virtual desktop 4, so this shortcut does not work in Qt Designer.  Further, Qt Designer does not use KDE's standard Ctrl+W for closing the window.\n\nThis problem can be solved by remapping Ctrl+W to Ctrl+F4 when the active window is Qt Designer. When Qt Designer is active, every time Ctrl+W is pressed, Ctrl+F4 will be sent to Qt Designer instead. In other applications, the effect of Ctrl+W is unchanged.\n\nWe now need to specify three things: A new shortcut trigger on 'Ctrl+W', a new keyboard input action sending Ctrl+F4, and a new condition that the active window is Qt Designer.\nQt Designer seems to always have title 'Qt Designer by Trolltech', so the condition will check for the active window having that title.
@@ -188,7 +188,7 @@ TriggersCount=1
 [Data_2_4Triggers0]
 Key=Ctrl+W
 Type=SHORTCUT
-Uuid={d9f4aecb-9aee-427e-8468-0f3d7a2e5875}
+Uuid={9235b1d5-460f-489d-9126-77a6b3730c69}
 
 [Data_2_5]
 Comment=By pressing Alt+Ctrl+W a D-Bus call will be performed that will show the minicli. You can use any kind of D-Bus call, just like using the command line 'qdbus' tool.
@@ -217,7 +217,7 @@ TriggersCount=1
 [Data_2_5Triggers0]
 Key=Ctrl+Alt+W
 Type=SHORTCUT
-Uuid={1256a35d-6d7a-4111-9a4c-26c0b7d598f4}
+Uuid={855cc23a-af66-48fd-bd9c-f4ba2f9ed1e6}
 
 [Data_2_6]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nJust like the "Type 'Hello'" action, this one simulates keyboard input, specifically, after pressing Ctrl+Alt+B, it sends B to XMMS (B in XMMS jumps to the next song). The 'Send to specific window' checkbox is checked and a window with its class containing 'XMMS_Player' is specified; this will make the input always be sent to this window. This way, you can control XMMS even if, for instance, it is on a different virtual desktop.\n\n(Run 'xprop' and click on the XMMS window and search for WM_CLASS to see 'XMMS_Player').
@@ -259,7 +259,7 @@ TriggersCount=1
 [Data_2_6Triggers0]
 Key=Ctrl+Alt+B
 Type=SHORTCUT
-Uuid={8678fc25-e3c7-42b3-9ec6-dce5e58c3d9c}
+Uuid={5f6f01bd-e3a1-4687-bfee-5112117f0efb}
 
 [Data_2_7]
 Comment=Konqueror in KDE3.1 has tabs, and now you can also have gestures.\n\nJust press the middle mouse button and start drawing one of the gestures, and after you are finished, release the mouse button. If you only need to paste the selection, it still works, just click the middle mouse button. (You can change the mouse button to use in the global settings).\n\nRight now, there are the following gestures available:\nmove right and back left - Forward (Alt+Right)\nmove left and back right - Back (Alt+Left)\nmove up and back down  - Up (Alt+Up)\ncircle anticlockwise - Reload (F5)\n\nThe gesture shapes can be entered by performing them in the configuration dialog. You can also look at your numeric pad to help you: gestures are recognized like a 3x3 grid of fields, numbered 1 to 9.\n\nNote that you must perform exactly the gesture to trigger the action. Because of this, it is possible to enter more gestures for the action. You should try to avoid complicated gestures where you change the direction of mouse movement more than once.  For instance, 45654 or 74123 are simple to perform, but 1236987 may be already quite difficult.\n\nThe conditions for all gestures are defined in this group. All these gestures are active only if the active window is Konqueror (class contains 'konqueror').
@@ -451,7 +451,7 @@ TriggersCount=1
 [Data_2_8Triggers0]
 Key=Meta+E
 Type=SHORTCUT
-Uuid={8800467d-1f14-468b-9ec1-dae6d7dcb0e5}
+Uuid={6148fcff-2d5b-4edd-8a16-aa8ea1d6cfdc}
 
 [Data_3]
 Comment=Basic Konqueror gestures.
@@ -894,10 +894,10 @@ TriggersCount=1
 [Data_4_1Triggers0]
 Key=Print
 Type=SHORTCUT
-Uuid={05212e54-e92f-4a02-8bc3-079f4fec5e25}
+Uuid={6481da45-574f-4585-9288-084b8b6c0dd4}
 
 [Data_5]
-Comment=Comment
+Comment=URxvt
 Enabled=true
 Name=Terminal
 Type=SIMPLE_ACTION_DATA
@@ -906,7 +906,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_5Actions0]
-CommandURL=urxvt
+CommandURL=urxvtc
 Type=COMMAND_URL
 
 [Data_5Conditions]
@@ -920,33 +920,7 @@ TriggersCount=1
 [Data_5Triggers0]
 Key=Meta+Return
 Type=SHORTCUT
-Uuid={3bebaac4-72f7-4151-af8f-196500c80a37}
-
-[Data_6]
-Comment=Comment
-Enabled=false
-Name=Touchpad
-Type=SIMPLE_ACTION_DATA
-
-[Data_6Actions]
-ActionsCount=1
-
-[Data_6Actions0]
-CommandURL=XF86TouchpadToggle
-Type=COMMAND_URL
-
-[Data_6Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_6Triggers]
-Comment=Simple_action
-TriggersCount=1
-
-[Data_6Triggers0]
-Key=Meta+Ctrl+Alt+T
-Type=SHORTCUT
-Uuid={b304788b-b39c-49b1-9648-a2690e64315e}
+Uuid={02183fc6-d615-4d13-8248-734590c46ecc}
 
 [Gestures]
 Disabled=true
