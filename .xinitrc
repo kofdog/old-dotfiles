@@ -38,22 +38,37 @@ xinput set-prop 12 "Device Enabled" 0
 #--------------------------------------
 
 # Set wallpaper
-feh --bg-fill ~/Pictures/Yosemite.jpg
+sh ~/.fehbg &
 
 
 
 #--------------------------------------
-# Applications
+# Startup Scripts
 #--------------------------------------
 
-# Run startup scripts
+# Weird file sync stuff
 ~/.bin/fix-file-sharing
 
-# Start daemons
-mpd &
+
+
+#--------------------------------------
+# Daemons
+#--------------------------------------
+
+# Terminal
 urxvtd &
+
+# Audio
+start-pulseaudio-x11 &
+mpd &
+
+# File sharing
 dropboxd &
 CopyAgent &
+google-musicmanager &
+
+# Display
+redshift -l 39.9500:75.1667 &
 
 
 
