@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dwm-compile
+dwm-restart
