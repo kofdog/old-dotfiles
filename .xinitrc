@@ -103,7 +103,7 @@ case $session in
     awesome  ) exec awesome;;
     bspwm    ) exec bspwm;;
     cinnamon ) exec cinnamon-session;;
-    dwm      ) exec dwm;;
+    dwm      ) exec start-dwm;;
     gnome    ) exec gnome-session;;
     i3|i3wm  ) exec i3;;
     kde      ) exec startkde;;
