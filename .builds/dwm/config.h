@@ -1,21 +1,62 @@
 /* See LICENSE file for copyright and license details. */
 
+
+
+//-------------------------------------
+// Header Files
+//-------------------------------------
+
+// Multimedia keys
 #include <X11/XF86keysym.h>
 
-/* appearance */
-static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
-static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
-static const char selbgcolor[]      = "#005577";
-static const char selfgcolor[]      = "#eeeeee";
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
-static const unsigned int snap      = 5;        /* snap pixel */
-static const Bool showbar           = True;     /* False means no bar */
-static const Bool topbar            = True;     /* False means bottom bar */
 
-/* tagging */
+
+//-------------------------------------
+// Constants
+//-------------------------------------
+
+#define MODKEY Mod4Mask
+
+
+
+//-------------------------------------
+// Appearance
+//-------------------------------------
+
+//static const char font[] = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+static const char font[] = "Meslo LG S 9";
+static const char dfont[] = "Meslo LG S-9";
+
+// Colors for normal windows
+static const char normbordercolor[] = "#6a9fb5";
+static const char normbgcolor[]     = "#151515";
+static const char normfgcolor[]     = "#d0d0d0";
+
+// Colors for focused windows
+static const char selbordercolor[] = "#f5f5f5";
+static const char selbgcolor[]     = "#151515";
+static const char selfgcolor[]     = "#ffffff";
+
+// Border/margin stuff
+static const unsigned int borderpx       = 3; /* border width of windows (pixels) */
+static const unsigned int gappx          = 5; /* gap width between windows (pixels) */
+static const unsigned int snap           = 5; /* snap tolerance (pixels) */
+static const unsigned int systrayspacing = 2; /* item spacing (pixels) */
+
+// Bar and system tray
+static const Bool showsystray = False; /* False means no systray */
+static const Bool showbar     = True;  /* False means no bar */
+static const Bool topbar      = True;  /* False means bottom bar */
+
+static const Bool statusmarkup = True; /* True means use pango markup in status message */
+
+
+
+//-------------------------------------
+// Interface
+//-------------------------------------
+
+// Tagging
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
@@ -24,7 +65,7 @@ static const Rule rules[] = {
 	{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
 };
 
-/* layout(s) */
+// Layout
 static const float mfact      = 0.55;  /* factor of master area size [0.05..0.95] */
 static const int nmaster      = 1;     /* number of clients in master area */
 static const Bool resizehints = False; /* True means respect size hints in tiled resizals */
@@ -36,29 +77,40 @@ static const Layout layouts[] = {
 	{ "[M]",      monocle },
 };
 
-/* key definitions */
-#define MODKEY Mod4Mask
+
+
+//-------------------------------------
+// Commands
+//-------------------------------------
+
+// Helper for spawning shell commands in the pre dwm-5.0 fashion
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+
+// Framework for tag-related commands
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
-/* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+// Applications
+static const char *termcmd[]  = { "urxvtc", "-title", "urxvt", NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-i", "-fn", dfont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 
-/* commands */
-static const char *termcmd[]  = { "urxvtc", NULL };
-static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-
-static const char *volupcmd[] = { "pactl", "set-sink-volume", "0", "+5%", NULL };
+// Volume
+static const char *volupcmd[]   = { "pactl", "set-sink-volume", "0", "+5%", NULL };
 static const char *voldowncmd[] = { "pactl", "set-sink-volume", "0", "--", "-5%", NULL };
 static const char *volmutecmd[] = { "pactl", "set-sink-volume", "0", "0%", NULL };
 
+// Multimedia
 static const char *musicplaycmd[] = { "ncmpcpp", "toggle", NULL };
 static const char *musicnextcmd[] = { "ncmpcpp", "next", NULL };
 static const char *musicprevcmd[] = { "ncmpcpp", "prev", NULL };
 
+// Quit
+static const char *reallyquitcmd[] = { "killall", "dwm-start", NULL };
+
+// Keyboard shortcuts
 static Key keys[] = {
 	/* modifier                     key                      function        argument */
 	{ MODKEY,                       XK_space,                spawn,          {.v = dmenucmd } },
@@ -99,10 +151,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,                    quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_r,                    quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_q,                    spawn,          {.v = reallyquitcmd } },
 };
 
-/* button definitions */
+// Mouse shortcuts
 /* click can be ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
@@ -118,4 +171,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-

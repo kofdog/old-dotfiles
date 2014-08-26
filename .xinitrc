@@ -47,7 +47,7 @@ sh ~/.fehbg &
 #--------------------------------------
 
 # Weird file sync stuff
-~/.bin/fix-file-sharing
+~/.bin/filesharing-fix
 
 
 
@@ -61,6 +61,7 @@ urxvtd &
 # Audio
 start-pulseaudio-x11 &
 mpd &
+ncmpcpp stop
 
 # File sharing
 dropboxd &
@@ -97,13 +98,13 @@ export GOPATH=~/.gopath
 # Window Manager / Desktop Environment
 #--------------------------------------
 
-session=${1:-bspwm}
+session=${1:-dwm}
 
 case $session in
     awesome  ) exec awesome;;
     bspwm    ) exec bspwm;;
     cinnamon ) exec cinnamon-session;;
-    dwm      ) exec start-dwm;;
+    dwm      ) exec dwm-start;;
     gnome    ) exec gnome-session;;
     i3|i3wm  ) exec i3;;
     kde      ) exec startkde;;
