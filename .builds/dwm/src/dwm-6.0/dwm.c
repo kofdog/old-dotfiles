@@ -1312,7 +1312,7 @@ maprequest(XEvent *e) {
 
 void
 monocle(Monitor *m) {
-	unsigned int n = 0;
+	unsigned int n = 0, r = 0;
 	Client *c;
 
 	for(c = m->clients; c; c = c->next)
@@ -1320,8 +1320,17 @@ monocle(Monitor *m) {
 			n++;
 	if(n > 0) /* override layout symbol */
 		snprintf(m->ltsymbol, sizeof m->ltsymbol, "[%d]", n);
-	for(c = nexttiled(m->clients); c; c = nexttiled(c->next))
-		resize(c, m->wx, m->wy, m->ww - 2 * c->bw, m->wh - 2 * c->bw, False);
+	for(c = nexttiled(m->clients); c; c = nexttiled(c->next)) {
+		/* remove border when in monocle layout */
+		if(c->bw) {
+			c->oldbw = c->bw;
+			c->bw = 0;
+			r = 1;
+		}
+		resize(c, m->wx, m->wy, m->ww - (2 * c->bw), m->wh - (2 * c->bw), False);
+		if(r)
+			resizeclient(c, m->wx, m->wy, m->ww - (2 * c->bw), m->wh - (2 * c->bw));
+	}
 }
 
 void
@@ -1897,19 +1906,38 @@ tile(Monitor *m) {
 		mw = m->nmaster ? (m->ww - (g = gappx)) * m->mfact : 0;
 	else
 		mw = m->ww;
-	for(i = my = ty = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
+	for(i = my = ty = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++, r = 0) {
+		if(n == 1) {
+			if (c->bw) {
+				/* remove border when only one window is on the current tag */
+				c->oldbw = c->bw;
+				c->bw = 0;
+				r = 1;
+			}
+		}
+		else if(!c->bw && c->oldbw) {
+			/* restore border when more than one window is displayed */
+			c->bw = c->oldbw;
+			c->oldbw = 0;
+			r = 1;
+		}
 		if(i < m->nmaster) {
 			r = MIN(n, m->nmaster) - i;
 			h = (m->wh - my - gappx * (r - 1)) / r;
-			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), False);
+			resize(c, m->wx + g, m->wy + my + g, mw - (2*c->bw) - g, h - (2*c->bw) - 2*g, False);
+			if(r)
+				resizeclient(c, m->wx + g, m->wy + my + g, mw - (2*c->bw) - g, h - (2*c->bw) - 2*g);
 			my += HEIGHT(c) + gappx;
 		}
 		else {
 			r = n - i;
 			h = (m->wh - ty - gappx * (r - 1)) / r;
-			resize(c, m->wx + mw + g, m->wy + ty, m->ww - mw - g - (2*c->bw), h - (2*c->bw), False);
+			resize(c, m->wx + mw + g, m->wy + ty + g, m->ww - mw - (2*c->bw) - 2*g, h - (2*c->bw) - 2*g, False);
+			if(r)
+				resizeclient(c, m->wx + mw + g, m->wy + ty + g, m->ww - mw - (2*c->bw) - 2*g, h - (2*c->bw) - 2*g);
 			ty += HEIGHT(c) + gappx;
 		}
+	}
 }
 
 void
@@ -1936,6 +1964,12 @@ togglefloating(const Arg *arg) {
 	if(!selmon->sel)
 		return;
 	selmon->sel->isfloating = !selmon->sel->isfloating || selmon->sel->isfixed;
+	if(selmon->sel->isfloating)
+		/* restore border when moving window into floating mode */
+		if(!selmon->sel->bw && selmon->sel->oldbw) {
+			selmon->sel->bw = selmon->sel->oldbw;
+			selmon->sel->oldbw = 0;
+		}
 	if(selmon->sel->isfloating)
 		resize(selmon->sel, selmon->sel->x, selmon->sel->y,
 		       selmon->sel->w, selmon->sel->h, False);

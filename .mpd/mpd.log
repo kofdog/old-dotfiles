@@ -11211,3 +11211,6 @@ Aug 26 13:47 : player: played "Gorillaz/Demon Days/12 DARE.mp3"
 Aug 26 13:51 : player: played "Gorillaz/Demon Days/13 Fire Coming Out Of The Monkey's H.mp3"
 Aug 26 13:53 : player: played "Gorillaz/Demon Days/14 Don't Get Lost In Heaven.mp3"
 Aug 26 13:57 : player: played "Gorillaz/Demon Days/15 Demon Days.mp3"
+Aug 26 21:33 : player: played "Grizzly Bear/Yellow House/01 Easier.mp3"
+Aug 26 21:33 : pulse_output: "MPD" [pulse] failed to play: disconnected
+Aug 26 21:33 : player: played "Grizzly Bear/Yellow House/02 Lullabye.mp3"

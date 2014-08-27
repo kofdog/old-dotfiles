@@ -1,7 +1,9 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: stop
+state: play
+current: 0
+time: 113
 random: 0
 repeat: 0
 single: 0
@@ -10,34 +12,14 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Grizzly Bear/Yellow House/03 Knife.mp3
-1:Grizzly Bear/Yellow House/05 Little Brother.mp3
-2:Grizzly Bear/Yellow House/10 Colorado.mp3
-3:Alt-J (∆)/01 Intro.m4a
-4:Alt-J (∆)/02 Interlude 1.m4a
-5:Alt-J (∆)/03 Tessellate.m4a
-6:Alt-J (∆)/04 Breezeblocks.m4a
-7:Alt-J (∆)/05 Interlude 2.m4a
-8:Alt-J (∆)/06 Estocada.m4a
-9:Alt-J (∆)/07 Dissolve Me.m4a
-10:Alt-J (∆)/08 Matilda.m4a
-11:Alt-J (∆)/09 Ms.m4a
-12:Alt-J (∆)/10 Fitzpleasure.m4a
-13:Alt-J (∆)/11 Interlude 3.m4a
-14:Alt-J (∆)/12 Blood Flood.m4a
-15:Alt-J (∆)/13 Taro_Handmade.m4a
-16:Gorillaz/Demon Days/01 Intro.mp3
-17:Gorillaz/Demon Days/02 Last Living Souls.mp3
-18:Gorillaz/Demon Days/03 Kids With Guns.mp3
-19:Gorillaz/Demon Days/04 O Green World.mp3
-20:Gorillaz/Demon Days/05 Dirty Harry.mp3
-21:Gorillaz/Demon Days/06 Feel Good Inc..mp3
-22:Gorillaz/Demon Days/07 El Manana.mp3
-23:Gorillaz/Demon Days/08 Every Planet We Reach Is Dead.mp3
-24:Gorillaz/Demon Days/09 November Has Come.mp3
-25:Gorillaz/Demon Days/11 White Light.mp3
-26:Gorillaz/Demon Days/12 DARE.mp3
-27:Gorillaz/Demon Days/13 Fire Coming Out Of The Monkey's H.mp3
-28:Gorillaz/Demon Days/14 Don't Get Lost In Heaven.mp3
-29:Gorillaz/Demon Days/15 Demon Days.mp3
+0:Grizzly Bear/Yellow House/01 Easier.mp3
+1:Grizzly Bear/Yellow House/02 Lullabye.mp3
+2:Grizzly Bear/Yellow House/03 Knife.mp3
+3:Grizzly Bear/Yellow House/04 Central and Remote.mp3
+4:Grizzly Bear/Yellow House/05 Little Brother.mp3
+5:Grizzly Bear/Yellow House/06 Plans.mp3
+6:Grizzly Bear/Yellow House/07 Marla.mp3
+7:Grizzly Bear/Yellow House/08 On a Neck, On a Spit.mp3
+8:Grizzly Bear/Yellow House/09 Reprise.mp3
+9:Grizzly Bear/Yellow House/10 Colorado.mp3
 playlist_end
