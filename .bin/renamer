@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Extract directory from input
+DIR="$1"
+[ "$DIR" == "" ] && DIR="."
+cd $DIR
+
+# Change delimiter
+OLDIFS=$IFS
+IFS=$'\n'
+
+# Loop through files
+for file in $( find $DIR -type f ); do
+
+    d=$( dirname $file )
+    f=$( basename $file )
+
+    month=$( echo $f | awk -F'.' '{print $1}' )
+    if [[ $month =~ ^-?[0-9]+$ ]]; then
+        if [ $month -ge 8 ]; then
+#            echo "$d/2013.$f"
+            mv $file "$d/2013.$f"
+        else
+#            echo "$d/2014.$f"
+            mv $file "$d/2014.$f"
+        fi
+    fi
+
+done
+
+# Revert delimiter
+IFS=$OLDIFS
