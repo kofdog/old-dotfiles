@@ -3,7 +3,6 @@
 # Extract directory from input
 DIR="$1"
 [ "$DIR" == "" ] && DIR="."
-cd $DIR
 
 # Change delimiter
 OLDIFS=$IFS
@@ -12,18 +11,30 @@ IFS=$'\n'
 # Loop through files
 for file in $( find $DIR -type f ); do
 
+    # Extract path and filename
     d=$( dirname $file )
     f=$( basename $file )
 
+    # Extract portion of filename that should be month
     month=$( echo $f | awk -F'.' '{print $1}' )
+
+    # Verify this file is dated
     if [[ $month =~ ^-?[0-9]+$ ]]; then
-        if [ $month -ge 8 ]; then
-#            echo "$d/2013.$f"
-            mv $file "$d/2013.$f"
-        else
-#            echo "$d/2014.$f"
-            mv $file "$d/2014.$f"
+
+        # Avoid replanting the year
+        if [ $month -lt 2000 ]; then
+
+            # Decide between 2013/2014
+            if [ $month -ge 8 ]; then
+#                echo "$d/2013.$f"
+                mv $file "$d/2013.$f"
+            else
+#                echo "$d/2014.$f"
+                mv $file "$d/2014.$f"
+            fi
+
         fi
+
     fi
 
 done
