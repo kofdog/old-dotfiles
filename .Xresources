@@ -43,7 +43,7 @@ URxvt*letterSpace: -1
 
 ! Base colors
 URxvt*depth: 32
-URxvt*background: [95]#151515
+URxvt*background: [90]#151515
 URxvt*foreground: FOREGROUND
 URxvt*cursorColor: CURSOR
 

@@ -69,7 +69,7 @@ CopyAgent &
 google-musicmanager &
 
 # Display
-redshift -l 39.9500:75.1667 &
+#redshift -l 39.9500:75.1667 &
 
 
 
@@ -107,7 +107,8 @@ case $session in
     dwm      ) exec dwm-start;;
     gnome    ) exec gnome-session;;
     i3|i3wm  ) exec i3;;
-    kde      ) exec startkde;;
+    kde4     ) exec startkde;;
+    kde      ) exec /opt/kf5/bin/startkde;;
     lxde     ) exec startlxde;;
     openbox  ) exec openbox-session;;
     unity    ) exec unity;;
