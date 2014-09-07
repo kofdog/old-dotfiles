@@ -11244,3 +11244,8 @@ Aug 28 16:23 : player: played "Tame Impala/Lonerism/10 She Just Won't Believe Me
 Aug 28 16:29 : player: played "Tame Impala/Lonerism/11 Nothing That Has Happened So Far.mp3"
 Aug 28 16:48 : player: played "Tame Impala/Lonerism/12 Sun's Coming Up.mp3"
 Aug 28 17:21 : player: played "LCD Soundsystem/LCD Soundsystem/10 Tribulations.mp3"
+Sep 07 09:13 : archive: Failed to stat /home/mike/Music/Grizzly Bear/Yellow House/02 Lullabye.mp3: No such file or directory
+Sep 07 09:13 : input: Unrecognized URI
+Sep 07 09:13 : archive: Failed to stat /home/mike/Music/Grizzly Bear/Yellow House/02 Lullabye.mp3: No such file or directory
+Sep 07 09:13 : input: Unrecognized URI
+Sep 07 09:13 : player: played "Grizzly Bear/Yellow House/02 Lullabye.mp3"
