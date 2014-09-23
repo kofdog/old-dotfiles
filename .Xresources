@@ -34,14 +34,14 @@ URxvt*scrollBar: false
 URxvt*secondaryScroll: true
 
 ! Font
-URxvt*font: xft:Meslo LG S:size=9
+URxvt*font: xft:Meslo LG S:size=10
 URxvt*boldFont:
 URxvt*letterSpace: -1
 
 ! Import scheme
 #include ".palettes/dark/base16_default"
 
-! Base colors
+! Appearance
 URxvt*depth: 32
 URxvt*background: [90]#151515
 URxvt*foreground: FOREGROUND

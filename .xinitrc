@@ -29,7 +29,7 @@ xset s noblank
 xsetroot -cursor_name left_ptr
 
 # Disable touchpad
-xinput set-prop 12 "Device Enabled" 0
+#xinput set-prop 12 "Device Enabled" 0
 
 
 
@@ -39,15 +39,6 @@ xinput set-prop 12 "Device Enabled" 0
 
 # Set wallpaper
 sh ~/.fehbg &
-
-
-
-#--------------------------------------
-# Startup Scripts
-#--------------------------------------
-
-# Weird file sync stuff
-~/.bin/filesharing-fix
 
 
 
@@ -66,7 +57,10 @@ ncmpcpp stop
 # File sharing
 dropboxd &
 CopyAgent &
-google-musicmanager &
+#google-musicmanager &
+
+# Hide cursor
+unclutter &
 
 # Display
 #redshift -l 39.9500:75.1667 &
@@ -85,7 +79,7 @@ export EDITOR=vim
 export BROWSER=firefox
 export VIEWER=zathura
 export VPLAYER=mpv
-export MPLAYER="ncmpcpp -s media-library"
+export MPLAYER=ncmpcpp
 export MVIZ=viz
 export CLOCK=clock
 

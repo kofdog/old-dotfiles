@@ -3,3 +3,5 @@
 	email = mpkofron@gmail.com
 [credential]
 	helper = cache --timeout=3600
+[core]
+	askpass = 

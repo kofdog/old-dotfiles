@@ -2,7 +2,6 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: stop
-current: 1
 random: 0
 repeat: 0
 single: 0
@@ -11,14 +10,6 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Grizzly Bear/Yellow House/01 Easier.mp3
-1:Grizzly Bear/Yellow House/02 Lullabye.mp3
-2:Grizzly Bear/Yellow House/03 Knife.mp3
-3:Grizzly Bear/Yellow House/04 Central and Remote.mp3
-4:Grizzly Bear/Yellow House/05 Little Brother.mp3
-5:Grizzly Bear/Yellow House/06 Plans.mp3
-6:Grizzly Bear/Yellow House/07 Marla.mp3
-7:Grizzly Bear/Yellow House/08 On a Neck, On a Spit.mp3
-8:Grizzly Bear/Yellow House/09 Reprise.mp3
-9:Grizzly Bear/Yellow House/10 Colorado.mp3
+0:Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3
+1:Pink Floyd/Ummagumma [Remaster]/2-06 Several Species Of Small Furry.mp3
 playlist_end

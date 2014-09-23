@@ -12,9 +12,9 @@
 ## will be used to switch between columns.
 ##
 #
-#key_up = 259 'k'
+key_up = 'k'
 #
-#key_down = 258 'j'
+key_down = 'j'
 #
 #key_up_album = '['
 #
