@@ -1,6 +1,6 @@
 # Configure visualizer
 visualizer_fifo_path = "/home/mike/.mpd/mpd.fifo"
 visualizer_output_name = "FIFO"
-visualizer_sync_interval = "1"
-visualizer_type = "wave"
-visualizer_color = "default"
+visualizer_sync_interval = "15"
+visualizer_type = "spectrum"
+visualizer_color = "cyan"

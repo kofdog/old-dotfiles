@@ -19484,3 +19484,27 @@ Sep 14 11:56 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Sep 14 13:56 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 Sep 23 18:07 : player: played "Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3"
 Sep 23 18:14 : player: played "Pink Floyd/Ummagumma [Remaster]/2-06 Several Species Of Small Furry.mp3"
+Sep 24 12:47 : player: played "Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3"
+Sep 24 12:47 : player: played "Pink Floyd/Ummagumma [Remaster]/2-06 Several Species Of Small Furry.mp3"
+Sep 24 12:53 : player: played "Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3"
+Sep 24 12:58 : player: played "Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3"
+Sep 24 12:58 : player: played "Pink Floyd/Ummagumma [Remaster]/2-06 Several Species Of Small Furry.mp3"
+Sep 24 13:04 : player: played "Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3"
+Sep 24 13:09 : player: played "Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3"
+Sep 24 13:10 : player: played "Pink Floyd/Ummagumma [Remaster]/2-06 Several Species Of Small Furry.mp3"
+Sep 24 13:10 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Sep 24 13:15 : player: played "Goldfish/Get Busy Living/02 Get Busy Living [Feat. Emily Bruce].m4a"
+Sep 26 17:54 : player: played "Radiohead/In Rainbows/01 15 Step.mp3"
+Sep 26 18:04 : player: played "Sigur Rós/Ágætis byrjun/02 - Svefn-g-englar.mp3"
+Sep 26 18:09 : player: played "Queens Of The Stone Age/Era Vulgaris/01 Turning On The Screw.mp3"
+Sep 26 18:14 : player: played "Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3"
+Sep 26 18:18 : player: played "Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3"
+Sep 26 18:24 : player: played "LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3"
+Sep 26 18:53 : player: played "LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3"
+Sep 27 09:57 : pulse_output: Failed to enable "MPD" [pulse]: pa_context_connect() has failed: Connection refused
+Sep 27 09:59 : pulse_output: Failed to enable "MPD" [pulse]: pa_context_connect() has failed: Connection refused
+Sep 27 09:59 : output: Failed to open audio output
+Sep 27 09:59 : pulse_output: Failed to enable "MPD" [pulse]: pa_context_connect() has failed: Connection refused
+Sep 27 09:59 : pulse_output: Failed to enable "MPD" [pulse]: pa_context_connect() has failed: Connection refused
+Sep 27 10:00 : pulse_output: Failed to enable "MPD" [pulse]: pa_context_connect() has failed: Connection refused
+Sep 27 10:17 : player: played "Radiohead/In Rainbows/01 15 Step.mp3"

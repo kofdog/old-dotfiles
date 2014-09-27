@@ -22,6 +22,7 @@ URxvt*fading: 0
 URxvt*intensityStyles: false
 URxvt*termName: rxvt-256color
 URxvt*cursorBlink: true
+URxvt*perl-ext-common: default,selection-to-clipboard
 
 ! Fake transparency
 !URxvt*transparent: true

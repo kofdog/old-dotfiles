@@ -1,7 +1,9 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: stop
+state: pause
+current: 0
+time: 95
 random: 0
 repeat: 0
 single: 0
@@ -10,6 +12,10 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Pink Floyd/The Division Bell [Remaster]/04 Marooned.mp3
-1:Pink Floyd/Ummagumma [Remaster]/2-06 Several Species Of Small Furry.mp3
+0:Radiohead/In Rainbows/01 15 Step.mp3
+1:Sigur Rós/Ágætis byrjun/02 - Svefn-g-englar.mp3
+2:Queens Of The Stone Age/Era Vulgaris/01 Turning On The Screw.mp3
+3:Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3
+4:Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3
+5:LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3
 playlist_end
