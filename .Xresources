@@ -17,6 +17,7 @@ Xft.lcdfilter: lcddefault
 !--------------------------------------
 
 ! General
+URxvt*depth: 32
 URxvt*geometry: 80x25
 URxvt*fading: 0
 URxvt*intensityStyles: false
@@ -37,14 +38,12 @@ URxvt*secondaryScroll: true
 ! Font
 URxvt*font: xft:Meslo LG S:size=10
 URxvt*boldFont:
-URxvt*letterSpace: -1
 
 ! Import scheme
-#include ".palettes/dark/base16_default"
+#include ".palettes/base16/dark/default"
 
-! Appearance
-URxvt*depth: 32
-URxvt*background: [90]#151515
+! Basics
+URxvt*background: BACKGROUND
 URxvt*foreground: FOREGROUND
 URxvt*cursorColor: CURSOR
 
@@ -79,3 +78,11 @@ URxvt*color14: COLOR14
 ! White dark/light
 URxvt*color7: COLOR7
 URxvt*color15: COLOR15
+
+! Base-256 colors
+URxvt*color16: COLOR16
+URxvt*color17: COLOR17
+URxvt*color18: COLOR18
+URxvt*color19: COLOR19
+URxvt*color20: COLOR20
+URxvt*color21: COLOR21

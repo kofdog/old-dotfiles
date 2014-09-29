@@ -3,7 +3,7 @@ audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: pause
 current: 0
-time: 95
+time: 11
 random: 0
 repeat: 0
 single: 0
@@ -18,4 +18,15 @@ playlist_begin
 3:Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3
 4:Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3
 5:LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3
+6:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-14 _Long Ways To Go Yet_ [Featurin.mp3
+7:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-14 _Long Ways To Go Yet_ [Featurin.mp3
+8:Howard Shore/The Lord Of The Rings_ The Return Of The/1-08 Gollum's Villainy.mp3
+9:Howard Shore/The Lord Of The Rings_ The Return Of The/3-14 The Land Of Shadow.mp3
+10:Howard Shore/The Lord Of The Rings_ The Return Of The/4-01 Mount Doom [Featuring Renée Fle.mp3
+11:Howard Shore/The Lord Of The Rings_ The Return Of The/3-16 For Frodo [Featuring Ben Del Ma.mp3
+12:Howard Shore/The Lord Of The Rings_ The Return Of The/4-02 The Crack of Doom.mp3
+13:Howard Shore/The Lord Of The Rings_ The Return Of The/4-03 The Eagles [Featuring Renée Fle.mp3
+14:Howard Shore/The Lord Of The Rings_ The Return Of The/2-14 Merry's Simple Courage.mp3
+15:Howard Shore/The Lord Of The Rings_ The Return Of The/2-01 Osgiliath Invaded [Featuring Be.mp3
+16:Howard Shore/The Lord Of The Rings_ The Return Of The/2-04 The Sacrifice Of Faramir [Featu.mp3
 playlist_end

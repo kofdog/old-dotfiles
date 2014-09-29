@@ -23,7 +23,7 @@ super + z
     bspc desktop -B
 
 # Toggle active window floating, fullscreen
-super + {s,d}
+super + shift + {d,f}
     bspc window -t {floating,fullscreen}
 
 # Go to previously visited window (from current workspace), workspace
@@ -35,13 +35,13 @@ super + apostrophe
     bspc window -s last
 
 # ?????
-super + {o,p}
+super + {i,p}
     bspc control --record-history off; \
     bspc window {older,newer} -f; \
     bspc control --record-history on
 
 # ?????
-super + y
+super + u
     bspc window -w last.manual
 
 # ?????
@@ -83,7 +83,7 @@ super + ctrl + {1-9}
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,window -d} ^{1-9,10}
 
-super + {_,shift + }{u,i}
+super + {_,shift + }{y,o}
     bspc {desktop -f,window -d} {prev,next}
 
 # Change focus with mouse
@@ -109,15 +109,15 @@ super + @button{1-3}
 #--------------------------------------
 
 # Volume keys
-XF86Audio{Raise,Lower}Volume
-    pactl set-sink-volume 0 {+5%,-- -5%}
+super + alt + {c,v}
+    pactl set-sink-volume 0 {-- -5%,+5%}
 
-XF86AudioMute
+super + alt + space
     pactl set-sink-volume 0 0%
 
 # Multimedia keys
-XF86Audio{Play,Next,Prev}
-    ncmpcpp {toggle,next,prev}
+super + ctrl + {space,c,v}
+    ncmpcpp {toggle,prev,next}
 
 
 
@@ -127,42 +127,46 @@ XF86Audio{Play,Next,Prev}
 
 # Terminal
 super + Return
-    $TERMINAL
+    ${TERMINAL}
 
 # File manager
 super + f
-    $TERMRUN $FM
+    ${FM}
 
 # Web browser
 super + w
-    $BROWSER
+    ${BROWSER}
+
+# Mail client
+super + e
+    ${MAIL}
 
 # Text editor
 super + t
-    $TERMRUN $EDITOR
+    ${EDITOR}
 
 # Music player
 super + m
-    $TERMRUN $MPLAYER
+    ${MPLAYER}
 
 # Music visualizer
 super + v
-    $TERMRUN $MVIZ
+    ${MVIZ}
 
 # Clock
 super + c
-    $TERMRUN $CLOCK
+    ${CLOCK}
 
 # Application launcher
 super + space
-    j4-dmenu-desktop --term=$TERMINAL --dmenu="dmenu -i -fn 'Inconsolata-10'"
+    j4-dmenu-desktop --term=${TERMINAL} --dmenu="dmenu -i -fn 'Meslo LG S-10'"
 
 # Screenshot
 {_,alt +} @Print
     scrot {_,-s}
 
 # Screen lock
-super + @F2
+super + @F1
     lock
 
 

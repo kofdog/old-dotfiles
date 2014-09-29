@@ -119,3 +119,9 @@ PATH=~/.gopath/bin:$PATH
 
 # PS1
 export PS1='┌──\u@\h[\w]\n└╼ '
+
+# Color schemes
+BASE16_SCHEME="default"
+BASE16_SHADE="dark"
+BASE16_SHELL="~/.builds/base16-shell/base16-$BASE16_SCHEME.$BASE16_SHADE.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL

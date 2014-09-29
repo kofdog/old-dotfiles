@@ -21,9 +21,9 @@ xrdb -merge ~/.Xresources
 xset b off
 
 # Don't turn off backlight for any reason
-xset s off
-xset -dpms
-xset s noblank
+#xset s off
+#xset -dpms
+#xset s noblank
 
 # Set cursor theme
 xsetroot -cursor_name left_ptr
@@ -50,8 +50,8 @@ sh ~/.fehbg &
 urxvtd &
 
 # Audio
-start-pulseaudio-x11 &
 mpd &
+start-pulseaudio-x11 &
 ncmpcpp stop
 
 # File sharing
@@ -60,7 +60,7 @@ CopyAgent &
 #google-musicmanager &
 
 # Hide cursor
-unclutter &
+#unclutter &
 
 # Display
 #redshift -l 39.9500:75.1667 &
@@ -73,18 +73,26 @@ unclutter &
 
 # Default applications
 export TERMINAL=urxvtc
-export TERMRUN="urxvtc -e"
 export FM=ranger
 export EDITOR=vim
 export BROWSER=firefox
-export VIEWER=zathura
-export VPLAYER=mpv
+export MAIL=thunderbird
 export MPLAYER=ncmpcpp
-export MVIZ=viz
+export VPLAYER=mpv
+export VIEWER=zathura
 export CLOCK=clock
 
-# Paths
-export GOPATH=~/.gopath
+# Application launchers (may need to be run in terminal)
+export TERMRUN="urxvtc -e"
+export LAUNCH_TERMINAL=${TERMINAL}
+export LAUNCH_FM="${TERMRUN} ${FM}"
+export LAUNCH_EDITOR="${TERMRUN} ${EDITOR}"
+export LAUNCH_BROWSER=${BROWSER}
+export LAUNCH_MAIL=${MAIL}
+export LAUNCH_MPLAYER="${TERMRUN} ${MPLAYER}"
+export LAUNCH_VPLAYER=${VPLAYER}
+export LAUNCH_VIEWER=${VIEWER}
+export LAUNCH_CLOCK="${TERMRUN} ${CLOCK}"
 
 
 
@@ -92,7 +100,7 @@ export GOPATH=~/.gopath
 # Window Manager / Desktop Environment
 #--------------------------------------
 
-session=${1:-dwm}
+session=${1:-bspwm}
 
 case $session in
     awesome  ) exec awesome;;
