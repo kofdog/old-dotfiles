@@ -1,0 +1,8 @@
+#!/bin/sh
+
+${TERMINAL}
+${TERMINAL}
+${TERMINAL}
+bspc window -f left
+bspc window -p down
+${TERMINAL}
