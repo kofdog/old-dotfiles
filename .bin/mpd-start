@@ -2,3 +2,4 @@
 
 sudo killall mpd
 mpd
+mpc stop

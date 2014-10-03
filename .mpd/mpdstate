@@ -1,9 +1,8 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: pause
-current: 0
-time: 11
+state: stop
+current: 31
 random: 0
 repeat: 0
 single: 0
@@ -29,4 +28,25 @@ playlist_begin
 14:Howard Shore/The Lord Of The Rings_ The Return Of The/2-14 Merry's Simple Courage.mp3
 15:Howard Shore/The Lord Of The Rings_ The Return Of The/2-01 Osgiliath Invaded [Featuring Be.mp3
 16:Howard Shore/The Lord Of The Rings_ The Return Of The/2-04 The Sacrifice Of Faramir [Featu.mp3
+17:Queens Of The Stone Age/Era Vulgaris/01 Turning On The Screw.mp3
+18:Queens Of The Stone Age/Era Vulgaris/02 Sick, Sick, Sick.mp3
+19:Queens Of The Stone Age/Era Vulgaris/03 I'm Designer.mp3
+20:Queens Of The Stone Age/Era Vulgaris/04 Into The Hollow.mp3
+21:Queens Of The Stone Age/Era Vulgaris/05 Misfit Love.mp3
+22:Queens Of The Stone Age/Era Vulgaris/06 Battery Acid.mp3
+23:Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3
+24:Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3
+25:Queens Of The Stone Age/Era Vulgaris/09 Suture Up Your Future.mp3
+26:Queens Of The Stone Age/Era Vulgaris/10 River In The Road.mp3
+27:Queens Of The Stone Age/Era Vulgaris/11 Run Pig Run.mp3
+28:Queens Of The Stone Age/Like Clockwork/01 - Keep Your Eyes Peeled.mp3
+29:Queens Of The Stone Age/Like Clockwork/02 - I Sat By The Ocean.mp3
+30:Queens Of The Stone Age/Like Clockwork/03 - The Vampyre Of Time And Memory.mp3
+31:Queens Of The Stone Age/Like Clockwork/04 - If I Had A Tail.mp3
+32:Queens Of The Stone Age/Like Clockwork/05 - My God Is The Sun.mp3
+33:Queens Of The Stone Age/Like Clockwork/06 - Kalopsia.mp3
+34:Queens Of The Stone Age/Like Clockwork/07 - Fairweather Friends.mp3
+35:Queens Of The Stone Age/Like Clockwork/08 - Smooth Sailing.mp3
+36:Queens Of The Stone Age/Like Clockwork/09 - I Appear Missing.mp3
+37:Queens Of The Stone Age/Like Clockwork/10 - ...Like Clockwork.mp3
 playlist_end

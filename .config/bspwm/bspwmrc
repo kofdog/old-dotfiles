@@ -11,6 +11,18 @@ sxhkd &
 
 
 #--------------------------------------
+# Applications
+#--------------------------------------
+
+# Hide cursor
+unclutter &
+
+# Composite windows
+compton -b
+
+
+
+#--------------------------------------
 # Workspaces
 #--------------------------------------
 
@@ -24,8 +36,8 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 #--------------------------------------
 
 # Borders and gaps
-bspc config border_width        2
-bspc config window_gap          12
+bspc config border_width        5
+bspc config window_gap          50
 bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 

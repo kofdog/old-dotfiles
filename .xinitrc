@@ -21,15 +21,12 @@ xrdb -merge ~/.Xresources
 xset b off
 
 # Don't turn off backlight for any reason
-#xset s off
-#xset -dpms
-#xset s noblank
+xset s off
+xset -dpms
+xset s noblank
 
 # Set cursor theme
 xsetroot -cursor_name left_ptr
-
-# Disable touchpad
-#xinput set-prop 12 "Device Enabled" 0
 
 
 
@@ -52,15 +49,12 @@ urxvtd &
 # Audio
 mpd &
 start-pulseaudio-x11 &
-ncmpcpp stop
+mpc stop
 
 # File sharing
 dropboxd &
 CopyAgent &
 #google-musicmanager &
-
-# Hide cursor
-#unclutter &
 
 # Display
 #redshift -l 39.9500:75.1667 &
@@ -113,6 +107,7 @@ case $session in
     kde      ) exec /opt/kf5/bin/startkde;;
     lxde     ) exec startlxde;;
     openbox  ) exec openbox-session;;
+    spectrwm ) exec spectrwm;;
     unity    ) exec unity;;
     vb       ) VirtualBox -startvm "Windows 8" -fullscreen;;
     xfce     ) exec startxfce4;;
