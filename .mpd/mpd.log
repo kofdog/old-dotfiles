@@ -19552,3 +19552,4 @@ Oct 02 14:42 : player: played "Queens Of The Stone Age/Like Clockwork/02 - I Sat
 Oct 02 14:46 : player: played "Queens Of The Stone Age/Like Clockwork/03 - The Vampyre Of Time And Memory.mp3"
 Oct 03 10:38 : player: played "Queens Of The Stone Age/Like Clockwork/04 - If I Had A Tail.mp3"
 Oct 03 10:38 : player: played "Queens Of The Stone Age/Like Clockwork/04 - If I Had A Tail.mp3"
+Oct 05 11:12 : pulse_output: Failed to enable "MPD" [pulse]: pa_context_connect() has failed: Connection refused

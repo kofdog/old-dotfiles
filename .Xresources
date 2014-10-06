@@ -43,7 +43,7 @@ URxvt*boldFont:
 #include ".palettes/base16/dark/default"
 
 ! Basics
-URxvt*background: BACKGROUND
+URxvt*background: [90]#151515
 URxvt*foreground: FOREGROUND
 URxvt*cursorColor: CURSOR
 
