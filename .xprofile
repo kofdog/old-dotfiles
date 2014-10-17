@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Use this file for autostart. Be mindful of the fact that this will be
+# run not only by .xinitrc, but also by all display managers.
+
+# X resources
+xrdb -merge ~/.Xresources
+
+# Terminal
+urxvtd &
+
+# Audio
+mpd &
+#start-pulseaudio-x11 &
+mpc stop
+
+# File sharing
+dropboxd &
+CopyAgent &
+#google-musicmanager &
+
+# Display
+#redshift -l 39.9500:75.1667 &
