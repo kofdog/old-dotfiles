@@ -4,17 +4,17 @@
 # run not only by .xinitrc, but also by all display managers.
 
 # X resources
-xrdb -merge ~/.Xresources
+~/.bin/xrdb-merge
 
 # Terminal
 urxvtd &
 
 # Audio
-mpd &
+~/.bin/mpd-start
 #start-pulseaudio-x11 &
-mpc stop
 
 # File sharing
+~/.bin/filesharing-fix
 dropboxd &
 CopyAgent &
 #google-musicmanager &
