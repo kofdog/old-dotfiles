@@ -14,7 +14,7 @@ syntax on
 "set t_Co=16
 let base16colorspace=256
 set background=dark
-colorscheme base16-default
+colorscheme base16-ocean
 
 
 
@@ -23,10 +23,10 @@ colorscheme base16-default
 " Auto indent
 filetype plugin indent on
 
-" Set tab = 4 spaces...
+" Set tab = 4-spaces...
 set tabstop=4
 set shiftwidth=4
-set softtabstop=4
+set softtabstop=0
 set expandtab
 
 " ...except in Makefiles: tab = 8-space tab

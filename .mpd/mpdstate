@@ -2,7 +2,6 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: stop
-current: 31
 random: 0
 repeat: 0
 single: 0
@@ -11,42 +10,4 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Radiohead/In Rainbows/01 15 Step.mp3
-1:Sigur Rós/Ágætis byrjun/02 - Svefn-g-englar.mp3
-2:Queens Of The Stone Age/Era Vulgaris/01 Turning On The Screw.mp3
-3:Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3
-4:Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3
-5:LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3
-6:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-14 _Long Ways To Go Yet_ [Featurin.mp3
-7:Howard Shore/The Lord Of The Rings_ The Two Towers -/3-14 _Long Ways To Go Yet_ [Featurin.mp3
-8:Howard Shore/The Lord Of The Rings_ The Return Of The/1-08 Gollum's Villainy.mp3
-9:Howard Shore/The Lord Of The Rings_ The Return Of The/3-14 The Land Of Shadow.mp3
-10:Howard Shore/The Lord Of The Rings_ The Return Of The/4-01 Mount Doom [Featuring Renée Fle.mp3
-11:Howard Shore/The Lord Of The Rings_ The Return Of The/3-16 For Frodo [Featuring Ben Del Ma.mp3
-12:Howard Shore/The Lord Of The Rings_ The Return Of The/4-02 The Crack of Doom.mp3
-13:Howard Shore/The Lord Of The Rings_ The Return Of The/4-03 The Eagles [Featuring Renée Fle.mp3
-14:Howard Shore/The Lord Of The Rings_ The Return Of The/2-14 Merry's Simple Courage.mp3
-15:Howard Shore/The Lord Of The Rings_ The Return Of The/2-01 Osgiliath Invaded [Featuring Be.mp3
-16:Howard Shore/The Lord Of The Rings_ The Return Of The/2-04 The Sacrifice Of Faramir [Featu.mp3
-17:Queens Of The Stone Age/Era Vulgaris/01 Turning On The Screw.mp3
-18:Queens Of The Stone Age/Era Vulgaris/02 Sick, Sick, Sick.mp3
-19:Queens Of The Stone Age/Era Vulgaris/03 I'm Designer.mp3
-20:Queens Of The Stone Age/Era Vulgaris/04 Into The Hollow.mp3
-21:Queens Of The Stone Age/Era Vulgaris/05 Misfit Love.mp3
-22:Queens Of The Stone Age/Era Vulgaris/06 Battery Acid.mp3
-23:Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3
-24:Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3
-25:Queens Of The Stone Age/Era Vulgaris/09 Suture Up Your Future.mp3
-26:Queens Of The Stone Age/Era Vulgaris/10 River In The Road.mp3
-27:Queens Of The Stone Age/Era Vulgaris/11 Run Pig Run.mp3
-28:Queens Of The Stone Age/Like Clockwork/01 - Keep Your Eyes Peeled.mp3
-29:Queens Of The Stone Age/Like Clockwork/02 - I Sat By The Ocean.mp3
-30:Queens Of The Stone Age/Like Clockwork/03 - The Vampyre Of Time And Memory.mp3
-31:Queens Of The Stone Age/Like Clockwork/04 - If I Had A Tail.mp3
-32:Queens Of The Stone Age/Like Clockwork/05 - My God Is The Sun.mp3
-33:Queens Of The Stone Age/Like Clockwork/06 - Kalopsia.mp3
-34:Queens Of The Stone Age/Like Clockwork/07 - Fairweather Friends.mp3
-35:Queens Of The Stone Age/Like Clockwork/08 - Smooth Sailing.mp3
-36:Queens Of The Stone Age/Like Clockwork/09 - I Appear Missing.mp3
-37:Queens Of The Stone Age/Like Clockwork/10 - ...Like Clockwork.mp3
 playlist_end

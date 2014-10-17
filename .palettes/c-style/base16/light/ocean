@@ -1,0 +1,6 @@
+#include "../ocean"
+#include "../colors"
+
+#define BACKGROUND [90]#2b303b
+#define FOREGROUND BASE02
+#define CURSOR BASE02

@@ -112,7 +112,7 @@ PATH=~/.gopath/bin:$PATH
 export PS1='┌──\u@\h[\w]\n└╼ '
 
 # Color schemes
-BASE16_SCHEME="default"
+BASE16_SCHEME="ocean"
 BASE16_SHADE="dark"
 BASE16_SHELL="~/.builds/base16-shell/base16-$BASE16_SCHEME.$BASE16_SHADE.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
@@ -123,5 +123,5 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Colored LESS output
-export LESSOPEN="| src-hilite-lesspipe.sh %s"
+export LESSOPEN="| ~/.bin/less-filter %s"
 export LESS=' -R '

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd ~/.builds/moka-gnome-shell-theme
+
+./render-pngs.py
+sudo ./INSTALL
+
+cd -

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+source ~/.bin/barconfig
+
+AMASTER=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $4}'`
+ASTAT=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $6}'`
+icon=""
+color="^fg(${BAR_FG})"
+
+if [[ ${ASTAT} = "on" ]]; then
+    icon="vol_on.xbm"
+    percbar=`echo "${AMASTER}"\
+        | gdbar -max 65536 -bg ${STAT_BG} -fg ${BAR_FG} -h ${H} -w ${W}`
+else
+    icon="vol_off.xbm"
+    percbar=`echo 0 \
+        | gdbar -bg ${STAT_BG} -fg ${BAR_FG} -h ${H} -w ${W}`
+fi
+
+icon='^i(/home/mike/.staticons/'"${icon})"
+echo "${color}${icon} ${percbar}  "

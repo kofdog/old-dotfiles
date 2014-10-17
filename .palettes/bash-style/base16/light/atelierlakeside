@@ -1,0 +1,6 @@
+#include "../atelier-lakeside"
+#include "../colors"
+
+#define BACKGROUND [90]#161b1d
+#define FOREGROUND BASE02
+#define CURSOR BASE02

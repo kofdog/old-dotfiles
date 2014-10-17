@@ -117,7 +117,7 @@ super + alt + space
 
 # Multimedia keys
 super + ctrl + {space,c,v}
-    ncmpcpp {toggle,prev,next}
+    mpc {toggle,prev,next}
 
 
 
@@ -127,39 +127,31 @@ super + ctrl + {space,c,v}
 
 # Terminal
 super + Return
-    ${TERMINAL}
+    urxvtc
 
 # File manager
 super + f
-    ${FM}
+    urxvtc -e ranger
 
 # Web browser
 super + w
-    ${BROWSER}
+	firefox
 
 # Mail client
 super + e
-    ${MAIL}
+    thunderbird
 
 # Text editor
 super + t
-    ${EDITOR}
-
+    vim
+	
 # Music player
-super + m
-    ${MPLAYER}
-
-# Music visualizer
-super + v
-    ${MVIZ}
-
-# Clock
-super + c
-    ${CLOCK}
+super + a
+    urxvtc -e ncmpcpp
 
 # Application launcher
 super + space
-    j4-dmenu-desktop --term=${TERMINAL} --dmenu="dmenu -i -fn 'Meslo LG S-10'"
+    j4-dmenu-desktop --term=urxvtc --dmenu="dmenu -i -fn 'Meslo LG S-10'"
 
 # Screenshot
 {_,alt +} @Print

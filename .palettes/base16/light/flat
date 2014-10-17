@@ -1,5 +1,0 @@
-#include "../flat"
-
-#define BACKGROUND BASE07
-#define FOREGROUND BASE02
-#define CURSOR BASE02

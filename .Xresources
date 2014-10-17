@@ -1,4 +1,12 @@
 !--------------------------------------
+! Constants
+!--------------------------------------
+
+#include ".palettes/c-style/base16/dark/ocean"
+#define FONT xft:Meslo LG S:size=10
+
+
+!--------------------------------------
 ! Xft
 !--------------------------------------
 
@@ -10,6 +18,14 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
+
+!--------------------------------------
+! DZen2
+!--------------------------------------
+
+!dzen2.font: FONT
+!dzen2.foreground: FOREGROUND
+!dzen2.background: BACKGROUND
 
 
 !--------------------------------------
@@ -36,14 +52,12 @@ URxvt*scrollBar: false
 URxvt*secondaryScroll: true
 
 ! Font
-URxvt*font: xft:Meslo LG S:size=10
+URxvt*font: FONT
+!URxvt*font: -*-terminus-medium-*-*-*-32-*-*-*-*-*-*-*
 URxvt*boldFont:
 
-! Import scheme
-#include ".palettes/base16/dark/default"
-
 ! Basics
-URxvt*background: [90]#151515
+URxvt*background: BACKGROUND_TRANS
 URxvt*foreground: FOREGROUND
 URxvt*cursorColor: CURSOR
 

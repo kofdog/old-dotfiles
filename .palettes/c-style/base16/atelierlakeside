@@ -1,0 +1,16 @@
+#define BASE00 #161b1d
+#define BASE01 #1f292e
+#define BASE02 #516d7b
+#define BASE03 #5a7b8c
+#define BASE04 #7195a8
+#define BASE05 #7ea2b4
+#define BASE06 #c1e4f6
+#define BASE07 #ebf8ff
+#define BASE08 #d22d72
+#define BASE09 #935c25
+#define BASE0A #8a8a0f
+#define BASE0B #568c3b
+#define BASE0C #2d8f6f
+#define BASE0D #257fad
+#define BASE0E #5d5db1
+#define BASE0F #b72dd2

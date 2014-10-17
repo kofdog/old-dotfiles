@@ -48,7 +48,7 @@ urxvtd &
 
 # Audio
 mpd &
-start-pulseaudio-x11 &
+#start-pulseaudio-x11 &
 mpc stop
 
 # File sharing
@@ -62,55 +62,21 @@ CopyAgent &
 
 
 #--------------------------------------
-# System Variables
+# Window Manager
 #--------------------------------------
 
-# Default applications
-export TERMINAL=urxvtc
-export FM=ranger
-export EDITOR=vim
-export BROWSER=firefox
-export MAIL=thunderbird
-export MPLAYER=ncmpcpp
-export VPLAYER=mpv
-export VIEWER=zathura
-export CLOCK=clock
+session=${1:-spectrwm}
 
-# Application launchers (may need to be run in terminal)
-export TERMRUN="urxvtc -e"
-export LAUNCH_TERMINAL=${TERMINAL}
-export LAUNCH_FM="${TERMRUN} ${FM}"
-export LAUNCH_EDITOR="${TERMRUN} ${EDITOR}"
-export LAUNCH_BROWSER=${BROWSER}
-export LAUNCH_MAIL=${MAIL}
-export LAUNCH_MPLAYER="${TERMRUN} ${MPLAYER}"
-export LAUNCH_VPLAYER=${VPLAYER}
-export LAUNCH_VIEWER=${VIEWER}
-export LAUNCH_CLOCK="${TERMRUN} ${CLOCK}"
-
-
-
-#--------------------------------------
-# Window Manager / Desktop Environment
-#--------------------------------------
-
-session=${1:-bspwm}
-
+# Only WMs are included here, because DEs should be launched from their
+# respective login managers (e.g. gdm, kdm, lightdm).
 case $session in
     awesome  ) exec awesome;;
     bspwm    ) exec bspwm;;
-    cinnamon ) exec cinnamon-session;;
     dwm      ) exec dwm-start;;
-    gnome    ) exec gnome-session;;
     i3|i3wm  ) exec i3;;
-    kde4     ) exec startkde;;
-    kde      ) exec /opt/kf5/bin/startkde;;
-    lxde     ) exec startlxde;;
     openbox  ) exec openbox-session;;
-    spectrwm ) exec spectrwm;;
-    unity    ) exec unity;;
+    spectrwm ) compton -b; exec spectrwm;;
     vb       ) VirtualBox -startvm "Windows 8" -fullscreen;;
-    xfce     ) exec startxfce4;;
     xmonad   ) exec xmonad;;
     *        ) exec $1;;
 esac

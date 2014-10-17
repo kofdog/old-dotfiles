@@ -1,0 +1,6 @@
+#include "../monokai"
+#include "../colors"
+
+#define BACKGROUND [90]#272822
+#define FOREGROUND BASE05
+#define CURSOR BASE05
