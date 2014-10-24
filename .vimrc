@@ -14,7 +14,7 @@ syntax on
 "set t_Co=16
 let base16colorspace=256
 set background=dark
-colorscheme base16-ocean
+colorscheme base16-monokai
 
 
 
@@ -27,7 +27,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set softtabstop=0
-set expandtab
+set noexpandtab
 
 " ...except in Makefiles: tab = 8-space tab
 if has("autocmd")

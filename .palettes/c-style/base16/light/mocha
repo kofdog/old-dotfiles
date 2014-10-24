@@ -1,6 +1,7 @@
 #include "../mocha"
 #include "../colors"
 
-#define BACKGROUND [90]#3b3228
+#define BACKGROUND BASE07
+#define BACKGROUND_TRANS [90]#f5eeeb
 #define FOREGROUND BASE02
 #define CURSOR BASE02

@@ -1,6 +1,7 @@
 #include "../chalk"
 #include "../colors"
 
-#define BACKGROUND [90]#151515
+#define BACKGROUND BASE00
+#define BACKGROUND_TRANS [90]#151515
 #define FOREGROUND BASE05
 #define CURSOR BASE05

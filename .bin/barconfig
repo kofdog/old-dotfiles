@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source ~/.palettes/bash-style/base16/ocean
+source ~/.palettes/bash-style/base16/monokai
 source ~/.palettes/bash-style/base16/colors
-source ~/.palettes/bash-style/base16/dark/ocean
+source ~/.palettes/bash-style/base16/dark
 
 BAR_BG=${BACKGROUND}
 STAT_BG=${DARK_GRAY}

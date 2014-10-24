@@ -1,6 +1,7 @@
 #include "../railscasts"
 #include "../colors"
 
-#define BACKGROUND [90]#2b2b2b
+#define BACKGROUND BASE07
+#define BACKGROUND_TRANS [90]#f9f7f3
 #define FOREGROUND BASE02
 #define CURSOR BASE02

@@ -1,6 +1,7 @@
 #include "../paraiso"
 #include "../colors"
 
-#define BACKGROUND [90]#2f1e2e
+#define BACKGROUND BASE00
+#define BACKGROUND_TRANS [90]#2f1e2e
 #define FOREGROUND BASE05
 #define CURSOR BASE05

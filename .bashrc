@@ -109,10 +109,11 @@ PATH=~/.bin:$PATH
 PATH=~/.gopath/bin:$PATH
 
 # PS1
-export PS1='┌──\u@\h[\w]\n└╼ '
+#export PS1='┌──\u@\h[\w]\n└╼ '
+export PS1='> '
 
 # Color schemes
-BASE16_SCHEME="ocean"
+BASE16_SCHEME="monokai"
 BASE16_SHADE="dark"
 BASE16_SHELL="~/.builds/base16-shell/base16-$BASE16_SCHEME.$BASE16_SHADE.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
@@ -125,3 +126,6 @@ fi
 # Colored LESS output
 export LESSOPEN="| ~/.bin/less-filter %s"
 export LESS=' -R '
+
+# Vi mode
+set -o vi

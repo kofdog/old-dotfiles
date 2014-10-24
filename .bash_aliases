@@ -2,7 +2,11 @@
 alias search='pacaur -Ss'
 alias inst='pacaur -S'
 alias upgrade='pacaur -Syu'
-alias remove='pacaur -Rssd'
+alias remove='pacaur -Rs'
+alias purge='pacaur -Rssd'
+alias cleanu='paccache -ruk0'
+alias clean2='paccache -rk2'
+alias cleanall='paccache -rk0'
 
 # systemd
 alias sysup='sudo systemctl start'

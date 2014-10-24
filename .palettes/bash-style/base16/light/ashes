@@ -1,6 +1,0 @@
-#include "../ashes"
-#include "../colors"
-
-#define BACKGROUND [90]#1c2023
-#define FOREGROUND BASE02
-#define CURSOR BASE02

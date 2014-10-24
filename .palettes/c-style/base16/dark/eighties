@@ -1,6 +1,7 @@
 #include "../eighties"
 #include "../colors"
 
-#define BACKGROUND [90]#2d2d2d
+#define BACKGROUND BASE00
+#define BACKGROUND_TRANS [90]#2d2d2d
 #define FOREGROUND BASE05
 #define CURSOR BASE05

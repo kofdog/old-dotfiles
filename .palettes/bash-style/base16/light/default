@@ -1,6 +1,0 @@
-#include "../default"
-#include "../colors"
-
-#define BACKGROUND [90]#151515
-#define FOREGROUND BASE02
-#define CURSOR BASE02

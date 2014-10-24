@@ -2,7 +2,7 @@
 ! Constants
 !--------------------------------------
 
-#include ".palettes/c-style/base16/dark/ocean"
+#include ".palettes/c-style/base16/dark/monokai"
 #define FONT xft:Meslo LG S:size=10
 
 

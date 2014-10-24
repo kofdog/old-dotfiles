@@ -1,16 +1,18 @@
-#define BASE00 #1e1e1e
-#define BASE01 #323537
-#define BASE02 #464b50
-#define BASE03 #5f5a60
-#define BASE04 #838184
-#define BASE05 #a7a7a7
-#define BASE06 #c3c3c3
-#define BASE07 #ffffff
-#define BASE08 #cf6a4c
-#define BASE09 #cda869
-#define BASE0A #f9ee98
-#define BASE0B #8f9d6a
-#define BASE0C #afc4db
-#define BASE0D #7587a6
-#define BASE0E #9b859d
-#define BASE0F #9b703f
+#!bin/bash
+
+BASE00="#1e1e1e"
+BASE01="#323537"
+BASE02="#464b50"
+BASE03="#5f5a60"
+BASE04="#838184"
+BASE05="#a7a7a7"
+BASE06="#c3c3c3"
+BASE07="#ffffff"
+BASE08="#cf6a4c"
+BASE09="#cda869"
+BASE0A="#f9ee98"
+BASE0B="#8f9d6a"
+BASE0C="#afc4db"
+BASE0D="#7587a6"
+BASE0E="#9b859d"
+BASE0F="#9b703f"
