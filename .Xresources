@@ -34,7 +34,7 @@ Xft.lcdfilter: lcddefault
 
 ! General
 URxvt*depth: 32
-URxvt*geometry: 80x25
+URxvt*geometry: 90x25
 URxvt*fading: 0
 URxvt*intensityStyles: false
 URxvt*termName: rxvt-256color

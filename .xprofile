@@ -1,7 +1,5 @@
-#!/bin/sh
-
-# Use this file for autostart. Be mindful of the fact that this will be
-# run not only by .xinitrc, but also by all display managers.
+# Use this file to autostart GUI programs. It is called by xinitrc,
+# and should be sourced by display managers.
 
 # Terminal
 urxvtd &
@@ -9,7 +7,6 @@ urxvtd &
 
 # Audio
 ~/.bin/mpd-start &
-#start-pulseaudio-x11 &
 
 # File sharing
 ~/.bin/filesharing-fix &
@@ -22,3 +19,6 @@ CopyAgent &
 
 # Messaging
 skype &
+
+# Gnome 3 fullscreen fix
+devilspie &

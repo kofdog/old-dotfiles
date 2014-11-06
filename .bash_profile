@@ -1,5 +1,4 @@
-#
-# ~/.bash_profile
-#
+# Use this file to configure login shells (TTY).
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+# Just source .bashrc
+[[ -f ~/.bashrc ]] && source ~/.bashrc

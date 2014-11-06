@@ -1,13 +1,7 @@
 #!/bin/sh
 
-# This file will only be run when directly calling xinit or startx, NOT
-# when using a display manager. Use it to set up anything specific to
-# basic window managers, and use .xprofile for more global setup.
-
-
-#--------------------------------------
-# X.org
-#--------------------------------------
+# Use this file to configure an X session. It is called by xinit and
+# startx, but not from display managers.
 
 # Source system-wide xinitrc
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
@@ -17,9 +11,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     unset f
 fi
 
-# Source xprofile
+# Source autostart
 [ -f /etc/xprofile ] && source /etc/xprofile
 [ -f ~/.xprofile ] && source ~/.xprofile
+
+# Source environment variables
+[ -f ~/.profile ] && source ~/.profile
 
 # Remove annoying beep
 xset b off
@@ -32,23 +29,14 @@ xset s noblank
 # Set cursor theme
 xsetroot -cursor_name left_ptr
 
-
-#--------------------------------------
-# Themes
-#--------------------------------------
-
 # Set wallpaper
 sh ~/.fehbg &
 
-
-#--------------------------------------
-# Window Manager
-#--------------------------------------
-
-session=${1:-spectrwm}
+# Set default session
+session=${1:-bspwm}
 
 # Only WMs are included here, because DEs should be launched from their
-# respective display managers (e.g. gdm, kdm, lightdm).
+# respective display managers (e.g. gdm, kdm, lightdm)
 case $session in
     awesome  ) exec awesome;;
     bspwm    ) exec bspwm;;

@@ -24,12 +24,12 @@ colorscheme base16-monokai
 filetype plugin indent on
 
 " Set tab = 4-spaces...
-set tabstop=4
+set tabstop=8
 set shiftwidth=4
-set softtabstop=0
-set noexpandtab
+set softtabstop=4
+set expandtab
 
-" ...except in Makefiles: tab = 8-space tab
+" ...except in Makefiles: tab = 8-width tab
 if has("autocmd")
 	autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
 endif
