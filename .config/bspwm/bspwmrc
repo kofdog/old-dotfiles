@@ -1,18 +1,7 @@
 #!/bin/sh
 
-
-
-#--------------------------------------
-# Keybindings
-#--------------------------------------
-
+# Load keybindings
 sxhkd &
-
-
-
-#--------------------------------------
-# Applications
-#--------------------------------------
 
 # Hide cursor
 unclutter &
@@ -20,44 +9,20 @@ unclutter &
 # Composite windows
 compton -b
 
-
-
-#--------------------------------------
-# Workspaces
-#--------------------------------------
-
-# Initialize
+# Initialize workspaces
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-
-
-#--------------------------------------
-# Aesthetics
-#--------------------------------------
-
-# Borders and gaps
+# Set borders, gaps, splits
 bspc config border_width        5
 bspc config window_gap          50
 bspc config borderless_monocle  true
 bspc config gapless_monocle     true
-
-# Split behavior
 bspc config split_ratio         0.50
 
+# Load a panel
+#panel dzen2 &
 
-
-#--------------------------------------
-# Panel
-#--------------------------------------
-
-# panel dzen2 &
-
-
-
-#--------------------------------------
-# Rules
-#--------------------------------------
-
+# Set application-specific rules
 #bspc rule -a Gimp desktop=^8 follow=on floating=on
 #bspc rule -a Chromium desktop=^2
 #bspc rule -a mplayer2 floating=on

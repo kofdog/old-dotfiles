@@ -1,18 +1,42 @@
 #!/bin/sh
 
-
-
-#--------------------------------------
-# bspwm
-#--------------------------------------
+# Reload this configuration on the fly
+super + Escape
+    pkill -USR1 -x sxhkd
 
 # Quit X
 super + alt + Escape
     bspc quit
 
-# Close window
-super + shift + q
-    bspc window -c
+# Move window control, window
+super + {_,shift + }{h,j,k,l}
+    bspc window -{f,s} {left,down,up,right}
+
+# Set split direction for active window
+super + ctrl + {h,j,k,l}
+    bspc window -p {left,down,up,right}
+
+# Grow / shrink active window
+super + alt + {h,j,k,l}
+    bspc window -e {left -10,down +10,up -10,right +10}
+
+super + alt + shift + {h,j,k,l}
+    bspc window -e {right -10,up +10,down -10,left +10}
+
+# Toggle active window floating, fullscreen
+super + {s,d}
+    bspc window -t {floating,fullscreen}
+
+# Close/kill window
+super + {_,shift + }x
+    bspc window -{c,k}
+
+# Move to workspace, move active window to workspace
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,window -d} ^{1-9,10}
+
+super + {_,shift + }{u,i}
+    bspc {desktop -f,window -d} {prev,next}
 
 # ?????
 super + a
@@ -21,10 +45,6 @@ super + a
 # ?????
 super + z
     bspc desktop -B
-
-# Toggle active window floating, fullscreen
-super + shift + {d,f}
-    bspc window -t {floating,fullscreen}
 
 # Go to previously visited window (from current workspace), workspace
 super + {grave,Tab}
@@ -35,22 +55,18 @@ super + apostrophe
     bspc window -s last
 
 # ?????
-super + {i,p}
+super + {o,p}
     bspc control --record-history off; \
     bspc window {older,newer} -f; \
     bspc control --record-history on
 
 # ?????
-super + u
+super + y
     bspc window -w last.manual
 
 # ?????
 super + g
     bspc window -s biggest
-
-# Move window control, window
-super + {_,shift + }{h,j,k,l}
-    bspc window -{f,s} {left,down,up,right}
 
 # Cycle through windows
 super + {n,b}
@@ -60,31 +76,13 @@ super + {n,b}
 super + {comma,period}
     bspc desktop -C {backward,forward}
 
-# Set split direction for active window
-super + ctrl + {h,j,k,l}
-    bspc window -p {left,down,up,right}
-
 # Reset split direction for active window, ?????
 super + ctrl + {_,shift + }space
     bspc {window -p cancel,desktop -c}
 
-# Grow / shrink active window
-super + alt + {h,j,k,l}
-    bspc window -e {left -10,down +10,up -10,right +10}
-
-super + alt + shift + {h,j,k,l}
-    bspc window -e {right -10,up +10,down -10,left +10}
-
 # Set split ratio for active window
 super + ctrl + {1-9}
     bspc window -r 0.{1-9}
-
-# Move to workspace, move active window to workspace
-super + {_,shift + }{1-9,0}
-    bspc {desktop -f,window -d} ^{1-9,10}
-
-super + {_,shift + }{y,o}
-    bspc {desktop -f,window -d} {prev,next}
 
 # Change focus with mouse
 ~button1
@@ -102,71 +100,44 @@ super + !button{1-3}
 super + @button{1-3}
     bspc pointer -u
 
-
-
-#--------------------------------------
-# Multimedia
-#--------------------------------------
-
 # Volume keys
 @F{11,12}
-    amixer set Master {5%-,5%+} unmute
+    amixer set Master 5%{-,+} unmute
 
 super + alt + space
     amixer set Master toggle
 
 # Multimedia keys
-super + alt + {j,k,l}
+super + alt + {u,i,o}
     mpc {prev,toggle,next}
 
+# Screenshot
+{_,alt + }@Print
+    scrot {_,-s}
 
+# Suspend / screen lock
+super + {_,shift + }@F1
+    {suspend,lock}
 
-#--------------------------------------
 # Applications
-#--------------------------------------
-
-# Terminal
 super + Return
     $LAUNCH_TERMINAL
 
-# File manager
 super + f
     $LAUNCH_FILE_MANAGER
 
-# Web browser
 super + w
     $LAUNCH_BROWSER
 
 super + shift + w
     google-chrome-stable --new-window
 
-# Text editor
 super + e
     $LAUNCH_EDITOR
 	
-# Music player
 super + a
     $LAUNCH_MPLAYER
 
-# Application launcher
 super + space
     $LAUNCHER
 #    j4-dmenu-desktop --term=urxvtc --dmenu="dmenu -i -fn 'Meslo LG S-10'"
-
-# Screenshot
-{_,alt +} @Print
-    scrot {_,-s}
-
-# Suspend / screen lock
-super + {_,shift +} @F1
-    {suspend,lock}
-
-
-
-#--------------------------------------
-# Reload
-#--------------------------------------
-
-# Reload sxhkd configuration on the fly
-super + Escape
-    pkill -USR1 -x sxhkd
