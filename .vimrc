@@ -26,8 +26,12 @@ endif
 " Exit insert mode
 :imap jk <Esc>
 
-" Delete up to underscore
+" Delete/change up to underscore/hyphen
 :nmap du dt_
+:nmap cu ct_
+
+:nmap di dt-
+:nmap ci ct-
 
 " Remap up/down keys to navigate wrapped lines
 :nnoremap j gj
