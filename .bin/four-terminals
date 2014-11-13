@@ -1,6 +1,0 @@
-#!/bin/sh
-
-urxvtc &
-urxvtc &
-urxvtc &
-urxvtc &

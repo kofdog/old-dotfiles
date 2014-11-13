@@ -1,5 +1,0 @@
-#!/bin/sh
-
-sleep 10
-conky
-sleep 10

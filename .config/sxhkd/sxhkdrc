@@ -102,7 +102,7 @@ super + @button{1-3}
 
 # Volume keys
 @F{11,12}
-    amixer set Master 5%{-,+} unmute
+    amixer set Master 10%{-,+} unmute
 
 super + alt + space
     amixer set Master toggle
@@ -111,13 +111,17 @@ super + alt + space
 super + alt + {u,i,o}
     mpc {prev,toggle,next}
 
+# Brightness keys
+F{9,10}
+    brightness {down,up} 10
+
 # Screenshot
 {_,alt + }@Print
-    scrot {_,-s}
+    scrot{_, -s}
 
-# Suspend / screen lock
-super + {_,shift + }@F1
-    {suspend,lock}
+# Screen lock (suspend with suspend key)
+super + @F1
+    locky
 
 # Applications
 super + Return
@@ -130,7 +134,7 @@ super + w
     $LAUNCH_BROWSER
 
 super + shift + w
-    google-chrome-stable --new-window
+    firefox
 
 super + e
     $LAUNCH_EDITOR

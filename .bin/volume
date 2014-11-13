@@ -1,0 +1,8 @@
+#!/bin/bash
+
+direction=${1:-down}
+case $direction in
+    up    ) amixer set Master $2%+ unmute;;
+    down  ) amixer set Master $2%- unmute;;
+    *     ) ;;
+esac

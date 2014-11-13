@@ -1,3 +1,0 @@
-#!/bin/sh
-
-mpdviz -f ~/.mpd/mpd.fifo -v spectrum -i
