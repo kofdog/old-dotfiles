@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/.bin
+sudo stow -v -t /usr/local -S *
+cd -

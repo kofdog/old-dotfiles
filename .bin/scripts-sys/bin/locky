@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Take a screenshot
+scrot /tmp/screenshot.png
+
+# Blur it
+convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
+
+# Lock the screen
+i3lock -i /tmp/screenshotblur.png -u

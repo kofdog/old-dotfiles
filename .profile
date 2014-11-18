@@ -2,8 +2,8 @@
 # bashrc and xinitrc, and should be sourced by display managers.
 
 # Add personal scripts to path
-PATH=~/.bin:$PATH
-PATH=~/.gopath/bin:$PATH
+#PATH=~/.bin:$PATH
+#PATH=~/.gopath/bin:$PATH
 
 # Grab colors and set font
 source ~/.palettes/bash-style/base16/monokai

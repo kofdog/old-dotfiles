@@ -1,6 +1,9 @@
 " Add packages to runtime path
 execute pathogen#infect()
 
+" Leader key
+:let mapleader = ","
+
 " Syntax highlighting
 syntax on
 
@@ -22,6 +25,12 @@ set expandtab
 if has("autocmd")
 	autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
 endif
+
+" Buffer manipulation
+set hidden
+nnoremap <Leader>l :bnext<CR>
+nnoremap <Leader>h :bprev<CR>
+nnoremap <Leader>q :bp <BAR> bd #<CR>
 
 " Exit insert mode
 :imap jk <Esc>

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+tty-clock -C 4 -c -s

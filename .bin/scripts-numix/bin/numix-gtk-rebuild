@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ~/.builds/Numix
+git pull
+
+sudo rm -rf /usr/share/themes/Numix
+sudo cp -r ../Numix /usr/share/themes
+
+cd -

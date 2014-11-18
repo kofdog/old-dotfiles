@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd ~/.builds/faba-icon-theme
+git pull
+
+./render-bitmaps.rb
+./render-symbolic.rb
+
+sudo ./install.sh
+
+cd -

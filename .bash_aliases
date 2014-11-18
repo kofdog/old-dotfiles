@@ -24,6 +24,9 @@ alias uuuu='cd ../../../..'
 alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
+# vim
+vimp () { vim $( find "$@" -maxdepth 1 -type f ); }
+
 # administration
 alias p8='ping -c 3 8.8.8.8'
 

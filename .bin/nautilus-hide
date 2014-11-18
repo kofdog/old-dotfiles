@@ -1,4 +1,0 @@
-#!/bin/bash
-
-gsettings set org.gtk.Settings.FileChooser show-hidden false
-nautilus

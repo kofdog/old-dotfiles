@@ -3,7 +3,7 @@
 !--------------------------------------
 
 #include ".palettes/c-style/base16/dark/monokai"
-#define FONT xft:Meslo LG S:size=10
+#define FONT xft:Meslo LG M:size=10
 
 
 !--------------------------------------
@@ -34,7 +34,7 @@ Xft.lcdfilter: lcddefault
 
 ! General
 URxvt*depth: 32
-URxvt*geometry: 90x25
+URxvt*geometry: 90x22
 URxvt*fading: 0
 URxvt*intensityStyles: false
 URxvt*termName: rxvt-256color
@@ -57,7 +57,7 @@ URxvt*font: FONT
 URxvt*boldFont:
 
 ! Basics
-URxvt*background: BACKGROUND_TRANS
+URxvt*background: BACKGROUND
 URxvt*foreground: FOREGROUND
 URxvt*cursorColor: CURSOR
 

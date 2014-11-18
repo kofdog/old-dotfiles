@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#sudo sysctl -w fs.inotify.max_user_watches=20000
+#sudo sysctl -w fs.file-max=10000000
+sudo sysctl -p /etc/sysctl.conf

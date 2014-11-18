@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ~/.builds/numix-icon-theme
+git pull
+
+sudo rm -rf /usr/share/icons/{Numix,Numix-Light}
+sudo cp -r Numix Numix-Light /usr/share/icons
+
+cd -
