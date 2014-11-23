@@ -3,20 +3,20 @@
 !--------------------------------------
 
 #include ".palettes/c-style/base16/dark/monokai"
-#define FONT xft:Meslo LG M:size=10
+#define FONT xft:Inconsolata:size=12
 
 
 !--------------------------------------
 ! Xft
 !--------------------------------------
 
+Xft.antialias: 1
 Xft.autohint: 0
 Xft.dpi: 192
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.hinting: true
+Xft.hinting: 1
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
+Xft.rgba: grayscale
 
 
 !--------------------------------------

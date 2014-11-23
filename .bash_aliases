@@ -1,16 +1,19 @@
 #!/bin/bash
 
 # pacman
-alias search='pacaur -Ss'
-alias inst='pacaur -S'
-alias upgrade='pacaur -Syu'
-alias remove='pacaur -Rs'
-alias purge='pacaur -Rssd'
-alias cleanu='paccache -ruk0'
-alias clean3='paccache -rk3'
-alias clean2='paccache -rk2'
-alias clean1='paccache -rk1'
-alias cleanall='paccache -rk0'
+alias pacup='pacaur -Syu'
+alias pacs='pacaur -Ss'
+alias pacin='pacaur -S'
+alias pacrm='pacaur -Rs'
+alias pacrmrf='pacaur -Rssd'
+alias pacrmo='pacaur -Rns $(sudo pacman -Qtdq)'
+alias paclsstd='sudo pacman -Qen'
+alias paclsaur='sudo pacman -Qem'
+alias pacclu='paccache -ruk0'
+alias paccl3='paccache -rk3'
+alias paccl2='paccache -rk2'
+alias paccl1='paccache -rk1'
+alias paccla='paccache -rk0'
 
 # systemd
 alias sysup='sudo systemctl start'
