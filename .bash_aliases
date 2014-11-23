@@ -7,7 +7,9 @@ alias upgrade='pacaur -Syu'
 alias remove='pacaur -Rs'
 alias purge='pacaur -Rssd'
 alias cleanu='paccache -ruk0'
+alias clean3='paccache -rk3'
 alias clean2='paccache -rk2'
+alias clean1='paccache -rk1'
 alias cleanall='paccache -rk0'
 
 # systemd

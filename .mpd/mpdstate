@@ -2,6 +2,7 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: stop
+current: 0
 random: 0
 repeat: 0
 single: 0
@@ -10,4 +11,28 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/01 Fire Walker.mp3
+1:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/02 Let The Day Begin.mp3
+2:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/03 Returning.mp3
+3:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/04 Lullaby.mp3
+4:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/05 Hate The Taste.mp3
+5:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/06 Rival.mp3
+6:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/07 Teenage Disease.mp3
+7:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/08 Some Kind Of Ghost.mp3
+8:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/09 Sometimes The Light.mp3
+9:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/10 Funny Games.mp3
+10:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/11 Sell It.mp3
+11:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/12 Lose Yourself.mp3
+12:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/13 Warning Sign.mp3
+13:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/14 The Knife.mp3
+14:Black Rebel Motorcycle Club/Specter At The Feast [Deluxe Edition]/15 Angel Baby.mp3
+15:LPC/The Bear/LPC - The Bear - 01 Tomahawks & Buffalo.mp3
+16:LPC/The Bear/LPC - The Bear - 02 Thunder.mp3
+17:LPC/The Bear/LPC - The Bear - 03 Asteroids First.mp3
+18:LPC/The Bear/LPC - The Bear - 04 Jekyll.mp3
+19:LPC/The Bear/LPC - The Bear - 05 The Bear.mp3
+20:LPC/The Bear/LPC - The Bear - 06 Hyde.mp3
+21:LPC/The Bear/LPC - The Bear - 07 Bongo.mp3
+22:LPC/The Bear/LPC - The Bear - 08 (The Last) VVOLVES.mp3
+23:LPC/The Bear/LPC - The Bear - 09 Kondors & Wizardry.mp3
 playlist_end

@@ -3,13 +3,13 @@
 
 # Terminal
 urxvtd &
-~/.bin/xrdb-merge &
+xrdb-merge &
 
 # Audio
-~/.bin/mpd-start &
+mpd-start &
 
 # File sharing
-~/.bin/filesharing-fix &
+filesharing-fix &
 dropboxd &
 CopyAgent &
 #google-musicmanager &
