@@ -1,0 +1,10 @@
+[Unit]
+Description=Hourly timer
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+Unit=hourly.target
+
+[Install]
+WantedBy=hourly.target

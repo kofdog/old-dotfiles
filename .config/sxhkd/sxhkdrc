@@ -125,7 +125,7 @@ super + @F1
 
 # Applications
 super + Return
-    $LAUNCH_TERMINAL
+    $TERMINAL
 
 super + f
     $LAUNCH_FILE_MANAGER

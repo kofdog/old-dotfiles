@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set=base16
+
+month=$(date +"%m")
+hour=$(date +"%H")
+
+shade="light"
+dn="day"
+if [ $hour -lt 6 -o $hour -ge 18 ]; then
+    shade="dark"
+    dn="night"
+fi
+
+scheme="default"
+mo="12_december"
+case $month in
+    1   ) mo="01_january"; scheme="flat";;
+    2   ) mo="02_february"; scheme="twilight";;
+    3   ) mo="03_march"; scheme="ashes";;
+    4   ) mo="04_april"; scheme="ocean";;
+    5   ) mo="05_may"; scheme="chalk";;
+    6   ) mo="06_june"; scheme="eighties";;
+    7   ) mo="07_july"; scheme="paraiso";;
+    8   ) mo="08_august"; scheme="atelierlakeside";;
+    9   ) mo="09_september"; scheme="railscasts";;
+    10  ) mo="10_october"; scheme="monokai";;
+    11  ) mo="11_november"; scheme="mocha";;
+    12  ) mo="12_december"; scheme="default";;
+    *   ) mo="12_december"; scheme="default";;
+esac
+
+file="${mo}_${dn}.jpg"
+echo "feh --bg-scale ~/Pictures/$file" > ~/.fehbg
+
+chcol $set $scheme $shade

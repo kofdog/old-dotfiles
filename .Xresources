@@ -2,8 +2,8 @@
 ! Constants
 !--------------------------------------
 
-#include ".palettes/c-style/base16/dark/monokai"
-#define FONT xft:Inconsolata:size=12
+#include ".palettes/c-style/base16/dark/default"
+#define FONT xft:Source Code Pro:size=12
 
 
 !--------------------------------------

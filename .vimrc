@@ -38,7 +38,7 @@ syntax on
 " Color scheme
 let base16colorspace=256
 set background=dark
-colorscheme base16-monokai
+colorscheme base16-default
 
 " Set tab = 4-spaces...
 set tabstop=8

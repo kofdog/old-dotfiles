@@ -1,0 +1,10 @@
+[Unit]
+Description=Changes system colors and wallpaper on timer
+Wants=hourly.timer
+
+[Service]
+ExecStart=/usr/local/bin/colors-wallpaper
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=hourly.target
