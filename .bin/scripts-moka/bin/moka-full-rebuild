@@ -1,6 +1,0 @@
-#!/bin/bash
-
-moka-icons-rebuild
-faba-icons-rebuild
-moka-gs-rebuild
-orchis-gtk-rebuild

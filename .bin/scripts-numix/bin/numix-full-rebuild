@@ -1,5 +1,0 @@
-#!/bin/bash
-
-numix-icons-rebuild
-numix-circle-icons-rebuild
-numix-gtk-rebuild

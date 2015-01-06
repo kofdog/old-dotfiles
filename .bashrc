@@ -39,7 +39,7 @@ fi
 
 # Set shell prompt
 #export PS1='┌──\u@\h[\w]\n└╼ '
-export PS1=' >> '
+export PS1=' +  '
 
 # Set color scheme
 BASE16_SCHEME="default"
@@ -53,9 +53,13 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Set vi input mode
-set -o vi
+#set -o vi
 
 # Autostart
-if [ "$TERM" != "linux" ]; then
-    archey3
-fi
+#if [ "$TERM" != "linux" ]; then
+#    archey3
+#fi
+
+# Android Studio
+PATH=$PATH:/opt/android-studio/bin
+export PATH

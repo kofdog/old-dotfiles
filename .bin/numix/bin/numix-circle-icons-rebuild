@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ~/.builds/numix-icon-theme-circle
+git pull
+
+sudo rm -rf /usr/share/icons/{Numix-Circle,Numix-Circle-Light}
+sudo cp -r Numix-Circle Numix-Circle-Light /usr/share/icons
+
+cd -

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-cd ~/.builds/moka-icon-theme
-git pull
-
-./render-pngs.py
-sudo ./INSTALL
-
-cd -

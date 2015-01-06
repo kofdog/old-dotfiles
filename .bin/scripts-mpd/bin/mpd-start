@@ -1,5 +1,0 @@
-#!/bin/sh
-
-sudo killall mpd
-mpd &
-mpc stop

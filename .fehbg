@@ -1,1 +1,1 @@
-feh --bg-scale ~/Pictures/12_december_night.jpg
+feh  --bg-scale '/home/mike/Pictures/winter.jpg' 

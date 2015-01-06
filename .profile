@@ -11,14 +11,15 @@ export FONT="Source Code Pro 12"
 # Set default applications
 export EDITOR=vim
 export FILES=ranger
-export BROWSER=chromium
+export BROWSER=firefox
 export MPLAYER=ncmpcpp
 export VPLAYER=mpv
-export LAUNCHER="dmenu_run -i -fn $FONT -nb $BACKGROUND -nf $FOREGROUND -sb $FOREGROUND -sf $BACKGROUND"
+export LAUNCHER="dmenu_run -i -fn '$FONT' -nb '$BACKGROUND' -nf '$FOREGROUND' -sb '$FOREGROUND' -sf '$BACKGROUND'"
 
 # Set application launchers (for when run outside terminal)
-export TERMINAL=urxvtc
-export TERMRUN="urxvtc -e"
+export TERM_SHELL=fish
+export TERMINAL="termite -e $TERM_SHELL"
+export TERMRUN="termite -e"
 export LAUNCH_EDITOR="$TERMRUN $EDITOR"
 export LAUNCH_FILES="$TERMRUN $FILE_MANAGER"
 export LAUNCH_BROWSER=$BROWSER

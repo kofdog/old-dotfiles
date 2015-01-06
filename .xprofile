@@ -1,24 +1,18 @@
 # Use this file to autostart GUI programs. It is called by xinitrc,
 # and should be sourced by display managers.
 
-# Terminal
-urxvtd &
-xrdb-merge &
-
 # Audio
 mpd-start &
 
-# File sharing
-filesharing-fix &
-dropboxd &
-CopyAgent &
+# File sharing - handle with systemd instead
+#filesharing-fix &
+#dropboxd &
+#CopyConsole --daemon &
 #google-musicmanager &
-
-# Display
-#redshift -l 39.9500:75.1667 &
-
-# Messaging
-skype &
 
 # Gnome 3 fullscreen fix
 devilspie &
+
+# Color switching
+#systemctl --user start colors-wallpaper.service
+#systemctl --user start colors-wallpaper.timer

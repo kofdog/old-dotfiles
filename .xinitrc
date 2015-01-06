@@ -18,6 +18,9 @@ fi
 # Source environment variables
 [ -f ~/.profile ] && source ~/.profile
 
+# Modify keyboard layout
+setxkbmap -option ctrl:swapcaps -option altwin:swap_alt_win
+
 # Remove annoying beep
 xset b off
 

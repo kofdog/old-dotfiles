@@ -1,0 +1,14 @@
+#!/bin/bash
+
+desktop_dir=/usr/share/applications
+desktops=( 7zFM avahi-discover bssh bvnc CMake fluid gucharmap htop jconsole-jdk7 jmc-jdk7 jvisualm-jdk7 nvidia-settings org.gnome.Screenshot sun_java-jdk7 sun-java-jdk7 sun-javaws-jdk7 policytool-jdk7 zathura )
+
+for d in ${desktops[@]}; do
+    file="${desktop_dir}/${d}.desktop"
+    if [ -f $file ]; then
+        echo "Moving ${d}"
+        sudo mv "$file" "${file}.disabled"
+    else
+        echo "Not moving ${d}: does not exist"
+    fi
+done

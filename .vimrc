@@ -9,6 +9,9 @@ Plugin 'skammer/vim-css-color'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 call vundle#end()
 
 " YouCompleteMe
@@ -20,9 +23,9 @@ let g:ycm_key_list_previous_completion = ['<C-a>']
 " UltiSnips
 let g:UltiSnipsUsePythonVersion = 2
 
-let g:UltiSnipsExpandTrigger = '<S-TAB>'
-let g:UltiSnipsJumpForwardTrigger = '<C-n>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-m>'
+let g:UltiSnipsExpandTrigger = '<c-j>'
+let g:UltiSnipsJumpForwardTrigger = '<c-n>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-m>'
 
 let g:UltiSnipsEditSplic = 'vertical'
 
@@ -35,13 +38,17 @@ filetype plugin indent on
 " Syntax highlighting
 syntax on
 
+" Special characters
+set digraph
+inoremap <C-d> <C-h>
+
 " Color scheme
 let base16colorspace=256
 set background=dark
 colorscheme base16-default
 
-" Set tab = 4-spaces...
-set tabstop=8
+" Set tab = 4-width tab
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
@@ -50,6 +57,9 @@ set expandtab
 if has("autocmd")
 	autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
 endif
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Get backups out of the way
 set backupdir=~/.vim/backup

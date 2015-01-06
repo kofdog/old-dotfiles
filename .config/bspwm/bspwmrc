@@ -1,30 +1,34 @@
 #!/bin/sh
 
-# Load keybindings
-sxhkd &
-
-# Hide cursor
-unclutter &
-
-# Composite windows
-compton -b
-
 # Initialize workspaces
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 # Set borders, gaps, splits
-bspc config border_width        5
-bspc config window_gap          50
-bspc config borderless_monocle  true
-bspc config gapless_monocle     true
-bspc config split_ratio         0.50
+for desktop in $(bspc query -D); do
+	#bspc config -d $desktop border_width 10;
+	bspc config -d $desktop border_width 0;
+	bspc config -d $desktop window_gap   20;
+done
+unset desktop
+
+bspc config borderless_monocle true
+bspc config gapless_monocle    true
+bspc config split_ratio        0.50
+
+bspc config focused_border_color "$COLOR15"
+bspc config active_border_color  "$COLOR7"
+bspc config normal_border_color  "$COLOR18"
+bspc config urgent_border_color  "$COLOR1"
 
 # Load a panel
 #panel dzen2 &
+#/home/mike/.config/bspwm/panel/panel &
 
-# Set application-specific rules
-#bspc rule -a Gimp desktop=^8 follow=on floating=on
-#bspc rule -a Chromium desktop=^2
-#bspc rule -a mplayer2 floating=on
-#bspc rule -a Kupfer.py focus=on
-#bspc rule -a Screenkey manage=off
+# Load keybindings
+sxhkd &
+
+# Hide cursor
+#unclutter &
+
+# Composite windows
+compton -b

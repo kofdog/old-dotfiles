@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd ~/.builds/dwm
+updpkgsums
+makepkg -efi
+cd -

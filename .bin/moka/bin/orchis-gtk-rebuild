@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd ~/.builds/orchis-gtk-theme
+git pull
+
+./render-gtk3-assets.py
+./render-gtk3-assets-hidpi.py
+./render-metacity-assets.py
+./render-unity-assets.py
+
+sudo ./INSTALL
+
+cd -

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wmfix
+x11-shrink
+matlab

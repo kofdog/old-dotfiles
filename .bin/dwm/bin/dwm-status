@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Power/Battery status
+if [ "$( cat /sys/class/power_supply/AC0/online )" -eq "1" ]; then
+    DWM_BATTERY="AC";
+    DWM_RENEW_INT=3;
+else
+    DWM_BATTERY=$(( `cat /sys/class/power_supply/BAT0/energy_now` * 100 / `cat /sys/class/power_supply/BAT0/energy_full` ));
+    DWM_RENEW_INT=30;
+fi;
+
+# Network connection
+DWM_ESSID=$( nmcli -t -f NAME c show --active ); 
+
+# Volume level
+DWM_VOL=$( amixer -c0 sget Master | awk -vORS=' ' '/Mono:/ {print($4)}' );
+
+# Date and time
+DWM_CLOCK=$( date '+%e %b %Y | %k:%M' );
+
+# Overall output command
+DWM_STATUS="Network: [$DWM_ESSID] | Power: [$DWM_BATTERY%] | Vol: $DWM_VOL| $DWM_CLOCK";
+xsetroot -name "$DWM_STATUS";

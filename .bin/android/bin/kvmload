@@ -1,0 +1,4 @@
+#!/bin/bash
+
+modprobe kvm
+modprobe kvm_intel
