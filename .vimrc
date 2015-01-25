@@ -5,29 +5,29 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'a.vim'
 Plugin 'ap/vim-buftabline'
-Plugin 'skammer/vim-css-color'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
+"Plugin 'skammer/vim-css-color'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'honza/vim-snippets'
+"Plugin 'SirVer/ultisnips'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 call vundle#end()
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-
-let g:ycm_key_list_select_completion = ['<TAB>']
-let g:ycm_key_list_previous_completion = ['<C-a>']
+"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"
+"let g:ycm_key_list_select_completion = ['<TAB>']
+"let g:ycm_key_list_previous_completion = ['<C-a>']
 
 " UltiSnips
-let g:UltiSnipsUsePythonVersion = 2
-
-let g:UltiSnipsExpandTrigger = '<c-j>'
-let g:UltiSnipsJumpForwardTrigger = '<c-n>'
-let g:UltiSnipsJumpBackwardTrigger = '<c-m>'
-
-let g:UltiSnipsEditSplic = 'vertical'
+"let g:UltiSnipsUsePythonVersion = 2
+"
+"let g:UltiSnipsExpandTrigger = '<c-j>'
+"let g:UltiSnipsJumpForwardTrigger = '<c-n>'
+"let g:UltiSnipsJumpBackwardTrigger = '<c-m>'
+"
+"let g:UltiSnipsEditSplic = 'vertical'
 
 " Obligatory
 filetype plugin indent on
@@ -39,8 +39,8 @@ filetype plugin indent on
 syntax on
 
 " Special characters
-set digraph
-inoremap <C-d> <C-h>
+"set digraph
+"inoremap <C-d> <C-h>
 
 " Color scheme
 let base16colorspace=256

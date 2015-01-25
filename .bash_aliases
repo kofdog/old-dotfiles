@@ -69,5 +69,8 @@ alias cleary='clear; archey3'
 # vim keybindings
 alias info='info --vi-keys'
 
+# quick launchers
+alias em='emacs -nw'
+
 # useful for long-running commands: <command>; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\=\s*//;s/[;&|]\s*alert$//'\'')"'

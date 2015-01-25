@@ -16,7 +16,7 @@
 	scroll_on_keystroke = true
 	scrollback_lines    = 500
 
-	allow_bold = false
+	allow_bold = true
 	font = Source Code Pro 12
 
 [colors]

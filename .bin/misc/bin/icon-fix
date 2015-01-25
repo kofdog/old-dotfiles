@@ -1,7 +1,7 @@
 #!/bin/bash
 
 desktop_dir=/usr/share/applications
-desktops=( 7zFM avahi-discover bssh bvnc CMake fluid gucharmap htop jconsole-jdk7 jmc-jdk7 jvisualm-jdk7 nvidia-settings org.gnome.Screenshot sun_java-jdk7 sun-java-jdk7 sun-javaws-jdk7 policytool-jdk7 zathura )
+desktops=( 7zFM avahi-discover bssh bvnc ca.desrt.dconf-editor CMake copy-agent cups dropbox flash-player-properties fluid gucharmap htop jconsole-jdk7 jmc-jdk7 jvisualvm-jdk7 nm-connection-editor nvidia-settings org.gnome.Screenshot simple-scan sun_java-jdk7 sun-java-jdk7 sun-javaws-jdk7 policytool-jdk7 www.octave.org-octave zathura )
 
 for d in ${desktops[@]}; do
     file="${desktop_dir}/${d}.desktop"

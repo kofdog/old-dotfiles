@@ -2,7 +2,6 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: stop
-current: 84
 random: 0
 repeat: 0
 single: 0
@@ -11,92 +10,4 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Alt-J (∆)/01 Intro.m4a
-1:Alt-J (∆)/02 Interlude 1.m4a
-2:Alt-J (∆)/03 Tessellate.m4a
-3:Alt-J (∆)/05 Interlude 2.m4a
-4:Alt-J (∆)/02 Interlude 1.m4a
-5:Alt-J (∆)/03 Tessellate.m4a
-6:Alt-J (∆)/04 Breezeblocks.m4a
-7:Alt-J (∆)/05 Interlude 2.m4a
-8:Alt-J (∆)/06 Estocada.m4a
-9:Alt-J (∆)/07 Dissolve Me.m4a
-10:Alt-J (∆)/08 Matilda.m4a
-11:Alt-J (∆)/09 Ms.m4a
-12:Alt-J (∆)/10 Fitzpleasure.m4a
-13:Alt-J (∆)/11 Interlude 3.m4a
-14:Alt-J (∆)/12 Blood Flood.m4a
-15:Alt-J (∆)/13 Taro_Handmade.m4a
-16:Goldfish/Get Busy Living/02 Get Busy Living [Feat. Emily Bruce].m4a
-17:Goldfish/Get Busy Living/05 Humbug [Feat. Sakhile Moleshe].m4a
-18:Goldfish/Get Busy Living/06 Brush Your Hair 1.m4a
-19:Goldfish/Perceptions of Pacha/03 Fort Knox.m4a
-20:Grizzly Bear/Yellow House/05 Little Brother.mp3
-21:Grizzly Bear/Veckatimest/10 While You Wait for the Others.mp3
-22:Grizzly Bear/Veckatimest/07 Ready, Able.mp3
-23:Gorillaz/Demon Days/05 Dirty Harry.mp3
-24:Dan Deacon/Spiderman of the Rings/03 Wham City.mp3
-25:Dan Deacon/Spiderman of the Rings/07 Snake Mistakes.mp3
-26:Daft Punk/Human After All/01 Human After All.mp3
-27:Daft Punk/Human After All/02 The Prime Time Of Your Life.mp3
-28:Daft Punk/Human After All/03 Robot Rock.mp3
-29:Daft Punk/Human After All/04 Steam Machine.mp3
-30:Black Rebel Motorcycle Club/B.R.M.C_/02 Red Eyes and Tears.mp3
-31:Black Rebel Motorcycle Club/B.R.M.C_/06 As Sure as the Sun.mp3
-32:Black Rebel Motorcycle Club/B.R.M.C_/07 Rifles.mp3
-33:Black Rebel Motorcycle Club/B.R.M.C_/08 Too Real.mp3
-34:Black Rebel Motorcycle Club/B.R.M.C_/09 Spread Your Love.mp3
-35:Jimi Hendrix/Are You Experienced_/01 Purple Haze.mp3
-36:Jimi Hendrix/Are You Experienced_/03 Hey Joe.mp3
-37:Jimi Hendrix/Axis_ Bold As Love/09 Castles Made Of Sand.mp3
-38:Jimi Hendrix/Electric Ladyland/03 Crosstown Traffic.mp3
-39:Jimi Hendrix/Electric Ladyland/04 Voodoo Chile.mp3
-40:Jimi Hendrix/Electric Ladyland/16 Voodoo Child (Slight Return).mp3
-41:Kings Of Leon/Aha Shake Heartbreak/01 Slow Night, So Long.mp3
-42:Kings Of Leon/Aha Shake Heartbreak/02 King of The Rodeo.mp3
-43:Kings Of Leon/Aha Shake Heartbreak/03 Taper Jean Girl.mp3
-44:Kings Of Leon/Youth & Young Manhood/02 Happy Alone.mp3
-45:Kings Of Leon/Youth & Young Manhood/11 Holy Roller Novocaine.mp3
-46:LCD Soundsystem/LCD Soundsystem/10 Tribulations.mp3
-47:LCD Soundsystem/LCD Soundsystem/08 Disco Infiltrator.mp3
-48:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
-49:LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3
-50:Led Zeppelin/Led Zeppelin IV/08 When the Levee Breaks.mp3
-51:My Morning Jacket/Z/01 Wordless Chorus.mp3
-52:My Morning Jacket/Z/02 It Beats 4 U.mp3
-53:My Morning Jacket/Z/10 Dondante.mp3
-54:Pink Floyd/Wish You Were Here [Remaster]/01 Shine On You Crazy Diamond (Parts.mp3
-55:Pink Floyd/Wish You Were Here [Remaster]/02 Welcome To The Machine.mp3
-56:Pink Floyd/Wish You Were Here [Remaster]/03 Have A Cigar.mp3
-57:Pink Floyd/Wish You Were Here [Remaster]/04 Wish You Were Here.mp3
-58:Pink Floyd/Wish You Were Here [Remaster]/05 Shine On You Crazy Diamond (Parts.mp3
-59:Pink Floyd/Wish You Were Here [Remaster]/01 Shine On You Crazy Diamond (Parts.mp3
-60:Pink Floyd/Wish You Were Here [Remaster]/02 Welcome To The Machine.mp3
-61:Pink Floyd/Wish You Were Here [Remaster]/03 Have A Cigar.mp3
-62:Pink Floyd/Wish You Were Here [Remaster]/04 Wish You Were Here.mp3
-63:Pink Floyd/Wish You Were Here [Remaster]/05 Shine On You Crazy Diamond (Parts.mp3
-64:Tame Impala/Lonerism/01 Be Above It.mp3
-65:Tame Impala/Lonerism/02 Endors Toi.mp3
-66:Tame Impala/Lonerism/03 Apocalypse Dreams.mp3
-67:Tame Impala/Lonerism/04 Mind Mischief.mp3
-68:Tame Impala/Lonerism/05 Music to Walk Home By.mp3
-69:Tame Impala/Lonerism/06 Why Won't They Talk to Me_.mp3
-70:Tame Impala/Lonerism/07 Feels Like We Only Go Backwards.mp3
-71:Tame Impala/Lonerism/08 Keep On Lying.mp3
-72:Tame Impala/Lonerism/09 Elephant.mp3
-73:Tame Impala/Lonerism/10 She Just Won't Believe Me.mp3
-74:Tame Impala/Lonerism/11 Nothing That Has Happened So Far.mp3
-75:Tame Impala/Lonerism/12 Sun's Coming Up.mp3
-76:Tame Impala/InnerSpeaker/01 It Is Not Meant to Be.mp3
-77:Tame Impala/InnerSpeaker/02 Desire Be Desire Go.mp3
-78:Tame Impala/InnerSpeaker/03 Alter Ego.mp3
-79:Tame Impala/InnerSpeaker/04 Lucidity.mp3
-80:Tame Impala/InnerSpeaker/05 Why Won't You Make Up Your Mind_.mp3
-81:Tame Impala/InnerSpeaker/06 Solitude Is Bliss.mp3
-82:Tame Impala/InnerSpeaker/07 Island Walking.mp3
-83:Tame Impala/InnerSpeaker/08 Jeremy's Storm.mp3
-84:Tame Impala/InnerSpeaker/09 Expectation.mp3
-85:Tame Impala/InnerSpeaker/10 The Bold Arrow of Time.mp3
-86:Tame Impala/InnerSpeaker/11 Runway Houses City Clouds.mp3
-87:Tame Impala/InnerSpeaker/12 I Don't Really Mind.mp3
 playlist_end

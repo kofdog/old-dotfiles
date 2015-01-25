@@ -63,6 +63,9 @@ alias cleary 'clear; archey3'
 # vim keybindings
 alias info 'info --vi-keys'
 
+# quick launchers
+alias em 'emacs -nw'
+
 # Make directory (recursive) and move there
 function md
     mkdir -p $argv; cd $argv
