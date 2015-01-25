@@ -2,6 +2,20 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'base16-default t)
 
+;; Indentation
+(package-initialize)
+(smart-tabs-mode 1)
+(smart-tabs-insinuate 'c 'javascript)
+
+(setq-default indent-tabs-mode nil)
+(add-hook 'c-mode-common-hook
+          (lambda () (setq indent-tabs-mode t)))
+
+(setq c-default-style "linux")
+(setq-default tab-width 4)
+(defvaralias 'c-basic-offset 'tab-width)
+(defvaralias 'cperl-indent-level 'tab-width)
+
 ;; Plugins
 (require 'package)
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
