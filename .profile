@@ -9,7 +9,7 @@ export COLORS="Base16 Default Dark"
 export FONT="Source Code Pro 12"
 
 # Set default applications
-export EDITOR=vim
+export EDITOR=emacs
 export FILES=ranger
 export BROWSER=firefox
 export MPLAYER=ncmpcpp
@@ -18,10 +18,11 @@ export LAUNCHER="dmenu_run -i -fn '$FONT' -nb '$BACKGROUND' -nf '$FOREGROUND' -s
 
 # Set application launchers (for when run outside terminal)
 export TERM_SHELL=fish
-export TERMINAL="termite -e $TERM_SHELL"
-export TERMRUN="termite -e"
-export LAUNCH_EDITOR="$TERMRUN $EDITOR"
-export LAUNCH_FILES="$TERMRUN $FILE_MANAGER"
+export TERMINAL=termite
+export TERMRUN="$TERMINAL -e"
+export LAUNCH_TERMINAL="$$TERMRUN $TERM_SHELL"
+export LAUNCH_EDITOR="$TERMRUN 'em -nw'"
+export LAUNCH_FILES="$TERMRUN $FILES"
 export LAUNCH_BROWSER=$BROWSER
 export LAUNCH_MPLAYER="$TERMRUN $MPLAYER"
 export LAUNCH_VPLAYER=$VPLAYER

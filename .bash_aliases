@@ -70,7 +70,10 @@ alias cleary='clear; archey3'
 alias info='info --vi-keys'
 
 # quick launchers
-alias em='emacs -nw'
+alias em='em -nw'
+
+# fix sudo
+alias sudo='sudo '
 
 # useful for long-running commands: <command>; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\=\s*//;s/[;&|]\s*alert$//'\'')"'

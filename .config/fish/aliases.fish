@@ -64,7 +64,16 @@ alias cleary 'clear; archey3'
 alias info 'info --vi-keys'
 
 # quick launchers
-alias em 'emacs -nw'
+alias em 'em -nw'
+
+# fix sudo
+function sudo
+    if test "$argv" = !!
+        eval command sudo $history[1]
+    else
+        command sudo $argv
+    end
+end
 
 # Make directory (recursive) and move there
 function md
