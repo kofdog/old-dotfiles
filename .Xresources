@@ -41,10 +41,6 @@ URxvt*termName: rxvt-256color
 URxvt*cursorBlink: true
 URxvt*perl-ext-common: default,selection-to-clipboard
 
-! Fake transparency
-!URxvt*transparent: true
-!URxvt*shading: 30
-
 ! Scrolling
 URxvt*saveLines: 5000
 URxvt*scrollStyle: rxvt
@@ -100,3 +96,8 @@ URxvt*color18: COLOR18
 URxvt*color19: COLOR19
 URxvt*color20: COLOR20
 URxvt*color21: COLOR21
+
+! Fake transparency
+!URxvt*transparent: true
+!URxvt*blurRadius: 30
+!URxvt*shading: 180
