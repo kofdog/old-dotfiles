@@ -3,7 +3,7 @@
 !--------------------------------------
 
 #include ".palettes/c-style/base16/dark/default"
-#define FONT xft:Source Code Pro:size=12
+#define FONT xft:Source Code Pro:size=13
 
 
 !--------------------------------------
@@ -23,9 +23,9 @@ Xft.rgba: grayscale
 ! DZen2
 !--------------------------------------
 
-!dzen2.font: FONT
-!dzen2.foreground: FOREGROUND
-!dzen2.background: BACKGROUND
+dzen2.font: FONT
+dzen2.foreground: FOREGROUND
+dzen2.background: BACKGROUND
 
 
 !--------------------------------------
@@ -50,7 +50,7 @@ URxvt*secondaryScroll: true
 ! Font
 URxvt*font: FONT
 !URxvt*font: -*-terminus-medium-*-*-*-32-*-*-*-*-*-*-*
-URxvt*boldFont:
+!URxvt*boldFont:
 
 ! Basics
 URxvt*background: BACKGROUND

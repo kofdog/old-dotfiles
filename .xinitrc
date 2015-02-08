@@ -36,7 +36,7 @@ xsetroot -cursor_name left_ptr
 sh ~/.fehbg &
 
 # Set default session
-session=${1:-bspwm}
+session=${1:-hlwm}
 
 # Only WMs are included here, because DEs should be launched from their
 # respective display managers (e.g. gdm, kdm, lightdm)
@@ -44,6 +44,7 @@ case $session in
     awesome  ) exec awesome;;
     bspwm    ) exec bspwm;;
     dwm      ) exec dwm-start;;
+    hlwm     ) exec herbstluftwm --locked;;
     i3|i3wm  ) exec i3;;
     openbox  ) exec openbox-session;;
     spectrwm ) compton -b; exec spectrwm;;

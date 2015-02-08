@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# terminal title bar
+wname() { echo -en "\033]0;$@\007"; }
+alias ranger='wname ranger; ranger'
+alias ncmpcpp='wname ncmpcpp; ncmpcpp'
+
 # pacman
 alias pacup='pacaur -Syu'
 alias pacs='pacaur -Ss'
@@ -47,6 +52,7 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # vim
+alias vim='wname vim; vim'
 vimp () { vim $( find "$@" -maxdepth 1 -type f ); }
 
 # administration
@@ -72,7 +78,7 @@ alias cleary='clear; archey3'
 alias info='info --vi-keys'
 
 # quick launchers
-alias em='em -nw'
+alias em='wname emacs; em -nw'
 
 # fix sudo
 alias sudo='sudo '

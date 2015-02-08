@@ -38,8 +38,13 @@ if ! shopt -oq posix; then
 fi
 
 # Set shell prompt
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
 #export PS1='┌──\u@\h[\w]\n└╼ '
-export PS1=' +  '
+#export PS1=' +  '
 
 # Set color scheme
 BASE16_SCHEME="default"

@@ -1,5 +1,17 @@
 #!/usr/bin/fish
 
+# terminal title bar
+function fish_title
+    set firstword (echo $_ | awk '{print $1;}')
+    if [ $firstword = 'em' ]
+        echo 'emacs'
+    else if [ $firstword = 'ncmpcpp' ]
+        echo 'ncmpcpp'
+    else
+        echo $_
+    end
+end
+
 # pacman
 alias pacup 'pacaur -Syu'
 alias pacs 'pacaur -Ss'
@@ -49,12 +61,13 @@ alias uuuuu 'cd ../../../../..'
 alias p8 'ping -c 3 8.8.8.8'
 
 # color support
-alias ls 'ls --color=auto'
-alias grep 'grep --color=auto'
-alias fgrep 'fgrep --color=auto'
-alias egrep 'egrep --color=auto'
+alias ls 'command ls --color=auto'
+alias grep 'command grep --color=auto'
+alias fgrep 'command fgrep --color=auto'
+alias egrep 'command egrep --color=auto'
 
 # ls
+alias sl 'ls'
 alias ll 'ls -alF'
 alias la 'ls -A'
 alias l 'ls -CF'
@@ -66,7 +79,7 @@ alias cleary 'clear; archey3'
 alias info 'info --vi-keys'
 
 # quick launchers
-alias em 'em -nw'
+alias em 'command em -nw'
 
 # fix sudo
 function sudo

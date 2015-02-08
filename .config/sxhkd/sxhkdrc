@@ -133,7 +133,7 @@ super + shift + w
     google-chrome-stable --new-window
 
 super + e
-    $LAUNCH_EDITOR
+    $LAUNCH_MAIL
 
 super + a
     $LAUNCH_MPLAYER

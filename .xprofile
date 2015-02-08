@@ -10,6 +10,10 @@ mpd-start &
 #CopyConsole --daemon &
 #google-musicmanager &
 
+# Terminal
+urxvtd &
+xrdb -load ~/.Xresources
+
 # Gnome 3 fullscreen fix
 devilspie &
 
