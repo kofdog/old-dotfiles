@@ -12,7 +12,7 @@ mpd-start &
 
 # Terminal
 urxvtd &
-xrdb -load ~/.Xresources
+xrdb -merge ~/.Xresources
 
 # Gnome 3 fullscreen fix
 devilspie &

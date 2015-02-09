@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+#Icon=/opt/android-studio/bin/androidstudio.svg
+Icon=androidstudio
+Name=Android Studio
+Comment=Android Studio - The Official IDE for Android Development
+Exec=/opt/android-studio/bin/studio.sh
+Categories=Utility;IDE;Development;
+Terminal=false
+StartupWMClass=jetbrains-android-studio

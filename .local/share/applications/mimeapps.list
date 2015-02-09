@@ -1,0 +1,18 @@
+[Added Associations]
+application/x-extension-eml=userapp-Thunderbird-PJI4LX.desktop;
+message/rfc822=userapp-Thunderbird-PJI4LX.desktop;
+text/html=chromium.desktop
+video/mp4=vlc-2.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-PJI4LX.desktop;google-chrome.desktop;
+x-scheme-handler/webcal=google-chrome.desktop
+
+[Default Applications]
+application/x-extension-eml=userapp-Thunderbird-PJI4LX.desktop
+message/rfc822=userapp-Thunderbird-PJI4LX.desktop
+text/html=chromium.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/mailto=chromium.desktop
+x-scheme-handler/webcal=chromium.desktop
+x-scheme-handler/web+tg=chromium.desktop
