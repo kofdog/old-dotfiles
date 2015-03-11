@@ -2,6 +2,8 @@
 ;;; Commentary:
 
 ;;; Code:
+(setq require-final-newline t)
+(setq mode-require-final-newline t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (provide 'init-whitespace)

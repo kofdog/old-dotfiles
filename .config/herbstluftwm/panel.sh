@@ -11,12 +11,11 @@ fi
 x=${geometry[0]}
 y=${geometry[1]}
 panel_width=${geometry[2]}
-panel_height=36
-font="Source Code Pro:size=13"
-#font="-*-terminus-medium-*-*-*-32-*-*-*-*-*-*-*"
-bgcolor=$(hc get frame_border_normal_color)
-selbg=$(hc get window_border_active_color)
-selfg='#101010'
+panel_height=40
+font=$FONT_XFT
+bgcolor=$BACKGROUND
+selbg=$ACCENT
+selfg=$BACKGROUND
 
 ####
 # Try to find textwidth binary.
@@ -67,7 +66,7 @@ hc pad $monitor $panel_height
     while true ; do
         # "date" output is checked once a second, but an event is only
         # generated if the output changed compared to the previous run.
-        date +$'date\t^fg(#efefef)%H:%M^fg(#909090), %Y-%m-^fg(#efefef)%d'
+        date +$'date\t^fg(#d3d0c8)%H:%M^fg(#a09f93), %Y-%m-^fg(#d3d0c8)%d'
         sleep 1 || break
     done > >(uniq_linebuffered) &
     childpid=$!
@@ -93,16 +92,16 @@ hc pad $monitor $panel_height
                     echo -n "^bg($selbg)^fg($selfg)"
                     ;;
                 '+')
-                    echo -n "^bg(#9CA668)^fg(#141414)"
+                    echo -n "^bg($GREEN)^fg($selfg)"
                     ;;
                 ':')
-                    echo -n "^bg()^fg(#ffffff)"
+                    echo -n "^bg()^fg($WHITE)"
                     ;;
                 '!')
-                    echo -n "^bg(#FF0675)^fg(#141414)"
+                    echo -n "^bg($RED)^fg($selfg)"
                     ;;
                 *)
-                    echo -n "^bg()^fg(#ababab)"
+                    echo -n "^bg()^fg($LIGHT_GRAY)"
                     ;;
             esac
             if [ ! -z "$dzen2_svn" ] ; then
@@ -117,7 +116,7 @@ hc pad $monitor $panel_height
             fi
         done
         echo -n "$separator"
-        echo -n "^bg()^fg() ${windowtitle//^/^^}"
+        echo -n "^bg()^fg($FOREGROUND) ${windowtitle//^/^^}"
         # small adjustments
         right="$separator^bg() $date $separator"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')

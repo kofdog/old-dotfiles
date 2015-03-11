@@ -2,8 +2,9 @@
 ! Constants
 !--------------------------------------
 
-#include ".palettes/c-style/base16/dark/default"
-#define FONT xft:Source Code Pro:size=13
+#include ".palettes/c-style/base16/dark/eighties"
+#define FONT xft:Source Code Pro:style=Semibold:size=13
+#define TWOFIFTYSIX
 
 
 !--------------------------------------
@@ -33,7 +34,7 @@ dzen2.background: BACKGROUND
 !--------------------------------------
 
 ! General
-URxvt*depth: 32
+!URxvt*depth: 32 ! disables w3mimgdisplay in ranger
 URxvt*geometry: 90x22
 URxvt*fading: 0
 URxvt*intensityStyles: false
@@ -49,8 +50,7 @@ URxvt*secondaryScroll: true
 
 ! Font
 URxvt*font: FONT
-!URxvt*font: -*-terminus-medium-*-*-*-32-*-*-*-*-*-*-*
-!URxvt*boldFont:
+URxvt*boldFont:
 
 ! Basics
 URxvt*background: BACKGROUND
@@ -90,12 +90,14 @@ URxvt*color7: COLOR7
 URxvt*color15: COLOR15
 
 ! Base-256 colors
+#ifdef TWOFIFTYSIX
 URxvt*color16: COLOR16
 URxvt*color17: COLOR17
 URxvt*color18: COLOR18
 URxvt*color19: COLOR19
 URxvt*color20: COLOR20
 URxvt*color21: COLOR21
+#endif
 
 ! Fake transparency
 !URxvt*transparent: true

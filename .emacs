@@ -8,6 +8,8 @@
 (require 'init-packages)
 
 (require 'init-appearance)
+(require 'init-backup)
+(require 'init-bell)
 (require 'init-completion)
 (require 'init-evil)
 ;(require 'init-helm)
@@ -21,8 +23,6 @@
 (add-hook 'after-init-hook '(lambda ()
                               (require 'init-keybindings)
                               ))
-
-(setq make-backup-files nil)
 
 (provide '.emacs)
 ;;; .emacs ends here

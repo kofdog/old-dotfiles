@@ -16,3 +16,5 @@ BASE0C="#66cccc"
 BASE0D="#6699cc"
 BASE0E="#cc99cc"
 BASE0F="#d27b53"
+
+export ACCENT=$BASE0C

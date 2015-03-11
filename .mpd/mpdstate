@@ -2,64 +2,95 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: stop
-current: 50
+current: 0
 random: 0
 repeat: 0
 single: 0
 consume: 0
-crossfade: 0
+crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Alt-J (∆)/01 Intro.m4a
-1:Alt-J (∆)/02 Interlude 1.m4a
-2:Alt-J (∆)/03 Tessellate.m4a
-3:Alt-J (∆)/04 Breezeblocks.m4a
-4:Alt-J (∆)/05 Interlude 2.m4a
-5:Alt-J (∆)/06 Estocada.m4a
-6:Alt-J (∆)/07 Dissolve Me.m4a
-7:Alt-J (∆)/08 Matilda.m4a
-8:Alt-J (∆)/09 Ms.m4a
-9:Alt-J (∆)/10 Fitzpleasure.m4a
-10:Alt-J (∆)/11 Interlude 3.m4a
-11:Alt-J (∆)/12 Blood Flood.m4a
-12:Alt-J (∆)/13 Taro_Handmade.m4a
-13:Electric Light Orchestra/Time/01 Prologue.mp3
-14:Electric Light Orchestra/Time/02 Twilight.mp3
-15:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
-16:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
-17:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
-18:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
-19:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
-20:Electric Light Orchestra/Time/08 From The End Of The World.mp3
-21:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
-22:Electric Light Orchestra/Time/10 Here Is The News.mp3
-23:Electric Light Orchestra/Time/11 21st Century Man.mp3
-24:Electric Light Orchestra/Time/12 Hold On Tight.mp3
-25:Electric Light Orchestra/Time/13 Epilogue.mp3
-26:Goldfish/Get Busy Living/02 Get Busy Living [Feat. Emily Bruce].m4a
-27:Balthazar/Applause/01 Fifteen Floors 1.m4a
-28:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
-29:LCD Soundsystem/Sound Of Silver/06 Us V Them.mp3
-30:LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3
-31:LCD Soundsystem/LCD Soundsystem/10 Tribulations.mp3
-32:LCD Soundsystem/LCD Soundsystem/08 Disco Infiltrator.mp3
-33:LCD Soundsystem/This is Happening/01 Dance Yrself Clean.m4a
-34:Nirvana/MTV Unplugged in New York/14 Where Did You Sleep Last Night.mp3
-35:Queens Of The Stone Age/Era Vulgaris/01 Turning On The Screw.mp3
-36:Queens Of The Stone Age/Era Vulgaris/02 Sick, Sick, Sick.mp3
-37:Queens Of The Stone Age/Era Vulgaris/03 I'm Designer.mp3
-38:Queens Of The Stone Age/Era Vulgaris/04 Into The Hollow.mp3
-39:Queens Of The Stone Age/Era Vulgaris/05 Misfit Love.mp3
-40:Queens Of The Stone Age/Era Vulgaris/06 Battery Acid.mp3
-41:Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3
-42:Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3
-43:Queens Of The Stone Age/Era Vulgaris/09 Suture Up Your Future.mp3
-44:Queens Of The Stone Age/Era Vulgaris/10 River In The Road.mp3
-45:Queens Of The Stone Age/Era Vulgaris/11 Run Pig Run.mp3
-46:Queens Of The Stone Age/Like Clockwork/10 - ...Like Clockwork.mp3
-47:Sublime/Unknown/What I Got.mp3
-48:Talking Heads/True Stories/06 Radio Head.m4a
-49:Talking Heads/Remain in Light/04 Once In A Lifetime.m4a
-50:Talking Heads/Remain in Light/05 Houses In Motion.m4a
+0:Electric Light Orchestra/Time/01 Prologue.mp3
+1:Electric Light Orchestra/Time/02 Twilight.mp3
+2:Electric Light Orchestra/Time/03 Yours Truly, 2095.mp3
+3:Electric Light Orchestra/Time/04 Ticket To The Moon.mp3
+4:Electric Light Orchestra/Time/05 The Way Life's Meant To Be.mp3
+5:Electric Light Orchestra/Time/06 Another Heart Breaks.mp3
+6:Electric Light Orchestra/Time/07 Rain Is Falling.mp3
+7:Electric Light Orchestra/Time/08 From The End Of The World.mp3
+8:Electric Light Orchestra/Time/09 The Lights Go Down.mp3
+9:Electric Light Orchestra/Time/10 Here Is The News.mp3
+10:Electric Light Orchestra/Time/11 21st Century Man.mp3
+11:Electric Light Orchestra/Time/12 Hold On Tight.mp3
+12:Electric Light Orchestra/Time/13 Epilogue.mp3
+13:Goldfish/Get Busy Living/02 Get Busy Living [Feat. Emily Bruce].m4a
+14:Balthazar/Applause/01 Fifteen Floors 1.m4a
+15:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
+16:LCD Soundsystem/Sound Of Silver/06 Us V Them.mp3
+17:LCD Soundsystem/LCD Soundsystem/01 Daft Punk Is Playing At My House.mp3
+18:LCD Soundsystem/LCD Soundsystem/10 Tribulations.mp3
+19:LCD Soundsystem/LCD Soundsystem/08 Disco Infiltrator.mp3
+20:LCD Soundsystem/This is Happening/01 Dance Yrself Clean.m4a
+21:Nirvana/MTV Unplugged in New York/14 Where Did You Sleep Last Night.mp3
+22:Queens Of The Stone Age/Era Vulgaris/01 Turning On The Screw.mp3
+23:Queens Of The Stone Age/Era Vulgaris/02 Sick, Sick, Sick.mp3
+24:Queens Of The Stone Age/Era Vulgaris/03 I'm Designer.mp3
+25:Queens Of The Stone Age/Era Vulgaris/04 Into The Hollow.mp3
+26:Queens Of The Stone Age/Era Vulgaris/05 Misfit Love.mp3
+27:Queens Of The Stone Age/Era Vulgaris/06 Battery Acid.mp3
+28:Queens Of The Stone Age/Era Vulgaris/07 Make It Wit Chu.mp3
+29:Queens Of The Stone Age/Era Vulgaris/08 3's & 7's.mp3
+30:Queens Of The Stone Age/Era Vulgaris/09 Suture Up Your Future.mp3
+31:Queens Of The Stone Age/Era Vulgaris/10 River In The Road.mp3
+32:Queens Of The Stone Age/Era Vulgaris/11 Run Pig Run.mp3
+33:Queens Of The Stone Age/Like Clockwork/10 - ...Like Clockwork.mp3
+34:Sublime/Unknown/What I Got.mp3
+35:Talking Heads/True Stories/06 Radio Head.m4a
+36:Talking Heads/Remain in Light/04 Once In A Lifetime.m4a
+37:Talking Heads/Remain in Light/05 Houses In Motion.m4a
+38:Balthazar/Applause/11 Blood Like Wine 1.m4a
+39:Balthazar/Applause/11 Blood Like Wine 1.m4a
+40:Alt-J (∆)/This Is All Yours/01 Intro.m4a
+41:Alt-J (∆)/This Is All Yours/02 Arrival In Nara.m4a
+42:Alt-J (∆)/This Is All Yours/03 Nara.m4a
+43:Alt-J (∆)/This Is All Yours/04 Every Other Freckle.m4a
+44:Alt-J (∆)/This Is All Yours/05 Left Hand Free.m4a
+45:Alt-J (∆)/This Is All Yours/06 Garden of England - Interlude.m4a
+46:Alt-J (∆)/This Is All Yours/07 Choice Kingdom.m4a
+47:Alt-J (∆)/This Is All Yours/08 Hunger of the Pine.m4a
+48:Alt-J (∆)/This Is All Yours/09 Warm Foothills.m4a
+49:Alt-J (∆)/This Is All Yours/10 The Gospel of John Hurt.m4a
+50:Alt-J (∆)/This Is All Yours/11 Pusher.m4a
+51:Alt-J (∆)/This Is All Yours/12 Bloodflood, Pt. II.m4a
+52:Alt-J (∆)/This Is All Yours/13 Leaving Nara.m4a
+53:Alt-J (∆)/This Is All Yours/14 Lovely Day (Bonus Track).m4a
+54:Alt-J (∆)/This Is All Yours/01 Intro.m4a
+55:Alt-J (∆)/This Is All Yours/02 Arrival In Nara.m4a
+56:Alt-J (∆)/This Is All Yours/03 Nara.m4a
+57:Alt-J (∆)/This Is All Yours/04 Every Other Freckle.m4a
+58:Alt-J (∆)/This Is All Yours/05 Left Hand Free.m4a
+59:Alt-J (∆)/This Is All Yours/06 Garden of England - Interlude.m4a
+60:Alt-J (∆)/This Is All Yours/07 Choice Kingdom.m4a
+61:Alt-J (∆)/This Is All Yours/08 Hunger of the Pine.m4a
+62:Alt-J (∆)/This Is All Yours/09 Warm Foothills.m4a
+63:Alt-J (∆)/This Is All Yours/10 The Gospel of John Hurt.m4a
+64:Alt-J (∆)/This Is All Yours/11 Pusher.m4a
+65:Alt-J (∆)/This Is All Yours/12 Bloodflood, Pt. II.m4a
+66:Alt-J (∆)/This Is All Yours/13 Leaving Nara.m4a
+67:Alt-J (∆)/This Is All Yours/14 Lovely Day (Bonus Track).m4a
+68:Alt-J (∆)/This Is All Yours/01 Intro.m4a
+69:Alt-J (∆)/This Is All Yours/02 Arrival In Nara.m4a
+70:Alt-J (∆)/This Is All Yours/03 Nara.m4a
+71:Alt-J (∆)/This Is All Yours/04 Every Other Freckle.m4a
+72:Alt-J (∆)/This Is All Yours/05 Left Hand Free.m4a
+73:Alt-J (∆)/This Is All Yours/06 Garden of England - Interlude.m4a
+74:Alt-J (∆)/This Is All Yours/07 Choice Kingdom.m4a
+75:Alt-J (∆)/This Is All Yours/08 Hunger of the Pine.m4a
+76:Alt-J (∆)/This Is All Yours/09 Warm Foothills.m4a
+77:Alt-J (∆)/This Is All Yours/10 The Gospel of John Hurt.m4a
+78:Alt-J (∆)/This Is All Yours/11 Pusher.m4a
+79:Alt-J (∆)/This Is All Yours/12 Bloodflood, Pt. II.m4a
+80:Alt-J (∆)/This Is All Yours/13 Leaving Nara.m4a
+81:Alt-J (∆)/This Is All Yours/14 Lovely Day (Bonus Track).m4a
 playlist_end

@@ -12,7 +12,6 @@ mpd-start &
 
 # Terminal
 urxvtd &
-xrdb -merge ~/.Xresources
 
 # Gnome 3 fullscreen fix
 devilspie &
@@ -20,3 +19,6 @@ devilspie &
 # Color switching
 #systemctl --user start colors-wallpaper.service
 #systemctl --user start colors-wallpaper.timer
+
+# X11
+xrdb -merge ~/.Xresources

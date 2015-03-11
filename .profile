@@ -2,20 +2,22 @@
 # bashrc and xinitrc, and should be sourced by display managers.
 
 # Grab colors and set font
-source ~/.palettes/bash-style/base16/default
+source ~/.palettes/bash-style/base16/eighties
 source ~/.palettes/bash-style/base16/colors
 source ~/.palettes/bash-style/base16/dark
-export COLORS="Base16 Default Dark"
-export FONT="Source Code Pro 13"
+export COLORS="Base16 Eighties Dark"
+export FONT="Source Code Pro Semibold 13"
+export FONT_DMENU="Source Code Pro Semibold-11"
+export FONT_XFT="Source Code Pro:style=Semibold:size=13"
 
 # Set default applications
-export EDITOR="emacs -nw"
+export EDITOR="vim"
 export FILES=ranger
 export BROWSER=firefox
 export MAIL=thunderbird
 export MPLAYER=ncmpcpp
 export VPLAYER=mpv
-export LAUNCHER="dmenu_run -i -fn '$FONT' -nb '$BACKGROUND' -nf '$FOREGROUND' -sb '$FOREGROUND' -sf '$BACKGROUND'"
+export LAUNCHER=dmenu-launch
 
 # Set application launchers (for when run outside terminal)
 export TERMRUN="urxvtc -e"

@@ -47,8 +47,8 @@ fi
 #export PS1=' +  '
 
 # Set color scheme
-BASE16_SCHEME="default"
-BASE16_SHADE=""
+BASE16_SCHEME="eighties"
+BASE16_SHADE="dark"
 BASE16_SHELL="~/.builds/base16-shell/base16-$BASE16_SCHEME.$BASE16_SHADE.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 

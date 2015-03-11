@@ -3,15 +3,27 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'a.vim'
-Plugin 'ap/vim-buftabline'
-"Plugin 'skammer/vim-css-color'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'honza/vim-snippets'
-"Plugin 'SirVer/ultisnips'
+
+" Critical
+Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/Smart-Tabs'
+
+" Nifty
+Plugin 'ap/vim-buftabline'
+Plugin 'a.vim'
 Plugin 'tpope/vim-repeat'
+"Plugin 'skammer/vim-css-color'
+"Plugin 'Valloric/YouCompleteMe'
+
+" Snippets
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+"Plugin 'SirVer/ultisnips'
+
 call vundle#end()
 
 " YouCompleteMe
@@ -45,13 +57,18 @@ syntax on
 " Color scheme
 let base16colorspace=256
 set background=dark
-colorscheme base16-default
+colorscheme base16-eighties
 
 " Set tab = 4-width tab
-set tabstop=4
+set noexpandtab
+set softtabstop=0
 set shiftwidth=4
-set softtabstop=4
-set expandtab
+set tabstop=4
+
+" Use tabs for indentation, spaces for alignment
+set cindent
+set cinoptions=(0,u0,U0
+set smarttab
 
 " ...except in Makefiles: tab = 8-width tab
 if has("autocmd")
