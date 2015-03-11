@@ -1,6 +1,6 @@
 #!/bin/bash
 # Provide three arguments: 1) set, 2) scheme, 3) shade
-# e.g. base16 dark default
+# e.g. base16 default dark
 
 # Xresources
 file=~/.Xresources

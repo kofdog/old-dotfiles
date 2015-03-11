@@ -1,28 +1,28 @@
-;; Base16 Default (https://github.com/chriskempson/base16)
+;; Base16 Mocha (https://github.com/chriskempson/base16)
 ;; Scheme: Chris Kempson (http://chriskempson.com)
 
-;;; base16-default-theme.el
+;;; base16-mocha-theme.el
 
 ;;; Code:
 
-(deftheme base16-default)
+(deftheme base16-mocha)
 
-(let ((background "#202020")
-      (current-line "#505050")
-      (selection "#b0b0b0")
-      (foreground "#e0e0e0")
-      (comment "#b0b0b0")
-      (cursor "#e0e0e0")
-      (red "#ac4142")
-      (orange "#d28445")
-      (yellow "#f4bf75")
-      (green "#90a959")
-      (aqua "#75b5aa")
-      (blue "#6a9fb5")
-      (purple "#aa759f"))
+(let ((background "#534636")
+      (current-line "#7e705a")
+      (selection "#b8afad")
+      (foreground "#e9e1dd")
+      (comment "#b8afad")
+      (cursor "#e9e1dd")
+      (red "#cb6077")
+      (orange "#d28b71")
+      (yellow "#f4bc87")
+      (green "#beb55b")
+      (aqua "#7bbda4")
+      (blue "#8ab3b5")
+      (purple "#a89bb9"))
 
   (custom-theme-set-faces
-   'base16-default
+   'base16-mocha
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -81,7 +81,7 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,foreground)))))
 
   (custom-theme-set-variables
-   'base16-default
+   'base16-mocha
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -91,6 +91,6 @@
        ;; black, red, green, yellow, blue, magenta, cyan, white
        [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground]))))
 
-(provide-theme 'base16-default)
+(provide-theme 'base16-mocha)
 
-;;; base16-default-theme.el ends here
+;;; base16-mocha-theme.el ends here

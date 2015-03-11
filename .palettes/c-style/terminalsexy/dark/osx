@@ -1,0 +1,7 @@
+#include "../osx"
+#include "../colors"
+
+#define BACKGROUND BASEBG
+#define BACKGROUND_TRANS [90]#19282b
+#define FOREGROUND BASEFG
+#define CURSOR BASECU

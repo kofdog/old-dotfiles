@@ -1,28 +1,28 @@
-;; Base16 Default (https://github.com/chriskempson/base16)
+;; Base16 Ocean (https://github.com/chriskempson/base16)
 ;; Scheme: Chris Kempson (http://chriskempson.com)
 
-;;; base16-default-theme.el
+;;; base16-ocean-theme.el
 
 ;;; Code:
 
-(deftheme base16-default)
+(deftheme base16-ocean)
 
-(let ((background "#202020")
-      (current-line "#505050")
-      (selection "#b0b0b0")
-      (foreground "#e0e0e0")
-      (comment "#b0b0b0")
-      (cursor "#e0e0e0")
-      (red "#ac4142")
-      (orange "#d28445")
-      (yellow "#f4bf75")
-      (green "#90a959")
-      (aqua "#75b5aa")
-      (blue "#6a9fb5")
-      (purple "#aa759f"))
+(let ((background "#343d46")
+      (current-line "#65737e")
+      (selection "#a7adba")
+      (foreground "#dfe1e8")
+      (comment "#a7adba")
+      (cursor "#dfe1e8")
+      (red "#bf616a")
+      (orange "#d08770")
+      (yellow "#ebcb8b")
+      (green "#a3be8c")
+      (aqua "#96b5b4")
+      (blue "#8fa1b3")
+      (purple "#b48ead"))
 
   (custom-theme-set-faces
-   'base16-default
+   'base16-ocean
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -81,7 +81,7 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,foreground)))))
 
   (custom-theme-set-variables
-   'base16-default
+   'base16-ocean
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -91,6 +91,6 @@
        ;; black, red, green, yellow, blue, magenta, cyan, white
        [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground]))))
 
-(provide-theme 'base16-default)
+(provide-theme 'base16-ocean)
 
-;;; base16-default-theme.el ends here
+;;; base16-ocean-theme.el ends here

@@ -1,28 +1,28 @@
-;; Base16 Default (https://github.com/chriskempson/base16)
-;; Scheme: Chris Kempson (http://chriskempson.com)
+;; Base16 Monokai (https://github.com/chriskempson/base16)
+;; Scheme: Wimer Hazenberg (http://www.monokai.nl)
 
-;;; base16-default-theme.el
+;;; base16-monokai-theme.el
 
 ;;; Code:
 
-(deftheme base16-default)
+(deftheme base16-monokai)
 
-(let ((background "#202020")
-      (current-line "#505050")
-      (selection "#b0b0b0")
-      (foreground "#e0e0e0")
-      (comment "#b0b0b0")
-      (cursor "#e0e0e0")
-      (red "#ac4142")
-      (orange "#d28445")
+(let ((background "#383830")
+      (current-line "#75715e")
+      (selection "#a59f85")
+      (foreground "#f5f4f1")
+      (comment "#a59f85")
+      (cursor "#f5f4f1")
+      (red "#f92672")
+      (orange "#fd971f")
       (yellow "#f4bf75")
-      (green "#90a959")
-      (aqua "#75b5aa")
-      (blue "#6a9fb5")
-      (purple "#aa759f"))
+      (green "#a6e22e")
+      (aqua "#a1efe4")
+      (blue "#66d9ef")
+      (purple "#ae81ff"))
 
   (custom-theme-set-faces
-   'base16-default
+   'base16-monokai
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -81,7 +81,7 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,foreground)))))
 
   (custom-theme-set-variables
-   'base16-default
+   'base16-monokai
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -91,6 +91,6 @@
        ;; black, red, green, yellow, blue, magenta, cyan, white
        [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground]))))
 
-(provide-theme 'base16-default)
+(provide-theme 'base16-monokai)
 
-;;; base16-default-theme.el ends here
+;;; base16-monokai-theme.el ends here

@@ -1,28 +1,28 @@
-;; Base16 Default (https://github.com/chriskempson/base16)
-;; Scheme: Chris Kempson (http://chriskempson.com)
+;; Base16 Solarized (https://github.com/chriskempson/base16)
+;; Scheme: Ethan Schoonover (http://ethanschoonover.com/solarized)
 
-;;; base16-default-theme.el
+;;; base16-solarized-theme.el
 
 ;;; Code:
 
-(deftheme base16-default)
+(deftheme base16-solarized)
 
-(let ((background "#202020")
-      (current-line "#505050")
-      (selection "#b0b0b0")
-      (foreground "#e0e0e0")
-      (comment "#b0b0b0")
-      (cursor "#e0e0e0")
-      (red "#ac4142")
-      (orange "#d28445")
-      (yellow "#f4bf75")
-      (green "#90a959")
-      (aqua "#75b5aa")
-      (blue "#6a9fb5")
-      (purple "#aa759f"))
+(let ((background "#073642")
+      (current-line "#657b83")
+      (selection "#839496")
+      (foreground "#eee8d5")
+      (comment "#839496")
+      (cursor "#eee8d5")
+      (red "#dc322f")
+      (orange "#cb4b16")
+      (yellow "#b58900")
+      (green "#859900")
+      (aqua "#2aa198")
+      (blue "#268bd2")
+      (purple "#6c71c4"))
 
   (custom-theme-set-faces
-   'base16-default
+   'base16-solarized
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -81,7 +81,7 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,foreground)))))
 
   (custom-theme-set-variables
-   'base16-default
+   'base16-solarized
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -91,6 +91,6 @@
        ;; black, red, green, yellow, blue, magenta, cyan, white
        [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground]))))
 
-(provide-theme 'base16-default)
+(provide-theme 'base16-solarized)
 
-;;; base16-default-theme.el ends here
+;;; base16-solarized-theme.el ends here

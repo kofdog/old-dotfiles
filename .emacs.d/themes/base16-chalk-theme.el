@@ -1,11 +1,11 @@
-;; Base16 Default (https://github.com/chriskempson/base16)
+;; Base16 Chalk (https://github.com/chriskempson/base16)
 ;; Scheme: Chris Kempson (http://chriskempson.com)
 
-;;; base16-default-theme.el
+;;; base16-chalk-theme.el
 
 ;;; Code:
 
-(deftheme base16-default)
+(deftheme base16-chalk)
 
 (let ((background "#202020")
       (current-line "#505050")
@@ -13,16 +13,16 @@
       (foreground "#e0e0e0")
       (comment "#b0b0b0")
       (cursor "#e0e0e0")
-      (red "#ac4142")
-      (orange "#d28445")
-      (yellow "#f4bf75")
-      (green "#90a959")
-      (aqua "#75b5aa")
-      (blue "#6a9fb5")
-      (purple "#aa759f"))
+      (red "#fb9fb1")
+      (orange "#eda987")
+      (yellow "#ddb26f")
+      (green "#acc267")
+      (aqua "#12cfc0")
+      (blue "#6fc2ef")
+      (purple "#e1a3ee"))
 
   (custom-theme-set-faces
-   'base16-default
+   'base16-chalk
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -81,7 +81,7 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,foreground)))))
 
   (custom-theme-set-variables
-   'base16-default
+   'base16-chalk
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -91,6 +91,6 @@
        ;; black, red, green, yellow, blue, magenta, cyan, white
        [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground]))))
 
-(provide-theme 'base16-default)
+(provide-theme 'base16-chalk)
 
-;;; base16-default-theme.el ends here
+;;; base16-chalk-theme.el ends here

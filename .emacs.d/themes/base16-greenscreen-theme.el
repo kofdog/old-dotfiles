@@ -1,28 +1,28 @@
-;; Base16 Default (https://github.com/chriskempson/base16)
+;; Base16 Green Screen (https://github.com/chriskempson/base16)
 ;; Scheme: Chris Kempson (http://chriskempson.com)
 
-;;; base16-default-theme.el
+;;; base16-greenscreen-theme.el
 
 ;;; Code:
 
-(deftheme base16-default)
+(deftheme base16-greenscreen)
 
-(let ((background "#202020")
-      (current-line "#505050")
-      (selection "#b0b0b0")
-      (foreground "#e0e0e0")
-      (comment "#b0b0b0")
-      (cursor "#e0e0e0")
-      (red "#ac4142")
-      (orange "#d28445")
-      (yellow "#f4bf75")
-      (green "#90a959")
-      (aqua "#75b5aa")
-      (blue "#6a9fb5")
-      (purple "#aa759f"))
+(let ((background "#003300")
+      (current-line "#007700")
+      (selection "#009900")
+      (foreground "#00dd00")
+      (comment "#009900")
+      (cursor "#00dd00")
+      (red "#007700")
+      (orange "#009900")
+      (yellow "#007700")
+      (green "#00bb00")
+      (aqua "#005500")
+      (blue "#009900")
+      (purple "#00bb00"))
 
   (custom-theme-set-faces
-   'base16-default
+   'base16-greenscreen
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -81,7 +81,7 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,foreground)))))
 
   (custom-theme-set-variables
-   'base16-default
+   'base16-greenscreen
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -91,6 +91,6 @@
        ;; black, red, green, yellow, blue, magenta, cyan, white
        [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground]))))
 
-(provide-theme 'base16-default)
+(provide-theme 'base16-greenscreen)
 
-;;; base16-default-theme.el ends here
+;;; base16-greenscreen-theme.el ends here

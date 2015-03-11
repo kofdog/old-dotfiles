@@ -1,28 +1,28 @@
-;; Base16 Default (https://github.com/chriskempson/base16)
-;; Scheme: Chris Kempson (http://chriskempson.com)
+;; Base16 Railscasts (https://github.com/chriskempson/base16)
+;; Scheme: Ryan Bates (http://railscasts.com)
 
-;;; base16-default-theme.el
+;;; base16-railscasts-theme.el
 
 ;;; Code:
 
-(deftheme base16-default)
+(deftheme base16-railscasts)
 
-(let ((background "#202020")
-      (current-line "#505050")
-      (selection "#b0b0b0")
-      (foreground "#e0e0e0")
-      (comment "#b0b0b0")
-      (cursor "#e0e0e0")
-      (red "#ac4142")
-      (orange "#d28445")
-      (yellow "#f4bf75")
-      (green "#90a959")
-      (aqua "#75b5aa")
-      (blue "#6a9fb5")
-      (purple "#aa759f"))
+(let ((background "#272935")
+      (current-line "#5a647e")
+      (selection "#d4cfc9")
+      (foreground "#f4f1ed")
+      (comment "#d4cfc9")
+      (cursor "#f4f1ed")
+      (red "#da4939")
+      (orange "#cc7833")
+      (yellow "#ffc66d")
+      (green "#a5c261")
+      (aqua "#519f50")
+      (blue "#6d9cbe")
+      (purple "#b6b3eb"))
 
   (custom-theme-set-faces
-   'base16-default
+   'base16-railscasts
 
    ;; Built-in stuff (Emacs 23)
    `(default ((t (:background ,background :foreground ,foreground))))
@@ -81,7 +81,7 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,foreground)))))
 
   (custom-theme-set-variables
-   'base16-default
+   'base16-railscasts
 
    `(ansi-color-names-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
@@ -91,6 +91,6 @@
        ;; black, red, green, yellow, blue, magenta, cyan, white
        [unspecified ,background ,red ,green ,yellow ,blue ,purple ,blue ,foreground]))))
 
-(provide-theme 'base16-default)
+(provide-theme 'base16-railscasts)
 
-;;; base16-default-theme.el ends here
+;;; base16-railscasts-theme.el ends here
