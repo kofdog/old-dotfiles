@@ -1,0 +1,6 @@
+#!/bin/bash
+#source ~/.palettes/bash-style/base16/eighties
+#source ~/.palettes/bash-style/base16/colors
+#source ~/.palettes/bash-style/base16/dark
+#
+dmenu_run -i -fn "$FONT_DMENU" -nb "$BACKGROUND" -nf "$FOREGROUND" -sb "$ACCENT" -sf "$BACKGROUND"
