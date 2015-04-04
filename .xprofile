@@ -10,15 +10,16 @@ mpd-start &
 #CopyConsole --daemon &
 #google-musicmanager &
 
-# Terminal
-urxvtd &
-
 # Gnome 3 fullscreen fix
-devilspie &
+#devilspie &
 
 # Color switching
 #systemctl --user start colors-wallpaper.service
 #systemctl --user start colors-wallpaper.timer
 
 # X11
-xrdb -merge ~/.Xresources
+xrdb -load /home/mike/.Xresources
+
+# Terminal
+urxvtd &
+stjerm &

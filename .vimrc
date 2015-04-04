@@ -14,8 +14,7 @@ Plugin 'vim-scripts/Smart-Tabs'
 Plugin 'ap/vim-buftabline'
 Plugin 'a.vim'
 Plugin 'tpope/vim-repeat'
-"Plugin 'skammer/vim-css-color'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'junegunn/goyo.vim'
 
 " Snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -26,20 +25,16 @@ Plugin 'honza/vim-snippets'
 
 call vundle#end()
 
-" YouCompleteMe
-"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-"
-"let g:ycm_key_list_select_completion = ['<TAB>']
-"let g:ycm_key_list_previous_completion = ['<C-a>']
+" System info required for later
+let s:kern = system("uname -r")
+let s:kernfixed = substitute(s:kern, "\n", "", "")
+let s:kernpath = '/lib/modules/' . s:kernfixed . '/build/include'
 
-" UltiSnips
-"let g:UltiSnipsUsePythonVersion = 2
-"
-"let g:UltiSnipsExpandTrigger = '<c-j>'
-"let g:UltiSnipsJumpForwardTrigger = '<c-n>'
-"let g:UltiSnipsJumpBackwardTrigger = '<c-m>'
-"
-"let g:UltiSnipsEditSplic = 'vertical'
+" Syntastic
+" TODO: Figure out how to add include paths
+let g:syntastic_c_check_header = 1
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_java_javac_classpath = "~/Android/Sdk/platforms/android-21/*.jar:~/AndroidStudioProjects/Sandbox/app/src/main"
 
 " Obligatory
 filetype plugin indent on
@@ -51,6 +46,7 @@ filetype plugin indent on
 syntax on
 
 " Special characters
+inoremap <C-d> <C-k>
 "set digraph
 "inoremap <C-d> <C-h>
 
@@ -77,6 +73,10 @@ endif
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Path
+let s:pathcommand = 'set path+=' . s:kernpath
+exec s:pathcommand
 
 " Get backups out of the way
 set backupdir=~/.vim/backup

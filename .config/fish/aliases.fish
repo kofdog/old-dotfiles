@@ -57,7 +57,15 @@ alias uuu 'cd ../../..'
 alias uuuu 'cd ../../../..'
 alias uuuuu 'cd ../../../../..'
 
+# quick cd
+alias eudy 'cd ~/Documents/code/eudyptula'
+alias desk 'cd ~/.local/share/applications'
+alias sand 'cd ~/AndroidStudioProjects/Sandbox/app/src/main/java/com/example/mike/sandbox'
+alias sdesk 'cd /usr/share/applications'
+
 # administration
+alias dirsize 'du -h -d 1 | sort -rh | less'
+alias filesize 'du -hS | sort -rh | less'
 alias p8 'ping -c 3 8.8.8.8'
 
 # color support
@@ -67,15 +75,19 @@ alias fgrep 'command fgrep --color=auto'
 alias egrep 'command egrep --color=auto'
 
 # ls
+alias l 'ls'
+alias s 'ls'
 alias sl 'ls'
-alias ll 'ls -alF'
+
 alias la 'ls -A'
-alias l 'ls -CF'
+alias lh 'ls -alFh'
+alias ll 'ls -alF'
 
 # aesthetic
 alias cleary 'clear; archey3'
 
-# vim keybindings
+# vim
+alias testvim='vim ~/Documents/code/eudyptula/01-helloworld/hello_world.c'
 alias info 'info --vi-keys'
 
 # quick launchers

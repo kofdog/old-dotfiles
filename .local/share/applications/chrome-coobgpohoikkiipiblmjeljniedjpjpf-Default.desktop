@@ -4,7 +4,7 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Google Search
-Exec=/opt/google/chrome-beta/google-chrome-beta --user-data-dir=/home/mike/.config/google-chrome-beta --profile-directory=Default --app-id=coobgpohoikkiipiblmjeljniedjpjpf
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=coobgpohoikkiipiblmjeljniedjpjpf
 Icon=chrome-coobgpohoikkiipiblmjeljniedjpjpf-Default
 NoDisplay=true
 StartupWMClass=crx_coobgpohoikkiipiblmjeljniedjpjpf

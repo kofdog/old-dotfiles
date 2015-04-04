@@ -4,6 +4,7 @@
 
 #include ".palettes/c-style/base16/dark/eighties"
 #define FONT xft:Source Code Pro:style=Semibold:size=13
+#define STFONT Source Code Pro Semibold 13
 #define TWOFIFTYSIX
 
 
@@ -103,3 +104,57 @@ URxvt*color21: COLOR21
 !URxvt*transparent: true
 !URxvt*blurRadius: 30
 !URxvt*shading: 180
+
+
+!--------------------------------------
+! Stjerm
+!--------------------------------------
+
+! General
+!stjerm*mod: windows
+stjerm*key: f2
+stjerm*height: 1080
+stjerm*width: 3840
+
+! Scrolling
+stjerm*lines: unlimited
+stjerm*scrollbar: none
+
+! Font
+stjerm*font: STFONT
+
+! Basics
+stjerm*background: BACKGROUND
+stjerm*foreground: FOREGROUND
+
+! Black dark/light
+stjerm*color0: COLOR0
+stjerm*color8: COLOR8
+
+! Red dark/light
+stjerm*color1: COLOR1
+stjerm*color9: COLOR9
+
+! Green dark/light
+stjerm*color2: COLOR2
+stjerm*color10: COLOR10
+
+! Yellow dark/light
+stjerm*color3: COLOR3
+stjerm*color11: COLOR11
+
+! Blue dark/light
+stjerm*color4: COLOR4
+stjerm*color12: COLOR12
+
+! Magenta dark/light
+stjerm*color5: COLOR5
+stjerm*color13: COLOR13
+
+! Cyan dark/light
+stjerm*color6: COLOR6
+stjerm*color14: COLOR14
+
+! White dark/light
+stjerm*color7: COLOR7
+stjerm*color15: COLOR15

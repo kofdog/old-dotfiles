@@ -11,17 +11,17 @@ export FONT_DMENU="Source Code Pro Semibold-11"
 export FONT_XFT="Source Code Pro:style=Semibold:size=13"
 
 # Set default applications
-export EDITOR="vim"
+export EDITOR=vim
 export FILES=ranger
 export BROWSER=firefox
-export MAIL=thunderbird
+export MAIL=mutt
 export MPLAYER=ncmpcpp
 export VPLAYER=mpv
 export LAUNCHER=dmenu-launch
 
 # Set application launchers (for when run outside terminal)
-export TERMRUN="urxvtc -e"
-export TERMINAL="$TERMRUN fish"
+export TERMINAL="urxvtc"
+export TERMRUN="$TERMINAL -e"
 export LAUNCH_FILES="$TERMRUN $FILES"
 export LAUNCH_BROWSER=$BROWSER
 export LAUNCH_MAIL=$MAIL

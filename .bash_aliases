@@ -51,11 +51,20 @@ alias uuuu='cd ../../../..'
 alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
+# quick cd
+alias eudy='cd ~/Documents/code/eudyptula'
+alias desk='cd ~/.local/share/applications'
+alias sand='cd ~/AndroidStudioProjects/Sandbox/app/src/main/java/com/example/mike/sandbox'
+alias sdesk='cd /usr/share/applications'
+
 # vim
-alias vim='wname vim; vim'
+#alias vim='wname vim; vim'
+alias testvim='vim ~/Documents/code/eudyptula/01-helloworld/hello_world.c'
 vimp () { vim $( find "$@" -maxdepth 1 -type f ); }
 
 # administration
+alias dirsize='du -h -d 1 | sort -rh | less'
+alias filesize='du -hS | sort -rh | less'
 alias p8='ping -c 3 8.8.8.8'
 
 # color support
@@ -67,9 +76,13 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # ls
-alias ll='ls -alF'
+alias l='ls'
+alias s='ls'
+alias sl='ls'
+
 alias la='ls -A'
-alias l='ls -CF'
+alias lh='ls -alFh'
+alias ll='ls -alF'
 
 # aesthetic
 alias cleary='clear; archey3'
