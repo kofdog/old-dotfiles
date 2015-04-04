@@ -16,6 +16,11 @@ font=$FONT_XFT
 bgcolor=$BACKGROUND
 selbg=$ACCENT
 selfg=$BACKGROUND
+dullfg=$LIGHT_GRAY
+dullestfg=$DARKER_GRAY
+num_hearts=10
+icon_font="FontAwesome:style=Regular:size=10"
+heart_icon=""
 
 ####
 # Try to find textwidth binary.
@@ -62,7 +67,15 @@ hc pad $monitor $panel_height
     # e.g.
     #   date    ^fg(#efefef)18:33^fg(#909090), 2013-10-^fg(#efefef)29
 
-    #mpc idleloop player &
+    while true ; do
+		if ! mpc status >/dev/null; then
+			sleep 5
+		else
+			echo "player $(mpc current)"
+			mpc idleloop player
+		fi
+	done &
+
     while true ; do
         # "date" output is checked once a second, but an event is only
         # generated if the output changed compared to the previous run.
@@ -101,7 +114,7 @@ hc pad $monitor $panel_height
                     echo -n "^bg($RED)^fg($selfg)"
                     ;;
                 *)
-                    echo -n "^bg()^fg($LIGHT_GRAY)"
+                    echo -n "^bg()^fg($dullfg)"
                     ;;
             esac
             if [ ! -z "$dzen2_svn" ] ; then
@@ -117,12 +130,37 @@ hc pad $monitor $panel_height
         done
         echo -n "$separator"
         echo -n "^bg()^fg($FOREGROUND) ${windowtitle//^/^^}"
-        # small adjustments
-        right="$separator^bg() $date $separator"
+
+		# Current track
+        mpd=$(pidof mpd)
+
+        # Battery
+		battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) / $(cat /sys/class/power_supply/BAT*/energy_full))
+		num=$(expr $battery \* $num_hearts)
+		num=$((num / 100))
+		hearts=""
+		empty=""
+		for i in $(seq 1 $num); do
+			hearts="${hearts}^fg($RED)${heart_icon}"
+		done
+		for i in $(seq $((num + 1)) $num_hearts); do
+			empty="${empty}^fg($dullestfg)${heart_icon}"
+		done
+		bat="^fn($icon_font)${hearts}${empty}^fn($font)"
+
+		right="$separator^fg($FOREGROUND)"
+		if [ "$mpd" != "" ] ;then
+			right="$right $song $separator^fg($FOREGROUND)"
+		fi
+		if [ "$battery" != "/" ] ;then
+			right="$right $bat $separator^fg($FOREGROUND)"
+		fi
+        right="$right $date $separator"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
-        width=$($textwidth "$font" "$right_text_only    ")
-        echo -n "^pa($(($panel_width - $width)))$right"
+        width=$($textwidth "$font" "$right_text_only")
+        # TODO: Make this work dynamically
+		echo -n "^pa($(($panel_width - $width + 4 * $($textwidth $font $bat))))$right"
         echo
 
         ### Data handling ###
@@ -171,8 +209,9 @@ hc pad $monitor $panel_height
             focus_changed|window_title_changed)
                 windowtitle="${cmd[@]:2}"
                 ;;
-            #player)
-            #    ;;
+            player)
+				song=$(mpc current)
+                ;;
         esac
     done
 

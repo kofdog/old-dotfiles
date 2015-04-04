@@ -126,6 +126,7 @@ stjerm*font: STFONT
 ! Basics
 stjerm*background: BACKGROUND
 stjerm*foreground: FOREGROUND
+stjerm*opacity: 100
 
 ! Black dark/light
 stjerm*color0: COLOR0

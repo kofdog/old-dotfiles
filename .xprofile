@@ -18,7 +18,9 @@ mpd-start &
 #systemctl --user start colors-wallpaper.timer
 
 # X11
+USRRESOURCES=$HOME/.Xresources
 xrdb -load /home/mike/.Xresources
+xset b off
 
 # Terminal
 urxvtd &
