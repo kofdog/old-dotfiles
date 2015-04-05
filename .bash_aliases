@@ -58,7 +58,7 @@ alias sand='cd ~/AndroidStudioProjects/Sandbox/app/src/main/java/com/example/mik
 alias sdesk='cd /usr/share/applications'
 
 # vim
-#alias vim='wname vim; vim'
+alias vim='wname vim; vim'
 alias testvim='vim ~/Documents/code/eudyptula/01-helloworld/hello_world.c'
 vimp () { vim $( find "$@" -maxdepth 1 -type f ); }
 

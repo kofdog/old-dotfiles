@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
 state: play
-current: 0
-time: 120.141000
+current: 15
+time: 32.891000
 random: 0
 repeat: 0
 single: 0
@@ -12,23 +12,20 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Alt-J (∆)/This Is All Yours/13 Leaving Nara.m4a
-1:Alt-J (∆)/This Is All Yours/14 Lovely Day (Bonus Track).m4a
-2:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
-3:LCD Soundsystem/Sound Of Silver/02 Time To Get Away.mp3
-4:LCD Soundsystem/Sound Of Silver/03 North American Scum.mp3
-5:LCD Soundsystem/Sound Of Silver/04 Someone Great.mp3
-6:LCD Soundsystem/Sound Of Silver/05 All My Friends.mp3
-7:LCD Soundsystem/Sound Of Silver/06 Us V Them.mp3
-8:LCD Soundsystem/Sound Of Silver/07 Watch The Tapes.mp3
-9:LCD Soundsystem/Sound Of Silver/08 Sound Of Silver.mp3
-10:LCD Soundsystem/Sound Of Silver/09 New York, I Love You But You're B.mp3
-11:Led Zeppelin/Houses of the Holy/01 The Song Remains the Same.mp3
-12:Led Zeppelin/Houses of the Holy/02 The Rain Song.mp3
-13:Led Zeppelin/Houses of the Holy/03 Over the Hills and Far Away.mp3
-14:Led Zeppelin/Houses of the Holy/04 The Crunge.mp3
-15:Led Zeppelin/Houses of the Holy/05 Dancing Days.mp3
-16:Led Zeppelin/Houses of the Holy/06 D'Yer Mak'er.mp3
-17:Led Zeppelin/Houses of the Holy/07 No Quarter.mp3
-18:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
+0:LCD Soundsystem/Sound Of Silver/03 North American Scum.mp3
+1:LCD Soundsystem/Sound Of Silver/04 Someone Great.mp3
+2:LCD Soundsystem/Sound Of Silver/05 All My Friends.mp3
+3:LCD Soundsystem/Sound Of Silver/06 Us V Them.mp3
+4:LCD Soundsystem/Sound Of Silver/07 Watch The Tapes.mp3
+5:LCD Soundsystem/Sound Of Silver/08 Sound Of Silver.mp3
+6:LCD Soundsystem/Sound Of Silver/09 New York, I Love You But You're B.mp3
+7:Led Zeppelin/Houses of the Holy/01 The Song Remains the Same.mp3
+8:Led Zeppelin/Houses of the Holy/02 The Rain Song.mp3
+9:Led Zeppelin/Houses of the Holy/03 Over the Hills and Far Away.mp3
+10:Led Zeppelin/Houses of the Holy/04 The Crunge.mp3
+11:Led Zeppelin/Houses of the Holy/05 Dancing Days.mp3
+12:Led Zeppelin/Houses of the Holy/06 D'Yer Mak'er.mp3
+13:Led Zeppelin/Houses of the Holy/07 No Quarter.mp3
+14:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
+15:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
 playlist_end
