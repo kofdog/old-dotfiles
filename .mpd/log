@@ -1,3 +1,0 @@
-Mar 18 16:06 : update: Failed to stat /home/mike/music: No such file or directory
-Mar 18 16:06 : state_file: failed to open /home/mike/.mpd/state: No such file or directory
-Mar 18 16:06 : avahi: Service 'Music Player' successfully established.
