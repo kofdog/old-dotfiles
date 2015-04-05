@@ -97,7 +97,7 @@ hc pad $monitor $panel_height
         # and then waits for the next event to happen.
 
         bordercolor="#26221C"
-        separator="^bg()^fg($selbg)|"
+		separator="^bg()^fg($selbg)|^fg($FOREGROUND)"
         # draw tags
         for i in "${tags[@]}" ; do
             case ${i:0:1} in
@@ -148,14 +148,14 @@ hc pad $monitor $panel_height
 		done
 		bat="^fn($icon_font)${hearts}${empty}^fn($font)"
 
-		right="$separator^fg($FOREGROUND)"
-		if [ "$mpd" != "" ] ;then
-			right="$right $song $separator^fg($FOREGROUND)"
+		right=""
+		if [ "$song" != "" ] && [ "$mpd" != "" ]; then
+			right="$right $separator $song"
 		fi
-		if [ "$battery" != "/" ] ;then
-			right="$right $bat $separator^fg($FOREGROUND)"
+		if [ "$battery" != "/" ]; then
+			right="$right $separator $bat"
 		fi
-        right="$right $date $separator"
+        right="$right $separator $date"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
         width=$($textwidth "$font" "$right_text_only")
