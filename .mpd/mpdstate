@@ -1,9 +1,7 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:FIFO
-state: play
-current: 15
-time: 32.891000
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -27,5 +25,4 @@ playlist_begin
 12:Led Zeppelin/Houses of the Holy/06 D'Yer Mak'er.mp3
 13:Led Zeppelin/Houses of the Holy/07 No Quarter.mp3
 14:Led Zeppelin/Houses of the Holy/08 The Ocean.mp3
-15:LCD Soundsystem/Sound Of Silver/01 Get Innocuous!.mp3
 playlist_end
