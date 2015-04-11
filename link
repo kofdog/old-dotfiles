@@ -1,15 +1,37 @@
 #!/bin/bash
+# Create links to this dotfiles repo in the user's home directory.
+# This repo should be checked out in some other directory, $dotfiles
+# (I personally like "$HOME/.dotfiles"). Run this script from there.
+usage="Usage: $(basename "$0") [-h]"
 
-#targetdir=$HOME
-targetdir=/home/mike/.test
+OPTIND=1
+while getopts ":h" opt; do
+	case $opt in
+		h)
+			echo "$usage"
+			exit
+			;;
+		\?)
+			echo "Invalid option: -$OPTARG" >&2
+			exit 1
+			;;
+	esac
+done
+shift $((OPTIND - 1))
 
-for f in $(find . -type f -not -path "./.git*" -not -name "*README.md" -not -name link); do
+for f in $(find . -type f -not -path "./.git*" -not -name "*README.md" \
+	              -not -name "link"); do
 	strippedfile="${f:2}"
-	targetfile="$targetdir/$strippedfile"
+	targetfile="$HOME/$strippedfile"
+
+	# If file already exists in $HOME and is not a link, create a backup.
 	if [ -e "$targetfile" ] && [ ! -h "$targetfile" ]; then
 		mv "$targetfile" "${targetfile}.old"
+
+	# If file doesn't exist, create the path in $HOME.
 	elif [ ! -e "$targetfile" ]; then
-		mkdir -p "$(dirname ${targetfile})"
+		mkdir -p "$(dirname "$targetfile")"
 	fi
+
 	ln -s "$(pwd)/$strippedfile" "$targetfile"
 done
