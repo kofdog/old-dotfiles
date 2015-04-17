@@ -14,17 +14,19 @@ export FONT_XFT="Source Code Pro:style=Semibold:size=13"
 export EDITOR=vim
 export FILES=ranger
 export BROWSER=firefox
+export ALT_BROWSER=google-chrome-stable
 export MAIL=mutt
 export MPLAYER=ncmpcpp
 export VPLAYER=mpv
 export LAUNCHER=dmenu-launch
 
 # Set application launchers (for when run outside terminal)
-export TERMINAL="urxvtc"
+export TERMINAL=urxvtc
 export TERMRUN="$TERMINAL -e"
 export LAUNCH_FILES="$TERMRUN $FILES"
 export LAUNCH_BROWSER=$BROWSER
-export LAUNCH_MAIL=$MAIL
+export LAUNCH_ALT_BROWSER=$ALT_BROWSER
+export LAUNCH_MAIL="$TERMRUN $MAIL"
 export LAUNCH_MPLAYER="$TERMRUN $MPLAYER"
 export LAUNCH_VPLAYER=$VPLAYER
 
