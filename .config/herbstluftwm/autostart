@@ -20,7 +20,8 @@ hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-x close
 hc keybind $Mod-Return spawn $TERMINAL
-hc keybind $Mod-Shift-Return spawn $BROWSER
+hc keybind $Mod-Shift-Return spawn $LAUNCH_BROWSER
+hc keybind $Mod-Control-Return spawn $LAUNCH_ALT_BROWSER
 hc keybind $Mod-space spawn $LAUNCHER
 
 # basic movement
