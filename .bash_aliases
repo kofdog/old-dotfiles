@@ -59,6 +59,7 @@ alias sdesk='cd /usr/share/applications'
 
 # vim
 alias vim='wname vim; vim'
+alias nv='wname neovim; nvim'
 alias testvim='vim ~/Documents/code/eudyptula/01-helloworld/hello_world.c'
 vimp () { vim $( find "$@" -maxdepth 1 -type f ); }
 
