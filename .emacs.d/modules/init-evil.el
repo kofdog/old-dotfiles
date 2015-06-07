@@ -3,6 +3,8 @@
 
 ;;; Code:
 (require 'evil)
+(require 'evil-leader)
+(global-evil-leader-mode)
 (evil-mode 1)
 
 ;; Plugins
@@ -29,22 +31,39 @@
        (t (setq unread-command-events (append unread-command-events
 					       (list evt))))))))
 
-; Remove horrible 'record' function
-(define-key evil-normal-state-map (kbd "q") nil)
-
 ; Move by visible lines
 (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
 (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
 (define-key evil-normal-state-map (kbd "gj") 'evil-next-line)
 (define-key evil-normal-state-map (kbd "gk") 'evil-previous-line)
 
+; Set leader key
+(evil-leader/set-leader ";")
+
+; Buffer navigation
+(evil-leader/set-key "h" 'previous-buffer)
+(evil-leader/set-key "l" 'next-buffer)
+(evil-leader/set-key "b" 'ido-switch-buffer)
+(evil-leader/set-key "q" 'kill-buffer)
+
+; File switching
+(defun maybe-projectile-find-file ()
+  (interactive)
+  (call-interactively
+   (if (projectile-project-p)
+       #'projectile-find-file
+       #'ido-find-file)))
+(evil-leader/set-key "f" 'maybe-projectile-find-file)
+(evil-leader/set-key "a" 'projectile-find-other-file)
+
+; Window navigation
+(evil-leader/set-key "o" 'evil-window-next)
+
 ; Page up/down
-(define-key evil-normal-state-map (kbd "C-j") (lambda ()
-                                                (interactive)
-                                                (evil-scroll-down nil)))
-(define-key evil-normal-state-map (kbd "C-k") (lambda ()
-                                                (interactive)
-                                                (evil-scroll-up nil)))
+;(define-key evil-normal-state-map (kbd "C-j")
+;  (lambda () (interactive) (evil-scroll-down nil)))
+;(define-key evil-normal-state-map (kbd "C-k")
+;  (lambda () (interactive) (evil-scroll-up nil)))
 
 (provide 'init-evil)
 ;;; init-evil.el ends here

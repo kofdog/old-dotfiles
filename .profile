@@ -13,8 +13,8 @@ export FONT_XFT="Source Code Pro:style=Semibold:size=13"
 # Set default applications
 export EDITOR=vim
 export FILES=ranger
-export BROWSER=firefox
-export ALT_BROWSER=google-chrome-stable
+export BROWSER=google-chrome-stable
+export ALT_BROWSER=firefox
 export MAIL=mutt
 export MPLAYER=ncmpcpp
 export VPLAYER=mpv

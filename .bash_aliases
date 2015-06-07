@@ -52,14 +52,16 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick cd
-alias eudy='cd ~/Documents/code/eudyptula'
+alias eudy='cd ~/Projects/eudyptula-challenge'
 alias desk='cd ~/.local/share/applications'
+alias kern='cd ~/Projects/kernel'
 alias sand='cd ~/AndroidStudioProjects/Sandbox/app/src/main/java/com/example/mike/sandbox'
 alias sdesk='cd /usr/share/applications'
 
 # vim
-alias vim='wname vim; vim'
-alias nv='wname neovim; nvim'
+#alias vim='wname vim; vim'
+#alias nv='wname neovim; nvim'
+alias nv='nvim'
 alias testvim='vim ~/Documents/code/eudyptula/01-helloworld/hello_world.c'
 vimp () { vim $( find "$@" -maxdepth 1 -type f ); }
 
@@ -92,7 +94,7 @@ alias cleary='clear; archey3'
 alias info='info --vi-keys'
 
 # quick launchers
-alias em='wname emacs; em -nw'
+alias emc='wname emacs; em -nw'
 
 # fix sudo
 alias sudo='sudo '

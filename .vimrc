@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Critical
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/Smart-Tabs'
@@ -55,11 +55,11 @@ let base16colorspace=256
 set background=dark
 colorscheme base16-eighties
 
-" Set tab = 4-width tab
+" Set tab = 8-width tab
 set noexpandtab
 set softtabstop=0
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=8
+set tabstop=8
 
 " Use tabs for indentation, spaces for alignment
 set cindent

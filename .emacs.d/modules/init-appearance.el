@@ -8,8 +8,10 @@
 (unless (display-graphic-p) (menu-bar-mode -1))
 
 ;; Color scheme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'base16-default t)
+;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;(load-theme 'base16-default t)
+(require 'color-theme-sanityinc-tomorrow)
+(load-theme 'sanityinc-tomorrow-eighties t)
 
 (provide 'init-appearance)
 ;;; init-appearance.el ends here

@@ -1,6 +1,9 @@
 # Use this file to autostart GUI programs. It is called by xinitrc,
 # and should be sourced by display managers.
 
+# Video
+redshift &
+
 # Audio
 mpd-start &
 

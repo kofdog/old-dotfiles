@@ -17,6 +17,7 @@
     ag
     async
     auto-complete
+    color-theme-sanityinc-tomorrow
     evil
     evil-leader
     evil-surround
@@ -24,7 +25,7 @@
     flx-ido
     flycheck
     ;helm
-    ;projectile
+    projectile
     smart-tabs-mode
     yasnippet
     ) "A list of packages to ensure are installed at launch.")
