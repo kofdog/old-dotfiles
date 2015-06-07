@@ -13,5 +13,8 @@
 (require 'color-theme-sanityinc-tomorrow)
 (load-theme 'sanityinc-tomorrow-eighties t)
 
+;; Mode line
+(column-number-mode t)
+
 (provide 'init-appearance)
 ;;; init-appearance.el ends here

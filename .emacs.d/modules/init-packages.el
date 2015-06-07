@@ -15,6 +15,7 @@
 (defvar required-packages
   '(
     ag
+    android-mode
     async
     auto-complete
     color-theme-sanityinc-tomorrow

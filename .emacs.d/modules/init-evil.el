@@ -2,6 +2,10 @@
 ;;; Commentary:
 
 ;;; Code:
+;; Dependencies
+(require 'projectile)
+(require 'android-mode)
+
 (require 'evil)
 (require 'evil-leader)
 (global-evil-leader-mode)
@@ -55,6 +59,13 @@
        #'ido-find-file)))
 (evil-leader/set-key "f" 'maybe-projectile-find-file)
 (evil-leader/set-key "a" 'projectile-find-other-file)
+
+; Android development
+(evil-leader/set-key "e" 'android-start-emulator)
+(evil-leader/set-key "d" 'android-start-ddms)
+
+; All development
+(evil-leader/set-key "m" 'compile)
 
 ; Window navigation
 (evil-leader/set-key "o" 'evil-window-next)

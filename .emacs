@@ -7,9 +7,11 @@
 
 (require 'init-packages)
 
+(require 'init-android)
 (require 'init-appearance)
 (require 'init-backup)
 (require 'init-bell)
+(require 'init-compilation)
 ;(require 'init-completion)
 (require 'init-evil)
 ;(require 'init-helm)
