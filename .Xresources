@@ -4,6 +4,7 @@
 
 #include ".palettes/c-style/base16/dark/eighties"
 #define FONT xft:Source Code Pro:style=Semibold:size=13
+!#define FONT xft:Meslo LG L:style=Regular:size=13
 #define TWOFIFTYSIX
 
 
@@ -42,10 +43,10 @@ URxvt*cursorBlink: true
 URxvt*perl-ext-common: default,selection-to-clipboard
 
 ! Fake transparency
-URxvt*transparent: true
-URxvt*blurRadius: 90
+!URxvt*transparent: true
+!URxvt*blurRadius: 90
 !URxvt*shading: 20
-URxvt*fading: 20
+!URxvt*fading: 20
 
 ! Scrolling
 URxvt*saveLines: 5000

@@ -12,9 +12,14 @@
 ;(load-theme 'base16-default t)
 (require 'color-theme-sanityinc-tomorrow)
 (load-theme 'sanityinc-tomorrow-eighties t)
+;(require 'monokai-theme)
+;(load-theme 'monokai t)
 
 ;; Mode line
 (column-number-mode t)
+
+;; Matching pairs
+(show-paren-mode t)
 
 (provide 'init-appearance)
 ;;; init-appearance.el ends here
