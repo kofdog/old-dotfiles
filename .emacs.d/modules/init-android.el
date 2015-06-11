@@ -3,7 +3,7 @@
 
 ;;; Code:
 (require 'android-mode)
-(setq android-mode-sdk-dir "/opt/android-sdk")
+(setq android-mode-sdk-dir "/home/mike/Android/Sdk")
 (add-hook 'java-mode-hook '(lambda () (android-mode)))
 
 (provide 'init-android)

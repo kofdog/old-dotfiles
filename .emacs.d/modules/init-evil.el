@@ -25,15 +25,15 @@
   (let ((modified (buffer-modified-p)))
     (insert "j")
     (let ((evt (read-event (format "Insert %c to exit insert state" ?k)
-			   nil 0.5)))
+                           nil 0.5)))
       (cond
        ((null evt) (message ""))
        ((and (integerp evt) (char-equal evt ?k))
-	(delete-char -1)
-	(set-buffer-modified-p modified)
-	(push 'escape unread-command-events))
+        (delete-char -1)
+        (set-buffer-modified-p modified)
+        (push 'escape unread-command-events))
        (t (setq unread-command-events (append unread-command-events
-					       (list evt))))))))
+                                              (list evt))))))))
 
 ; Move by visible lines
 (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
