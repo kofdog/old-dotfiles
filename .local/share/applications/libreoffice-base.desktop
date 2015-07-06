@@ -40,3 +40,4 @@ Actions=NewDocument;
 [Desktop Action NewDocument]
 Name=New Database
 Exec=libreoffice --base
+NotShowIn=GNOME;

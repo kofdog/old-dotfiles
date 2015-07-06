@@ -48,7 +48,13 @@
 (evil-leader/set-key "h" 'previous-buffer)
 (evil-leader/set-key "l" 'next-buffer)
 (evil-leader/set-key "b" 'ido-switch-buffer)
-(evil-leader/set-key "q" 'kill-buffer)
+(evil-leader/set-key "k" 'kill-buffer)
+
+; Quitting
+(defun close-all-buffers ()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
+(evil-leader/set-key "q" 'close-all-buffers)
 
 ; File switching
 (defun maybe-projectile-find-file ()

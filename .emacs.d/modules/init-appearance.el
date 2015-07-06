@@ -21,5 +21,12 @@
 ;; Matching pairs
 (show-paren-mode t)
 
+;; TODO highlighting
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (font-lock-add-keywords
+             nil
+             '(("\\<\\(FIXME\\|TODO\\|BUG\\):" 1 font-lock-warning-face t)))))
+
 (provide 'init-appearance)
 ;;; init-appearance.el ends here

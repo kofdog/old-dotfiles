@@ -1,12 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 # Initialize workspaces
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d I II III IV V
 
 # Set borders, gaps, splits
 for desktop in $(bspc query -D); do
-	#bspc config -d $desktop border_width 10;
-	bspc config -d $desktop border_width 0;
+	bspc config -d $desktop border_width 1;
+	#bspc config -d $desktop border_width 0;
 	bspc config -d $desktop window_gap   20;
 done
 unset desktop
@@ -15,14 +15,13 @@ bspc config borderless_monocle true
 bspc config gapless_monocle    true
 bspc config split_ratio        0.50
 
-bspc config focused_border_color "$COLOR15"
-bspc config active_border_color  "$COLOR7"
-bspc config normal_border_color  "$COLOR18"
-bspc config urgent_border_color  "$COLOR1"
+bspc config focused_border_color "$LIGHT_GRAY"
+bspc config active_border_color  "$BLACK"
+bspc config normal_border_color  "$BLACK"
+bspc config urgent_border_color  "$RED"
 
 # Load a panel
-#panel dzen2 &
-#/home/mike/.config/bspwm/panel/panel &
+~/.config/bspwm/panel/panel &
 
 # Load keybindings
 sxhkd &

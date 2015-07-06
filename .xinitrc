@@ -33,7 +33,7 @@ xsetroot -cursor_name left_ptr
 sh ~/.fehbg &
 
 # Set default session
-session=${1:-hlwm}
+session=${1:-bspwm}
 
 # Only WMs are included here, because DEs should be launched from their
 # respective display managers (e.g. gdm, kdm, lightdm)

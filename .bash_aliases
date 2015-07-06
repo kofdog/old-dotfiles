@@ -52,11 +52,14 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick cd
-alias eudy='cd ~/Projects/eudyptula-challenge'
-alias desk='cd ~/.local/share/applications'
-alias kern='cd ~/Projects/kernel'
-alias sand='cd ~/AndroidStudioProjects/Sandbox/app/src/main/java/com/example/mike/sandbox'
-alias sdesk='cd /usr/share/applications'
+alias apps='cd ~/.local/share/applications'
+alias dotfiles='cd ~/Documents/projects/dotfiles'
+alias eudyptula='cd ~/Documents/projects/eudyptula-challenge'
+alias guess='cd ~/AndroidStudioProjects/GuessChinese'
+alias kernel='cd ~/Documents/projects/kernel'
+alias mur='cd ~/AndroidStudioProjects/Murmur'
+alias sandbox='cd ~/AndroidStudioProjects/Sandbox'
+alias sapps='cd /usr/share/applications'
 
 # vim
 #alias vim='wname vim; vim'

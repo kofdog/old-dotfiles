@@ -27,7 +27,6 @@
     flycheck
     ;helm
     ;monokai-theme
-    octave-mode
     projectile
     smart-tabs-mode
     yasnippet

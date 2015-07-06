@@ -8,6 +8,7 @@ source ~/.palettes/bash-style/base16/dark
 export COLORS="Base16 Eighties Dark"
 export FONT="Source Code Pro Semibold 13"
 export FONT_DMENU="Source Code Pro Semibold-11"
+export FONT_LEMONBAR="Source Code Pro Semibold-13"
 export FONT_XFT="Source Code Pro:style=Semibold:size=13"
 
 # Set default applications

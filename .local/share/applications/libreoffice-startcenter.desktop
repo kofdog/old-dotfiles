@@ -36,22 +36,27 @@ X-KDE-Protocols=file,http,ftp,webdav
 
 ##Define Actions
 Actions=Writer;Calc;Impress;Draw;Base;Math;
+NotShowIn=GNOME;
 
 [Desktop Action Writer]
 Name=Text Document
 Exec=libreoffice --writer
+NotShowIn=GNOME;
 
 [Desktop Action Calc]
 Name=Spreadsheet
 Exec=libreoffice --calc
+NotShowIn=GNOME;
 
 [Desktop Action Impress]
 Name=Presentation
 Exec=libreoffice --impress
+NotShowIn=GNOME;
 
 [Desktop Action Draw]
 Name=Drawing
 Exec=libreoffice --draw
+NotShowIn=GNOME;
 
 [Desktop Action Base]
 Name=Database
@@ -61,5 +66,6 @@ NotShowIn=GNOME;
 [Desktop Action Math]
 Name=Formula
 Exec=libreoffice --math
+NotShowIn=GNOME;
 
 ##End of actions menu
