@@ -1,0 +1,22 @@
+#!/bin/bash
+
+source ~/.bin/bar-config
+
+EMPTY=75
+
+FREE=`df -h | grep "sda1" | awk '{gsub(/%/,""); print $5}'`
+USED=`df -h | grep "sda1" | awk '{gsub(/%/,""); print $3}'`
+TOTAL=`df -h | grep "sda1" | awk '{gsub(/%/,""); print $2}'`
+color="^fg(${BAR_FG})"
+
+icon="disk.xbm"
+if [[ ${FREE} -gt ${EMPTY} ]]; then
+    percbar=`echo -e "${FREE}"\
+        | gdbar -bg ${STAT_BG} -fg ${WARNING} -h ${H} -w ${W}`
+else
+    percbar=`echo -e "${FREE}"\
+        | gdbar -bg ${STAT_BG} -fg ${BAR_FG} -h ${H} -w ${W}`
+fi
+
+icon='^i(/home/mike/.staticons/'"${icon})"
+echo "${color}${icon} ${percbar}  "

@@ -6,32 +6,32 @@ usage="Usage: $(basename "$0") [-h]"
 
 OPTIND=1
 while getopts ":h" opt; do
-	case $opt in
-		h)
-			echo "$usage"
-			exit
-			;;
-		\?)
-			echo "Invalid option: -$OPTARG" >&2
-			exit 1
-			;;
-	esac
+    case $opt in
+        h)
+            echo "$usage"
+            exit
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            exit 1
+            ;;
+    esac
 done
 shift $((OPTIND - 1))
 
 for f in $(find . -type f -not -path "./.git*" -not -name "*README.md" \
-	              -not -name "link"); do
-	strippedfile="${f:2}"
-	targetfile="$HOME/$strippedfile"
+                -not -name "link"); do
+    strippedfile="${f:2}"
+    targetfile="$HOME/$strippedfile"
 
-	# If file already exists in $HOME and is not a link, create a backup.
-	if [ -e "$targetfile" ] && [ ! -h "$targetfile" ]; then
-		mv "$targetfile" "${targetfile}.old"
+    # If file already exists in $HOME and is not a link, create a backup.
+    if [ -e "$targetfile" ] && [ ! -h "$targetfile" ]; then
+        mv "$targetfile" "${targetfile}.old"
 
-	# If file doesn't exist, create the path in $HOME.
-	elif [ ! -e "$targetfile" ]; then
-		mkdir -p "$(dirname "$targetfile")"
-	fi
+        # If file doesn't exist, create the path in $HOME.
+    elif [ ! -e "$targetfile" ]; then
+        mkdir -p "$(dirname "$targetfile")"
+    fi
 
-	ln -s "$(pwd)/$strippedfile" "$targetfile"
+    ln -s "$(pwd)/$strippedfile" "$targetfile"
 done

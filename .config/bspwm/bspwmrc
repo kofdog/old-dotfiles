@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Load keybindings
+sxhkd &
+
 # Initialize workspaces
 bspc monitor -d I II III IV V
 
@@ -22,9 +25,6 @@ bspc config urgent_border_color  "$RED"
 
 # Load a panel
 ~/.config/bspwm/panel/panel &
-
-# Load keybindings
-sxhkd &
 
 # Hide cursor
 #unclutter &

@@ -126,7 +126,7 @@ super + Return
 super + shift + Return
     $LAUNCH_BROWSER
 
-super + w
+super + ctrl + Return
     $LAUNCH_ALT_BROWSER
 
 super + space
