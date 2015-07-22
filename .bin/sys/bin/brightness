@@ -1,16 +1,16 @@
 #!/bin/bash
 
-DIR=/sys/class/backlight/intel_backlight
-MAX=$( cat $DIR/max_brightness )
-DIFF=$(( MAX * $2 / 100 ))
+dir=/sys/class/backlight/intel_backlight
+max=$(cat $dir/max_brightness)
+diff=$((max * $2 / 100))
 
-current=$( cat $DIR/brightness )
-minus=$(( current - DIFF ))
-plus=$(( current + DIFF ))
+current=$(cat $dir/brightness)
+minus=$((current - diff))
+plus=$((current + diff))
 
 direction=${1:-down}
 case $direction in
-    up    ) sudo tee $DIR/brightness <<< $(( plus<MAX ? plus:MAX ));;
-    down  ) sudo tee $DIR/brightness <<< $(( minus>0 ? minus:0 ));;
+    up    ) sudo tee $dir/brightness <<< $((plus < max ? plus : max));;
+    down  ) sudo tee $dir/brightness <<< $((minus > 0 ? minus : 0));;
     *     ) ;;
 esac

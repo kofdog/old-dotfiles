@@ -1,10 +1,25 @@
-#!/bin/sh
+#!/bin/bash
 
-# Take a screenshot
-scrot /tmp/screenshot.png
+#file=/tmp/screen.png
+#
+## Take a screenshot
+#scrot $file
+#
+## Blur it
+#convert $file -blur 0x20 $file
+##convert $file -scale 10% -scale 1000% $file
+#
+## Add an image to the center, if provided as argument
+#[[ -f $1 ]] && convert $file $1 -gravity center -composite -matte $file
 
-# Blur it
-convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
+# If "lock" version of background doesn't exist, make it
+file_raw=$(echo $(cut -d ' ' ~/.fehbg -f4 | cut -d "'" -f2) | cut -d ' ' -f2)
+file="${file_raw%.*}_lock.png"
+if [ ! -f $file ]; then
+    convert $file_raw -resize 3840x2160\! $file
+    convert $file -blur 0x50 $file
+    [[ -f $1 ]] && convert $file $1 -gravity center -composite -matte $file
+fi
 
 # Lock the screen
-i3lock -i /tmp/screenshotblur.png -u
+i3lock -i $file -u

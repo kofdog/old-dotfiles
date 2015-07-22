@@ -1,39 +1,33 @@
-!--------------------------------------
-! Constants
-!--------------------------------------
-
+!! Constants
 #include ".palettes/c-style/base16/dark/eighties"
 #define FONT xft:Source Code Pro:style=Semibold:size=13
-!#define FONT xft:Meslo LG L:style=Regular:size=13
 #define TWOFIFTYSIX
 
+!! Xft
+! My original settings
+!Xft.antialias: 1
+!Xft.autohint: 0
+!Xft.dpi: 192
+!Xft.hinting: 1
+!Xft.hintstyle: hintslight
+!Xft.lcdfilter: lcddefault
+!Xft.rgba: grayscale
 
-!--------------------------------------
-! Xft
-!--------------------------------------
-
+! Infinality recommended settings
 Xft.antialias: 1
 Xft.autohint: 0
 Xft.dpi: 192
 Xft.hinting: 1
-Xft.hintstyle: hintslight
+Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
-Xft.rgba: grayscale
+Xft.rgba: rgb
 
-
-!--------------------------------------
-! DZen2
-!--------------------------------------
-
+!! DZen2
 dzen2.font: FONT
 dzen2.foreground: FOREGROUND
 dzen2.background: BACKGROUND
 
-
-!--------------------------------------
-! URxvt
-!--------------------------------------
-
+!! URxvt
 ! General
 !URxvt*depth: 32
 URxvt*geometry: 90x22

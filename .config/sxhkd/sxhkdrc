@@ -9,7 +9,7 @@ super + shift + q
     killall panel && bspc quit
 
 # Move window control, window; set split direction
-super + {_,ctrl + ,shift + }{h,j,k,l}
+super + {_,shift + ,ctrl + }{h,j,k,l}
     bspc window -{f,s,p} {left,down,up,right}
 
 # Grow / shrink active window
@@ -28,10 +28,10 @@ super + {shift +,ctrl +} x
     bspc window -{c,k}
 
 # Go to workspace, move active window to workspace
-super + {_,ctrl + }{1-9,0}
+super + {_,shift + }{1-9,0}
     bspc {desktop -f,window -d} ^{1-9,10}
 
-super + {_,ctrl + }{u,i}
+super + {_,shift + }{u,i}
     bspc {desktop -f,window -d} {prev,next}
 
 # ?????
@@ -117,7 +117,7 @@ super + alt + {u,i,o}
 
 # Screen lock (suspend with suspend key)
 super + @F1
-    locky
+    locky ~/Pictures/gimp/the_way_is_shut.png
 
 # Applications
 super + Return

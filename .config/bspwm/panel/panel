@@ -1,8 +1,13 @@
 #!/bin/bash
 
-PANEL_FIFO=/tmp/panel-fifo
-#PANEL_FONT_FAMILY="-*-terminus-medium-r-normal-*-12-*-*-*-c-*-*-1"
-PANEL_FONT_FAMILY=$FONT_LEMONBAR
+panel_fifo=/tmp/panel-fifo
+panel_height=48
+panel_font_family=$FONT_LEMONBAR
+panel_font_offset=$OFFSET_LEMONBAR
+panel_icon_family=$FONT_LEMONBAR_ICONS
+panel_icon_offset=$OFFSET_LEMONBAR_ICONS
+panel_workspace_family=$FONT_LEMONBAR_WORKSPACES
+panel_workspace_offset=$OFFSET_LEMONBAR_WORKSPACES
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
     printf "%s\n" "The panel is already running." >&2
@@ -11,27 +16,132 @@ fi
 
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 
-[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
-mkfifo "$PANEL_FIFO"
+[ -e "$panel_fifo" ] && rm "$panel_fifo"
+mkfifo "$panel_fifo"
 
-bspc config top_padding $PANEL_HEIGHT
-bspc control --subscribe > "$PANEL_FIFO" &
-xtitle -sf 'T%s' > "$PANEL_FIFO" &
+bspc config top_padding $panel_height
+bspc control --subscribe > "$panel_fifo" &
+xtitle -sf 'T%s' > "$panel_fifo" &
 
-panel_clock()
+# TODO: Separate these into scripts
+panel_wifi()
 {
-    date '+C%a %F %H:%M'
+    icon=""
+
+    # TODO: Add conditional statements for wifi/ethernet, connected/disconnected
+    name=`nmcli connection show --active | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
+    strength=`nmcli device wifi | grep "   $name" | awk 'END{gsub(/\[|\]|%/,""); print $6}'`
+
+    echo "N${icon}${strength}: ${name}"
 }
 
+panel_brightness()
+{
+    icon=""
+
+    dir=/sys/class/backlight/intel_backlight
+    max=$(cat $dir/max_brightness)
+    current=$(cat $dir/brightness)
+
+    bright=$((current * 100 / max))
+
+    echo "R${icon}$bright"
+}
+
+panel_battery()
+{
+    #num_hearts=10
+    full_icon=""
+    empty_icon=""
+    charging_icon=""
+
+    #battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
+    #               / $(cat /sys/class/power_supply/BAT*/energy_full))
+    #num=$(expr $battery \* $num_hearts)
+    #num=$((num / 100))
+    #hearts=""
+    #empty=""
+    #for i in $(seq 1 $num); do
+    #    hearts="${hearts}${full_icon}"
+    #done
+    #for i in $(seq $((num + 1)) $num_hearts); do
+    #    empty="${empty}${empty_icon}"
+    #done
+    #echo "B${hearts}${empty}"
+
+    # TODO: Integrate with ACPI
+    battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
+                   / $(cat /sys/class/power_supply/BAT*/energy_full))
+    if [[ $(cat /sys/class/power_supply/BAT*/status) = "Charging" ]]; then
+        if [[ $battery -eq 100 ]]; then
+            icon=$full_icon
+        else
+            icon=$charging_icon
+        fi
+    else
+        if [[ $battery -gt 20 ]]; then
+            icon=$full_icon
+        else
+            icon=$empty_icon
+        fi
+    fi
+    echo "B${icon}$battery"
+}
+
+panel_volume()
+{
+    speak_icon=""
+    head_icon=""
+
+    # TODO: Integrate with ACPI
+    amaster=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'`
+    astat=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
+
+    if [[ $astat = "Front" ]]; then
+        icon=$speak_icon
+    else
+        icon=$head_icon
+    fi
+    echo "V${icon}${amaster}"
+}
+
+panel_time()
+{
+    date '+C%I:%M %p'
+}
+panel_date()
+{
+    date '+D%a %b %-d'
+}
+
+# Slow
 while true; do
-    panel_clock > "$PANEL_FIFO" &
+    panel_battery > "$panel_fifo" &
+    panel_wifi > "$panel_fifo" &
+    sleep 5
+done &
+
+# One-second
+while true; do
+    panel_time > "$panel_fifo" &
+    panel_date > "$panel_fifo" &
     sleep 1
+done &
+
+# TODO: Integrate with ACPI
+# Fast (event-driven, sort of)
+while true; do
+    panel_volume > "$panel_fifo" &
+    panel_brightness > "$panel_fifo" &
+    sleep 0.25
 done &
 
 source ~/.config/bspwm/panel/panel_colors
 
-cat "$PANEL_FIFO" | ~/.config/bspwm/panel/panel_bar | \
-    lemonbar -f "$PANEL_FONT_FAMILY" -F "$COLOR_FOREGROUND" \
-             -B "$COLOR_BACKGROUND" &
+cat "$panel_fifo" | ~/.config/bspwm/panel/panel_bar | \
+    lemonbar -f "$panel_font_family" -f "$panel_icon_family" \
+             -f "$panel_workspace_family" -o "$panel_font_offset" \
+             -o "$panel_icon_offset" -o "$panel_workspace_offset" \
+             -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" &
 
 wait
