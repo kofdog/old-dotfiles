@@ -16,27 +16,31 @@ while read -r line; do
             # date output
             date=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
+        V*)
+            # volume output
+            volume=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            ;;
         B*)
             # battery output
             #battery="%{F$COLOR_BATTERY_FG}%{T2} ${line#?} %{T1}%{F-}"
             battery=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
-        V*)
-            # volume output
-            volume=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
-            ;;
         R*)
             # brightness output
             bright=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            ;;
+        K*)
+            # kernel output
+            kernel=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         N*)
             # network output
             network=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
-        T*)
-            # xtitle output
-            title="%{F$COLOR_TITLE_FG}%{B$COLOR_TITLE_BG}  %{T1}${line#?}%{T1}  %{B-}%{F-}"
-            ;;
+        #T*)
+        #    # xtitle output
+        #    title="  %{F$COLOR_TITLE_FG}%{B$COLOR_TITLE_BG}%{T1}${line#?}%{T1}%{B-}%{F-}  "
+        #    ;;
         W*)
             # bspwm internal state
             wm_infos=""
@@ -91,5 +95,5 @@ while read -r line; do
             done
             ;;
     esac
-    printf "%s\n" "%{l}${wm_infos}${title}%{r}${network}${bright}${battery}${volume}${date}${time}"
+    printf "%s\n" "%{l}${wm_infos}%{r}${network}${kernel}${bright}${battery}${volume}${date}${time}"
 done

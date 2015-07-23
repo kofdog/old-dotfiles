@@ -21,9 +21,15 @@ mkfifo "$panel_fifo"
 
 bspc config top_padding $panel_height
 bspc control --subscribe > "$panel_fifo" &
-xtitle -sf 'T%s' > "$panel_fifo" &
+#xtitle -sf 'T%s' > "$panel_fifo" &
 
 # TODO: Separate these into scripts
+panel_kernel()
+{
+    icon=""
+    echo "K${icon}$(uname -r)"
+}
+
 panel_wifi()
 {
     icon=""
@@ -50,11 +56,12 @@ panel_brightness()
 
 panel_battery()
 {
-    #num_hearts=10
     full_icon=""
     empty_icon=""
-    charging_icon=""
+    #charging_icon=""
+    charging_icon=""
 
+    #num_hearts=10
     #battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
     #               / $(cat /sys/class/power_supply/BAT*/energy_full))
     #num=$(expr $battery \* $num_hearts)
@@ -73,11 +80,7 @@ panel_battery()
     battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
                    / $(cat /sys/class/power_supply/BAT*/energy_full))
     if [[ $(cat /sys/class/power_supply/BAT*/status) = "Charging" ]]; then
-        if [[ $battery -eq 100 ]]; then
-            icon=$full_icon
-        else
-            icon=$charging_icon
-        fi
+        icon=$charging_icon
     else
         if [[ $battery -gt 20 ]]; then
             icon=$full_icon
@@ -105,26 +108,27 @@ panel_volume()
     echo "V${icon}${amaster}"
 }
 
-panel_time()
-{
-    date '+C%I:%M %p'
-}
 panel_date()
 {
     date '+D%a %b %-d'
+}
+panel_time()
+{
+    date '+C%I:%M %p'
 }
 
 # Slow
 while true; do
     panel_battery > "$panel_fifo" &
+    panel_kernel > "$panel_fifo" &
     panel_wifi > "$panel_fifo" &
     sleep 5
 done &
 
 # One-second
 while true; do
-    panel_time > "$panel_fifo" &
     panel_date > "$panel_fifo" &
+    panel_time > "$panel_fifo" &
     sleep 1
 done &
 
