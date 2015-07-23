@@ -86,6 +86,23 @@ panel_brightness()
     echo "R${icon}$bright"
 }
 
+panel_volume()
+{
+    speak_icon=""
+    head_icon=""
+
+    # TODO: Integrate with ACPI
+    amaster=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'`
+    astat=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
+
+    if [[ $astat = "Front" ]]; then
+        icon=$speak_icon
+    else
+        icon=$head_icon
+    fi
+    echo "V${icon}${amaster}"
+}
+
 panel_battery()
 {
     full_icon=""
@@ -123,23 +140,6 @@ panel_battery()
     echo "B${icon}${battery}"
 }
 
-panel_volume()
-{
-    speak_icon=""
-    head_icon=""
-
-    # TODO: Integrate with ACPI
-    amaster=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'`
-    astat=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
-
-    if [[ $astat = "Front" ]]; then
-        icon=$speak_icon
-    else
-        icon=$head_icon
-    fi
-    echo "V${icon}${amaster}"
-}
-
 panel_date()
 {
     #date '+D%a %b %-d'
@@ -160,15 +160,15 @@ done &
 # Slow
 while true; do
     panel_battery > "$panel_fifo" &
+    panel_cpu > "$panel_fifo" &
+    panel_ram > "$panel_fifo" &
     panel_wifi > "$panel_fifo" &
     sleep 5
 done &
 
 # One-second
 while true; do
-    panel_cpu > "$panel_fifo" &
     panel_date > "$panel_fifo" &
-    panel_ram > "$panel_fifo" &
     panel_time > "$panel_fifo" &
     sleep 1
 done &
