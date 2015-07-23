@@ -44,7 +44,11 @@ panel_kernel()
 panel_cpu()
 {
     #icon=""
-    icon=""
+    #icon=""
+    #icon=""
+    #icon=""
+    #icon=""
+    icon=""
 
     list=(`top -bn 1 | grep Cpu | awk '{print $4}' | cut -d '[' -f1`)
 
@@ -60,7 +64,12 @@ panel_cpu()
 panel_ram()
 {
     icon=""
-    ram=$(free -h | grep Mem | awk '{print $3}')
+
+    total=$(free | grep Mem | awk '{print $2}')
+    used=$(free | grep Mem | awk '{print $3}')
+    ram=$((used * 100 / total))
+    #ram=$(free -h | grep Mem | awk '{print $3}')
+
     echo "Z${icon}${ram}"
 }
 
@@ -178,6 +187,6 @@ cat "$panel_fifo" | ~/.config/bspwm/panel/panel_bar | \
     lemonbar -f "$panel_font_family" -f "$panel_icon_family" \
              -f "$panel_workspace_family" -o "$panel_font_offset" \
              -o "$panel_icon_offset" -o "$panel_workspace_offset" \
-             -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" &
+             -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 0 &
 
 wait
