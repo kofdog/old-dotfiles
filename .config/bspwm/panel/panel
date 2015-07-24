@@ -58,8 +58,10 @@ panel_cpu()
     #done
     #average=$((total / ${#list[@]}))
 
-    average=$(ps -eo pcpu | awk 'BEGIN {sum=0.0f} {sum+=$1} END {print sum}')
-    average=${average%.*}
+    total=$(ps -eo pcpu | awk 'BEGIN {sum=0.0f} {sum+=$1} END {print sum}')
+    num_cores=$(grep -c ^processor /proc/cpuinfo)
+
+    average=$((${total%.*} / num_cores))
 
     echo "P${icon}${average}"
 }
