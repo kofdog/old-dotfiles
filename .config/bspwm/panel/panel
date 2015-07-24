@@ -50,13 +50,16 @@ panel_cpu()
     #icon=""
     icon=""
 
-    list=(`top -bn 1 | grep Cpu | awk '{print $4}' | cut -d '[' -f1`)
+    #list=(`top -bn 1 | grep Cpu | awk '{print $4}' | cut -d '[' -f1`)
 
-    total=0
-    for var in ${list[@]}; do
-        total=$((total + var))
-    done
-    average=$((total / ${#list[@]}))
+    #total=0
+    #for var in ${list[@]}; do
+    #    total=$((total + var))
+    #done
+    #average=$((total / ${#list[@]}))
+
+    average=$(ps -eo pcpu | awk 'BEGIN {sum=0.0f} {sum+=$1} END {print sum}')
+    average=${average%.*}
 
     echo "P${icon}${average}"
 }
