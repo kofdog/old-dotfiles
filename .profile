@@ -17,15 +17,16 @@ export OFFSET_LEMONBAR_WORKSPACES=-4
 export FONT_XFT="Source Code Pro:style=Semibold:size=13"
 
 # Set default applications
+export ALT_BROWSER=firefox
+export BROWSER=chromium
 export EDITOR=vim
 export FILES=ranger
-export BROWSER=chromium
-export ALT_BROWSER=firefox
+export LAUNCHER=dmenu-launch
 export MAIL=mutt
 export MPLAYER=ncmpcpp
-export VPLAYER=mpv
 export READER=zathura
-export LAUNCHER=dmenu-launch
+export VIEWER=feh
+export VPLAYER=mpv
 
 # Set application launchers (for when run outside terminal)
 export TERMINAL=urxvtc
