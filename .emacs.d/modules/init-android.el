@@ -3,6 +3,7 @@
 
 ;;; Code:
 (require 'android-mode)
+(setq android-mode-builder 'gradle)
 (setq android-mode-sdk-dir "/home/mike/Android/Sdk")
 (add-hook 'java-mode-hook '(lambda () (android-mode)))
 

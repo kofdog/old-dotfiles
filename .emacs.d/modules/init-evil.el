@@ -67,8 +67,10 @@
 (evil-leader/set-key "a" 'projectile-find-other-file)
 
 ; Android development
-(evil-leader/set-key "e" 'android-start-emulator)
 (evil-leader/set-key "d" 'android-start-ddms)
+(evil-leader/set-key "e" 'android-start-emulator)
+(evil-leader/set-key "i" 'android-build-install)
+(evil-leader/set-key "u" 'android-build-uninstall)
 
 ; All development
 (evil-leader/set-key "m" 'compile)
