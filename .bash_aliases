@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# terminal title bar
-wname() { echo -en "\033]0;$@\007"; }
-alias ranger='wname ranger; ranger'
-alias ncmpcpp='wname ncmpcpp; ncmpcpp'
-
 # pacman
 alias pacup='pacaur -Syu'
 alias pacs='pacaur -Ss'
@@ -57,16 +52,8 @@ alias dotfiles='cd ~/Documents/projects/dotfiles'
 alias eudyptula='cd ~/Documents/projects/eudyptula-challenge'
 alias guess='cd ~/AndroidStudioProjects/GuessChinese'
 alias kernel='cd ~/Documents/projects/kernel'
-alias mur='cd ~/AndroidStudioProjects/Murmur'
-alias sandbox='cd ~/AndroidStudioProjects/Sandbox'
+alias murmur='cd ~/AndroidStudioProjects/Murmur'
 alias sapps='cd /usr/share/applications'
-
-# vim
-#alias vim='wname vim; vim'
-#alias nv='wname neovim; nvim'
-alias nv='nvim'
-alias testvim='vim ~/Documents/code/eudyptula/01-helloworld/hello_world.c'
-vimp () { vim $( find "$@" -maxdepth 1 -type f ); }
 
 # administration
 alias dirsize='du -h -d 1 | sort -rh | less'
@@ -97,7 +84,8 @@ alias cleary='clear; archey3'
 alias info='info --vi-keys'
 
 # quick launchers
-alias emc='wname emacs; em -nw'
+alias emc='em -nw'
+alias nv='nvim'
 
 # fix sudo
 alias sudo='sudo '
