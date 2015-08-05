@@ -1,54 +1,49 @@
 " Add Vundle packages
-set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Critical
-"Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ap/vim-buftabline'
+Plugin 'a.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'vim-scripts/Smart-Tabs'
 
 " Nifty
-Plugin 'ap/vim-buftabline'
-Plugin 'a.vim'
-Plugin 'tpope/vim-repeat'
 Plugin 'junegunn/goyo.vim'
-
-" Snippets
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-"Plugin 'SirVer/ultisnips'
 
 call vundle#end()
 
-" System info required for later
-let s:kern = system("uname -r")
-let s:kernfixed = substitute(s:kern, "\n", "", "")
-let s:kernpath = '/lib/modules/' . s:kernfixed . '/build/include'
+set showcmd   " Show (partial) command in status line.
+set showmatch " Show matching brackets.
+set showmode  " Show current mode.
+set ruler     " Show the line and column numbers of the cursor.
 
-" Syntastic
-" TODO: Figure out how to add include paths
-let g:syntastic_c_check_header = 1
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_java_javac_classpath = "~/Android/Sdk/platforms/android-21/*.jar:~/AndroidStudioProjects/Sandbox/app/src/main"
+set noerrorbells " No beeps.
+set modeline     " Enable modeline.
+set esckeys      " Cursor keys in insert mode.
+set linespace=0  " Set line-spacing to minimum.
+set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
+
+set hlsearch   " Highlight search results.
+set ignorecase " Make searching case insensitive
+set smartcase  " ... unless the query has capital letters.
+set incsearch  " Incremental search.
+
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
 
 " Obligatory
 filetype plugin indent on
 
 " Leader key
-:let mapleader = ";"
+:let mapleader = "\<SPACE>"
 
 " Syntax highlighting
 syntax on
-
-" Special characters
-inoremap <C-d> <C-k>
-"set digraph
-"inoremap <C-d> <C-h>
 
 " Color scheme
 let base16colorspace=256
@@ -74,10 +69,6 @@ endif
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Path
-let s:pathcommand = 'set path+=' . s:kernpath
-exec s:pathcommand
-
 " Get backups out of the way
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
@@ -90,12 +81,6 @@ nnoremap <Leader>q :bp <BAR> bd #<CR>
 
 " Exit Insert mode
 imap jk <Esc>
-
-" Move in Insert mode
-inoremap <C-h> <left>
-inoremap <C-j> <down>
-inoremap <C-k> <up>
-inoremap <C-l> <right>
 
 " Delete/change up to underscore/hyphen
 nmap du dt_
