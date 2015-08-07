@@ -120,6 +120,12 @@ augroup END
 let g:android_sdk_path = '~/Android/Sdk'
 let g:gradle_path = '/usr/share/java/gradle'
 
+"" Ctrl-P
+let g:ctrlp_map = '<Leader>o'
+let g:ctrlp_show_hidden = '1'
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
+
 "" Easytags
 "let g:easytags_always_enabled = '1'
 "let g:easytags_async = '1'
@@ -130,11 +136,8 @@ let g:gradle_path = '/usr/share/java/gradle'
 " Delete buffers after leaving (so they don't clog the list)
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
-"" Ctrl-P
-let g:ctrlp_map = '<Leader>o'
-let g:ctrlp_show_hidden = '1'
-let g:ctrlp_working_path_mode = 'ra'
-set wildignore+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
+"" Rhubarb
+set completeopt-=preview
 
 "" Keybindings
 " Leader key
