@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'a.vim'                  " header/library switching
+Plugin 'bling/vim-airline'      " awesome status line
 Plugin 'bling/vim-bufferline'   " show buffers in statusline
 Plugin 'hsanson/vim-android'    " Android integration
 Plugin 'junegunn/goyo.vim'      " distraction-free editing
@@ -116,9 +117,23 @@ augroup OpenQuickfixWindowAfterMake
     autocmd QuickFixCmdPost    l* nested lwindow
 augroup END
 
+"" Airline
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+
 "" Android
 let g:android_sdk_path = '~/Android/Sdk'
 let g:gradle_path = '/usr/share/java/gradle'
+
+"" Bufferline
+let g:bufferline_echo = 0
+let g:bufferline_rotate = 0
+
+" Separators
+let g:bufferline_active_buffer_left = ''
+let g:bufferline_active_buffer_right = ''
+
+let g:bufferline_show_bufnr = 0
 
 "" Ctrl-P
 let g:ctrlp_map = '<Leader>o'
