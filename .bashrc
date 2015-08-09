@@ -5,7 +5,7 @@
 [[ $- != *i* ]] && return
 
 # If tmux started already, attach to the session; otherwise, start it
-#[[ -z "$TMUX" ]] && exec tmux
+[[ -z "$TMUX" ]] && exec tmux
 
 # Source environment variables
 [[ -f ~/.profile ]] && source ~/.profile
