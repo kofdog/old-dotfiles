@@ -3,22 +3,23 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'a.vim'                  " header/library switching
-Plugin 'bling/vim-airline'      " awesome status line
-Plugin 'bling/vim-bufferline'   " show buffers in statusline
-Plugin 'hsanson/vim-android'    " Android integration
-Plugin 'junegunn/goyo.vim'      " distraction-free editing
-Plugin 'kien/ctrlp.vim'         " file finding
-Plugin 'tpope/vim-commentary'   " comments
-Plugin 'tpope/vim-dispatch'     " asynchronous, distraction-free compilation
-Plugin 'tpope/vim-eunuch'       " UNIX commands in Vim
-Plugin 'tpope/vim-fugitive'     " git integration
-Plugin 'tpope/vim-repeat'       " supporting . for plugins
-Plugin 'tpope/vim-rhubarb'      " Github integration
-Plugin 'tpope/vim-surround'     " surrounding brackets/quotes/etc.
-Plugin 'vim-scripts/Smart-Tabs' " tabs for indentation, spaces for alignment
-"Plugin 'xolox/vim-easytags'     " Exuberant Ctags integration
-Plugin 'xolox/vim-misc'         " dependency for Easytags
+Plugin 'a.vim'                   " header/library switching
+Plugin 'bling/vim-airline'       " awesome status line
+Plugin 'bling/vim-bufferline'    " show buffers in statusline
+Plugin 'chriskempson/base16-vim' " colors
+Plugin 'hsanson/vim-android'     " Android integration
+Plugin 'junegunn/goyo.vim'       " distraction-free editing
+Plugin 'kien/ctrlp.vim'          " file finding
+Plugin 'tpope/vim-commentary'    " comments
+Plugin 'tpope/vim-dispatch'      " asynchronous, distraction-free compilation
+Plugin 'tpope/vim-eunuch'        " UNIX commands in Vim
+Plugin 'tpope/vim-fugitive'      " git integration
+Plugin 'tpope/vim-repeat'        " supporting . for plugins
+Plugin 'tpope/vim-rhubarb'       " Github integration
+Plugin 'tpope/vim-surround'      " surrounding brackets/quotes/etc.
+Plugin 'vim-scripts/Smart-Tabs'  " tabs for indentation, spaces for alignment
+"Plugin 'xolox/vim-easytags'      " Exuberant Ctags integration
+Plugin 'xolox/vim-misc'          " dependency for Easytags
 
 call vundle#end()
 
@@ -62,9 +63,9 @@ set nrformats-=octal
 set laststatus=2
 set ruler
 set showcmd
-set showmode
+set noshowmode
 set wildmenu
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+"set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Scrolling
 if !&scrolloff
@@ -118,8 +119,9 @@ augroup OpenQuickfixWindowAfterMake
 augroup END
 
 "" Airline
-let g:airline_left_sep=''
-let g:airline_right_sep=''
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline#extensions#whitespace#enabled = 0
 
 "" Android
 let g:android_sdk_path = '~/Android/Sdk'
@@ -137,15 +139,15 @@ let g:bufferline_show_bufnr = 0
 
 "" Ctrl-P
 let g:ctrlp_map = '<Leader>o'
-let g:ctrlp_show_hidden = '1'
+let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 
 "" Easytags
-"let g:easytags_always_enabled = '1'
-"let g:easytags_async = '1'
+"let g:easytags_always_enabled = 1
+"let g:easytags_async = 1
 :set tags=./tags;
-"let g:easytags_dynamic_files = '1'
+"let g:easytags_dynamic_files = 1
 
 "" Fugitive
 " Delete buffers after leaving (so they don't clog the list)
