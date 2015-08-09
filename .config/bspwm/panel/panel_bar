@@ -8,6 +8,9 @@ num_mon=$(bspc query -M | wc -l)
 
 while read -r line; do
     case $line in
+        S*)
+            tray=" %{F$COLOR_ICON_FG}%{T2}${line#?}%{T1}%{F-} "
+            ;;
         C*)
             time=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
@@ -35,6 +38,9 @@ while read -r line; do
             ;;
         N*)
             network=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            ;;
+        A*)
+            music=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         #T*)
         #    title="  %{F$COLOR_TITLE_FG}%{B$COLOR_TITLE_BG}%{T1}${line#?}%{T1}%{B-}%{F-}  "
@@ -93,5 +99,5 @@ while read -r line; do
             done
             ;;
     esac
-    printf "%s\n" "%{l}${wm_infos}%{r}${network}${kernel}${cpu}${ram}${bright}${volume}${battery}${date}${time}"
+    printf "%s\n" "%{l}${wm_infos}%{r}${music}${network}${kernel}${cpu}${ram}${bright}${volume}${battery}${date}${time}${tray}"
 done

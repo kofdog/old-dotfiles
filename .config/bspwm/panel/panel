@@ -10,8 +10,8 @@ panel_workspace_family=$FONT_LEMONBAR_WORKSPACES
 panel_workspace_offset=$OFFSET_LEMONBAR_WORKSPACES
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
-    printf "%s\n" "The panel is already running." >&2
-    exit 1
+	printf "%s\n" "The panel is already running." >&2
+	exit 1
 fi
 
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
@@ -24,174 +24,191 @@ bspc control --subscribe > "$panel_fifo" &
 #xtitle -sf 'T%s' > "$panel_fifo" &
 
 # TODO: Separate these into scripts
+panel_music()
+{
+	icon=""
+	music=$(mpc current)
+	test -n "$music" && echo "A${icon}${music}"
+}
 panel_wifi()
 {
-    icon=""
+	icon=""
 
-    # TODO: Add conditional statements for wifi/ethernet, connected/disconnected
-    name=`nmcli connection show --active | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
-    strength=`nmcli device wifi | grep "   $name" | awk 'END{gsub(/\[|\]|%/,""); print $6}'`
+	# TODO: Add conditional statements for wifi/ethernet, connected/disconnected
+	name=`nmcli connection show --active | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
+	strength=`nmcli device wifi | grep "   $name" | awk 'END{gsub(/\[|\]|%/,""); print $6}'`
 
-    echo "N${icon}${strength}: ${name}"
+	echo "N${icon}${strength}: ${name}"
 }
 
 panel_kernel()
 {
-    icon=""
-    echo "K${icon}$(uname -r)"
+	icon=""
+	echo "K${icon}$(uname -r)"
 }
 
 panel_cpu()
 {
-    #icon=""
-    #icon=""
-    #icon=""
-    #icon=""
-    #icon=""
-    icon=""
+	icon=""
+	#icon=""
+	#icon=""
+	#icon=""
+	#icon=""
+	#icon=""
 
-    #list=(`top -bn 1 | grep Cpu | awk '{print $4}' | cut -d '[' -f1`)
+	#list=(`top -bn 1 | grep Cpu | awk '{print $4}' | cut -d '[' -f1`)
 
-    #total=0
-    #for var in ${list[@]}; do
-    #    total=$((total + var))
-    #done
-    #average=$((total / ${#list[@]}))
+	#total=0
+	#for var in ${list[@]}; do
+	#    total=$((total + var))
+	#done
+	#average=$((total / ${#list[@]}))
 
-    total=$(ps -eo pcpu | awk 'BEGIN {sum=0.0f} {sum+=$1} END {print sum}')
-    num_cores=$(grep -c ^processor /proc/cpuinfo)
+	total=$(ps -eo pcpu | awk 'BEGIN {sum=0.0f} {sum+=$1} END {print sum}')
+	num_cores=$(grep -c ^processor /proc/cpuinfo)
 
-    average=$((${total%.*} / num_cores))
+	average=$((${total%.*} / num_cores))
 
-    echo "P${icon}${average}"
+	echo "P${icon}${average}"
 }
 
 panel_ram()
 {
-    icon=""
+	icon=""
 
-    total=$(free | grep Mem | awk '{print $2}')
-    used=$(free | grep Mem | awk '{print $3}')
-    ram=$((used * 100 / total))
-    #ram=$(free -h | grep Mem | awk '{print $3}')
+	total=$(free | grep Mem | awk '{print $2}')
+	used=$(free | grep Mem | awk '{print $3}')
+	ram=$((used * 100 / total))
+	#ram=$(free -h | grep Mem | awk '{print $3}')
 
-    echo "Z${icon}${ram}"
+	echo "Z${icon}${ram}"
 }
 
 panel_brightness()
 {
-    icon=""
+	icon=""
 
-    dir=/sys/class/backlight/intel_backlight
-    max=$(cat $dir/max_brightness)
-    current=$(cat $dir/brightness)
+	dir=/sys/class/backlight/intel_backlight
+	max=$(cat $dir/max_brightness)
+	current=$(cat $dir/brightness)
 
-    bright=$((current * 100 / max))
+	bright=$((current * 100 / max))
 
-    echo "R${icon}$bright"
+	echo "R${icon}$bright"
 }
 
 panel_volume()
 {
-    speak_icon=""
-    head_icon=""
+	speak_icon=""
+	head_icon=""
 
-    # TODO: Integrate with ACPI
-    amaster=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'`
-    astat=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
+	# TODO: Integrate with ACPI
+	amaster=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $4}'`
+	astat=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
 
-    if [[ $astat = "Front" ]]; then
-        icon=$speak_icon
-    else
-        icon=$head_icon
-    fi
-    echo "V${icon}${amaster}"
+	if [[ $astat == "Mono:" ]]; then
+		icon=$speak_icon
+	else
+		icon=$head_icon
+	fi
+	echo "V${icon}${amaster}"
 }
 
 panel_battery()
 {
-    full_icon=""
-    empty_icon=""
-    #charging_icon=""
-    charging_icon=""
+	full_icon=""
+	empty_icon=""
+	#charging_icon=""
+	charging_icon=""
 
-    #num_hearts=10
-    #battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
-    #               / $(cat /sys/class/power_supply/BAT*/energy_full))
-    #num=$(expr $battery \* $num_hearts)
-    #num=$((num / 100))
-    #hearts=""
-    #empty=""
-    #for i in $(seq 1 $num); do
-    #    hearts="${hearts}${full_icon}"
-    #done
-    #for i in $(seq $((num + 1)) $num_hearts); do
-    #    empty="${empty}${empty_icon}"
-    #done
-    #echo "B${hearts}${empty}"
+	#num_hearts=10
+	#battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
+	#               / $(cat /sys/class/power_supply/BAT*/energy_full))
+	#num=$(expr $battery \* $num_hearts)
+	#num=$((num / 100))
+	#hearts=""
+	#empty=""
+	#for i in $(seq 1 $num); do
+	#    hearts="${hearts}${full_icon}"
+	#done
+	#for i in $(seq $((num + 1)) $num_hearts); do
+	#    empty="${empty}${empty_icon}"
+	#done
+	#echo "B${hearts}${empty}"
 
-    # TODO: Integrate with ACPI
-    battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
-                   / $(cat /sys/class/power_supply/BAT*/energy_full))
-    if [[ $(cat /sys/class/power_supply/BAT*/status) = "Charging" ]]; then
-        icon=$charging_icon
-    else
-        if [[ $battery -gt 20 ]]; then
-            icon=$full_icon
-        else
-            icon=$empty_icon
-        fi
-    fi
-    echo "B${icon}${battery}"
+	# TODO: Integrate with ACPI
+	battery=$(expr $(expr $(cat /sys/class/power_supply/BAT*/energy_now) \* 100) \
+ 	          / $(cat /sys/class/power_supply/BAT*/energy_full))
+	if [[ $(cat /sys/class/power_supply/BAT*/status) = "Charging" ]]; then
+		icon=$charging_icon
+	else
+		if [[ $battery -gt 20 ]]; then
+			icon=$full_icon
+		else
+			icon=$empty_icon
+		fi
+	fi
+	echo "B${icon}${battery}"
 }
 
 panel_date()
 {
-    #date '+D%a %b %-d'
-    date '+D%a %-d %b'
+	#date '+D%a %b %-d'
+	date '+D%a %-d %b'
 }
 panel_time()
 {
-    #date '+C%I:%M %p'
-    date '+C%H:%M'
+	#date '+C%I:%M %p'
+	date '+C%H:%M'
+}
+
+panel_systray()
+{
+	tray=""
+	if [[ $(dropbox-cli status) != "Dropbox isn't running!" ]]; then
+		tray="$tray"
+	fi
+	echo "S$tray"
 }
 
 # Very slow
 while true; do
-    panel_kernel > "$panel_fifo" &
-    sleep 60
+	panel_kernel > "$panel_fifo" &
+	panel_systray > "$panel_fifo" &
+	sleep 60
 done &
 
 # Slow
 while true; do
-    panel_battery > "$panel_fifo" &
-    panel_cpu > "$panel_fifo" &
-    panel_ram > "$panel_fifo" &
-    panel_wifi > "$panel_fifo" &
-    sleep 5
+	panel_battery > "$panel_fifo" &
+	panel_cpu > "$panel_fifo" &
+	panel_music > "$panel_fifo" &
+	panel_ram > "$panel_fifo" &
+	panel_wifi > "$panel_fifo" &
+	sleep 5
 done &
 
 # One-second
 while true; do
-    panel_date > "$panel_fifo" &
-    panel_time > "$panel_fifo" &
-    sleep 1
+	panel_date > "$panel_fifo" &
+	panel_time > "$panel_fifo" &
+	sleep 1
 done &
 
 # TODO: Integrate with ACPI
 # Fast (event-driven, sort of)
 while true; do
-    panel_volume > "$panel_fifo" &
-    panel_brightness > "$panel_fifo" &
-    sleep 0.25
+	panel_volume > "$panel_fifo" &
+	panel_brightness > "$panel_fifo" &
+	sleep 0.25
 done &
 
 source ~/.config/bspwm/panel/panel_colors
 
 cat "$panel_fifo" | ~/.config/bspwm/panel/panel_bar | \
-    lemonbar -f "$panel_font_family" -f "$panel_icon_family" \
-             -f "$panel_workspace_family" -o "$panel_font_offset" \
-             -o "$panel_icon_offset" -o "$panel_workspace_offset" \
-             -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 0 &
+	lemonbar -f "$panel_font_family" -f "$panel_icon_family" \
+	         -f "$panel_workspace_family" -o "$panel_font_offset" \
+	         -o "$panel_icon_offset" -o "$panel_workspace_offset" \
+	         -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 0 &
 
 wait
