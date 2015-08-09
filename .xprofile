@@ -7,9 +7,9 @@ redshift &
 # Audio
 mpd-start &
 
-# File sharing - handle with systemd instead
+# File sharing
 #filesharing-fix &
-#dropboxd &
+dropbox-cli start &
 #CopyConsole --daemon &
 #google-musicmanager &
 
@@ -27,4 +27,4 @@ xset b off
 
 # Terminal
 urxvtd &
-stjerm &
+#stjerm &
