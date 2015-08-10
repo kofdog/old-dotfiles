@@ -3,23 +3,24 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'a.vim'                   " header/library switching
-Plugin 'bling/vim-airline'       " awesome status line
-Plugin 'bling/vim-bufferline'    " show buffers in statusline
-Plugin 'chriskempson/base16-vim' " colors
-Plugin 'hsanson/vim-android'     " Android integration
-Plugin 'junegunn/goyo.vim'       " distraction-free editing
-Plugin 'kien/ctrlp.vim'          " file finding
-Plugin 'tpope/vim-commentary'    " comments
-Plugin 'tpope/vim-dispatch'      " asynchronous, distraction-free compilation
-Plugin 'tpope/vim-eunuch'        " UNIX commands in Vim
-Plugin 'tpope/vim-fugitive'      " git integration
-Plugin 'tpope/vim-repeat'        " supporting . for plugins
-Plugin 'tpope/vim-rhubarb'       " Github integration
-Plugin 'tpope/vim-surround'      " surrounding brackets/quotes/etc.
-Plugin 'vim-scripts/Smart-Tabs'  " tabs for indentation, spaces for alignment
-"Plugin 'xolox/vim-easytags'      " Exuberant Ctags integration
-Plugin 'xolox/vim-misc'          " dependency for Easytags
+Plugin 'a.vim'                            " header/library switching
+Plugin 'bling/vim-airline'                " awesome status line
+Plugin 'bling/vim-bufferline'             " show buffers in statusline
+Plugin 'chriskempson/base16-vim'          " colors
+Plugin 'hsanson/vim-android'              " Android integration
+Plugin 'junegunn/goyo.vim'                " distraction-free editing
+Plugin 'kien/ctrlp.vim'                   " file finding
+Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
+Plugin 'tpope/vim-commentary'             " comments
+Plugin 'tpope/vim-dispatch'               " asynchronous compilation in tmux
+Plugin 'tpope/vim-eunuch'                 " UNIX commands in Vim
+Plugin 'tpope/vim-fugitive'               " git integration
+Plugin 'tpope/vim-repeat'                 " supporting . for plugins
+Plugin 'tpope/vim-rhubarb'                " Github integration
+Plugin 'tpope/vim-surround'               " surrounding brackets/quotes/etc.
+Plugin 'vim-scripts/Smart-Tabs'           " tabs:indentation::spaces:alignment
+"Plugin 'xolox/vim-easytags'               " Exuberant Ctags integration
+Plugin 'xolox/vim-misc'                   " dependency for Easytags
 
 call vundle#end()
 
