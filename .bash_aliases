@@ -52,6 +52,7 @@ alias dotfiles='cd ~/Documents/projects/dotfiles'
 alias eudyptula='cd ~/Documents/projects/eudyptula-challenge'
 alias guess='cd ~/AndroidStudioProjects/GuessChinese'
 alias kernel='cd ~/Documents/projects/kernel'
+alias learn-meteor='cd ~/Documents/projects/learn-meteor'
 alias murmur='cd ~/AndroidStudioProjects/Murmur'
 alias sapps='cd /usr/share/applications'
 
