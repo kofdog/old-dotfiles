@@ -8,6 +8,7 @@ Plugin 'bling/vim-airline'                " awesome status line
 Plugin 'bling/vim-bufferline'             " show buffers in statusline
 Plugin 'chriskempson/base16-vim'          " colors
 Plugin 'hsanson/vim-android'              " Android integration
+Plugin 'jnurmine/Zenburn'                 " colors
 Plugin 'junegunn/goyo.vim'                " distraction-free editing
 Plugin 'kien/ctrlp.vim'                   " file finding
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
@@ -96,13 +97,12 @@ syntax on
 
 " Color scheme
 let base16colorspace=256
+"set t_Co=256
 set background=dark
 colorscheme base16-eighties
 
 " Remove trailing whitespace on save
-if has("autocmd")
-	autocmd BufWritePre * :%s/\s\+$//e
-endif
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Get backups out of the way
 set backupdir=~/.vim/backup
@@ -141,7 +141,7 @@ let g:bufferline_show_bufnr = 0
 "" Ctrl-P
 let g:ctrlp_map = '<Leader>o'
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_working_path_mode = 'rc'
 set wildignore+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 
 "" Easytags
