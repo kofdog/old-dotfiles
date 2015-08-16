@@ -112,6 +112,9 @@ colorscheme base16-eighties
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Disable auto-commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " Get backups out of the way
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
