@@ -1,0 +1,44 @@
+#!/bin/bash
+
+export BLACK=${BASE00}
+export DARK_GRAY=${BASE08}
+export RED=${BASE01}
+export GREEN=${BASE02}
+export YELLOW=${BASE03}
+export BLUE=${BASE04}
+export MAGENTA=${BASE05}
+export CYAN=${BASE06}
+export LIGHTEST_GRAY=${BASE07}
+export WHITE=${BASE0F}
+
+export ORANGE=${BASE09}
+export BROWN=${BASE0B}
+export DARKEST_GRAY=${BASE08}
+export DARKER_GRAY=${BASE08}
+export LIGHT_GRAY=${BASE07}
+export LIGHTER_GRAY=${BASE07}
+
+export COLOR0=${BLACK}
+export COLOR1=${RED}
+export COLOR2=${GREEN}
+export COLOR3=${YELLOW}
+export COLOR4=${BLUE}
+export COLOR5=${MAGENTA}
+export COLOR6=${CYAN}
+export COLOR7=${LIGHTEST_GRAY}
+
+export COLOR8=${DARK_GRAY}
+export COLOR9=${RED}
+export COLOR10=${GREEN}
+export COLOR11=${YELLOW}
+export COLOR12=${BLUE}
+export COLOR13=${MAGENTA}
+export COLOR14=${CYAN}
+export COLOR15=${WHITE}
+
+export COLOR16=${ORANGE}
+export COLOR17=${BROWN}
+export COLOR18=${DARKEST_GRAY}
+export COLOR19=${DARKER_GRAY}
+export COLOR20=${LIGHT_GRAY}
+export COLOR21=${LIGHTER_GRAY}

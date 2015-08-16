@@ -1,0 +1,7 @@
+#include "../zenburn"
+#include "../colors"
+
+#define BACKGROUND BASE00
+#define BACKGROUND_TRANS [90]#1f1f1f
+#define FOREGROUND BASE07
+#define CURSOR BASE07

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export BACKGROUND=${BASE00}
+export FOREGROUND=${BASE07}
+export CURSOR=${BASE07}
