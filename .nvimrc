@@ -189,13 +189,6 @@ nnoremap <Leader>gf <C-]>
 " Exit Insert mode
 imap jk <Esc>
 
-" Delete/change up to underscore/hyphen
-nmap du dt_
-nmap cu ct_
-
-nmap di dt-
-nmap ci ct-
-
 " Remap up/down keys to navigate wrapped lines
 nnoremap j gj
 nnoremap k gk
