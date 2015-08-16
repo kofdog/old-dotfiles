@@ -5,13 +5,16 @@ call vundle#begin()
 
 Plugin 'a.vim'                            " header/library switching
 Plugin 'bling/vim-airline'                " awesome status line
-Plugin 'bling/vim-bufferline'             " show buffers in statusline
+"Plugin 'bling/vim-bufferline'             " show buffers in statusline
 Plugin 'chriskempson/base16-vim'          " colors
 Plugin 'hsanson/vim-android'              " Android integration
+Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
 Plugin 'jnurmine/Zenburn'                 " colors
 Plugin 'junegunn/goyo.vim'                " distraction-free editing
 Plugin 'kien/ctrlp.vim'                   " file finding
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
+Plugin 'pangloss/vim-javascript'          " better syntax/indent for JS
+Plugin 'Raimondi/delimitMate'             " automatic closing parens, et al.
 Plugin 'tpope/vim-commentary'             " comments
 Plugin 'tpope/vim-dispatch'               " asynchronous compilation in tmux
 Plugin 'tpope/vim-eunuch'                 " UNIX commands in Vim
@@ -19,6 +22,8 @@ Plugin 'tpope/vim-fugitive'               " git integration
 Plugin 'tpope/vim-repeat'                 " supporting . for plugins
 Plugin 'tpope/vim-rhubarb'                " Github integration
 Plugin 'tpope/vim-surround'               " surrounding brackets/quotes/etc.
+"Plugin 'Valloric/MatchTagAlways'          " HTML tag highlighting
+"Plugin 'vim-scripts/HTML-AutoCloseTag'    " automatic HTML tag closing
 Plugin 'vim-scripts/Smart-Tabs'           " tabs:indentation::spaces:alignment
 "Plugin 'xolox/vim-easytags'               " Exuberant Ctags integration
 Plugin 'xolox/vim-misc'                   " dependency for Easytags
@@ -87,8 +92,11 @@ if maparg('<C-L>', 'n') ==# ''
 	nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
-" Regardless of indentation settings above, in Makefiles: tab = 8-width tab
-autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+"" Indentation adjustments
+autocmd FileType css setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType make setlocal shiftwidth=8 tabstop=8 softtabstop=0 noexpandtab
 
 " Obligatory
 filetype plugin indent on
@@ -123,6 +131,7 @@ augroup END
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
 
 "" Android
 let g:android_sdk_path = '~/Android/Sdk'
@@ -185,6 +194,9 @@ nnoremap <Leader>q :bp <BAR> bd #<CR>
 " IDE navigation
 nnoremap <Leader>aa :A<CR>
 nnoremap <Leader>gf <C-]>
+
+" Web dev - accounts for delimitMate
+imap <silent> <C-j> </<C-X><C-O><C-X><C-H><Esc><<
 
 " Exit Insert mode
 imap jk <Esc>
