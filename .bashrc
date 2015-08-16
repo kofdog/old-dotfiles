@@ -59,17 +59,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Set vi input mode
-#set -o vi
-
-# Autostart
-#if [ "$TERM" != "linux" ]; then
-#    archey3
-#fi
-
 # Android development
-PATH=$PATH:/Android/Sdk/platform-tools
-PATH=$PATH:/Android/Sdk/tools
 PATH=$PATH:/opt/android-ndk
+PATH=$PATH:/opt/android-sdk/platform-tools
+PATH=$PATH:/opt/android-sdk/tools
 PATH=$PATH:/opt/android-studio/bin
 export PATH
