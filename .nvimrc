@@ -93,9 +93,9 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 "" Indentation adjustments
-autocmd FileType css setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType css setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType html setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType make setlocal shiftwidth=8 tabstop=8 softtabstop=0 noexpandtab
 
 " Obligatory
