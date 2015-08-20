@@ -6,15 +6,15 @@ source ~/.palettes/bash-style/base16/eighties
 source ~/.palettes/bash-style/base16/colors
 source ~/.palettes/bash-style/base16/dark
 export COLORS="Base16 Eighties Dark"
-export FONT="Source Code Pro Semibold 13"
-export FONT_DMENU="Source Code Pro Semibold-13"
-export FONT_LEMONBAR="Source Code Pro Semibold-13"
+export FONT="Source Code Pro Semibold 14"
+export FONT_DMENU="Source Code Pro Semibold-14"
+export FONT_LEMONBAR="Source Code Pro Semibold-14"
 export OFFSET_LEMONBAR=0
-export FONT_LEMONBAR_ICONS="FontAwesome-13"
+export FONT_LEMONBAR_ICONS="FontAwesome-14"
 export OFFSET_LEMONBAR_ICONS=-4
-export FONT_LEMONBAR_WORKSPACES="FontAwesome-13"
+export FONT_LEMONBAR_WORKSPACES="FontAwesome-14"
 export OFFSET_LEMONBAR_WORKSPACES=-4
-export FONT_XFT="Source Code Pro:style=Semibold:size=13"
+export FONT_XFT="Source Code Pro:style=Semibold:size=14"
 
 # Set default applications
 export ALT_BROWSER=firefox
