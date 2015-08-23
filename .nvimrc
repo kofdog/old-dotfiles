@@ -58,6 +58,8 @@ set ignorecase
 set incsearch
 set smartcase
 
+set mouse=
+
 " Default indentation
 set noexpandtab
 set shiftwidth=8
