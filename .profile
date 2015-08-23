@@ -17,8 +17,8 @@ export OFFSET_LEMONBAR_WORKSPACES=-4
 export FONT_XFT="Source Code Pro:style=Semibold:size=14"
 
 # Set default applications
-export ALT_BROWSER=firefox
-export BROWSER=chromium
+export ALT_BROWSER=chromium
+export BROWSER=firefox
 export EDITOR=vim
 export FILES=ranger
 export LAUNCHER=dmenu-launch
