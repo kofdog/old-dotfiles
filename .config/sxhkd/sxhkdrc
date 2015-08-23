@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Reload this configuration on the fly
-super + shift + r
+super + ctrl + r
     pkill -USR1 -x sxhkd
 
 # Quit X
-super + shift + q
+super + ctrl + q
     killall panel && bspc quit
 
 # Move window control, window; set split direction
-super + {_,shift + ,ctrl + }{h,j,k,l}
+super + {_,ctrl + ,shift + }{h,j,k,l}
     bspc window -{f,s,p} {left,down,up,right}
 
 # Grow / shrink active window
@@ -24,14 +24,14 @@ super + {s,d}
     bspc window -t {floating,fullscreen}
 
 # Close/kill window
-super + {shift +,ctrl +} x
+super + {ctrl +,shift +} x
     bspc window -{c,k}
 
 # Go to workspace, move active window to workspace
-super + {_,shift + }{1-9,0}
+super + {_,ctrl + }{1-9,0}
     bspc {desktop -f,window -d} ^{1-9,10}
 
-super + {_,shift + }{u,i}
+super + {_,ctrl + }{u,i}
     bspc {desktop -f,window -d} {prev,next}
 
 # ?????
@@ -51,7 +51,7 @@ super + apostrophe
     bspc window -s last
 
 # ?????
-super + {o,p}
+super + {_,ctrl + }o
     bspc control --record-history off; \
     bspc window {older,newer} -f; \
     bspc control --record-history on
@@ -65,7 +65,7 @@ super + g
     bspc window -s biggest
 
 # Cycle through windows
-super + {_,shift + }n
+super + ctrl + {n,p}
     bspc window -f {next,prev}
 
 # ?????
@@ -104,7 +104,7 @@ super + alt + space
     volume mute
 
 # Multimedia keys
-super + alt + {u,i,o}
+super + {p,a,n}
     mpc {prev,toggle,next}
 
 # Brightness keys
@@ -123,10 +123,10 @@ super + @F1
 super + Return
     $TERMINAL
 
-super + shift + Return
+super + ctrl + Return
     $LAUNCH_BROWSER
 
-super + ctrl + Return
+super + shift + Return
     $LAUNCH_ALT_BROWSER
 
 super + space
