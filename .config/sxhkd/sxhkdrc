@@ -24,7 +24,7 @@ super + {s,f}
     bspc window -t {floating,fullscreen}
 
 # Close/kill window
-super + {ctrl +,shift +} d
+super + {ctrl +,shift +} a
     bspc window -{c,k}
 
 # Go to workspace, move active window to workspace
