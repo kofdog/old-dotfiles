@@ -20,11 +20,11 @@ super + alt + shift + {h,j,k,l}
     bspc window -e {right -10,up +10,down -10,left +10}
 
 # Toggle active window floating, fullscreen
-super + {s,d}
+super + {s,f}
     bspc window -t {floating,fullscreen}
 
 # Close/kill window
-super + {ctrl +,shift +} x
+super + {ctrl +,shift +} d
     bspc window -{c,k}
 
 # Go to workspace, move active window to workspace
