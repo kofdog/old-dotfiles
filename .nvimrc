@@ -12,6 +12,7 @@ Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
 Plugin 'jnurmine/Zenburn'                 " colors
 Plugin 'junegunn/goyo.vim'                " distraction-free editing
 Plugin 'kien/ctrlp.vim'                   " file finding
+Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
 Plugin 'pangloss/vim-javascript'          " better syntax/indent for JS
 Plugin 'Raimondi/delimitMate'             " automatic closing parens, et al.
@@ -167,6 +168,9 @@ set wildignore+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 "" Fugitive
 " Delete buffers after leaving (so they don't clog the list)
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
+"" Mustache/Handlebars
+au FileType html set syntax=mustache
 
 "" Rhubarb
 set completeopt-=preview
