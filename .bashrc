@@ -38,6 +38,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+complete -cf sudo
 
 # Set shell prompt
 if [ "$color_prompt" = yes ]; then
