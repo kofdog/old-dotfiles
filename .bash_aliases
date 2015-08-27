@@ -79,6 +79,7 @@ alias lh='ls -alFh'
 alias ll='ls -alF'
 
 # aesthetic
+alias clearf='clear; screenfetch'
 alias cleary='clear; archey3'
 
 # vim keybindings
