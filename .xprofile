@@ -9,6 +9,7 @@ mpd-start &
 
 # File sharing
 #filesharing-fix &
+sudo sysctl -p &
 dropbox-cli start &
 #CopyConsole --daemon &
 #google-musicmanager &

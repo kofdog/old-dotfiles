@@ -77,7 +77,7 @@ panel_ram()
 	icon=""
 
 	total=$(free | grep Mem | awk '{print $2}')
-	used=$(free | grep Mem | awk '{print $3}')
+	used=$(free | grep + | awk '{print $3}')
 	ram=$((used * 100 / total))
 	#ram=$(free -h | grep Mem | awk '{print $3}')
 
