@@ -1,1 +1,2 @@
+#!/bin/sh
 feh --no-xinerama --bg-scale '/home/mike/Pictures/gr8.jpg' 
