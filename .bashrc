@@ -61,6 +61,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Android development
+export ANDROID_SDK_ROOT=/opt/android-sdk
 PATH=$PATH:/opt/android-ndk
 PATH=$PATH:/opt/android-sdk/platform-tools
 PATH=$PATH:/opt/android-sdk/tools
