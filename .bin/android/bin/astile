@@ -1,5 +1,4 @@
 #!/bin/bash
 
 wmfix
-x11-shrink
 asload
