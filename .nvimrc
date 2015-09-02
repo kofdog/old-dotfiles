@@ -96,9 +96,8 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 "" Indentation adjustments
-autocmd FileType css setlocal shiftwidth=4 tabstop=4 expandtab
-autocmd FileType html setlocal shiftwidth=4 tabstop=4 expandtab
-autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType css,html,javascript setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType java,xml setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType make setlocal shiftwidth=8 tabstop=8 softtabstop=0 noexpandtab
 
 " Obligatory
@@ -180,9 +179,12 @@ set completeopt-=preview
 :let mapleader = ";"
 
 " Android
+nnoremap <Leader>ad :AndroidDevices<CR>
+nnoremap <Leader>ae :AndroidEmulator<CR>
 nnoremap <Leader>ai :Android installDebug<CR>
 nnoremap <Leader>am :Android assembleDebug<CR>
-nnoremap <Leader>at :AndroidUpdateTags<CR>
+nnoremap <Leader>at :AndroidTest<CR>
+nnoremap <Leader>au :AndroidUpdateTags<CR>
 
 " Dispatch
 nnoremap <Leader>m :Make<CR>
@@ -215,6 +217,9 @@ nnoremap <Leader>ep :e ~/.profile<CR>
 nnoremap <Leader>ev :e ~/.vimrc<CR>
 nnoremap <Leader>exi :e ~/.xinitrc<CR>
 nnoremap <Leader>exp :e ~/.xprofile<CR>
+
+" Reload this config
+nnoremap <Leader>r :so ~/.nvimrc<CR>
 
 " Exit Insert mode
 imap jk <Esc>
