@@ -48,7 +48,7 @@ md () { mkdir -p "$@" && cd "$@"; }
 
 # quick cd
 alias projects='cd ~/Documents/projects'
-alias dotfiles='projets; cd dotfiles'
+alias dotfiles='projects; cd dotfiles'
 alias eudyptula='projects; cd eudyptula-challenge'
 alias kernel='projects; cd kernel'
 alias learn-meteor='projects; cd learn-meteor'
