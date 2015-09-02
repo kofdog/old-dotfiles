@@ -1,0 +1,3 @@
+#!/bin/bash
+
+locky && sudo systemctl start systemd-suspend

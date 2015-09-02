@@ -116,8 +116,11 @@ super + {p,a,n}
     scrot{_, -s}
 
 # Screen lock (suspend with suspend key)
+super + ctrl + @F1
+    locky
+
 super + @F1
-    locky ~/Pictures/gimp/the_way_is_shut.png
+    sleepy
 
 # Applications
 super + Return
