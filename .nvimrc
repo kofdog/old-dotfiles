@@ -1,6 +1,6 @@
 "" Vundle
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+se rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'a.vim'                            " header/library switching
@@ -33,104 +33,104 @@ call vundle#end()
 
 "" Settings
 " File reading
-set autoread
-set fileformats+=mac
+se ar
+se ffs+=mac
 
 " Fancy indentation and such
-set autoindent
-set backspace=indent,eol,start
-set cindent
-set cinoptions=(0,u0,U0
-set complete-=i
-set smarttab
+se ai
+se bs=indent,eol,start
+se cin
+se cino=(0,u0,U0
+se cpt-=i
+se sta
 
 " Aesthetic
-set display+=lastline
-set linespace=0
-set noerrorbells
-set nojoinspaces
-set showmatch
+se dy+=lastline
+se lsp=0
+se noeb
+se nojs
+se sm
 
-set formatoptions+=j
+se fo+=j
 
 " Search
-set hlsearch
-set ignorecase
-set incsearch
-set smartcase
+se hls
+se ic
+se is
+se scs
 
-set mouse=
+se mouse=
 
 " Default indentation
-set noexpandtab
-set shiftwidth=8
-set softtabstop=0
-set tabstop=8
+se noet
+se sw=8
+se sts=0
+se ts=8
 
-set nrformats-=octal
+se nf-=octal
 
 " Statusline
-set laststatus=2
-set ruler
-set showcmd
-set noshowmode
-set wildmenu
-"set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+se ls=2
+se ru
+se sc
+se nosmd
+se wmnu
+"se stl=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Scrolling
 if !&scrolloff
-	set scrolloff=1
+	se so=1
 endif
 if !&sidescrolloff
-	set sidescrolloff=5
+	se siso=5
 endif
 
-set shell=/bin/bash
+se sh=/bin/bash
 
-set ttimeout
-set ttimeoutlen=100
+se ttimeout
+se ttm=100
 
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
-	nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+	nn <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
 "" Indentation adjustments
-autocmd FileType css,html,javascript setlocal shiftwidth=4 tabstop=4 expandtab
-autocmd FileType java,xml setlocal shiftwidth=4 tabstop=4 expandtab
-autocmd FileType make setlocal shiftwidth=8 tabstop=8 softtabstop=0 noexpandtab
+au FileType css,html,javascript setl sw=4 ts=4 et
+au FileType java,xml setl sw=4 ts=4 et
+au FileType make setl sw=8 ts=8 sts=0 noet
 
 " Obligatory
 filetype plugin indent on
-set nocp
+se nocp
 syntax on
 
 " Color scheme
 let base16colorspace=256
-"set t_Co=256
-set background=dark
-colorscheme base16-eighties
+"se t_Co=256
+se bg=dark
+colo base16-eighties
 
 " Remove trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
+au BufWritePre * :%s/\s\+$//e
 
 " Disable auto-commenting
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+au FileType * setl fo-=c fo-=r fo-=o
 
 " Get backups out of the way
-set backupdir=~/.vim/backup
-set directory=~/.vim/swap
+se bdir=~/.vim/backup
+se dir=~/.vim/swap
 
 "" Grep
 " Open Quickfix after grep
-autocmd QuickFixCmdPost *grep* cwindow
+au QuickFixCmdPost *grep* cwindow
 
 "" Compilation
 " Open Quickfix after make
-augroup OpenQuickfixWindowAfterMake
-    autocmd QuickFixCmdPost [^l]* nested cwindow
-    autocmd QuickFixCmdPost    l* nested lwindow
-augroup END
+aug OpenQuickfixWindowAfterMake
+    au QuickFixCmdPost [^l]* nested cwindow
+    au QuickFixCmdPost    l* nested lwindow
+aug END
 
 "" Airline
 let g:airline_left_sep = ''
@@ -156,76 +156,76 @@ let g:bufferline_show_bufnr = 0
 let g:ctrlp_map = '<Leader>o'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'rc'
-set wildignore+=*/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
+se wig+=*/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 
 "" Easytags
 "let g:easytags_always_enabled = 1
 "let g:easytags_async = 1
-:set tags=./tags;
+se tag=./tags;
 "let g:easytags_dynamic_files = 1
 
 "" Fugitive
 " Delete buffers after leaving (so they don't clog the list)
-autocmd BufReadPost fugitive://* set bufhidden=delete
+au BufReadPost fugitive://* se bh=delete
 
 "" Mustache/Handlebars
-au FileType html set syntax=mustache
+au FileType html se syn=mustache
 
 "" Rhubarb
-set completeopt-=preview
+se cot-=preview
 
 "" Keybindings
 " Leader key
-:let mapleader = ";"
+let mapleader = ";"
 
 " Android
-nnoremap <Leader>ad :AndroidDevices<CR>
-nnoremap <Leader>ae :AndroidEmulator<CR>
-nnoremap <Leader>ai :Android installDebug<CR>
-nnoremap <Leader>am :Android assembleDebug<CR>
-nnoremap <Leader>at :AndroidTest<CR>
-nnoremap <Leader>au :AndroidUpdateTags<CR>
+nn <Leader>ad :AndroidDevices<CR>
+nn <Leader>ae :AndroidEmulator<CR>
+nn <Leader>ai :Android installDebug<CR>
+nn <Leader>am :Android assembleDebug<CR>
+nn <Leader>at :AndroidTest<CR>
+nn <Leader>au :AndroidUpdateTags<CR>
 
 " Dispatch
-nnoremap <Leader>m :Make<CR>
+nn <Leader>m :Make<CR>
 
-" Fugitive
-nnoremap <Leader>gc :Gcommit<CR>
-nnoremap <Leader>gd :Gdiff<CR>
-nnoremap <Leader>gr :Gread<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gw :Gwrite<CR>
+" Fugitiveackground
+nn <Leader>gc :Gcommit<CR>
+nn <Leader>gd :Gdiff<CR>
+nn <Leader>gr :Gread<CR>
+nn <Leader>gs :Gstatus<CR>
+nn <Leader>gw :Gwrite<CR>
 
 " Buffer manipulation
-set hidden
-nnoremap <Leader>l :bnext<CR>
-nnoremap <Leader>h :bprev<CR>
-nnoremap <Leader>q :bp <BAR> bd #<CR>
+se hid
+nn <Leader>l :bnext<CR>
+nn <Leader>h :bprev<CR>
+nn <Leader>q :bp <BAR> bd #<CR>
 
 " IDE navigation
-nnoremap <Leader>aa :A<CR>
-nnoremap <Leader>gf <C-]>
+nn <Leader>aa :A<CR>
+nn <Leader>gf <C-]>
 
 " Web dev - accounts for delimitMate
-imap <silent> <C-j> </<C-X><C-O><C-X><C-H><Esc><<
+im <silent> <C-j> </<C-X><C-O><C-X><C-H><Esc><<
 
 " Quick edits
-nnoremap <Leader>eba :e ~/.bash_aliases<CR>
-nnoremap <Leader>ebr :e ~/.bashrc<CR>
-nnoremap <Leader>en :e ~/.nvimrc<CR>
-nnoremap <Leader>ep :e ~/.profile<CR>
-nnoremap <Leader>ev :e ~/.vimrc<CR>
-nnoremap <Leader>exi :e ~/.xinitrc<CR>
-nnoremap <Leader>exp :e ~/.xprofile<CR>
+nn <Leader>eba :e ~/.bash_aliases<CR>
+nn <Leader>ebr :e ~/.bashrc<CR>
+nn <Leader>en :e ~/.nvimrc<CR>
+nn <Leader>ep :e ~/.profile<CR>
+nn <Leader>ev :e ~/.vimrc<CR>
+nn <Leader>exi :e ~/.xinitrc<CR>
+nn <Leader>exp :e ~/.xprofile<CR>
 
 " Reload this config
-nnoremap <Leader>r :so ~/.nvimrc<CR>
+nn <Leader>r :so ~/.nvimrc<CR>
 
 " Exit Insert mode
-imap jk <Esc>
+im jk <Esc>
 
 " Remap up/down keys to navigate wrapped lines
-nnoremap j gj
-nnoremap k gk
-nnoremap gj j
-nnoremap gk k
+nn j gj
+nn k gk
+nn gj j
+nn gk k
