@@ -4,3 +4,6 @@ visualizer_output_name = "FIFO"
 visualizer_sync_interval = "15"
 visualizer_type = "spectrum"
 visualizer_color = "cyan"
+
+# Aesthetic
+display_volume_level = "no"
