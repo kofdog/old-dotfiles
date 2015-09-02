@@ -50,13 +50,11 @@ md () { mkdir -p "$@" && cd "$@"; }
 alias projects='cd ~/Documents/projects'
 alias dotfiles='projects; cd dotfiles'
 alias eudyptula='projects; cd eudyptula-challenge'
+alias guess='projects; cd GuessChinese'
 alias kernel='projects; cd kernel'
 alias learn-meteor='projects; cd learn-meteor'
+alias murmur='projects; cd Murmur'
 alias sunshine='projects; cd Sunshine'
-
-alias aprojects='cd ~/AndroidStudioProjects'
-alias guess='aprojects; cd GuessChinese'
-alias murmur='aprojects; cd Murmur'
 
 alias apps='cd ~/.local/share/applications'
 alias sapps='cd /usr/share/applications'

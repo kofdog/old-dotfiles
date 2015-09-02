@@ -139,7 +139,7 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#tabline#enabled = 1
 
 "" Android
-let g:android_sdk_path = '~/Android/Sdk'
+let g:android_sdk_path = '/opt/android-sdk'
 let g:gradle_path = '/usr/share/java/gradle'
 
 "" Bufferline
