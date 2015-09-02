@@ -157,7 +157,7 @@ let g:bufferline_show_bufnr = 0
 let g:ctrlp_map = '<Leader>o'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'rc'
-set wildignore+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
+set wildignore+=*/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 
 "" Easytags
 "let g:easytags_always_enabled = 1
@@ -206,6 +206,15 @@ nnoremap <Leader>gf <C-]>
 
 " Web dev - accounts for delimitMate
 imap <silent> <C-j> </<C-X><C-O><C-X><C-H><Esc><<
+
+" Quick edits
+nnoremap <Leader>eba :e ~/.bash_aliases<CR>
+nnoremap <Leader>ebr :e ~/.bashrc<CR>
+nnoremap <Leader>en :e ~/.nvimrc<CR>
+nnoremap <Leader>ep :e ~/.profile<CR>
+nnoremap <Leader>ev :e ~/.vimrc<CR>
+nnoremap <Leader>exi :e ~/.xinitrc<CR>
+nnoremap <Leader>exp :e ~/.xprofile<CR>
 
 " Exit Insert mode
 imap jk <Esc>
