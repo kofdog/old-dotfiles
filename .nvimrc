@@ -132,6 +132,14 @@ aug OpenQuickfixWindowAfterMake
     au QuickFixCmdPost    l* nested lwindow
 aug END
 
+"" Path
+" Linux kernel
+let s:kern = system("uname -r")
+let s:kernpath = 'set path+=/usr/lib/modules/' . s:kern . '/build/include'
+let s:kerncommand = substitute(s:kernpath, '\n', '', 'g')
+exec s:kerncommand
+"set path+=/lib/modules/system("uname -r")/build/include
+
 "" Airline
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
@@ -156,7 +164,7 @@ let g:bufferline_show_bufnr = 0
 let g:ctrlp_map = '<Leader>o'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'rc'
-se wig+=*/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
+se wig+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 
 "" Easytags
 "let g:easytags_always_enabled = 1
