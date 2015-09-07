@@ -164,7 +164,7 @@ let g:bufferline_show_bufnr = 0
 let g:ctrlp_map = '<Leader>o'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'rc'
-se wig+=*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
+se wig+=*/app/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 
 "" Easytags
 "let g:easytags_always_enabled = 1
