@@ -5,13 +5,13 @@ sxhkd &
 
 # Initialize workspaces
 #bspc monitor -d     
-bspc monitor -d           
+bspc monitor -d           
 
 # Set borders, gaps, splits
 for desktop in $(bspc query -D); do
 	bspc config -d $desktop border_width 1;
 	#bspc config -d $desktop border_width 0;
-	bspc config -d $desktop window_gap   20;
+	bspc config -d $desktop window_gap   50;
 done
 unset desktop
 
