@@ -2,6 +2,7 @@
 #include ".palettes/c-style/base16/dark/eighties"
 !#define FONT xft:Source Code Pro:style=Semibold:size=14
 #define FONT xft:Fira Mono:style=Regular:size=14
+!#define FONT xft:Hack:style=Regular:size=14
 #define TWOFIFTYSIX
 
 !! Xft
