@@ -169,7 +169,7 @@ se wig+=*/app/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 "" Easytags
 "let g:easytags_always_enabled = 1
 "let g:easytags_async = 1
-se tag=./tags;
+se tag=./.tags;
 "let g:easytags_dynamic_files = 1
 
 "" Fugitive
@@ -191,7 +191,7 @@ nn <Leader>ad :AndroidDevices<CR>
 nn <Leader>ae :AndroidEmulator<CR>
 nn <Leader>ai :Android installDebug<CR>
 nn <Leader>am :Android assembleDebug<CR>
-nn <Leader>at :AndroidTest<CR>
+nn <Leader>at :Android connectedCheck<CR>
 nn <Leader>au :AndroidUpdateTags<CR>
 
 " Dispatch
@@ -216,6 +216,7 @@ nn <Leader>gf <C-]>
 
 " Web dev - accounts for delimitMate
 im <silent> <C-j> </<C-X><C-O><C-X><C-H><Esc><<
+nn <F5> :silent update<Bar>silent !firefox %:p &<CR>
 
 " Quick edits
 nn <Leader>eba :e ~/.bash_aliases<CR>
