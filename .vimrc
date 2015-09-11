@@ -107,7 +107,6 @@ syntax on
 
 " Color scheme
 let base16colorspace=256
-"se t_Co=256
 se bg=dark
 colo base16-eighties
 
