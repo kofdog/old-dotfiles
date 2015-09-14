@@ -5,8 +5,8 @@ call vundle#begin()
 
 Plugin 'a.vim'                            " header/library switching
 Plugin 'bling/vim-airline'                " awesome status line
-"Plugin 'bling/vim-bufferline'             " show buffers in statusline
 Plugin 'chriskempson/base16-vim'          " colors
+Plugin 'christoomey/vim-tmux-navigator'   " Seamless vim/tmux navigation
 Plugin 'hsanson/vim-android'              " Android integration
 Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
 Plugin 'jnurmine/Zenburn'                 " colors
@@ -90,9 +90,9 @@ se sh=/bin/bash
 se ttimeout
 se ttm=100
 
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-	nn <silent> <C-L> :nohlsearch<CR><C-L>
+" Use <C-I> to clear the highlighting of :set hlsearch.
+if maparg('<C-I>', 'n') ==# ''
+	nn <silent> <C-I> :nohlsearch<CR><C-I>
 endif
 
 "" Indentation adjustments
@@ -122,7 +122,7 @@ se dir=~/.vim/swap
 
 "" Grep
 " Open Quickfix after grep
-au QuickFixCmdPost *grep* cwindow
+"au QuickFixCmdPost *grep* cwindow
 
 "" Compilation
 " Open Quickfix after make
@@ -189,6 +189,7 @@ let mapleader = ";"
 nn <Leader>ad :AndroidDevices<CR>
 nn <Leader>ae :AndroidEmulator<CR>
 nn <Leader>ai :Android installDebug<CR>
+nn <Leader>al :Android lint<CR>
 nn <Leader>am :Android assembleDebug<CR>
 nn <Leader>at :Android connectedCheck<CR>
 nn <Leader>au :AndroidUpdateTags<CR>
@@ -196,9 +197,13 @@ nn <Leader>au :AndroidUpdateTags<CR>
 " Dispatch
 nn <Leader>m :Make<CR>
 
-" Fugitiveackground
+" Fugitive
 nn <Leader>gc :Gcommit<CR>
 nn <Leader>gd :Gdiff<CR>
+command! -nargs=+ NewGrep execute 'silent Ggrep! <args>' | copen
+nn <Leader>gg :execute "NewGrep " . expand("<cword>")<CR>
+
+nn <Leader>gl :Glog<CR>
 nn <Leader>gr :Gread<CR>
 nn <Leader>gs :Gstatus<CR>
 nn <Leader>gw :Gwrite<CR>
@@ -222,12 +227,14 @@ nn <Leader>eba :e ~/.bash_aliases<CR>
 nn <Leader>ebr :e ~/.bashrc<CR>
 nn <Leader>en :e ~/.nvimrc<CR>
 nn <Leader>ep :e ~/.profile<CR>
+nn <Leader>et :e ~/.tmux.conf<CR>
 nn <Leader>ev :e ~/.vimrc<CR>
 nn <Leader>exi :e ~/.xinitrc<CR>
 nn <Leader>exp :e ~/.xprofile<CR>
 
 " Reload this config
-nn <Leader>r :so ~/.nvimrc<CR>
+nn <Leader>rn :so ~/.nvimrc<CR>
+nn <Leader>rv :so ~/.vimrc<CR>
 
 " Exit Insert mode
 im jk <Esc>
