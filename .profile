@@ -6,15 +6,15 @@ source ~/.palettes/bash-style/base16/eighties
 source ~/.palettes/bash-style/base16/colors
 source ~/.palettes/bash-style/base16/dark
 export COLORS="Base16 Eighties Dark"
-export FONT="Fira Mono 14"
-export FONT_DMENU="Fira Mono-14"
-export FONT_LEMONBAR="Fira Mono-14"
+export FONT="Source Code Pro 14"
+export FONT_DMENU="Source Code Pro-14"
+export FONT_LEMONBAR="Source Code Pro-14"
 export OFFSET_LEMONBAR=0
 export FONT_LEMONBAR_ICONS="FontAwesome-14"
-export OFFSET_LEMONBAR_ICONS=-4
+export OFFSET_LEMONBAR_ICONS=-6
 export FONT_LEMONBAR_WORKSPACES="FontAwesome-14"
-export OFFSET_LEMONBAR_WORKSPACES=-4
-export FONT_XFT="Fira Mono:style=Regular:size=14"
+export OFFSET_LEMONBAR_WORKSPACES=-6
+export FONT_XFT="Source Code Pro:style=Regular:size=14"
 
 # Set default applications
 export ALT_BROWSER=chromium
