@@ -1,28 +1,31 @@
 !! Constants
 #include ".palettes/c-style/base16/dark/eighties"
 !#define FONT xft:Source Code Pro:style=Semibold:size=14
-#define FONT xft:Fira Mono:style=Regular:size=14
+!#define FONT xft:Fira Mono:style=Regular:size=14
 !#define FONT xft:Hack:style=Regular:size=14
+!#define FONT xft:Meslo LG M:style=Regular:size=14
+#define FONT xft:Source Code Pro:style=Regular:size=14
+!#define FONT xft:Ubuntu Mono:style=Regular:size=16
 #define TWOFIFTYSIX
 
 !! Xft
 ! My original settings
-!Xft.antialias: 1
-!Xft.autohint: 0
-!Xft.dpi: 192
-!Xft.hinting: 1
-!Xft.hintstyle: hintslight
-!Xft.lcdfilter: lcddefault
-!Xft.rgba: grayscale
-
-! Infinality recommended settings
 Xft.antialias: 1
 Xft.autohint: 0
 Xft.dpi: 192
 Xft.hinting: 1
-Xft.hintstyle: hintfull
+Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
-Xft.rgba: rgb
+Xft.rgba: grayscale
+
+! Infinality recommended settings
+!Xft.antialias: 1
+!Xft.autohint: 0
+!Xft.dpi: 192
+!Xft.hinting: 1
+!Xft.hintstyle: hintfull
+!Xft.lcdfilter: lcddefault
+!Xft.rgba: rgb
 
 !! DZen2
 dzen2.font: FONT
