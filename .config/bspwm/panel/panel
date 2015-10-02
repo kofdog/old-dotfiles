@@ -28,7 +28,14 @@ panel_music()
 {
 	icon=""
 	music=$(mpc current)
-	test -n "$music" && echo "A${icon}${music}"
+	output="A${icon}${music}"
+	if [ ${#music} -gt 30 ]; then
+		substr=" - "
+		x="${output%%$substr*}"
+		index=${#x}
+		output=${output:0:$index}
+	fi
+	test -n "$music" && echo "$output"
 }
 panel_wifi()
 {
