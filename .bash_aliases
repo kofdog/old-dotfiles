@@ -47,17 +47,18 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick cd
+alias builds='cd ~/.builds'
 alias projects='cd ~/Documents/projects'
+
+alias alec='projects; cd alec'
 alias dotfiles='projects; cd dotfiles'
 alias eudyptula='projects; cd eudyptula-challenge'
 alias guess='projects; cd GuessChinese'
-alias kernel='projects; cd kernel'
+alias kernel='builds; cd kernel'
 alias learn-meteor='projects; cd learn-meteor'
 alias murmur='projects; cd Murmur'
+alias prick='project; cd Pricktionary'
 alias sunshine='projects; cd Sunshine'
-
-alias apps='cd ~/.local/share/applications'
-alias sapps='cd /usr/share/applications'
 
 # administration
 alias dirsize='du -h -d 1 | sort -rh | less'
