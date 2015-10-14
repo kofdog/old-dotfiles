@@ -9,38 +9,39 @@ num_mon=$(bspc query -M | wc -l)
 while read -r line; do
     case $line in
         S*)
-            tray=" %{F$COLOR_ICON_FG}%{T2}${line#?}%{T1}%{F-} "
+            tray="  %{F$COLOR_ICON_FG}%{T2}${line#?}%{T1}%{F-} "
             ;;
         C*)
-            time=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            time="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         D*)
-            date=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            date="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         B*)
             #battery="%{F$COLOR_BATTERY_FG}%{T2} ${line#?} %{T1}%{F-}"
-            battery=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            battery="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         V*)
-            volume=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            volume="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         R*)
-            bright=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            bright="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         Z*)
-            ram=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            ram="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         P*)
-            cpu=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            cpu="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         K*)
-            kernel=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            kernel="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         N*)
-            network=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            network="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
             ;;
         A*)
-            music=" %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            #music="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
+            music="  %{F$COLOR_ICON_FG}%{T2}${line:1:5}%{T1}%{F-} ${line:6} "
             ;;
         #T*)
         #    title="  %{F$COLOR_TITLE_FG}%{B$COLOR_TITLE_BG}%{T1}${line#?}%{T1}%{B-}%{F-}  "
@@ -99,5 +100,6 @@ while read -r line; do
             done
             ;;
     esac
-    printf "%s\n" "%{l}${wm_infos}%{r}${music}${network}${kernel}${cpu}${ram}${bright}${volume}${battery}${date}${time}${tray}"
+    #printf "%s\n" "%{l}${wm_infos}%{r}${music}${network}${kernel}${cpu}${ram}${bright}${volume}${battery}${date}${time}${tray}"
+    printf "%s\n" "%{l}${wm_infos}%{c}${music}%{r}${network}${volume}${battery}${date}${time}"
 done

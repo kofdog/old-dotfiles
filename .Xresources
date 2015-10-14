@@ -4,7 +4,7 @@
 !#define FONT xft:Fira Mono:style=Regular:size=14
 !#define FONT xft:Hack:style=Regular:size=14
 !#define FONT xft:Meslo LG M:style=Regular:size=14
-#define FONT xft:Source Code Pro:style=Regular:size=14
+#define FONT xft:Source Code Pro:style=Regular:size=13
 !#define FONT xft:Ubuntu Mono:style=Regular:size=16
 #define TWOFIFTYSIX
 
@@ -36,6 +36,7 @@ dzen2.background: BACKGROUND
 ! General
 !URxvt*depth: 32
 URxvt*geometry: 90x22
+URxvt*internalBorder: 64
 URxvt*intensityStyles: false
 URxvt*termName: rxvt-256color
 URxvt*cursorBlink: true

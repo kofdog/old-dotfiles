@@ -91,6 +91,7 @@ alias info='info --vi-keys'
 
 # quick launchers
 alias emc='em -nw'
+alias htop='sudo htop'
 alias nv='nvim'
 
 # fix sudo

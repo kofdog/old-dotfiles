@@ -1,7 +1,7 @@
 #!/bin/bash
 
 panel_fifo=/tmp/panel-fifo
-panel_height=48
+panel_height=56
 panel_font_family=$FONT_LEMONBAR
 panel_font_offset=$OFFSET_LEMONBAR
 panel_icon_family=$FONT_LEMONBAR_ICONS
@@ -26,7 +26,13 @@ bspc control --subscribe > "$panel_fifo" &
 # TODO: Separate these into scripts
 panel_music()
 {
-	icon=""
+	#icon=""
+	state=$(mpc | grep '\[*\]' | cut -d ' ' -f1)
+	if [ "$state" == "[playing]" ]; then
+		icon="  "
+	else
+		icon="  "
+	fi
 	music=$(mpc current)
 	output="A${icon}${music}"
 	if [ ${#music} -gt 30 ]; then
@@ -45,7 +51,8 @@ panel_wifi()
 	name=`nmcli connection show --active | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
 	strength=`nmcli device wifi | grep "   $name" | awk 'END{gsub(/\[|\]|%/,""); print $6}'`
 
-	echo "N${icon}${strength}: ${name}"
+	#echo "N${icon}${strength}: ${name}"
+	echo "N${icon}${name}"
 }
 
 panel_kernel()
@@ -179,18 +186,18 @@ panel_systray()
 }
 
 # Very slow
-while true; do
-	panel_kernel > "$panel_fifo" &
-	panel_systray > "$panel_fifo" &
-	sleep 60
-done &
+#while true; do
+#	panel_kernel > "$panel_fifo" &
+#	panel_systray > "$panel_fifo" &
+#	sleep 60
+#done &
 
 # Slow
 while true; do
 	panel_battery > "$panel_fifo" &
-	panel_cpu > "$panel_fifo" &
+	#panel_cpu > "$panel_fifo" &
 	panel_music > "$panel_fifo" &
-	panel_ram > "$panel_fifo" &
+	#panel_ram > "$panel_fifo" &
 	panel_wifi > "$panel_fifo" &
 	sleep 5
 done &
@@ -206,7 +213,7 @@ done &
 # Fast (event-driven, sort of)
 while true; do
 	panel_volume > "$panel_fifo" &
-	panel_brightness > "$panel_fifo" &
+	#panel_brightness > "$panel_fifo" &
 	sleep 0.25
 done &
 
@@ -216,6 +223,7 @@ cat "$panel_fifo" | ~/.config/bspwm/panel/panel_bar | \
 	lemonbar -f "$panel_font_family" -f "$panel_icon_family" \
 	         -f "$panel_workspace_family" -o "$panel_font_offset" \
 	         -o "$panel_icon_offset" -o "$panel_workspace_offset" \
-	         -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 0 &
+	         -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" \
+	         -g x$panel_height -u 0 &
 
 wait
