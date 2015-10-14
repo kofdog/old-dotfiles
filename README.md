@@ -1,14 +1,17 @@
 # dotfiles
 Linux configuration files - emacs, bash, tmux, Xresources, WMs, themes, and more!
 
-(2015-04-04)
+(04-04-2015)
 http://imgur.com/a/doW17#0
 
-(2015-07-21)
+(21-07-2015)
 http://imgur.com/a/7BF3P#0
 
-(2015-08-09)
+(09-08-2015)
 http://imgur.com/a/Bz565#0
 
-(2015-10-02)
+(02-10-2015)
 http://imgur.com/a/qyxt3
+
+(14-10-2015)
+http://imgur.com/a/F0NQU
