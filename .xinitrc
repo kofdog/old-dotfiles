@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Use this file to configure an X session. It is called by xinit and
 # startx, but not from display managers.
@@ -12,11 +12,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # Source autostart
-[ -f /etc/xprofile ] && source /etc/xprofile
-[ -f ~/.xprofile ] && source ~/.xprofile
+[ -f /etc/xprofile ] && . /etc/xprofile
+[ -f ~/.xprofile ] && . ~/.xprofile
 
 # Source environment variables
-[ -f ~/.profile ] && source ~/.profile
+[ -f ~/.profile ] && . ~/.profile
 
 # Modify keyboard layout
 setxkbmap -option ctrl:swapcaps -option altwin:swap_alt_win

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+direction=${1:-down}
+#case $direction in
+#    up    ) amixer set Master $2%+ unmute;;
+#    down  ) amixer set Master $2%- unmute;;
+#    mute  ) amixer set Master toggle;;
+#    *     ) ;;
+#esac
+str=$(pactl list short sinks | grep -v SUSPENDED)
+[ -z "$str" ] && str=$(pactl list short sinks | grep analog)
+num=${str:0:1}
+case $direction in
+    up    ) sh -c "pactl set-sink-mute $num false; pactl set-sink-volume $num +5%";;
+    down  ) sh -c "pactl set-sink-mute $num false; pactl -- set-sink-volume $num -5%";;
+    mute  ) pactl set-sink-mute 0 toggle;;
+    *     ) ;;
+esac

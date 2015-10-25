@@ -8,6 +8,8 @@ panel_icon_family=$FONT_LEMONBAR_ICONS
 panel_icon_offset=$OFFSET_LEMONBAR_ICONS
 panel_workspace_family=$FONT_LEMONBAR_WORKSPACES
 panel_workspace_offset=$OFFSET_LEMONBAR_WORKSPACES
+panel_music_family=$FONT_LEMONBAR_MUSIC
+panel_music_offset=$OFFSET_LEMONBAR_MUSIC
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
 	printf "%s\n" "The panel is already running." >&2
@@ -117,13 +119,13 @@ panel_volume()
 	head_icon=""
 
 	# TODO: Integrate with ACPI
-	amaster=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $4}'`
+	amaster=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'`
 	astat=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $1}'`
 
-	if [[ $astat == "Mono:" ]]; then
-		icon=$speak_icon
-	else
+	if [[ $astat == "Headphones:" ]]; then
 		icon=$head_icon
+	else
+		icon=$speak_icon
 	fi
 	echo "V${icon}${amaster}"
 }
@@ -186,11 +188,11 @@ panel_systray()
 }
 
 # Very slow
-#while true; do
+while true; do
 #	panel_kernel > "$panel_fifo" &
-#	panel_systray > "$panel_fifo" &
-#	sleep 60
-#done &
+	panel_systray > "$panel_fifo" &
+	sleep 60
+done &
 
 # Slow
 while true; do
@@ -217,12 +219,13 @@ while true; do
 	sleep 0.25
 done &
 
-source ~/.config/bspwm/panel/panel_colors
+. ~/.config/bspwm/panel/panel_colors
 
 cat "$panel_fifo" | ~/.config/bspwm/panel/panel_bar | \
 	lemonbar -f "$panel_font_family" -f "$panel_icon_family" \
-	         -f "$panel_workspace_family" -o "$panel_font_offset" \
-	         -o "$panel_icon_offset" -o "$panel_workspace_offset" \
+	         -f "$panel_workspace_family" -f "$panel_music_family" \
+	         -o "$panel_font_offset" -o "$panel_icon_offset" \
+	         -o "$panel_workspace_offset" -o "$panel_music_offset" \
 	         -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" \
 	         -g x$panel_height -u 0 &
 

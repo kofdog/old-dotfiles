@@ -23,7 +23,7 @@ dropbox-cli start &
 
 # X11
 USRRESOURCES=$HOME/.Xresources
-xrdb -load /home/mike/.Xresources
+xrdb -load $USRRESOURCES
 xset b off
 
 # Terminal

@@ -2,7 +2,7 @@
 
 # Example panel for LemonBoy's bar
 
-source ~/.config/bspwm/panel/panel_colors
+. ~/.config/bspwm/panel/panel_colors
 
 num_mon=$(bspc query -M | wc -l)
 
@@ -41,7 +41,7 @@ while read -r line; do
             ;;
         A*)
             #music="  %{F$COLOR_ICON_FG}%{T2}${line:1:1}%{T1}%{F-} ${line:2} "
-            music="  %{F$COLOR_ICON_FG}%{T2}${line:1:5}%{T1}%{F-} ${line:6} "
+            music="  %{F$COLOR_ICON_FG}%{T4}${line:1:5}%{T1}%{F-} ${line:6} "
             ;;
         #T*)
         #    title="  %{F$COLOR_TITLE_FG}%{B$COLOR_TITLE_BG}%{T1}${line#?}%{T1}%{B-}%{F-}  "
@@ -69,27 +69,27 @@ while read -r line; do
                         ;;
                     O*)
                         # focused occupied desktop
-                        wm_infos="${wm_infos}%{F$COLOR_FOCUSED_OCCUPIED_FG}%{B$COLOR_FOCUSED_OCCUPIED_BG}%{U$COLOR_FOREGROUND}%{+u} %{T3}${name}%{T1} %{-u}%{B-}%{F-}"
+                        wm_infos="${wm_infos}%{F$COLOR_FOCUSED_OCCUPIED_FG}%{B$COLOR_FOCUSED_OCCUPIED_BG}%{U$COLOR_FOREGROUND}%{+u}  %{T3}${name}%{T1}  %{-u}%{B-}%{F-}"
                         ;;
                     F*)
                         # focused free desktop
-                        wm_infos="${wm_infos}%{F$COLOR_FOCUSED_FREE_FG}%{B$COLOR_FOCUSED_FREE_BG}%{U$COLOR_FOREGROUND}%{+u} %{T3}${name}%{T1} %{-u}%{B-}%{F-}"
+                        wm_infos="${wm_infos}%{F$COLOR_FOCUSED_FREE_FG}%{B$COLOR_FOCUSED_FREE_BG}%{U$COLOR_FOREGROUND}%{+u}  %{T3}${name}%{T1}  %{-u}%{B-}%{F-}"
                         ;;
                     U*)
                         # focused urgent desktop
-                        wm_infos="${wm_infos}%{F$COLOR_FOCUSED_URGENT_FG}%{B$COLOR_FOCUSED_URGENT_BG}%{U$COLOR_FOREGROUND}%{+u} %{T3}${name}%{T1} %{-u}%{B-}%{F-}"
+                        wm_infos="${wm_infos}%{F$COLOR_FOCUSED_URGENT_FG}%{B$COLOR_FOCUSED_URGENT_BG}%{U$COLOR_FOREGROUND}%{+u}  %{T3}${name}%{T1}  %{-u}%{B-}%{F-}"
                         ;;
                     o*)
                         # occupied desktop
-                        wm_infos="${wm_infos}%{F$COLOR_OCCUPIED_FG}%{B$COLOR_OCCUPIED_BG} %{T3}${name}%{T1} %{B-}%{F-}"
+                        wm_infos="${wm_infos}%{F$COLOR_OCCUPIED_FG}%{B$COLOR_OCCUPIED_BG}  %{T3}${name}%{T1}  %{B-}%{F-}"
                         ;;
                     f*)
                         # free desktop
-                        wm_infos="${wm_infos}%{F$COLOR_FREE_FG}%{B$COLOR_FREE_BG} %{T3}${name}%{T1} %{B-}%{F-}"
+                        wm_infos="${wm_infos}%{F$COLOR_FREE_FG}%{B$COLOR_FREE_BG}  %{T3}${name}%{T1}  %{B-}%{F-}"
                         ;;
                     u*)
                         # urgent desktop
-                        wm_infos="${wm_infos}%{F$COLOR_URGENT_FG}%{B$COLOR_URGENT_BG} %{T3}${name}%{T1} %{B-}%{F-}"
+                        wm_infos="${wm_infos}%{F$COLOR_URGENT_FG}%{B$COLOR_URGENT_BG}  %{T3}${name}%{T1}  %{B-}%{F-}"
                         ;;
                     L*)
                         # layout
@@ -101,5 +101,5 @@ while read -r line; do
             ;;
     esac
     #printf "%s\n" "%{l}${wm_infos}%{r}${music}${network}${kernel}${cpu}${ram}${bright}${volume}${battery}${date}${time}${tray}"
-    printf "%s\n" "%{l}${wm_infos}%{c}${music}%{r}${network}${volume}${battery}${date}${time}"
+    printf "%s\n" "%{l}${wm_infos}%{c}${music}%{r}${network}${volume}${battery}${date}${time}${tray}"
 done

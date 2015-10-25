@@ -2,11 +2,11 @@
 # bashrc and xinitrc, and should be sourced by display managers.
 
 # Grab colors and set font
-source ~/.palettes/bash-style/base16/eighties
-source ~/.palettes/bash-style/base16/colors
-source ~/.palettes/bash-style/base16/dark
+. ~/.palettes/bash-style/base16/eighties
+. ~/.palettes/bash-style/base16/colors
+. ~/.palettes/bash-style/base16/dark
 export COLORS="Base16 Eighties Dark"
-export FONT="Source Code Pro 13"
+export FONT="Source Code Pro 12"
 export FONT_DMENU="Source Code Pro-12"
 export FONT_LEMONBAR="Source Code Pro-12"
 export OFFSET_LEMONBAR=0
@@ -14,7 +14,9 @@ export FONT_LEMONBAR_ICONS="FontAwesome-13"
 export OFFSET_LEMONBAR_ICONS=-2
 export FONT_LEMONBAR_WORKSPACES="FontAwesome-13"
 export OFFSET_LEMONBAR_WORKSPACES=-2
-export FONT_XFT="Source Code Pro:style=Regular:size=13"
+export FONT_LEMONBAR_MUSIC="FontAwesome-11"
+export OFFSET_LEMONBAR_MUSIC=-4
+export FONT_XFT="Source Code Pro:style=Regular:size=12"
 
 # Set default applications
 export ALT_BROWSER=firefox

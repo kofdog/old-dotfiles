@@ -98,10 +98,10 @@ super + @button{1-3}
 
 # Volume keys
 @F{11,12}
-    volume {down,up} 5
+    volley {down,up} 5
 
 super + alt + space
-    volume mute
+    volley mute
 
 # Multimedia keys
 super + {p,a,n}

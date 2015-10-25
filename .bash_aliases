@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# aptitude
+alias aptup='sudo aptitude update && sudo aptitude upgrade'
+alias aptin='sudo aptitude install'
+alias apts='aptitude search'
+alias aptrm='sudo aptitude remove'
+
 # pacman
 alias pacup='pacaur -Syu'
 alias pacs='pacaur -Ss'
@@ -84,14 +90,14 @@ alias ll='ls -alF'
 
 # aesthetic
 alias clearf='clear; screenfetch'
-alias cleary='clear; archey3'
+alias cleary='clear; archey'
 
 # vim keybindings
 alias info='info --vi-keys'
 
 # quick launchers
 alias emc='em -nw'
-alias htop='sudo htop'
+#alias htop='sudo htop'
 alias nv='nvim'
 
 # fix sudo
