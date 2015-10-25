@@ -15,3 +15,7 @@ http://imgur.com/a/qyxt3
 
 (14-10-2015)
 http://imgur.com/a/F0NQU
+
+(25-10-2015)
+Migrate from Arch to Debian Jessie
+http://imgur.com/a/24Hoo
