@@ -1,5 +1,5 @@
 # dotfiles
-Linux configuration files - emacs, bash, tmux, Xresources, WMs, themes, and more!
+Here be dragons.
 
 (04-04-2015)
 http://imgur.com/a/doW17#0
