@@ -226,7 +226,7 @@ nn <F5> :silent update<Bar>silent !firefox %:p &<CR>
 " Quick edits
 nn <Leader>eba :e ~/.bash_aliases<CR>
 nn <Leader>ebr :e ~/.bashrc<CR>
-nn <Leader>ei :e ~/.nvim/init.vim<CR>
+nn <Leader>ei :e ~/.config/nvim/init.vim<CR>
 nn <Leader>ep :e ~/.profile<CR>
 nn <Leader>et :e ~/.tmux.conf<CR>
 nn <Leader>ev :e ~/.vimrc<CR>
@@ -234,7 +234,7 @@ nn <Leader>exi :e ~/.xinitrc<CR>
 nn <Leader>exp :e ~/.xprofile<CR>
 
 " Reload this config
-nn <Leader>rn :so ~/.nvim/init.vim<CR>
+nn <Leader>rn :so ~/.config/nvim/init.vim<CR>
 nn <Leader>rv :so ~/.vimrc<CR>
 
 " Exit Insert mode
