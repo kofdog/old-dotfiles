@@ -14,6 +14,7 @@ Plugin 'junegunn/goyo.vim'                " distraction-free editing
 Plugin 'kien/ctrlp.vim'                   " file finding
 Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
+Plugin 'othree/html5.vim'                 " syntax highlighting for HTML5
 Plugin 'pangloss/vim-javascript'          " better syntax/indent for JS
 Plugin 'Raimondi/delimitMate'             " automatic closing parens, et al.
 Plugin 'tpope/vim-commentary'             " comments
@@ -96,7 +97,7 @@ if maparg('<C-I>', 'n') ==# ''
 endif
 
 "" Indentation adjustments
-au FileType css,html,javascript setl sw=4 ts=4 et
+au FileType css,html,javascript setl sw=2 ts=2 et
 au FileType java,xml setl sw=4 ts=4 et
 au FileType make setl sw=8 ts=8 sts=0 noet
 
@@ -225,7 +226,7 @@ nn <F5> :silent update<Bar>silent !firefox %:p &<CR>
 " Quick edits
 nn <Leader>eba :e ~/.bash_aliases<CR>
 nn <Leader>ebr :e ~/.bashrc<CR>
-nn <Leader>en :e ~/.nvimrc<CR>
+nn <Leader>ei :e ~/.nvim/init.vim<CR>
 nn <Leader>ep :e ~/.profile<CR>
 nn <Leader>et :e ~/.tmux.conf<CR>
 nn <Leader>ev :e ~/.vimrc<CR>
@@ -233,7 +234,7 @@ nn <Leader>exi :e ~/.xinitrc<CR>
 nn <Leader>exp :e ~/.xprofile<CR>
 
 " Reload this config
-nn <Leader>rn :so ~/.nvimrc<CR>
+nn <Leader>rn :so ~/.nvim/init.vim<CR>
 nn <Leader>rv :so ~/.vimrc<CR>
 
 " Exit Insert mode
