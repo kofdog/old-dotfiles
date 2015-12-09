@@ -64,6 +64,7 @@ alias kernel='builds; cd kernel'
 alias learn-meteor='projects; cd learn-meteor'
 alias murmur='projects; cd Murmur'
 alias prick='project; cd Pricktionary'
+alias srweb='projects; cd web-reckoner'
 alias sunshine='projects; cd Sunshine'
 
 # administration
@@ -89,7 +90,7 @@ alias lh='ls -alFh'
 alias ll='ls -alF'
 
 # aesthetic
-alias clearf='clear; screenfetch'
+alias clc='clear; screenfetch'
 alias cleary='clear; archey'
 
 # vim keybindings
