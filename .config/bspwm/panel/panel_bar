@@ -101,5 +101,6 @@ while read -r line; do
             ;;
     esac
     #printf "%s\n" "%{l}${wm_infos}%{r}${music}${network}${kernel}${cpu}${ram}${bright}${volume}${battery}${date}${time}${tray}"
-    printf "%s\n" "%{l}${wm_infos}%{c}${music}%{r}${network}${volume}${battery}${date}${time}${tray}"
+    #printf "%s\n" "%{l}${wm_infos}%{c}${music}%{r}${network}${volume}${battery}${date}${time}${tray}"
+    printf "%s\n" "%{l}${music}%{c}${wm_infos}%{r}${network}${volume}${battery}${date}${time}${tray}"
 done

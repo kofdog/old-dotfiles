@@ -37,7 +37,7 @@ panel_music()
 	fi
 	music=$(mpc current)
 	output="A${icon}${music}"
-	if [ ${#music} -gt 30 ]; then
+	if [ ${#music} -gt 50 ]; then
 		substr=" - "
 		x="${output%%$substr*}"
 		index=${#x}

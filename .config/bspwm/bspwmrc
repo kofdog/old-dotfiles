@@ -8,7 +8,8 @@ sxhkd &
 #bspc monitor -d             
 #bspc monitor -d     
 #bspc monitor -d         
-bspc monitor -d         
+#bspc monitor -d         
+bspc monitor -d          
 
 # Set borders, gaps, splits
 for desktop in $(bspc query -D); do
