@@ -59,13 +59,13 @@ md () { mkdir -p "$@" && cd "$@"; }
 
 # quick ssh
 alias eru='ssh mike@eru'
+alias alec="eru -t 'tmux attach -t alec; bash -l'"
 alias srweb="eru -t 'tmux attach -t srweb; bash -l'"
 
 # quick cd
 alias builds='cd ~/.builds'
 alias projects='cd ~/Documents/projects'
 
-alias alec='projects; cd alec'
 alias dotfiles='projects; cd dotfiles'
 alias eudyptula='projects; cd eudyptula-challenge'
 alias guess='projects; cd GuessChinese'
