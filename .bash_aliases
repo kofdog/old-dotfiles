@@ -57,12 +57,9 @@ alias uuuu='cd ../../../..'
 alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
-# quick tmux
-alias tm='tmux attach -t'
-
 # quick ssh
 alias eru='ssh mike@eru'
-alias srweb="eru -t 'tm srweb; bash -l'"
+alias srweb="eru -t 'tmux attach -t srweb; bash -l'"
 
 # quick cd
 alias builds='cd ~/.builds'
