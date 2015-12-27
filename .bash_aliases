@@ -57,8 +57,12 @@ alias uuuu='cd ../../../..'
 alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
+# quick tmux
+alias tm='tmux attach -t'
+
 # quick ssh
 alias eru='ssh mike@eru'
+alias srweb="eru -t 'tm srweb; bash -l'"
 
 # quick cd
 alias builds='cd ~/.builds'
@@ -72,7 +76,6 @@ alias kernel='builds; cd kernel'
 alias learn-meteor='projects; cd learn-meteor'
 alias murmur='projects; cd Murmur'
 alias prick='project; cd Pricktionary'
-alias srweb='projects; cd web-reckoner'
 alias sunshine='projects; cd Sunshine'
 
 # administration
