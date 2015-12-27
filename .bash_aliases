@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ports
+alias portup='sudo portsnap fetch update && sudo portmaster -a'
+alias portin='sudo portmaster'
+alias ports='sudo pkg search -o'
+
 # aptitude
 alias aptup='sudo aptitude update && sudo aptitude upgrade'
 alias aptin='sudo aptitude install'
@@ -51,6 +56,9 @@ alias uuu='cd ../../..'
 alias uuuu='cd ../../../..'
 alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
+
+# quick ssh
+alias eru='ssh mike@eru'
 
 # quick cd
 alias builds='cd ~/.builds'
