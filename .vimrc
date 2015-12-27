@@ -233,7 +233,8 @@ nn <Leader>ev :e ~/.vimrc<CR>
 nn <Leader>exi :e ~/.xinitrc<CR>
 nn <Leader>exp :e ~/.xprofile<CR>
 
-" Reload this config
+" Reload things
+nn <Leader>rb :checktime<CR>
 nn <Leader>rn :so ~/.config/nvim/init.vim<CR>
 nn <Leader>rv :so ~/.vimrc<CR>
 
