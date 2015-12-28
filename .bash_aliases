@@ -90,8 +90,7 @@ alias lh='ls -alFh'
 alias ll='ls -alF'
 
 # aesthetic
-alias clc='clear; screenfetch'
-alias cleary='clear; archey'
+alias clc='clear; bsdinfo'
 
 # vim keybindings
 alias info='info --vi-keys'
