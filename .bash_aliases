@@ -91,6 +91,7 @@ alias ll='ls -alF'
 
 # aesthetic
 alias clc='clear; bsdinfo'
+alias top='nice top -m io -a'
 
 # vim keybindings
 alias info='info --vi-keys'
