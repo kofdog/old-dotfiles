@@ -62,10 +62,10 @@ alias aule='ssh kofdog@aule'
 alias ulmo='ssh kofdog@ulmo'
 
 alias alec="ulmo -t 'tmux attach -t alec; bash -l'"
-alias eudyptula="aule -t 'tmux attach -t eudyptula-challenge; bash -l'"
-alias guess="aule -t 'tmux attach -t guess-chinese; bash -l'"
+alias eudyptula="aule -t 'tmux attach -t eudy; bash -l'"
+alias guess="aule -t 'tmux attach -t guess; bash -l'"
 alias murmur="aule -t 'tmux attach -t murmur; bash -l'"
-alias prick="aule -t 'tmux attach -t pricktionary; bash -l'"
+alias prick="aule -t 'tmux attach -t prick; bash -l'"
 alias srweb="ulmo -t 'tmux attach -t srweb; bash -l'"
 alias sunshine="aule -t 'tmux attach -t sunshine; bash -l'"
 
