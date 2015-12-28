@@ -58,16 +58,19 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick ssh
-alias aule='ssh kofdog@aule'
-alias ulmo='ssh kofdog@ulmo'
+alias aule1='ssh kofdog@aule'
+alias ulmo1='ssh kofdog@ulmo'
 
-alias alec="ulmo -t 'tmux attach -t alec; bash -l'"
-alias eudyptula="aule -t 'tmux attach -t eudy; bash -l'"
-alias guess="aule -t 'tmux attach -t guess; bash -l'"
-alias murmur="aule -t 'tmux attach -t murmur; bash -l'"
-alias prick="aule -t 'tmux attach -t prick; bash -l'"
-alias srweb="ulmo -t 'tmux attach -t srweb; bash -l'"
-alias sunshine="aule -t 'tmux attach -t sunshine; bash -l'"
+alias aule="aule1 -t 'tmux attach -t misc; bash -l'"
+alias ulmo="ulmo1 -t 'tmux attach -t misc; bash -l'"
+
+alias alec="ulmo1 -t 'tmux attach -t alec; bash -l'"
+alias eudyptula="aule1 -t 'tmux attach -t eudy; bash -l'"
+alias guess="aule1 -t 'tmux attach -t guess; bash -l'"
+alias murmur="aule1 -t 'tmux attach -t murmur; bash -l'"
+alias prick="aule1 -t 'tmux attach -t prick; bash -l'"
+alias srweb="ulmo1 -t 'tmux attach -t srweb; bash -l'"
+alias sunshine="aule1 -t 'tmux attach -t sunshine; bash -l'"
 
 # administration
 alias dirsize='du -h -d 1 | sort -rh | less'
