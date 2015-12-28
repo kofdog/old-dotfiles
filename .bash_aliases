@@ -58,22 +58,16 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick ssh
-alias eru='ssh mike@eru'
-alias alec="eru -t 'tmux attach -t alec; bash -l'"
-alias srweb="eru -t 'tmux attach -t srweb; bash -l'"
+alias aule='ssh kofdog@aule'
+alias ulmo='ssh kofdog@ulmo'
 
-# quick cd
-alias builds='cd ~/.builds'
-alias projects='cd ~/Documents/projects'
-
-alias dotfiles='projects; cd dotfiles'
-alias eudyptula='projects; cd eudyptula-challenge'
-alias guess='projects; cd GuessChinese'
-alias kernel='builds; cd kernel'
-alias learn-meteor='projects; cd learn-meteor'
-alias murmur='projects; cd Murmur'
-alias prick='project; cd Pricktionary'
-alias sunshine='projects; cd Sunshine'
+alias alec="ulmo -t 'tmux attach -t alec; bash -l'"
+alias eudyptula="aule -t 'tmux attach -t eudyptula-challenge; bash -l'"
+alias guess="aule -t 'tmux attach -t guess-chinese; bash -l'"
+alias murmur="aule -t 'tmux attach -t murmur; bash -l'"
+alias prick="aule -t 'tmux attach -t pricktionary; bash -l'"
+alias srweb="ulmo -t 'tmux attach -t srweb; bash -l'"
+alias sunshine="aule -t 'tmux attach -t sunshine; bash -l'"
 
 # administration
 alias dirsize='du -h -d 1 | sort -rh | less'
@@ -106,7 +100,6 @@ alias info='info --vi-keys'
 
 # quick launchers
 alias emc='em -nw'
-#alias htop='sudo htop'
 alias nv='nvim'
 
 # fix sudo
