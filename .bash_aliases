@@ -76,7 +76,7 @@ alias p8='ping -c 3 8.8.8.8'
 
 # color support
 if [ -x /usr/bin/dircolors ]; then
-    alias ls='ls --color=auto'
+    alias ls='ls -G --color=auto'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
