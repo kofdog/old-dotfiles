@@ -21,6 +21,7 @@ Plugin 'tpope/vim-commentary'             " comments
 Plugin 'tpope/vim-dispatch'               " asynchronous compilation in tmux
 Plugin 'tpope/vim-eunuch'                 " UNIX commands in Vim
 Plugin 'tpope/vim-fugitive'               " git integration
+Plugin 'tpope/vim-obsession'              " make persistent sessions
 Plugin 'tpope/vim-repeat'                 " supporting . for plugins
 Plugin 'tpope/vim-rhubarb'                " Github integration
 Plugin 'tpope/vim-surround'               " surrounding brackets/quotes/etc.
