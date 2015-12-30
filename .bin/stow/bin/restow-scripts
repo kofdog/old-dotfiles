@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /mnt/data/Dropbox/documents/projects/dotfiles/.bin
+cd $DOTFILES/.bin
 sudo stow -v -t /usr/local -R *
 cd -
