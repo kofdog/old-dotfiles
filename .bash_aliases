@@ -58,16 +58,19 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick ssh
-alias aule='ssh kofdog@aule'
-alias ulmo='ssh kofdog@ulmo'
+tm-ulmo () { ssh kofdog@ulmo -t "tmux attach -t $1; bash -l"; }
+alias ulmo="tm-ulmo misc"
 
-alias alec="ulmo -t 'tmux attach -t alec; bash -l'"
-alias eudyptula="aule -t 'tmux attach -t eudy; bash -l'"
-alias guess="aule -t 'tmux attach -t guess; bash -l'"
-alias murmur="aule -t 'tmux attach -t murmur; bash -l'"
-alias prick="aule -t 'tmux attach -t prick; bash -l'"
-alias srweb="ulmo -t 'tmux attach -t srweb; bash -l'"
-alias sunshine="aule -t 'tmux attach -t sunshine; bash -l'"
+# project shortcuts
+tm-local () { tmux attach -t $1 || tmux new -s $1; }
+
+alias alec="tm-local alec"
+alias eudyptula="tm-local eudy"
+alias guess="tm-local guess"
+alias murmur="tm-local murmur"
+alias prick="tm-local prick"
+alias srweb="tm-ulmo srweb"
+alias sunshine="tm-local sunshine"
 
 # administration
 alias dirsize='du -h -d 1 | sort -rh | less'
