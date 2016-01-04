@@ -58,8 +58,9 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick ssh
-tm-ulmo () { ssh kofdog@ulmo -t "tmux attach -t $1; bash -l"; }
-alias ulmo="tm-ulmo misc"
+tm-remote () { ssh kofdog@$1 -t "tmux attach -t $2; bash -l"; }
+alias aule="tm-remote aule misc"
+alias ulmo="tm-remote ulmo misc"
 
 # project shortcuts
 tm-local () { tmux attach -t $1 || tmux new -s $1; }
@@ -69,7 +70,7 @@ alias eudyptula="tm-local eudy"
 alias guess="tm-local guess"
 alias murmur="tm-local murmur"
 alias prick="tm-local prick"
-alias srweb="tm-ulmo srweb"
+alias srweb="tm-local srweb"
 alias sunshine="tm-local sunshine"
 
 # administration
