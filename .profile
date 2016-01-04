@@ -40,6 +40,9 @@ export LAUNCH_MAIL="$TERMRUN $MAIL"
 export LAUNCH_MPLAYER="$TERMRUN $MPLAYER"
 export LAUNCH_VPLAYER=$VPLAYER
 
+# Set locations
+export DOTFILES=~/dotfiles
+
 # Fix 'less' security
 export PAGER=less
 unset LESSOPEN
