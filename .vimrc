@@ -149,7 +149,7 @@ let g:airline#extensions#tabline#enabled = 1
 "let g:airline_powerline_fonts = 1
 
 "" Android
-let g:android_sdk_path = '/opt/android-sdk'
+let g:android_sdk_path = '~/android-sdk'
 let g:gradle_path = '/usr/share/java/gradle'
 
 "" Bufferline
