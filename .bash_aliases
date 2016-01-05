@@ -68,6 +68,7 @@ tm-local () { tmux attach -t $1 || tmux new -s $1; }
 
 alias alec="tm-local alec"
 alias eudyptula="tm-local eudy"
+alias french="tm-local french"
 alias guess="tm-local guess"
 alias murmur="tm-local murmur"
 alias prick="tm-local prick"
