@@ -58,6 +58,7 @@ alias uuuuu='cd ../../../../..'
 md () { mkdir -p "$@" && cd "$@"; }
 
 # quick ssh
+alias tmux="tmux -u"
 tm-remote () { ssh kofdog@$1 -t "tmux attach -t $2; bash -l"; }
 alias aule="tm-remote aule misc"
 alias ulmo="tm-remote ulmo misc"
