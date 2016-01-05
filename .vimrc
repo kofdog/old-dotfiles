@@ -7,11 +7,12 @@ Plugin 'a.vim'                            " header/library switching
 Plugin 'bling/vim-airline'                " awesome status line
 Plugin 'chriskempson/base16-vim'          " colors
 Plugin 'christoomey/vim-tmux-navigator'   " Seamless vim/tmux navigation
-Plugin 'hsanson/vim-android'              " Android integration
+"Plugin 'hsanson/vim-android'              " Android integration
 Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
 Plugin 'jnurmine/Zenburn'                 " colors
 Plugin 'junegunn/goyo.vim'                " distraction-free editing
 Plugin 'kien/ctrlp.vim'                   " file finding
+Plugin 'ludovicchabant/vim-gutentags'     " tag management
 Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
 Plugin 'othree/html5.vim'                 " syntax highlighting for HTML5
@@ -171,7 +172,7 @@ se wig+=*/app/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
 "" Easytags
 "let g:easytags_always_enabled = 1
 "let g:easytags_async = 1
-se tag=./.tags;
+"se tag=./.tags;
 "let g:easytags_dynamic_files = 1
 
 "" Fugitive
