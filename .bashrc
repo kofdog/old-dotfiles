@@ -103,9 +103,9 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Android development
-export ANDROID_SDK_ROOT=/opt/android-sdk
-PATH=$PATH:/opt/android-ndk
-PATH=$PATH:/opt/android-sdk/platform-tools
-PATH=$PATH:/opt/android-sdk/tools
+export ANDROID_SDK_ROOT=~/android-sdk
+PATH=$PATH:~/android-ndk
+PATH=$PATH:~/android-sdk/platform-tools
+PATH=$PATH:~/android-sdk/tools
 PATH=$PATH:/usr/local/share/gradle/gradle-2.9/bin
 export PATH
