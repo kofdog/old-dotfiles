@@ -19,8 +19,8 @@ while getopts ":h" opt; do
 done
 shift $((OPTIND - 1))
 
-for f in $(find . -type f -not -path "./.git*" -not -name "*README.md" \
-                -not -name "link"); do
+for f in $(find . -type f -not -path "./.git/*" -not -name ".gitignore" \
+                -not -name "*README.md" -not -name "link"); do
     strippedfile="${f:2}"
     targetfile="$HOME/$strippedfile"
 
