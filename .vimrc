@@ -3,34 +3,17 @@ filetype off
 se rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'a.vim'                            " header/library switching
-Plugin 'bling/vim-airline'                " awesome status line
 Plugin 'chriskempson/base16-vim'          " colors
-Plugin 'christoomey/vim-tmux-navigator'   " Seamless vim/tmux navigation
-"Plugin 'hsanson/vim-android'              " Android integration
 Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
-Plugin 'jnurmine/Zenburn'                 " colors
-Plugin 'junegunn/goyo.vim'                " distraction-free editing
-Plugin 'kien/ctrlp.vim'                   " file finding
-Plugin 'ludovicchabant/vim-gutentags'     " tag management
 Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
 Plugin 'othree/html5.vim'                 " syntax highlighting for HTML5
 Plugin 'pangloss/vim-javascript'          " better syntax/indent for JS
-Plugin 'Raimondi/delimitMate'             " automatic closing parens, et al.
-Plugin 'tpope/vim-commentary'             " comments
 Plugin 'tpope/vim-dispatch'               " asynchronous compilation in tmux
-Plugin 'tpope/vim-eunuch'                 " UNIX commands in Vim
-Plugin 'tpope/vim-fugitive'               " git integration
 Plugin 'tpope/vim-obsession'              " make persistent sessions
-Plugin 'tpope/vim-repeat'                 " supporting . for plugins
-Plugin 'tpope/vim-rhubarb'                " Github integration
-Plugin 'tpope/vim-surround'               " surrounding brackets/quotes/etc.
-"Plugin 'Valloric/MatchTagAlways'          " HTML tag highlighting
-"Plugin 'vim-scripts/HTML-AutoCloseTag'    " automatic HTML tag closing
+Plugin 'vim-airline/vim-airline'          " aesthetics
+Plugin 'vim-airline/vim-airline-themes'   " colors
 Plugin 'vim-scripts/Smart-Tabs'           " tabs:indentation::spaces:alignment
-"Plugin 'xolox/vim-easytags'               " Exuberant Ctags integration
-Plugin 'xolox/vim-misc'                   " dependency for Easytags
 
 call vundle#end()
 
@@ -78,7 +61,6 @@ se ru
 se sc
 se nosmd
 se wmnu
-"se stl=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Scrolling
 if !&scrolloff
@@ -123,108 +105,35 @@ au FileType * setl fo-=c fo-=r fo-=o
 se bdir=~/.vim/backup
 se dir=~/.vim/swap
 
-"" Grep
-" Open Quickfix after grep
-"au QuickFixCmdPost *grep* cwindow
+"" Path/Tags
+" Project workspace
+se path+=$PWD/**
+se tag+=./tags
 
-"" Compilation
-" Open Quickfix after make
-aug OpenQuickfixWindowAfterMake
-    au QuickFixCmdPost [^l]* nested cwindow
-    au QuickFixCmdPost    l* nested lwindow
-aug END
-
-"" Path
 " Linux kernel
 let s:kern = system("uname -r")
-let s:kernpath = 'set path+=/usr/lib/modules/' . s:kern . '/build/include'
+let s:kernpath = 'se path+=/lib/modules/' . s:kern . '/build/include'
 let s:kerncommand = substitute(s:kernpath, '\n', '', 'g')
-exec s:kerncommand
-"set path+=/lib/modules/system("uname -r")/build/include
+"exec s:kerncommand
+se path+=/lib/modules/3.13.0-79-generic/build/include
+se path+=/lib/modules/3.13.0-79-generic/build/arch/x86/include
+se tag+=/lib/modules/3.13.0-79-generic/build/tags
+se tag+=/lib/modules/3.13.0-79-generic/build/arch/x86/tags
+
+se tag+=/usr/include/tags
 
 "" Airline
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline_powerline_fonts = 1
-
-"" Android
-let g:android_sdk_path = '~/android-sdk'
-let g:gradle_path = '/usr/share/java/gradle'
-
-"" Bufferline
-let g:bufferline_echo = 0
-let g:bufferline_rotate = 0
-
-" Separators
-let g:bufferline_active_buffer_left = ''
-let g:bufferline_active_buffer_right = ''
-
-let g:bufferline_show_bufnr = 0
-
-"" Ctrl-P
-let g:ctrlp_map = '<Leader>o'
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_working_path_mode = 'rc'
-se wig+=*/app/build/*,*/tmp/*,*.cmd,*.ko,*.mod*,*.o,*.so,*.swp,*.tar*,*.zip
-
-"" Easytags
-"let g:easytags_always_enabled = 1
-"let g:easytags_async = 1
-"se tag=./.tags;
-"let g:easytags_dynamic_files = 1
-
-"" Fugitive
-" Delete buffers after leaving (so they don't clog the list)
-au BufReadPost fugitive://* se bh=delete
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16'
 
 "" Mustache/Handlebars
 au FileType html se syn=mustache
 
-"" Rhubarb
-se cot-=preview
-
 "" Keybindings
 " Leader key
 let mapleader = ";"
-
-" Android
-nn <Leader>ad :AndroidDevices<CR>
-nn <Leader>ae :AndroidEmulator<CR>
-nn <Leader>ai :Android installDebug<CR>
-nn <Leader>al :Android lint<CR>
-nn <Leader>am :Android assembleDebug<CR>
-nn <Leader>at :Android connectedCheck<CR>
-nn <Leader>au :AndroidUpdateTags<CR>
-
-" Dispatch
-nn <Leader>m :Make<CR>
-
-" Fugitive
-nn <Leader>gc :Gcommit<CR>
-nn <Leader>gd :Gdiff<CR>
-command! -nargs=+ NewGrep execute 'silent Ggrep! <args>' | copen
-nn <Leader>gg :execute "NewGrep " . expand("<cword>")<CR>
-
-nn <Leader>gl :Glog<CR>
-nn <Leader>gr :Gread<CR>
-nn <Leader>gs :Gstatus<CR>
-nn <Leader>gw :Gwrite<CR>
-
-" Buffer manipulation
-se hid
-nn <Leader>l :bnext<CR>
-nn <Leader>h :bprev<CR>
-nn <Leader>q :bp <BAR> bd #<CR>
-
-" IDE navigation
-nn <Leader>aa :A<CR>
-nn <Leader>gf <C-]>
-
-" Web dev - accounts for delimitMate
-im <silent> <C-j> </<C-X><C-O><C-X><C-H><Esc><<
-nn <F5> :silent update<Bar>silent !firefox %:p &<CR>
 
 " Quick edits
 nn <Leader>eba :e ~/.bash_aliases<CR>
@@ -243,9 +152,3 @@ nn <Leader>rv :so ~/.vimrc<CR>
 
 " Exit Insert mode
 im jk <Esc>
-
-" Remap up/down keys to navigate wrapped lines
-nn j gj
-nn k gk
-nn gj j
-nn gk k
