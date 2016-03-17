@@ -4,12 +4,14 @@ se rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'chriskempson/base16-vim'          " colors
+Plugin 'edkolev/tmuxline.vim'             " tmux statusline
 Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
 Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
 Plugin 'othree/html5.vim'                 " syntax highlighting for HTML5
 Plugin 'pangloss/vim-javascript'          " better syntax/indent for JS
 Plugin 'tpope/vim-dispatch'               " asynchronous compilation in tmux
+Plugin 'tpope/vim-fugitive'               " git integration
 Plugin 'tpope/vim-obsession'              " make persistent sessions
 Plugin 'vim-airline/vim-airline'          " aesthetics
 Plugin 'vim-airline/vim-airline-themes'   " colors
@@ -38,6 +40,7 @@ se nojs
 se sm
 
 se fo+=j
+se hid
 
 " Search
 se hls
@@ -109,6 +112,10 @@ se dir=~/.vim/swap
 " Project workspace
 se path+=$PWD/**
 se tag+=./tags
+
+" Android
+se path+=~/android-sdk-linux/sources/android-23
+se tag+=~/android-sdk-linux/sources/android-23/tags
 
 " Linux kernel
 let s:kern = system("uname -r")
