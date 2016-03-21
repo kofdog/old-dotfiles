@@ -65,14 +65,6 @@ se sc
 se nosmd
 se wmnu
 
-" Scrolling
-if !&scrolloff
-	se so=1
-endif
-if !&sidescrolloff
-	se siso=5
-endif
-
 se sh=/bin/bash
 
 se ttimeout
