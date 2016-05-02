@@ -5,3 +5,4 @@
 	helper = cache --timeout=3600
 [core]
 	askpass = 
+	excludesfile = /home/kofdog/.gitignore_global
