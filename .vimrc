@@ -89,6 +89,7 @@ syntax on
 " Color scheme
 "let base16colorspace=256
 se bg=dark
+let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 colo gruvbox
 
 " Remove trailing whitespace on save
