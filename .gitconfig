@@ -6,3 +6,4 @@
 [core]
 	askpass = 
 	excludesfile = /home/kofdog/.gitignore_global
+	editor = nvim
