@@ -105,7 +105,7 @@ alias info='info --vi-keys'
 
 # quick launchers
 alias emc='em -nw'
-alias nv='nvim'
+alias nv="NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim"
 
 # fix sudo
 alias sudo='sudo '

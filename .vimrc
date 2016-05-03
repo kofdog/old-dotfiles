@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'chriskempson/base16-vim'          " colors
 Plugin 'edkolev/tmuxline.vim'             " tmux statusline
 Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
+Plugin 'morhetz/gruvbox'                  " colors
 Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
 Plugin 'othree/html5.vim'                 " syntax highlighting for HTML5
@@ -86,9 +87,9 @@ se nocp
 syntax on
 
 " Color scheme
-let base16colorspace=256
+"let base16colorspace=256
 se bg=dark
-colo base16-eighties
+colo gruvbox
 
 " Remove trailing whitespace on save
 au BufWritePre * :%s/\s\+$//e
@@ -124,8 +125,9 @@ se tag+=/usr/include/tags
 "" Airline
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tmuxline#enabled = 0
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
+let g:airline_theme='gruvbox'
 
 "" Mustache/Handlebars
 au FileType html se syn=mustache
