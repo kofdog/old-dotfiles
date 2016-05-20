@@ -5,6 +5,7 @@ call vundle#begin()
 
 Plugin 'chriskempson/base16-vim'          " colors
 Plugin 'edkolev/tmuxline.vim'             " tmux statusline
+Plugin 'hsanson/vim-android'              " Android/Gradle integration
 Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
 Plugin 'morhetz/gruvbox'                  " colors
 Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax

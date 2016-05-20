@@ -114,13 +114,14 @@ if ! shopt -oq posix; then
 fi
 
 # Set color scheme
-BASE16_SCHEME="eighties"
-BASE16_SHADE="dark"
-BASE16_SHELL="$HOME/base16-shell/base16-${BASE16_SCHEME}.${BASE16_SHADE}.sh"
-[[ -s "$BASE16_SHELL" ]] && . "$BASE16_SHELL"
+#BASE16_SCHEME="eighties"
+#BASE16_SHADE="dark"
+#BASE16_SHELL="$HOME/base16-shell/base16-${BASE16_SCHEME}.${BASE16_SHADE}.sh"
+#[[ -s "$BASE16_SHELL" ]] && . "$BASE16_SHELL"
 
 # Android development
-export ANDROID_SDK_ROOT=~/android-sdk-linux
-PATH=$PATH:~/android-sdk-linux/platform-tools
-PATH=$PATH:~/android-sdk-linux/tools
+export ANDROID_SDK_ROOT=~/Android/Sdk
+PATH=$PATH:~/Android/Sdk/platform-tools
+PATH=$PATH:~/Android/Sdk/tools
+PATH=$PATH:~/android-studio/bin
 export PATH
