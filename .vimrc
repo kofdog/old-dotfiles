@@ -117,10 +117,16 @@ let s:kern = system("uname -r")
 let s:kernpath = 'se path+=/lib/modules/' . s:kern . '/build/include'
 let s:kerncommand = substitute(s:kernpath, '\n', '', 'g')
 "exec s:kerncommand
-se path+=/lib/modules/3.13.0-79-generic/build/include
-se path+=/lib/modules/3.13.0-79-generic/build/arch/x86/include
-se tag+=/lib/modules/3.13.0-79-generic/build/tags
-se tag+=/lib/modules/3.13.0-79-generic/build/arch/x86/tags
+se path+=~/linux/include
+"se path+=~/linux/arch/x86/include
+se path+=~/linux/arch/x86_64/include
+"se path+=/lib/modules/3.13.0-79-generic/build/include
+"se path+=/lib/modules/3.13.0-79-generic/build/arch/x86/include
+se tag+=~/linux/tags
+"se tag+=~/linux/arch/x86/tags
+se tag+=~/linux/arch/x86_64/tags
+"se tag+=/lib/modules/3.13.0-79-generic/build/tags
+"se tag+=/lib/modules/3.13.0-79-generic/build/arch/x86/tags
 
 se tag+=/usr/include/tags
 

@@ -118,6 +118,7 @@ fi
 #BASE16_SHADE="dark"
 #BASE16_SHELL="$HOME/base16-shell/base16-${BASE16_SCHEME}.${BASE16_SHADE}.sh"
 #[[ -s "$BASE16_SHELL" ]] && . "$BASE16_SHELL"
+source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 
 # Android development
 export ANDROID_SDK_ROOT=~/Android/Sdk
