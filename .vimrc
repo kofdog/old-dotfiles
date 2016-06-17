@@ -109,26 +109,19 @@ se path+=$PWD/**
 se tag+=./tags
 
 " Android
-se path+=~/android-sdk-linux/sources/android-23
-se tag+=~/android-sdk-linux/sources/android-23/tags
+"se path+=~/android-sdk-linux/sources/android-23
+"se tag+=~/android-sdk-linux/sources/android-23/tags
 
 " Linux kernel
-let s:kern = system("uname -r")
-let s:kernpath = 'se path+=/lib/modules/' . s:kern . '/build/include'
-let s:kerncommand = substitute(s:kernpath, '\n', '', 'g')
+"let s:kern = system("uname -r")
+"let s:kernpath = 'se path+=/lib/modules/' . s:kern . '/build/include'
+"let s:kerncommand = substitute(s:kernpath, '\n', '', 'g')
 "exec s:kerncommand
 se path+=~/linux/include
-"se path+=~/linux/arch/x86/include
-se path+=~/linux/arch/x86_64/include
-"se path+=/lib/modules/3.13.0-79-generic/build/include
-"se path+=/lib/modules/3.13.0-79-generic/build/arch/x86/include
+se path+=~/linux/arch/x86/include
 se tag+=~/linux/tags
-"se tag+=~/linux/arch/x86/tags
-se tag+=~/linux/arch/x86_64/tags
-"se tag+=/lib/modules/3.13.0-79-generic/build/tags
-"se tag+=/lib/modules/3.13.0-79-generic/build/arch/x86/tags
 
-se tag+=/usr/include/tags
+"se tag+=/usr/include/tags
 
 "" Airline
 let g:airline#extensions#whitespace#enabled = 0
@@ -144,20 +137,8 @@ au FileType html se syn=mustache
 " Leader key
 let mapleader = ";"
 
-" Quick edits
-nn <Leader>eba :e ~/.bash_aliases<CR>
-nn <Leader>ebr :e ~/.bashrc<CR>
-nn <Leader>ei :e ~/.config/nvim/init.vim<CR>
-nn <Leader>ep :e ~/.profile<CR>
-nn <Leader>et :e ~/.tmux.conf<CR>
-nn <Leader>ev :e ~/.vimrc<CR>
-nn <Leader>exi :e ~/.xinitrc<CR>
-nn <Leader>exp :e ~/.xprofile<CR>
-
-" Reload things
-nn <Leader>rb :checktime<CR>
-nn <Leader>rn :so ~/.config/nvim/init.vim<CR>
-nn <Leader>rv :so ~/.vimrc<CR>
+" Close buffer
+nnoremap <Leader>bd :b#\|bd#<CR>
 
 " Exit Insert mode
 im jk <Esc>
