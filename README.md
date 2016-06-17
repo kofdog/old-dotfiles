@@ -18,3 +18,6 @@ http://imgur.com/a/F0NQU
 
 (25-10-2015)
 http://imgur.com/a/24Hoo - Migrate from Arch to Debian Jessie
+
+(17-06-2016)
+http://imgur.com/a/zgNjw - Universal UNIX-like dev environment with tmux/vim
