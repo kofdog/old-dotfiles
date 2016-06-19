@@ -121,8 +121,8 @@ fi
 source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 
 # Android development
-export ANDROID_SDK_ROOT=~/Android/Sdk
-PATH=$PATH:~/Android/Sdk/platform-tools
-PATH=$PATH:~/Android/Sdk/tools
+export ANDROID_HOME=~/android-sdk-linux
+PATH=$PATH:$ANDROID_HOME/platform-tools
+PATH=$PATH:$ANDROID_HOME/tools
 PATH=$PATH:~/android-studio/bin
 export PATH

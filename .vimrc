@@ -130,6 +130,11 @@ let g:airline#extensions#tmuxline#enabled = 0
 let g:airline_powerline_fonts = 1
 let g:airline_theme='gruvbox'
 
+"" Android
+let g:android_sdk_tags = '$PWD/tags'
+let g:gradle_daemon = 1
+let g:gradle_quickfix_show = 1
+
 "" Mustache/Handlebars
 au FileType html se syn=mustache
 
