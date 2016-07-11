@@ -126,3 +126,6 @@ PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:$ANDROID_HOME/tools
 PATH=$PATH:~/android-studio/bin
 export PATH
+
+# Go
+export GOPATH=~/work

@@ -58,6 +58,7 @@ plugins=(git zsh-syntax-highlighting)
 
 export ANDROID_HOME=~/android-sdk-linux
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
+export GOPATH=~/work
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
