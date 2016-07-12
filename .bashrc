@@ -120,12 +120,15 @@ fi
 #[[ -s "$BASE16_SHELL" ]] && . "$BASE16_SHELL"
 source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 
+## Path
 # Android development
 export ANDROID_HOME=~/android-sdk-linux
 PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:$ANDROID_HOME/tools
 PATH=$PATH:~/android-studio/bin
-export PATH
 
 # Go
 export GOPATH=~/work
+PATH=$PATH:$GOPATH/bin
+
+export PATH
