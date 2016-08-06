@@ -45,7 +45,7 @@ se fo+=j
 se hid
 
 " Search
-se hls
+se nohls
 se ic
 se is
 se scs
@@ -72,11 +72,6 @@ se sh=/bin/bash
 se ttimeout
 se ttm=100
 
-" Use <C-I> to clear the highlighting of :set hlsearch.
-if maparg('<C-I>', 'n') ==# ''
-	nn <silent> <C-I> :nohlsearch<CR><C-I>
-endif
-
 "" Indentation adjustments
 au FileType css,html,javascript setl sw=2 ts=2 et
 au FileType java,xml setl sw=4 ts=4 et
@@ -100,8 +95,9 @@ au BufWritePre * :%s/\s\+$//e
 au FileType * setl fo-=c fo-=r fo-=o
 
 " Get backups out of the way
-se bdir=~/.vim/backup
-se dir=~/.vim/swap
+se bdir=~/.vim/backup//
+se dir=~/.vim/swap//
+se noswf
 
 "" Path/Tags
 " Project workspace
