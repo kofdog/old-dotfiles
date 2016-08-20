@@ -138,7 +138,9 @@ au FileType html se syn=mustache
 " Leader key
 let mapleader = ";"
 
-" Close buffer
+" Buffer manipulation
+nnoremap gb :bn<CR>
+nnoremap gB :bp<CR>
 nnoremap <Leader>bd :b#\|bd#<CR>
 
 " Exit Insert mode
