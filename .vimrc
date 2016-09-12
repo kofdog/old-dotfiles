@@ -35,6 +35,7 @@ se cpt-=i
 se sta
 
 " Aesthetic
+se cc=81
 se dy+=lastline
 se lsp=0
 se noeb
