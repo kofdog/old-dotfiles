@@ -53,3 +53,6 @@ export LESSSECURE=1
 export OPERAPLUGINWRAPPER_PRIORITY=0
 export OPERA_KEEP_BLOCKED_PLUGIN=1
 export GDK_NATIVE_WINDOWS=1
+
+# Fix sound on Chromebook Pixel LS
+~/.bin/sys/bin/samus-alsaenable-speakers

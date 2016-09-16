@@ -121,10 +121,10 @@ fi
 source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 
 # Chrome OS-specific fixes: enable UTF-8, fix TERM
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-export TERM=xterm-256color
+#export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8
+#export LANGUAGE=en_US.UTF-8
+#export TERM=xterm-256color
 
 ## Path
 # Android development
