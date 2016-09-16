@@ -4,6 +4,8 @@
 [credential]
 	helper = cache --timeout=3600
 [core]
-	askpass = 
+	askpass =
 	excludesfile = /home/kofdog/.gitignore_global
-	editor = nvim
+	editor = vim
+[sendemail]
+	smtpserver = /usr/bin/msmtp
