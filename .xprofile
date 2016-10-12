@@ -2,15 +2,15 @@
 # and should be sourced by display managers.
 
 # Video
-redshift &
+redshift -l geoclue2 &
 
 # Audio
-mpd-start &
+#mpd-start &
 
 # File sharing
 #filesharing-fix &
-sudo sysctl -p &
-dropbox-cli start &
+#sudo sysctl -p &
+#dropbox-cli start &
 #CopyConsole --daemon &
 #google-musicmanager &
 
@@ -22,10 +22,10 @@ dropbox-cli start &
 #systemctl --user start colors-wallpaper.timer
 
 # X11
-USRRESOURCES=$HOME/.Xresources
-xrdb -load $USRRESOURCES
-xset b off
+#USRRESOURCES=$HOME/.Xresources
+#xrdb -load $USRRESOURCES
+#xset b off
 
 # Terminal
-urxvtd &
+#urxvtd &
 #stjerm &

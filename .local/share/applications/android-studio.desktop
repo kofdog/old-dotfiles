@@ -1,11 +1,11 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Icon=~/android-studio/bin/studio.png
-#Icon=androidstudio
+#Icon=~/android-studio/bin/studio.png
+Icon=android-studio
 Name=Android Studio
 Comment=Android Studio - The Official IDE for Android Development
-Exec=~/android-studio/bin/studio.sh
+Exec=/home/kofdog/android-studio/bin/studio.sh
 Categories=Utility;IDE;Development;
 Terminal=false
 StartupWMClass=jetbrains-studio

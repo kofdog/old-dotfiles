@@ -4,6 +4,8 @@ se rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'chriskempson/base16-vim'          " colors
+Plugin 'christoomey/vim-tmux-navigator'   " seamless navigation
+Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy finder
 Plugin 'edkolev/tmuxline.vim'             " tmux statusline
 Plugin 'hsanson/vim-android'              " Android/Gradle integration
 Plugin 'jelera/vim-javascript-syntax'     " better syntax highlighting for JS
@@ -17,6 +19,7 @@ Plugin 'tpope/vim-fugitive'               " git integration
 Plugin 'tpope/vim-obsession'              " make persistent sessions
 Plugin 'vim-airline/vim-airline'          " aesthetics
 Plugin 'vim-airline/vim-airline-themes'   " colors
+Plugin 'vim-scripts/a.vim'                " header/src switching
 Plugin 'vim-scripts/Smart-Tabs'           " tabs:indentation::spaces:alignment
 
 call vundle#end()
