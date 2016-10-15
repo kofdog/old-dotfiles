@@ -135,6 +135,9 @@ let g:android_sdk_tags = '$PWD/tags'
 let g:gradle_daemon = 1
 let g:gradle_quickfix_show = 1
 
+"" CtrlP
+let g:ctrlp_show_hidden = 1
+
 "" Mustache/Handlebars
 au FileType html se syn=mustache
 
