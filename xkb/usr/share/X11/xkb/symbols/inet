@@ -1881,7 +1881,7 @@ xkb_symbols "chromebook" {
 	include "level3(ralt_switch)"
         key <FK01> {    [ XF86Back, XF86Back, F1 ] };
         key <FK02> {    [ XF86Forward, XF86Forward, F2 ] };
-        key <FK03> {    [ XF86Reload, XF86Reload, F3 ] };
+        key <FK03> {    [ XF86Refresh, XF86Refresh, F3 ] };
         key <FK04> {    [ F11, F11, F4 ] };
         key <FK05> {    [ F5, F5, F5 ] }; // Overview key
         key <FK06> {    [ XF86MonBrightnessDown, XF86MonBrightnessDown, F6 ] };
