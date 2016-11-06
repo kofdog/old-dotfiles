@@ -43,6 +43,7 @@ se dy+=lastline
 se lsp=0
 se noeb
 se nojs
+se nu
 se sm
 
 se fo+=j
@@ -137,6 +138,7 @@ let g:gradle_quickfix_show = 1
 
 "" CtrlP
 let g:ctrlp_show_hidden = 1
+nn <c-o> :CtrlPBuffer<CR>
 
 "" Mustache/Handlebars
 au FileType html se syn=mustache
@@ -146,9 +148,9 @@ au FileType html se syn=mustache
 let mapleader = ";"
 
 " Buffer manipulation
-nnoremap gb :bn<CR>
-nnoremap gB :bp<CR>
-nnoremap <Leader>bd :b#\|bd#<CR>
+nn gb :bn<CR>
+nn gB :bp<CR>
+nn <Leader>bd :b#\|bd#<CR>
 
 " Exit Insert mode
 im jk <Esc>
