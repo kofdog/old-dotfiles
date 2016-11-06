@@ -43,7 +43,6 @@ se dy+=lastline
 se lsp=0
 se noeb
 se nojs
-se nu
 se sm
 
 se fo+=j
