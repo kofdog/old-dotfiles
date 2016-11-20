@@ -53,6 +53,7 @@ se nohls
 se ic
 se is
 se scs
+se wig=**/app/build/**,*.o,*.obj
 
 se mouse=
 
@@ -107,10 +108,6 @@ se noswf
 " Project workspace
 se path+=$PWD/**
 se tag+=./tags
-
-" Android
-"se path+=~/android-sdk-linux/sources/android-23
-"se tag+=~/android-sdk-linux/sources/android-23/tags
 
 " Linux kernel
 "let s:kern = system("uname -r")
