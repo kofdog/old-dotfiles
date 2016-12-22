@@ -14,9 +14,11 @@ Plugin 'mustache/vim-mustache-handlebars' " Javascript Handlebars syntax
 Plugin 'octol/vim-cpp-enhanced-highlight' " better syntax highlighting for C++
 Plugin 'othree/html5.vim'                 " syntax highlighting for HTML5
 Plugin 'pangloss/vim-javascript'          " better syntax/indent for JS
+Plugin 'tpope/vim-commentary'             " comments
 Plugin 'tpope/vim-dispatch'               " asynchronous compilation in tmux
 Plugin 'tpope/vim-fugitive'               " git integration
 Plugin 'tpope/vim-obsession'              " make persistent sessions
+Plugin 'tyrannicaltoucan/vim-quantum'     " colors
 Plugin 'vim-airline/vim-airline'          " aesthetics
 Plugin 'vim-airline/vim-airline-themes'   " colors
 Plugin 'vim-scripts/a.vim'                " header/src switching
@@ -92,6 +94,10 @@ syntax on
 se bg=dark
 let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 colo gruvbox
+"colo quantum
+"if has("termguicolors")
+"	set termguicolors
+"endif
 
 " Remove trailing whitespace on save
 au BufWritePre * :%s/\s\+$//e
@@ -126,6 +132,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tmuxline#enabled = 0
 let g:airline_powerline_fonts = 1
 let g:airline_theme='gruvbox'
+"let g:airline_theme='quantum'
 
 "" Android
 let g:android_sdk_tags = '$PWD/tags'
