@@ -2,7 +2,7 @@
 # and should be sourced by display managers.
 
 # Video
-redshift -l geoclue2 &
+redshift &
 
 # Audio
 #mpd-start &
