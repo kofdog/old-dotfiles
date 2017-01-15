@@ -121,9 +121,9 @@ fi
 source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 
 # Chrome OS-specific fixes: enable UTF-8, fix TERM
-#export LC_ALL=en_US.UTF-8
-#export LANG=en_US.UTF-8
-#export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 #export TERM=xterm-256color
 
 ## Path
@@ -131,6 +131,7 @@ source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 export ANDROID_HOME=~/android-sdk-linux
 PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:$ANDROID_HOME/tools
+PATH=$PATH:$ANDROID_HOME/tools/bin
 PATH=$PATH:~/android-studio/bin
 
 # Go

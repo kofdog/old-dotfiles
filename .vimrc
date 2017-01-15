@@ -90,11 +90,12 @@ se nocp
 syntax on
 
 " Color scheme
-"let base16colorspace=256
+let base16colorspace=256
 se bg=dark
-let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
-colo gruvbox
-"colo quantum
+" let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
+colo base16-materia
+" colo gruvbox
+" colo quantum
 "if has("termguicolors")
 "	set termguicolors
 "endif
@@ -131,8 +132,9 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tmuxline#enabled = 0
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
-"let g:airline_theme='quantum'
+let g:airline_theme='base16'
+" let g:airline_theme='gruvbox'
+" let g:airline_theme='quantum'
 
 "" Android
 let g:android_sdk_tags = '$PWD/tags'
@@ -145,6 +147,15 @@ nn <c-o> :CtrlPBuffer<CR>
 
 "" Mustache/Handlebars
 au FileType html se syn=mustache
+
+"" Tmuxline
+" let g:tmuxline_preset = {
+" 	\'a'       : '#S',
+" 	\'win'     : ['#I', '#W'],
+" 	\'cwin'    : ['#I', '#W'],
+" 	\'y'       : ['%Y', '%H:%M'],
+" 	\'z'       : '#H'
+" 	\'options' : {'status-justify' : 'left'}}
 
 "" Keybindings
 " Leader key
