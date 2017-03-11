@@ -114,11 +114,9 @@ if ! shopt -oq posix; then
 fi
 
 # Set color scheme
-#BASE16_SCHEME="eighties"
-#BASE16_SHADE="dark"
-#BASE16_SHELL="$HOME/base16-shell/base16-${BASE16_SCHEME}.${BASE16_SHADE}.sh"
-#[[ -s "$BASE16_SHELL" ]] && . "$BASE16_SHELL"
-source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-materia.sh"
+[[ -s "$BASE16_SHELL" ]] && . "$BASE16_SHELL"
+#source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 
 # Chrome OS-specific fixes: enable UTF-8, fix TERM
 export LC_ALL=en_US.UTF-8

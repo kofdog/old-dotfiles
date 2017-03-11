@@ -80,9 +80,11 @@ se ttimeout
 se ttm=100
 
 "" Indentation adjustments
-au FileType css,html,javascript setl sw=2 ts=2 et
-au FileType java,xml setl sw=4 ts=4 et
-au FileType make setl sw=8 ts=8 sts=0 noet
+au FileType c,cpp,make setl sw=8 ts=8 sts=0 noet cc=81 nu
+au FileType css,html,javascript setl sw=2 ts=2 et cc=81 nu
+au FileType java,xml setl sw=4 ts=4 et cc=101 nu
+au FileType haskell setl sw=4 ts=4 et cc=80 nu
+au FileType python setl sw=4 ts=4 et cc=80 nu
 
 " Obligatory
 filetype plugin indent on
@@ -113,7 +115,7 @@ se noswf
 
 "" Path/Tags
 " Project workspace
-se path+=$PWD/**
+se path=$PWD/**
 se tag+=./tags
 
 " Linux kernel
@@ -125,6 +127,7 @@ se path+=~/linux/include
 se path+=~/linux/arch/x86/include
 se tag+=~/linux/tags
 
+se path+=/usr/include
 "se tag+=/usr/include/tags
 
 "" Airline
